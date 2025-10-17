@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anima App</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+  content: [],
+  theme: {
+    extend: {
+      fontFamily: {
+        ui_sans_serif: [
+          'ui-sans-serif',
+          'system-ui',
+          'sans-serif',
+          'Apple Color Emoji',
+          'Segoe UI Emoji',
+          'Segoe UI Symbol',
+          'Noto Color Emoji'
+        ],
+        poppins: [
+          'Poppins',
+          'Helvetica'
+        ]
+      }
+    }
+  }
+};
+</script>
+
+  <style>
+    @font-face {
+      font-family: 'Poppins';
+      src: url('https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2') format("woff2");
+      font-weight: 500;
+      font-style: normal;
+    }
+  </style>
+
+  <style>
+    @font-face {
+      font-family: 'Poppins';
+      src: url('https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2') format("woff2");
+      font-weight: 600;
+      font-style: normal;
+    }
+  </style>
+
+  <style>
+    @font-face {
+      font-family: 'Poppins';
+      src: url('https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2') format("woff2");
+      font-weight: 700;
+      font-style: normal;
+    }
+  </style>
+</head>
+<body class="text-slate-900 text-base not-italic normal-nums font-normal accent-auto bg-white box-border caret-transparent block tracking-[normal] leading-6 list-outside list-disc pointer-events-auto text-start indent-[0px] normal-case visible border-separate font-ui_sans_serif"><div class="box-border caret-transparent"><div class="bg-white box-border caret-transparent min-h-[1000px] w-full"><div class="relative bg-emerald-50 box-border caret-transparent text-center w-full py-3"><div class="text-sm items-center box-border caret-transparent gap-x-2 inline-flex leading-5 gap-y-2"><span class="text-teal-600 font-bold box-border caret-transparent block">New!</span>
+<span class="text-cyan-950 font-medium box-border caret-transparent block">Weight Loss Clinic Now Open • Join 350+ Sheffield Success Stories</span>
+</div>
+<button class="absolute text-cyan-950/60 bg-transparent caret-transparent block translate-y-[-50.0%] p-0 right-4 top-2/4 hover:text-cyan-950"><img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-1.svg" alt="Icon" class="box-border caret-transparent h-5 w-5" />
+</button>
+</div>
+<nav class="box-border caret-transparent max-w-[1440px] mx-auto px-20 py-5"><div class="relative items-center bg-white box-border caret-transparent flex h-20 justify-between border border-stone-300 px-7 rounded-[15px] border-solid"><div class="items-center box-border caret-transparent gap-x-3 flex gap-y-3"><img alt="Sheffield Travel Pharmacy" src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/telegram-cloud-photo-size-5-6235491751955646823-y-1.png" class="box-border caret-transparent h-[47px] max-w-full" />
+<div class="bg-zinc-300/60 box-border caret-transparent h-5 w-px"></div>
+<div class="items-center box-border caret-transparent gap-x-2.5 flex gap-y-2.5"><img alt="Sheffield United FC" src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/telegram-cloud-photo-size-5-6235491751955646824-m-1.png" class="box-border caret-transparent h-8 max-w-full w-8" />
+<div class="text-gray-700/60 text-[10.5px] box-border caret-transparent leading-[13.125px] max-w-28">Sheffield United FC Official Partner</div>
+</div>
+</div>
+<div class="items-center box-border caret-transparent gap-x-8 flex gap-y-8"><div class="relative box-border caret-transparent"><button class="text-teal-600 text-[15px] font-semibold bg-transparent caret-transparent leading-[22.5px] text-center text-nowrap p-0">Home</button>
+<div class="absolute bg-teal-600 box-border caret-transparent h-1 rounded-tl rounded-tr -bottom-7 inset-x-0"></div>
+</div>
+<div class="relative box-border caret-transparent"><button class="text-cyan-950 text-[15px] font-medium bg-transparent caret-transparent leading-[22.5px] text-center text-nowrap p-0 hover:text-teal-600">Weight Management</button>
+</div>
+<div class="relative box-border caret-transparent"><button class="text-cyan-950 text-[15px] font-medium bg-transparent caret-transparent leading-[22.5px] text-center text-nowrap p-0 hover:text-teal-600">Travel Clinic</button>
+</div>
+<div class="relative box-border caret-transparent"><button class="text-cyan-950 text-[15px] font-medium bg-transparent caret-transparent leading-[22.5px] text-center text-nowrap p-0 hover:text-teal-600">Private Services</button>
+</div>
+<div class="relative box-border caret-transparent"><button class="text-cyan-950 text-[15px] font-medium bg-transparent caret-transparent leading-[22.5px] text-center text-nowrap p-0 hover:text-teal-600">NHS Services</button>
+</div>
+<div class="relative box-border caret-transparent"><button class="text-cyan-950 text-[15px] font-medium bg-transparent caret-transparent leading-[22.5px] text-center text-nowrap p-0 hover:text-teal-600">About</button>
+</div>
+</div>
+<button class="absolute text-white text-sm font-medium items-center bg-teal-600 shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_1px_3px_0px,rgba(0,0,0,0.1)_0px_1px_2px_-1px] caret-transparent gap-x-2 flex h-20 justify-center leading-5 gap-y-2 text-center text-nowrap px-6 py-2 rounded-r-[15px] right-0 top-0 hover:bg-teal-700"><span class="text-[15px] font-semibold box-border caret-transparent block text-nowrap">Book Consultation</span>
+<img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-2.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 pointer-events-none text-nowrap w-4 ml-1.5" />
+</button>
+</div>
+</nav>
+<section class="bg-white box-border caret-transparent max-w-[1440px] mx-auto p-20"><div class="items-center box-border caret-transparent gap-x-20 grid grid-cols-[repeat(2,minmax(0px,1fr))] gap-y-20"><div class="box-border caret-transparent max-w-[580px]"><h1 class="text-cyan-950 text-[64px] font-bold box-border caret-transparent tracking-[-1.28px] leading-[70.4px] mb-6">Sheffield&#39;s Leading<span class="text-teal-600 box-border caret-transparent">Weight Management</span>
+ &amp;<span class="text-teal-600 box-border caret-transparent">Travel Health</span>
+ Clinic</h1>
+<p class="text-[#525252] text-[19px] font-normal box-border caret-transparent leading-[1.5] mb-10">Medical weight loss that works. Travel vaccinations you can trust.<br class="box-border caret-transparent"/>Your health journey starts with Sheffield&#39;s most experienced pharmacy team.</p>
+<div class="box-border caret-transparent mb-6"><button class="text-white text-[17px] font-semibold items-center bg-[linear-gradient(to_bottom,#00BFA5,#00A19A)] shadow-[0_4px_12px_rgba(0,161,154,0.2)] caret-transparent gap-x-2 inline-flex h-12 justify-center leading-[25.5px] gap-y-2 text-center text-nowrap px-10 py-2 rounded-2xl transition-all duration-300 hover:shadow-[0_6px_16px_rgba(0,161,154,0.3)] group">Book Free Consultation<img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-3.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 pointer-events-none text-nowrap w-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" />
+</button>
+</div>
+<div class="items-center box-border caret-transparent gap-x-2 flex gap-y-2 mb-10"><img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-4.svg" alt="Icon" class="text-teal-600 box-border caret-transparent h-5 w-5" />
+<span class="text-cyan-950/60 box-border caret-transparent block">or call</span>
+<a href="tel://01149802780" class="text-teal-600 font-semibold box-border caret-transparent block hover:underline">0114 980 278</a>
+</div>
+<div class="text-[15px] items-center bg-teal-600/6 box-border caret-transparent gap-x-6 flex leading-[22.5px] gap-y-6 px-6 py-3 rounded-full"><div class="items-center box-border caret-transparent gap-x-1.5 flex gap-y-1.5"><div class="box-border caret-transparent gap-x-0.5 flex gap-y-0.5"><img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-5.svg" alt="Icon" class="text-amber-400 box-border caret-transparent h-4 w-4" />
+<img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-5.svg" alt="Icon" class="text-amber-400 box-border caret-transparent h-4 w-4" />
+<img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-5.svg" alt="Icon" class="text-amber-400 box-border caret-transparent h-4 w-4" />
+<img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-5.svg" alt="Icon" class="text-amber-400 box-border caret-transparent h-4 w-4" />
+<img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-5.svg" alt="Icon" class="text-amber-400 box-border caret-transparent h-4 w-4" />
+</div>
+<span class="text-[#0F3E4A] font-medium box-border caret-transparent block">4.8/5</span>
+</div>
+<div class="bg-cyan-950/20 box-border caret-transparent h-4 w-px"></div>
+<div class="items-center box-border caret-transparent gap-x-2 flex gap-y-2">
+<svg class="w-4 h-4 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+</svg>
+<span class="text-[#0F3E4A] font-medium box-border caret-transparent block">350+ patients</span>
+</div>
+<div class="bg-cyan-950/20 box-border caret-transparent h-4 w-px"></div>
+<div class="items-center box-border caret-transparent gap-x-2 flex gap-y-2">
+<svg class="w-4 h-4 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+</svg>
+<span class="text-[#0F3E4A] font-medium box-border caret-transparent block">15+ years</span>
+</div>
+</div>
+</div>
+<div class="box-border caret-transparent gap-x-4 grid grid-cols-[repeat(2,minmax(0px,1fr))] gap-y-4"><div class="relative aspect-[4_/_5] box-border caret-transparent overflow-hidden rounded-3xl"><img alt="Weight loss success" src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/rectangle-34.png" class="box-border caret-transparent h-full max-w-full object-cover w-full" />
+</div>
+<div class="relative aspect-[4_/_5] box-border caret-transparent overflow-hidden rounded-3xl"><img alt="Patient success" src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/rectangle-34-1.png" class="box-border caret-transparent h-full max-w-full object-cover w-full" />
+</div>
+<div class="relative aspect-[4_/_5] box-border caret-transparent overflow-hidden rounded-3xl"><img alt="Healthcare" src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/rectangle-34-2.png" class="box-border caret-transparent h-full max-w-full object-cover w-full" />
+</div>
+<div class="relative text-white items-center aspect-[4_/_5] bg-[linear-gradient(to_bottom,#00BFA5,#00A19A)] box-border caret-transparent flex flex-col justify-center overflow-hidden p-6 rounded-3xl shadow-[0_2px_8px_rgba(0,0,0,0.1)]"><div class="box-border caret-transparent text-center"><div class="text-[42px] font-bold box-border caret-transparent leading-[48px] mb-2 drop-shadow-sm">350+</div>
+<div class="text-sm box-border caret-transparent leading-5 opacity-90 mb-6">Patients Helped</div>
+<div class="bg-white/30 box-border caret-transparent h-px w-12 mb-6 mx-auto"></div>
+<div class="text-[42px] font-bold box-border caret-transparent leading-9 mb-2 drop-shadow-sm">15+</div>
+<div class="text-sm box-border caret-transparent leading-5 opacity-90">Years Experience</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="relative box-border caret-transparent overflow-hidden py-24"><div class="absolute bg-[linear-gradient(to_right_bottom,rgb(254,248,245),rgb(254,252,251),rgb(248,253,252))] box-border caret-transparent -z-10 inset-0"></div>
+<div class="absolute bg-[radial-gradient(circle_at_2px_2px,rgb(13,147,136)_1.5px,rgba(0,0,0,0)_0px)] bg-size-[48px_48px] box-border caret-transparent opacity-[0.015] -z-10 inset-0"></div>
+<div class="box-border caret-transparent max-w-[1440px] mx-auto px-20"><div class="box-border caret-transparent gap-x-8 grid grid-cols-[repeat(1,minmax(0px,1fr))] gap-y-8 md:gap-x-12 md:grid-cols-[repeat(3,minmax(0px,1fr))] md:gap-y-12"><a href="/weight-management" class="relative shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.07)_0px_4px_6px_0px,rgba(0,0,0,0.1)_0px_10px_15px_0px] box-border caret-transparent block h-[450px] border border-gray-200 overflow-hidden rounded-[20px] border-solid hover:shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.15)_0px_20px_25px_0px] group"><img alt="Lose Weight Safely" src="https://c.animaapp.com/mgtib0h8FGEJi4/img/weight-loss-servcie-card.png" class="absolute box-border caret-transparent h-full max-w-full object-cover object-center w-full inset-0" />
+<div class="absolute bg-[linear-gradient(to_top,rgba(0,0,0,0.8),rgba(0,0,0,0.4),rgba(0,0,0,0))] box-border caret-transparent h-full inset-0"></div>
+<div class="absolute text-white box-border caret-transparent flex flex-col h-[70%] justify-end p-10 bottom-0 inset-x-0"><h3 class="text-[26px] font-bold box-border caret-transparent tracking-[-0.5px] leading-[33.8px] mb-2">Lose Weight Safely</h3>
+<p class="text-white/100 box-border caret-transparent leading-[25.6px] max-w-[280px] mb-4">Drop 1-2lbs per week with clinically-proven medicines and weekly check-ins</p>
+<button class="text-white text-sm font-semibold items-center self-start backdrop-blur-[12px] bg-white/20 shadow-[0_4px_12px_rgba(0,0,0,0.2)] caret-transparent gap-x-2 flex justify-center leading-5 gap-y-2 text-center text-nowrap rounded-full border-2 border-white border-solid transition-all duration-300 ease-in-out px-10 py-3.5 hover:bg-white/35 hover:shadow-[0_6px_20px_rgba(0,0,0,0.3)] hover:-translate-y-0.5">Learn More<img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-6.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 pointer-events-none text-nowrap w-4 ml-2 transition-transform duration-300 ease-in-out group-hover:translate-x-1.5" />
+</button>
+</div>
+</a>
+<a href="/travel-clinic" class="relative shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.07)_0px_4px_6px_0px,rgba(0,0,0,0.1)_0px_10px_15px_0px] box-border caret-transparent block h-[450px] border border-gray-200 overflow-hidden rounded-[20px] border-solid hover:shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.15)_0px_20px_25px_0px] group"><img alt="Travel Protected" src="https://c.animaapp.com/mgtib0h8FGEJi4/img/travel-service-card.png" class="absolute box-border caret-transparent h-full max-w-full object-cover object-center w-full inset-0" />
+<div class="absolute bg-[linear-gradient(to_top,rgba(0,0,0,0.8),rgba(0,0,0,0.4),rgba(0,0,0,0))] box-border caret-transparent h-full inset-0"></div>
+<div class="absolute text-white box-border caret-transparent flex flex-col h-[70%] justify-end p-10 bottom-0 inset-x-0"><h3 class="text-[26px] font-bold box-border caret-transparent tracking-[-0.5px] leading-[33.8px] mb-2">Travel Protected</h3>
+<p class="text-white/100 box-border caret-transparent leading-[25.6px] max-w-[280px] mb-4">Same-day vaccinations and certificates for over 50 destinations worldwide</p>
+<button class="text-white text-sm font-semibold items-center self-start backdrop-blur-[12px] bg-white/20 shadow-[0_4px_12px_rgba(0,0,0,0.2)] caret-transparent gap-x-2 flex justify-center leading-5 gap-y-2 text-center text-nowrap rounded-full border-2 border-white border-solid transition-all duration-300 ease-in-out px-10 py-3.5 hover:bg-white/35 hover:shadow-[0_6px_20px_rgba(0,0,0,0.3)] hover:-translate-y-0.5">Learn More<img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-6.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 pointer-events-none text-nowrap w-4 ml-2 transition-transform duration-300 ease-in-out group-hover:translate-x-1.5" />
+</button>
+</div>
+</a>
+<a href="/health-hub" class="relative shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.07)_0px_4px_6px_0px,rgba(0,0,0,0.1)_0px_10px_15px_0px] box-border caret-transparent block h-[450px] border border-gray-200 overflow-hidden rounded-[20px] border-solid hover:shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.15)_0px_20px_25px_0px] group"><img alt="Your Local Health Centre" src="https://c.animaapp.com/mgtib0h8FGEJi4/img/health-hub-service-card.png" class="absolute box-border caret-transparent h-full max-w-full object-cover object-center w-full inset-0" />
+<div class="absolute bg-[linear-gradient(to_top,rgba(0,0,0,0.8),rgba(0,0,0,0.4),rgba(0,0,0,0))] box-border caret-transparent h-full inset-0"></div>
+<div class="absolute text-white box-border caret-transparent flex flex-col h-[70%] justify-end p-10 bottom-0 inset-x-0"><h3 class="text-[26px] font-bold box-border caret-transparent tracking-[-0.5px] leading-[33.8px] mb-2">Your Health Hub</h3>
+<p class="text-white/100 box-border caret-transparent leading-[25.6px] max-w-[280px] mb-4">Browse trusted pharmacy guides and latest wellness insights</p>
+<button class="text-white text-sm font-semibold items-center self-start backdrop-blur-[12px] bg-white/20 shadow-[0_4px_12px_rgba(0,0,0,0.2)] caret-transparent gap-x-2 flex justify-center leading-5 gap-y-2 text-center text-nowrap rounded-full border-2 border-white border-solid transition-all duration-300 ease-in-out px-10 py-3.5 hover:bg-white/35 hover:shadow-[0_6px_20px_rgba(0,0,0,0.3)] hover:-translate-y-0.5">Learn More<img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-6.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 pointer-events-none text-nowrap w-4 ml-2 transition-transform duration-300 ease-in-out group-hover:translate-x-1.5" />
+</button>
+</div>
+</a>
+</div>
+</div>
+</section>
+<section class="relative box-border caret-transparent max-w-[1440px] overflow-hidden mx-auto px-20 py-24"><div class="absolute bg-[linear-gradient(rgb(255,255,255),rgb(248,253,252),rgb(255,255,255))] box-border caret-transparent -z-10 inset-0"></div>
+<div class="box-border caret-transparent text-center mb-20"><div class="items-center bg-emerald-50 box-border caret-transparent gap-x-2 inline-flex gap-y-2 mb-6 px-4 py-2 rounded-full"><div class="bg-teal-600 box-border caret-transparent h-2 w-2 rounded-full"></div>
+<span class="text-teal-600 text-sm font-semibold box-border caret-transparent block tracking-[0.7px] leading-[21px] uppercase">Success Stories</span>
+</div>
+<h2 class="text-cyan-950 text-[56px] font-bold box-border caret-transparent tracking-[-1.12px] leading-[61.6px] mb-4">Genuine Results from Sheffield</h2>
+<div class="items-center box-border caret-transparent gap-x-2 flex justify-center gap-y-2 mb-6"><div class="bg-[linear-gradient(to_right,rgba(0,0,0,0),rgb(13,147,136))] box-border caret-transparent h-0.5 w-12"></div>
+<div class="bg-teal-600 box-border caret-transparent h-2 w-2 rounded-full"></div>
+<div class="bg-[linear-gradient(to_left,rgba(0,0,0,0),rgb(13,147,136))] box-border caret-transparent h-0.5 w-12"></div>
+</div>
+<p class="text-cyan-950/80 text-xl font-semibold box-border caret-transparent leading-8 max-w-screen-md mx-auto">Real transformations from our South Yorkshire patients</p>
+</div>
+<div class="box-border caret-transparent gap-x-10 grid grid-cols-[repeat(1,minmax(0px,1fr))] gap-y-10 md:grid-cols-[repeat(3,minmax(0px,1fr))]"><div class="box-border caret-transparent"><div class="relative bg-white shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_1px_3px_0px,rgba(0,0,0,0.1)_0px_1px_2px_-1px] box-border caret-transparent border border-emerald-50 overflow-hidden rounded-3xl border-solid hover:shadow-[rgba(13,147,136,0.25)_0px_25px_50px_-12px,rgba(13,147,136,0.1)_0px_0px_0px_1px] hover:border-teal-600/30"><div class="absolute bg-[linear-gradient(to_right_bottom,rgba(13,147,136,0.1),rgba(0,0,0,0))] box-border caret-transparent h-20 w-20 z-20 rounded-tr-3xl rounded-bl-[100px] right-0 top-0"></div>
+<div class="relative box-border caret-transparent flex flex-col h-full"><div class="relative box-border caret-transparent h-[380px] w-full overflow-hidden"><div class="absolute bg-[linear-gradient(to_top,rgba(0,0,0,0.6),rgba(0,0,0,0.2),rgba(0,0,0,0))] box-border caret-transparent z-10 inset-0"></div>
+<img alt="Sarah M" src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/rectangle-34.png" class="box-border caret-transparent h-full max-w-full object-cover w-full" />
+<div class="absolute backdrop-blur-sm bg-white/100 shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_10px_15px_-3px,rgba(0,0,0,0.1)_0px_4px_6px_-4px] box-border caret-transparent z-20 px-4 py-2 rounded-full right-6 top-6"><div class="items-center box-border caret-transparent gap-x-1 flex gap-y-1"><img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-7.svg" alt="Icon" class="box-border caret-transparent h-4 w-4" />
+<img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-7.svg" alt="Icon" class="box-border caret-transparent h-4 w-4" />
+<img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-7.svg" alt="Icon" class="box-border caret-transparent h-4 w-4" />
+<img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-7.svg" alt="Icon" class="box-border caret-transparent h-4 w-4" />
+<img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-7.svg" alt="Icon" class="box-border caret-transparent h-4 w-4" />
+</div>
+</div>
+<div class="absolute box-border caret-transparent z-20 left-6 bottom-6"><h3 class="text-white text-3xl font-bold box-border caret-transparent tracking-[-0.75px] leading-9 mb-1">Sarah M</h3>
+<p class="text-white/90 font-medium box-border caret-transparent">Sheffield, UK</p>
+</div>
+</div>
+<div class="bg-[linear-gradient(to_right_bottom,rgb(248,253,252),rgb(255,255,255))] box-border caret-transparent flex basis-[0%] flex-col grow p-10"><div class="items-center self-start box-border caret-transparent gap-x-2 flex gap-y-2 mb-8"><div class="bg-teal-600 box-border caret-transparent h-2 w-2 rounded-full"></div>
+<span class="text-teal-600 text-xl font-bold box-border caret-transparent block tracking-[-0.5px] leading-[30px]">Lost 11kg</span>
+</div>
+<div class="box-border caret-transparent mb-6"><img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-8.svg" alt="Icon" class="text-teal-600/20 box-border caret-transparent h-12 w-12" />
+</div>
+<blockquote class="box-border caret-transparent basis-[0%] grow"><p class="text-cyan-950/80 text-[17px] box-border caret-transparent leading-[28.9px]">I scheduled all of my travel vaccinations for the same day, thinking it might take a while. To my surprise, the whole process was incredibly quick and well-organized. The staff guided me through everything with such professionalism.</p>
+</blockquote>
+<div class="bg-[linear-gradient(to_right,rgb(13,147,136),rgba(0,0,0,0))] box-border caret-transparent h-1 w-20 mt-8 rounded-full"></div>
+<p class="text-cyan-950/50 text-xs italic box-border caret-transparent leading-4 mt-4">*Individual results may vary. Consult with a healthcare professional.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="box-border caret-transparent"><div class="relative bg-white shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_1px_3px_0px,rgba(0,0,0,0.1)_0px_1px_2px_-1px] box-border caret-transparent border border-emerald-50 overflow-hidden rounded-3xl border-solid hover:shadow-[rgba(13,147,136,0.25)_0px_25px_50px_-12px,rgba(13,147,136,0.1)_0px_0px_0px_1px] hover:border-teal-600/30"><div class="absolute bg-[linear-gradient(to_right_bottom,rgba(13,147,136,0.1),rgba(0,0,0,0))] box-border caret-transparent h-20 w-20 z-20 rounded-tr-3xl rounded-bl-[100px] right-0 top-0"></div>
+<div class="relative box-border caret-transparent flex flex-col h-full"><div class="relative box-border caret-transparent h-[380px] w-full overflow-hidden"><div class="absolute bg-[linear-gradient(to_top,rgba(0,0,0,0.6),rgba(0,0,0,0.2),rgba(0,0,0,0))] box-border caret-transparent z-10 inset-0"></div>
+<img alt="Noah S" src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/rectangle-34-1.png" class="box-border caret-transparent h-full max-w-full object-cover w-full" />
+<div class="absolute backdrop-blur-sm bg-white/100 shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_10px_15px_-3px,rgba(0,0,0,0.1)_0px_4px_6px_-4px] box-border caret-transparent z-20 px-4 py-2 rounded-full right-6 top-6"><div class="items-center box-border caret-transparent gap-x-1 flex gap-y-1"><img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-7.svg" alt="Icon" class="box-border caret-transparent h-4 w-4" />
+<img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-7.svg" alt="Icon" class="box-border caret-transparent h-4 w-4" />
+<img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-7.svg" alt="Icon" class="box-border caret-transparent h-4 w-4" />
+<img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-7.svg" alt="Icon" class="box-border caret-transparent h-4 w-4" />
+<img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-7.svg" alt="Icon" class="box-border caret-transparent h-4 w-4" />
+</div>
+</div>
+<div class="absolute box-border caret-transparent z-20 left-6 bottom-6"><h3 class="text-white text-3xl font-bold box-border caret-transparent tracking-[-0.75px] leading-9 mb-1">Noah S</h3>
+<p class="text-white/90 font-medium box-border caret-transparent">Barnsley, UK</p>
+</div>
+</div>
+<div class="bg-[linear-gradient(to_right_bottom,rgb(248,253,252),rgb(255,255,255))] box-border caret-transparent flex basis-[0%] flex-col grow p-10"><div class="items-center self-start box-border caret-transparent gap-x-2 flex gap-y-2 mb-8"><div class="bg-teal-600 box-border caret-transparent h-2 w-2 rounded-full"></div>
+<span class="text-teal-600 text-xl font-bold box-border caret-transparent block tracking-[-0.5px] leading-[30px]">Lost 20kg</span>
+</div>
+<div class="box-border caret-transparent mb-6"><img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-8.svg" alt="Icon" class="text-teal-600/20 box-border caret-transparent h-12 w-12" />
+</div>
+<blockquote class="box-border caret-transparent basis-[0%] grow"><p class="text-cyan-950/80 text-[17px] box-border caret-transparent leading-[28.9px]">Thanks to Totley Pharmacy, I&#39;ve managed to shed 20kg, and the difference it has made in my life is incredible. I feel healthier, lighter, and more energetic than ever before. The support was outstanding.</p>
+</blockquote>
+<div class="bg-[linear-gradient(to_right,rgb(13,147,136),rgba(0,0,0,0))] box-border caret-transparent h-1 w-20 mt-8 rounded-full"></div>
+<p class="text-cyan-950/50 text-xs italic box-border caret-transparent leading-4 mt-4">*Individual results may vary. Consult with a healthcare professional.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="box-border caret-transparent"><div class="relative bg-white shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_1px_3px_0px,rgba(0,0,0,0.1)_0px_1px_2px_-1px] box-border caret-transparent border border-emerald-50 overflow-hidden rounded-3xl border-solid hover:shadow-[rgba(13,147,136,0.25)_0px_25px_50px_-12px,rgba(13,147,136,0.1)_0px_0px_0px_1px] hover:border-teal-600/30"><div class="absolute bg-[linear-gradient(to_right_bottom,rgba(13,147,136,0.1),rgba(0,0,0,0))] box-border caret-transparent h-20 w-20 z-20 rounded-tr-3xl rounded-bl-[100px] right-0 top-0"></div>
+<div class="relative box-border caret-transparent flex flex-col h-full"><div class="relative box-border caret-transparent h-[380px] w-full overflow-hidden"><div class="absolute bg-[linear-gradient(to_top,rgba(0,0,0,0.6),rgba(0,0,0,0.2),rgba(0,0,0,0))] box-border caret-transparent z-10 inset-0"></div>
+<img alt="Ava K" src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/drew-suit-transparent.png" class="box-border caret-transparent h-full max-w-full object-cover w-full" />
+<div class="absolute backdrop-blur-sm bg-white/100 shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_10px_15px_-3px,rgba(0,0,0,0.1)_0px_4px_6px_-4px] box-border caret-transparent z-20 px-4 py-2 rounded-full right-6 top-6"><div class="items-center box-border caret-transparent gap-x-1 flex gap-y-1"><img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-7.svg" alt="Icon" class="box-border caret-transparent h-4 w-4" />
+<img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-7.svg" alt="Icon" class="box-border caret-transparent h-4 w-4" />
+<img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-7.svg" alt="Icon" class="box-border caret-transparent h-4 w-4" />
+<img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-7.svg" alt="Icon" class="box-border caret-transparent h-4 w-4" />
+<img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-7.svg" alt="Icon" class="box-border caret-transparent h-4 w-4" />
+</div>
+</div>
+<div class="absolute box-border caret-transparent z-20 left-6 bottom-6"><h3 class="text-white text-3xl font-bold box-border caret-transparent tracking-[-0.75px] leading-9 mb-1">Ava K</h3>
+<p class="text-white/90 font-medium box-border caret-transparent">Chesterfield, UK</p>
+</div>
+</div>
+<div class="bg-[linear-gradient(to_right_bottom,rgb(248,253,252),rgb(255,255,255))] box-border caret-transparent flex basis-[0%] flex-col grow p-10"><div class="items-center self-start box-border caret-transparent gap-x-2 flex gap-y-2 mb-8"><div class="bg-teal-600 box-border caret-transparent h-2 w-2 rounded-full"></div>
+<span class="text-teal-600 text-xl font-bold box-border caret-transparent block tracking-[-0.5px] leading-[30px]">Lost 11kg</span>
+</div>
+<div class="box-border caret-transparent mb-6"><img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-8.svg" alt="Icon" class="text-teal-600/20 box-border caret-transparent h-12 w-12" />
+</div>
+<blockquote class="box-border caret-transparent basis-[0%] grow"><p class="text-cyan-950/80 text-[17px] box-border caret-transparent leading-[28.9px]">I was pleasantly surprised at how simple and straightforward it was to book my travel vaccinations. The whole process, from scheduling the appointment to getting the vaccines, was seamless and professional.</p>
+</blockquote>
+<div class="bg-[linear-gradient(to_right,rgb(13,147,136),rgba(0,0,0,0))] box-border caret-transparent h-1 w-20 mt-8 rounded-full"></div>
+<p class="text-cyan-950/50 text-xs italic box-border caret-transparent leading-4 mt-4">*Individual results may vary. Consult with a healthcare professional.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="relative box-border caret-transparent h-24 w-full overflow-hidden"><img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-9.svg" alt="Icon" class="absolute box-border caret-transparent h-24 w-full bottom-0" />
+</div>
+<section class="relative box-border caret-transparent max-w-[1440px] overflow-hidden mx-auto px-20 py-24"><div class="absolute bg-[linear-gradient(rgb(255,255,255),rgb(248,253,252),rgb(255,255,255))] box-border caret-transparent -z-10 inset-0"></div>
+<div class="absolute bg-[radial-gradient(circle_at_1px_1px,rgb(13,147,136)_1px,rgba(0,0,0,0)_0px)] bg-size-[40px_40px] box-border caret-transparent opacity-[0.03] -z-10 inset-0"></div>
+<div class="box-border caret-transparent text-center mb-20"><div class="items-center bg-emerald-50 box-border caret-transparent gap-x-2 inline-flex gap-y-2 mb-6 px-4 py-2 rounded-full"><div class="bg-teal-600 box-border caret-transparent h-2 w-2 rounded-full"></div>
+<span class="text-teal-600 text-sm font-semibold box-border caret-transparent block tracking-[0.7px] leading-[21px] uppercase">What We Offer</span>
+</div>
+<h2 class="text-cyan-950 text-[56px] font-bold box-border caret-transparent tracking-[-1.12px] leading-[61.6px] mb-4">Our Services</h2>
+<div class="items-center box-border caret-transparent gap-x-2 flex justify-center gap-y-2 mb-6"><div class="bg-[linear-gradient(to_right,rgba(0,0,0,0),rgb(13,147,136))] box-border caret-transparent h-0.5 w-12"></div>
+<div class="bg-teal-600 box-border caret-transparent h-2 w-2 rounded-full"></div>
+<div class="bg-[linear-gradient(to_left,rgba(0,0,0,0),rgb(13,147,136))] box-border caret-transparent h-0.5 w-12"></div>
+</div>
+<p class="text-cyan-950/80 text-xl font-semibold box-border caret-transparent leading-8 max-w-screen-md mx-auto">Comprehensive healthcare solutions tailored to your needs</p>
+</div>
+<div class="box-border caret-transparent gap-x-10 grid grid-cols-[repeat(1,minmax(0px,1fr))] gap-y-10 md:grid-cols-[repeat(3,minmax(0px,1fr))]"><div class="relative bg-white box-border caret-transparent border border-emerald-50 p-10 rounded-3xl border-solid hover:shadow-[rgba(13,147,136,0.25)_0px_25px_50px_-12px,rgba(13,147,136,0.1)_0px_0px_0px_1px] hover:border-teal-600/30"><div class="absolute bg-[linear-gradient(to_right_bottom,rgba(13,147,136,0.1),rgba(0,0,0,0))] box-border caret-transparent h-20 w-20 rounded-tr-3xl rounded-bl-[100px] right-0 top-0"></div>
+<div class="relative box-border caret-transparent flex flex-col"><div class="relative box-border caret-transparent mb-8"><div class="absolute bg-teal-600/10 box-border caret-transparent blur-2xl rounded-full scale-[1.5px] inset-0"></div>
+<div class="relative items-center bg-[linear-gradient(to_right_bottom,rgb(232,249,247),rgb(255,255,255))] box-border caret-transparent flex h-20 justify-center w-20 border-teal-600/10 p-4 rounded-2xl border-2 border-solid"><div class="text-teal-600 box-border caret-transparent h-full w-full"><img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-10.svg" alt="Icon" class="box-border caret-transparent h-full w-full" />
+</div>
+</div>
+</div>
+<h3 class="text-cyan-950 text-[26px] font-bold box-border caret-transparent tracking-[-0.26px] leading-[32.5px] min-h-[60px] mb-4">Weight Management Programs</h3>
+<p class="text-cyan-950/80 text-[17px] box-border caret-transparent basis-[0%] grow leading-[28.9px] mb-6">Medically-supervised weight loss with personalised support and prescription treatments</p>
+<div class="bg-[linear-gradient(to_right,rgb(13,147,136),rgba(0,0,0,0))] box-border caret-transparent h-1 w-20 mt-6 rounded-full"></div>
+</div>
+</div>
+<div class="relative bg-white box-border caret-transparent border border-emerald-50 p-10 rounded-3xl border-solid hover:shadow-[rgba(13,147,136,0.25)_0px_25px_50px_-12px,rgba(13,147,136,0.1)_0px_0px_0px_1px] hover:border-teal-600/30"><div class="absolute bg-[linear-gradient(to_right_bottom,rgba(13,147,136,0.1),rgba(0,0,0,0))] box-border caret-transparent h-20 w-20 rounded-tr-3xl rounded-bl-[100px] right-0 top-0"></div>
+<div class="relative box-border caret-transparent flex flex-col"><div class="relative box-border caret-transparent mb-8"><div class="absolute bg-teal-600/10 box-border caret-transparent blur-2xl rounded-full scale-[1.5px] inset-0"></div>
+<div class="relative items-center bg-[linear-gradient(to_right_bottom,rgb(232,249,247),rgb(255,255,255))] box-border caret-transparent flex h-20 justify-center w-20 border-teal-600/10 p-4 rounded-2xl border-2 border-solid"><div class="text-teal-600 box-border caret-transparent h-full w-full"><img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-12.svg" alt="Icon" class="box-border caret-transparent h-full w-full" />
+</div>
+</div>
+</div>
+<h3 class="text-cyan-950 text-[26px] font-bold box-border caret-transparent tracking-[-0.26px] leading-[32.5px] min-h-[60px] mb-4">Travel Vaccinations &amp; Health</h3>
+<p class="text-cyan-950/80 text-[17px] box-border caret-transparent basis-[0%] grow leading-[28.9px] mb-6">Comprehensive travel health services and same-day vaccinations for all destinations</p>
+<div class="bg-[linear-gradient(to_right,rgb(13,147,136),rgba(0,0,0,0))] box-border caret-transparent h-1 w-20 mt-6 rounded-full"></div>
+</div>
+</div>
+<div class="relative bg-white box-border caret-transparent border border-emerald-50 p-10 rounded-3xl border-solid hover:shadow-[rgba(13,147,136,0.25)_0px_25px_50px_-12px,rgba(13,147,136,0.1)_0px_0px_0px_1px] hover:border-teal-600/30"><div class="absolute bg-[linear-gradient(to_right_bottom,rgba(13,147,136,0.1),rgba(0,0,0,0))] box-border caret-transparent h-20 w-20 rounded-tr-3xl rounded-bl-[100px] right-0 top-0"></div>
+<div class="relative box-border caret-transparent flex flex-col"><div class="relative box-border caret-transparent mb-8"><div class="absolute bg-teal-600/10 box-border caret-transparent blur-2xl rounded-full scale-[1.5px] inset-0"></div>
+<div class="relative items-center bg-[linear-gradient(to_right_bottom,rgb(232,249,247),rgb(255,255,255))] box-border caret-transparent flex h-20 justify-center w-20 border-teal-600/10 p-4 rounded-2xl border-2 border-solid"><div class="text-teal-600 box-border caret-transparent h-full w-full"><img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-13.svg" alt="Icon" class="box-border caret-transparent h-full w-full" />
+</div>
+</div>
+</div>
+<h3 class="text-cyan-950 text-[26px] font-bold box-border caret-transparent tracking-[-0.26px] leading-[32.5px] min-h-[60px] mb-4">Private Prescribing Services</h3>
+<p class="text-cyan-950/80 text-[17px] box-border caret-transparent basis-[0%] grow leading-[28.9px] mb-6">Expert independent prescribing for various health conditions with professional consultation</p>
+<div class="bg-[linear-gradient(to_right,rgb(13,147,136),rgba(0,0,0,0))] box-border caret-transparent h-1 w-20 mt-6 rounded-full"></div>
+</div>
+</div>
+<div class="relative bg-white box-border caret-transparent border border-emerald-50 p-10 rounded-3xl border-solid hover:shadow-[rgba(13,147,136,0.25)_0px_25px_50px_-12px,rgba(13,147,136,0.1)_0px_0px_0px_1px] hover:border-teal-600/30"><div class="absolute bg-[linear-gradient(to_right_bottom,rgba(13,147,136,0.1),rgba(0,0,0,0))] box-border caret-transparent h-20 w-20 rounded-tr-3xl rounded-bl-[100px] right-0 top-0"></div>
+<div class="relative box-border caret-transparent flex flex-col"><div class="relative box-border caret-transparent mb-8"><div class="absolute bg-teal-600/10 box-border caret-transparent blur-2xl rounded-full scale-[1.5px] inset-0"></div>
+<div class="relative items-center bg-[linear-gradient(to_right_bottom,rgb(232,249,247),rgb(255,255,255))] box-border caret-transparent flex h-20 justify-center w-20 border-teal-600/10 p-4 rounded-2xl border-2 border-solid"><div class="text-teal-600 box-border caret-transparent h-full w-full"><img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-14.svg" alt="Icon" class="box-border caret-transparent h-full w-full" />
+</div>
+</div>
+</div>
+<h3 class="text-cyan-950 text-[26px] font-bold box-border caret-transparent tracking-[-0.26px] leading-[32.5px] min-h-[60px] mb-4">Health Consultations</h3>
+<p class="text-cyan-950/80 text-[17px] box-border caret-transparent basis-[0%] grow leading-[28.9px] mb-6">Professional health assessments and advice from qualified independent prescribers</p>
+<div class="bg-[linear-gradient(to_right,rgb(13,147,136),rgba(0,0,0,0))] box-border caret-transparent h-1 w-20 mt-6 rounded-full"></div>
+</div>
+</div>
+<div class="relative bg-white box-border caret-transparent border border-emerald-50 p-10 rounded-3xl border-solid hover:shadow-[rgba(13,147,136,0.25)_0px_25px_50px_-12px,rgba(13,147,136,0.1)_0px_0px_0px_1px] hover:border-teal-600/30"><div class="absolute bg-[linear-gradient(to_right_bottom,rgba(13,147,136,0.1),rgba(0,0,0,0))] box-border caret-transparent h-20 w-20 rounded-tr-3xl rounded-bl-[100px] right-0 top-0"></div>
+<div class="relative box-border caret-transparent flex flex-col"><div class="relative box-border caret-transparent mb-8"><div class="absolute bg-teal-600/10 box-border caret-transparent blur-2xl rounded-full scale-[1.5px] inset-0"></div>
+<div class="relative items-center bg-[linear-gradient(to_right_bottom,rgb(232,249,247),rgb(255,255,255))] box-border caret-transparent flex h-20 justify-center w-20 border-teal-600/10 p-4 rounded-2xl border-2 border-solid"><div class="text-teal-600 box-border caret-transparent h-full w-full"><img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-15.svg" alt="Icon" class="box-border caret-transparent h-full w-full" />
+</div>
+</div>
+</div>
+<h3 class="text-cyan-950 text-[26px] font-bold box-border caret-transparent tracking-[-0.26px] leading-[32.5px] min-h-[60px] mb-4">Pharmacy Services</h3>
+<p class="text-cyan-950/80 text-[17px] box-border caret-transparent basis-[0%] grow leading-[28.9px] mb-6">Full-service pharmacy with NHS and private prescriptions, expert medication advice</p>
+<div class="bg-[linear-gradient(to_right,rgb(13,147,136),rgba(0,0,0,0))] box-border caret-transparent h-1 w-20 mt-6 rounded-full"></div>
+</div>
+</div>
+<div class="relative bg-white box-border caret-transparent border border-emerald-50 p-10 rounded-3xl border-solid hover:shadow-[rgba(13,147,136,0.25)_0px_25px_50px_-12px,rgba(13,147,136,0.1)_0px_0px_0px_1px] hover:border-teal-600/30"><div class="absolute bg-[linear-gradient(to_right_bottom,rgba(13,147,136,0.1),rgba(0,0,0,0))] box-border caret-transparent h-20 w-20 rounded-tr-3xl rounded-bl-[100px] right-0 top-0"></div>
+<div class="relative box-border caret-transparent flex flex-col"><div class="relative box-border caret-transparent mb-8"><div class="absolute bg-teal-600/10 box-border caret-transparent blur-2xl rounded-full scale-[1.5px] inset-0"></div>
+<div class="relative items-center bg-[linear-gradient(to_right_bottom,rgb(232,249,247),rgb(255,255,255))] box-border caret-transparent flex h-20 justify-center w-20 border-teal-600/10 p-4 rounded-2xl border-2 border-solid"><div class="text-teal-600 box-border caret-transparent h-full w-full"><img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-16.svg" alt="Icon" class="box-border caret-transparent h-full w-full" />
+</div>
+</div>
+</div>
+<h3 class="text-cyan-950 text-[26px] font-bold box-border caret-transparent tracking-[-0.26px] leading-[32.5px] min-h-[60px] mb-4">Travel Health Certificates</h3>
+<p class="text-cyan-950/80 text-[17px] box-border caret-transparent basis-[0%] grow leading-[28.9px] mb-6">Official health documentation and certificates for international travel requirements</p>
+<div class="bg-[linear-gradient(to_right,rgb(13,147,136),rgba(0,0,0,0))] box-border caret-transparent h-1 w-20 mt-6 rounded-full"></div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-white box-border caret-transparent max-w-[1440px] mx-auto px-20 py-24"><div class="box-border caret-transparent text-center mb-16"><div class="items-center bg-emerald-50 box-border caret-transparent gap-x-2 inline-flex gap-y-2 mb-6 px-4 py-2 rounded-full"><div class="bg-teal-600 box-border caret-transparent h-2 w-2 rounded-full"></div>
+<span class="text-teal-600 text-sm font-semibold box-border caret-transparent block tracking-[0.7px] leading-[21px] uppercase">Our Team</span>
+</div>
+<h2 class="text-cyan-950 text-[56px] font-bold box-border caret-transparent tracking-[-1.12px] leading-[61.6px] mb-4">Meet Your Healthcare Team</h2>
+<div class="items-center box-border caret-transparent gap-x-2 flex justify-center gap-y-2 mb-6"><div class="bg-[linear-gradient(to_right,rgba(0,0,0,0),rgb(13,147,136))] box-border caret-transparent h-0.5 w-12"></div>
+<div class="bg-teal-600 box-border caret-transparent h-2 w-2 rounded-full"></div>
+<div class="bg-[linear-gradient(to_left,rgba(0,0,0,0),rgb(13,147,136))] box-border caret-transparent h-0.5 w-12"></div>
+</div>
+<p class="text-cyan-950/80 text-xl font-semibold box-border caret-transparent leading-8 max-w-screen-md mx-auto">Led by experienced independent prescribers dedicated to your health journey</p>
+</div>
+<div class="items-center box-border caret-transparent gap-x-16 grid grid-cols-[repeat(1,minmax(0px,1fr))] gap-y-16 md:grid-cols-[repeat(2,minmax(0px,1fr))]"><div class="relative box-border caret-transparent"><div class="relative box-border caret-transparent overflow-hidden rounded-3xl"><img alt="Tejinder Singh - Lead Pharmacist & Independent Prescriber" src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/rectangle-20.png" class="box-border caret-transparent max-w-full object-cover w-full" />
+</div>
+</div>
+<div class="box-border caret-transparent"><h3 class="text-cyan-950 text-[40px] font-bold box-border caret-transparent leading-[50px] mb-3">Tejinder Singh</h3>
+<p class="text-teal-600 text-xl font-semibold box-border caret-transparent leading-[30px] mb-6">Lead Pharmacist &amp; Independent Prescriber</p>
+<div class="text-cyan-950/80 text-[17px] box-border caret-transparent leading-[28.9px] mb-8"><p class="box-border caret-transparent">With over 15 years of experience serving the Sheffield community, Tejinder leads our team with expertise in weight management and travel health.</p>
+<p class="box-border caret-transparent mt-4">As a qualified independent prescriber, he provides personalized care and evidence-based treatments to help you achieve your health goals.</p>
+</div>
+<div class="box-border caret-transparent"><div class="items-center box-border caret-transparent gap-x-3 flex gap-y-3"><img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-17.svg" alt="Icon" class="text-teal-600 box-border caret-transparent h-5 w-5" />
+<span class="text-cyan-950 font-medium box-border caret-transparent block">GPhC Registered Pharmacist</span>
+</div>
+<div class="items-center box-border caret-transparent gap-x-3 flex gap-y-3 mt-3"><img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-17.svg" alt="Icon" class="text-teal-600 box-border caret-transparent h-5 w-5" />
+<span class="text-cyan-950 font-medium box-border caret-transparent block">Independent Prescriber</span>
+</div>
+<div class="items-center box-border caret-transparent gap-x-3 flex gap-y-3 mt-3"><img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-17.svg" alt="Icon" class="text-teal-600 box-border caret-transparent h-5 w-5" />
+<span class="text-cyan-950 font-medium box-border caret-transparent block">15+ Years Experience</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="box-border caret-transparent max-w-[1440px] mx-auto px-20 py-16"><div class="relative box-border caret-transparent h-24 w-full overflow-hidden"><img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-18.svg" alt="Icon" class="absolute box-border caret-transparent h-24 w-full bottom-0" />
+</div>
+<section class="relative box-border caret-transparent flex justify-center w-full overflow-hidden px-4 py-16"><div class="absolute bg-[linear-gradient(rgb(255,255,255),rgb(248,253,252),rgb(255,255,255))] box-border caret-transparent -z-10 inset-0"></div>
+<div class="absolute bg-[radial-gradient(circle_at_1px_1px,rgb(13,147,136)_1px,rgba(0,0,0,0)_0px)] bg-size-[40px_40px] box-border caret-transparent opacity-[0.02] -z-10 inset-0"></div>
+<div class="box-border caret-transparent gap-x-8 flex flex-col max-w-[1264px] gap-y-8 w-full md:gap-x-[110px] md:flex-row md:gap-y-[110px]"><div class="relative box-border caret-transparent basis-[0%] grow max-w-[649px]"><h2 class="text-cyan-950 text-4xl font-semibold box-border caret-transparent tracking-[-0.36px] leading-[43.2px] mb-[62px] font-poppins">Calculate Your Weight Loss Journey</h2>
+<p class="text-cyan-950 text-lg font-medium box-border caret-transparent leading-[32.4px] mb-[139px] font-poppins">Discover your personalized weight loss timeline with our medically-backed calculator. Get realistic expectations and professional guidance for sustainable results.</p>
+<div class="relative box-border caret-transparent h-[526px] max-w-[637px] w-full"><img alt="Weight loss journey" src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/rectangle-34-3.png" class="absolute box-border caret-transparent h-full max-w-full object-cover w-full rounded-[15px] inset-0" />
+<div class="absolute bg-[linear-gradient(121deg,rgba(13,147,136,0),rgb(13,147,136))] box-border caret-transparent h-full scale-x-[-1px] scale-y-[-1px] w-full rounded-[15px] inset-0"></div>
+<div class="absolute box-border caret-transparent gap-x-3 flex flex-col max-w-[333px] gap-y-3 z-10 left-11 bottom-11"><div class="items-center box-border caret-transparent gap-x-1 flex gap-y-1"><div class="relative box-border caret-transparent h-7 w-7"><img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-19.svg" alt="Icon" class="text-yellow-400 box-border caret-transparent h-full w-full" />
+</div>
+<div class="relative box-border caret-transparent h-7 w-7"><img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-19.svg" alt="Icon" class="text-yellow-400 box-border caret-transparent h-full w-full" />
+</div>
+<div class="relative box-border caret-transparent h-7 w-7"><img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-19.svg" alt="Icon" class="text-yellow-400 box-border caret-transparent h-full w-full" />
+</div>
+<div class="relative box-border caret-transparent h-7 w-7"><img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-19.svg" alt="Icon" class="text-yellow-400 box-border caret-transparent h-full w-full" />
+</div>
+<div class="relative box-border caret-transparent h-7 w-7"><img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-19.svg" alt="Icon" class="text-yellow-400 box-border caret-transparent h-full w-full" />
+</div>
+</div>
+<p class="text-white text-lg font-bold box-border caret-transparent tracking-[-0.27px] leading-[29px] font-poppins">I lost 18kg over six months with Totley&#39;s guidance. The support was personal, professional, and life-changing</p>
+</div>
+</div>
+</div>
+<div class="bg-white shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(13,147,136,0.19)_0px_0px_32.6px_1px] box-border caret-transparent basis-[0%] grow max-w-[505px] rounded-[15px]"><div class="box-border caret-transparent pt-10 pb-[26px] px-[26px]"><div class="box-border caret-transparent gap-x-7 flex flex-col gap-y-7"><header class="box-border caret-transparent gap-x-1 flex flex-col gap-y-1 text-center"><h3 class="text-teal-600 text-2xl font-bold box-border caret-transparent tracking-[-0.96px] leading-[31.2px] font-poppins">Weight Loss Calculator</h3>
+<p class="text-cyan-950 font-semibold box-border caret-transparent leading-8 font-poppins">Enter your starting weight to see your potential</p>
+</header>
+<div class="box-border caret-transparent flex justify-center"><div class="relative bg-emerald-50 box-border caret-transparent h-[59px] w-[169px] p-1 rounded-full"><div class="absolute bg-teal-600 shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_10px_15px_-3px,rgba(0,0,0,0.1)_0px_4px_6px_-4px] box-border caret-transparent h-[51px] w-[82px] rounded-full left-1 top-1"></div>
+<div class="absolute items-center box-border caret-transparent flex justify-around px-4 inset-0"><button class="text-white font-semibold bg-transparent caret-transparent block text-center z-10 p-0">Kg</button>
+<button class="text-cyan-950 font-semibold bg-transparent caret-transparent block text-center z-10 p-0">St</button>
+</div>
+</div>
+</div>
+<div class="box-border caret-transparent gap-x-4 flex flex-col gap-y-4"><label class="text-cyan-950 font-semibold box-border caret-transparent block leading-8 font-poppins">Starting Weight</label>
+<div class="relative box-border caret-transparent"><div class="items-center bg-white box-border caret-transparent flex h-[63px] justify-center w-full border-emerald-50 rounded-2xl border-2 border-solid"><span class="text-cyan-950 text-2xl font-semibold box-border caret-transparent block leading-8">10</span>
+</div>
+<span class="absolute text-teal-600 font-semibold box-border caret-transparent block translate-y-[-50.0%] right-4 top-2/4">Kg</span>
+</div>
+<div class="relative box-border caret-transparent pt-2"><input type="range" value="10" class="bg-transparent bg-[linear-gradient(to_right,rgb(13,147,136)_0%,rgb(13,147,136)_2.5641%,rgb(243,244,246)_2.5641%,rgb(243,244,246)_100%)] box-border caret-transparent h-2 w-full p-0 rounded-[15px]" />
+<div class="box-border caret-transparent flex justify-between mt-2"><span class="text-cyan-950 font-semibold box-border caret-transparent block leading-8 font-poppins">5kg</span>
+<span class="text-cyan-950 font-semibold box-border caret-transparent block leading-8 font-poppins">200kg</span>
+</div>
+</div>
+</div>
+<div class="items-center bg-emerald-50 box-border caret-transparent flex justify-center min-h-32 border-teal-600/10 p-8 rounded-2xl border-2 border-solid"><div class="box-border caret-transparent gap-x-1 flex flex-col gap-y-1 text-center"><p class="text-cyan-950 font-semibold box-border caret-transparent">You could lose</p>
+<p class="text-teal-600 text-4xl font-bold box-border caret-transparent tracking-[-0.9px] leading-10">1.1kg</p>
+<p class="text-cyan-950 font-semibold box-border caret-transparent">in 12 months</p>
+</div>
+</div>
+<div class="items-center box-border caret-transparent gap-x-3 flex flex-col gap-y-3"><button class="text-white text-sm font-medium items-center bg-teal-600 shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.05)_0px_1px_2px_0px] caret-transparent gap-x-2 flex h-12 justify-center leading-5 gap-y-2 text-center text-nowrap px-6 py-2 rounded-2xl hover:bg-teal-700 hover:shadow-[rgba(13,147,136,0.4)_0px_0px_30px_0px,rgba(13,147,136,0.2)_0px_0px_60px_0px]"><span class="text-[15px] font-semibold box-border caret-transparent block text-nowrap">Start Your Transformation</span>
+<img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-3.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 pointer-events-none text-nowrap w-4 ml-2" />
+</button>
+<p class="text-cyan-950/70 text-sm font-medium box-border caret-transparent leading-[22.75px] text-center">Based on clinical studies and user-entered data</p>
+<p class="text-cyan-950/50 text-xs italic box-border caret-transparent leading-4 max-w-md text-center mt-2">*Results may vary. This calculator provides estimates based on average outcomes. Consult with a healthcare professional for personalized advice.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section class="box-border caret-transparent max-w-[1440px] mx-auto px-20 py-16"><section class="relative box-border caret-transparent w-full overflow-hidden"><div class="absolute bg-[linear-gradient(rgb(248,253,252),rgb(255,255,255),rgb(248,253,252))] box-border caret-transparent -z-10 inset-0"></div>
+<div class="box-border caret-transparent max-w-[1440px] mx-auto"><header class="box-border caret-transparent text-center mb-20"><h2 class="text-cyan-950 text-[56px] font-bold box-border caret-transparent tracking-[-1.12px] leading-[61.6px] mb-6">Tips and Tricks for Successful Weight Loss</h2>
+<p class="text-cyan-950 text-xl font-medium box-border caret-transparent leading-8 max-w-screen-md mx-auto">Explore practical advice, expert insights and small changes that can<br class="box-border caret-transparent" />
+make a big difference on your journey</p>
+</header>
+<div class="box-border caret-transparent gap-x-10 grid grid-cols-[repeat(1,minmax(0px,1fr))] gap-y-10 mb-16 md:grid-cols-[repeat(3,minmax(0px,1fr))]"><article class="relative bg-white box-border caret-transparent border border-emerald-50 overflow-hidden rounded-3xl border-solid hover:shadow-[rgba(13,147,136,0.25)_0px_25px_50px_-12px,rgba(13,147,136,0.1)_0px_0px_0px_1px] hover:border-teal-600/30"><div class="absolute bg-[linear-gradient(to_right_bottom,rgba(13,147,136,0.1),rgba(0,0,0,0))] box-border caret-transparent h-20 w-20 z-10 rounded-tr-3xl rounded-bl-[100px] right-0 top-0"></div>
+<div class="relative box-border caret-transparent h-[280px] w-full overflow-hidden"><img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/frame-4.png" alt="Eco Living: Sustainable Choices" class="box-border caret-transparent h-full max-w-full object-cover w-full" />
+<button class="absolute items-center backdrop-blur-sm bg-white/90 shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_10px_15px_-3px,rgba(0,0,0,0.1)_0px_4px_6px_-4px] caret-transparent flex h-10 justify-center text-center w-10 z-20 p-0 rounded-full right-6 top-6 hover:bg-white"><img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-20.svg" alt="Icon" class="text-teal-600 box-border caret-transparent h-5 w-5" />
+</button>
+</div>
+<div class="box-border caret-transparent p-8"><div class="items-center bg-emerald-50 box-border caret-transparent gap-x-2 inline-flex gap-y-2 mb-4 px-3 py-1 rounded-full"><div class="bg-teal-600 box-border caret-transparent h-1.5 w-1.5 rounded-full"></div>
+<span class="text-teal-600 text-sm font-semibold box-border caret-transparent block leading-[21px]">Weight Loss</span>
+</div>
+<h3 class="text-cyan-950 text-2xl font-bold box-border caret-transparent tracking-[-0.24px] leading-[30px] mb-3">Eco Living: Sustainable Choices</h3>
+<p class="text-cyan-950/80 box-border caret-transparent leading-[27.2px] mb-6">Transform your body and mind with fitness tips and routines.</p>
+<div class="text-cyan-950/60 text-sm items-center box-border caret-transparent gap-x-3 flex leading-[21px] gap-y-3"><time class="box-border caret-transparent block">27 May, 2024</time>
+<div class="bg-cyan-950/30 box-border caret-transparent h-1 w-1 rounded-full"></div>
+<span class="box-border caret-transparent block">5 min read</span>
+</div>
+</div>
+</article>
+<article class="relative bg-white box-border caret-transparent border border-emerald-50 overflow-hidden rounded-3xl border-solid hover:shadow-[rgba(13,147,136,0.25)_0px_25px_50px_-12px,rgba(13,147,136,0.1)_0px_0px_0px_1px] hover:border-teal-600/30"><div class="absolute bg-[linear-gradient(to_right_bottom,rgba(13,147,136,0.1),rgba(0,0,0,0))] box-border caret-transparent h-20 w-20 z-10 rounded-tr-3xl rounded-bl-[100px] right-0 top-0"></div>
+<div class="relative box-border caret-transparent h-[280px] w-full overflow-hidden"><img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/frame-2.png" alt="Life Lessons: Insights and Stories of Personal Growth" class="box-border caret-transparent h-full max-w-full object-cover w-full" />
+<button class="absolute items-center backdrop-blur-sm bg-white/90 shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_10px_15px_-3px,rgba(0,0,0,0.1)_0px_4px_6px_-4px] caret-transparent flex h-10 justify-center text-center w-10 z-20 p-0 rounded-full right-6 top-6 hover:bg-white"><img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-20.svg" alt="Icon" class="text-teal-600 box-border caret-transparent h-5 w-5" />
+</button>
+</div>
+<div class="box-border caret-transparent p-8"><div class="items-center bg-emerald-50 box-border caret-transparent gap-x-2 inline-flex gap-y-2 mb-4 px-3 py-1 rounded-full"><div class="bg-teal-600 box-border caret-transparent h-1.5 w-1.5 rounded-full"></div>
+<span class="text-teal-600 text-sm font-semibold box-border caret-transparent block leading-[21px]">Weight Loss</span>
+</div>
+<h3 class="text-cyan-950 text-2xl font-bold box-border caret-transparent tracking-[-0.24px] leading-[30px] mb-3">Life Lessons: Insights and Stories of Personal Growth</h3>
+<p class="text-cyan-950/80 box-border caret-transparent leading-[27.2px] mb-6">Transform your body and mind with fitness tips and routines.</p>
+<div class="text-cyan-950/60 text-sm items-center box-border caret-transparent gap-x-3 flex leading-[21px] gap-y-3"><time class="box-border caret-transparent block">27 May, 2024</time>
+<div class="bg-cyan-950/30 box-border caret-transparent h-1 w-1 rounded-full"></div>
+<span class="box-border caret-transparent block">5 min read</span>
+</div>
+</div>
+</article>
+<article class="relative bg-white box-border caret-transparent border border-emerald-50 overflow-hidden rounded-3xl border-solid hover:shadow-[rgba(13,147,136,0.25)_0px_25px_50px_-12px,rgba(13,147,136,0.1)_0px_0px_0px_1px] hover:border-teal-600/30"><div class="absolute bg-[linear-gradient(to_right_bottom,rgba(13,147,136,0.1),rgba(0,0,0,0))] box-border caret-transparent h-20 w-20 z-10 rounded-tr-3xl rounded-bl-[100px] right-0 top-0"></div>
+<div class="relative box-border caret-transparent h-[280px] w-full overflow-hidden"><img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/frame-3.png" alt="Fitness Journey: From Couch to Confident" class="box-border caret-transparent h-full max-w-full object-cover w-full" />
+<button class="absolute items-center backdrop-blur-sm bg-white/90 shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_10px_15px_-3px,rgba(0,0,0,0.1)_0px_4px_6px_-4px] caret-transparent flex h-10 justify-center text-center w-10 z-20 p-0 rounded-full right-6 top-6 hover:bg-white"><img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-20.svg" alt="Icon" class="text-teal-600 box-border caret-transparent h-5 w-5" />
+</button>
+</div>
+<div class="box-border caret-transparent p-8"><div class="items-center bg-emerald-50 box-border caret-transparent gap-x-2 inline-flex gap-y-2 mb-4 px-3 py-1 rounded-full"><div class="bg-teal-600 box-border caret-transparent h-1.5 w-1.5 rounded-full"></div>
+<span class="text-teal-600 text-sm font-semibold box-border caret-transparent block leading-[21px]">Weight Loss</span>
+</div>
+<h3 class="text-cyan-950 text-2xl font-bold box-border caret-transparent tracking-[-0.24px] leading-[30px] mb-3">Fitness Journey: From Couch to Confident</h3>
+<p class="text-cyan-950/80 box-border caret-transparent leading-[27.2px] mb-6">Transform your body and mind with fitness tips and routines.</p>
+<div class="text-cyan-950/60 text-sm items-center box-border caret-transparent gap-x-3 flex leading-[21px] gap-y-3"><time class="box-border caret-transparent block">27 May, 2024</time>
+<div class="bg-cyan-950/30 box-border caret-transparent h-1 w-1 rounded-full"></div>
+<span class="box-border caret-transparent block">5 min read</span>
+</div>
+</div>
+</article>
+</div>
+<div class="box-border caret-transparent flex justify-center pb-8"><button class="text-white text-sm font-medium items-center bg-teal-600 shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_1px_3px_0px,rgba(0,0,0,0.1)_0px_1px_2px_-1px] caret-transparent gap-x-2 flex justify-center leading-5 gap-y-2 text-center text-nowrap px-8 py-4 rounded-2xl hover:bg-teal-700 hover:shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(13,147,136,0.3)_0px_12px_32px_0px]"><span class="text-base font-semibold box-border caret-transparent block text-nowrap">View All Articles</span>
+<img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-3.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 pointer-events-none text-nowrap w-4 ml-2" />
+</button>
+</div>
+</div>
+</section>
+</section>
+<section class="relative box-border caret-transparent w-full overflow-hidden pt-32 pb-20"><div class="absolute bg-[linear-gradient(to_right,rgba(0,0,0,0),rgba(13,147,136,0.2),rgba(0,0,0,0))] box-border caret-transparent h-px top-0 inset-x-0"></div>
+<div class="absolute items-center box-border caret-transparent gap-x-3 flex gap-y-3 translate-x-[-50.0%] left-2/4 top-12"><div class="bg-[linear-gradient(to_right,rgba(0,0,0,0),rgba(13,147,136,0.3))] box-border caret-transparent h-px w-16"></div>
+<div class="bg-teal-600/30 box-border caret-transparent h-2 w-2 rounded-full"></div>
+<div class="bg-teal-600/20 box-border caret-transparent h-2 w-2 rounded-full"></div>
+<div class="bg-teal-600/10 box-border caret-transparent h-2 w-2 rounded-full"></div>
+<div class="bg-[linear-gradient(to_left,rgba(0,0,0,0),rgba(13,147,136,0.3))] box-border caret-transparent h-px w-16"></div>
+</div>
+<div class="absolute bg-[linear-gradient(rgb(255,255,255),rgb(248,253,252),rgb(248,253,252))] box-border caret-transparent -z-10 inset-0"></div>
+<div class="absolute bg-[radial-gradient(circle_at_1px_1px,rgb(13,147,136)_1px,rgba(0,0,0,0)_0px)] bg-size-[40px_40px] box-border caret-transparent opacity-[0.02] -z-10 inset-0"></div>
+<div class="box-border caret-transparent max-w-[1440px] mx-auto px-20"><div class="box-border caret-transparent text-center mb-12"><div class="items-center bg-emerald-50 box-border caret-transparent gap-x-2 inline-flex gap-y-2 mb-6 px-4 py-2 rounded-full"><div class="bg-teal-600 box-border caret-transparent h-2 w-2 rounded-full"></div>
+<span class="text-teal-600 text-sm font-semibold box-border caret-transparent block tracking-[0.7px] leading-[21px] uppercase">Trusted Partner</span>
+</div>
+<h2 class="text-cyan-950 text-[40px] font-bold box-border caret-transparent tracking-[-0.8px] leading-[44px] mb-4">As Featured In</h2>
+<div class="items-center box-border caret-transparent gap-x-2 flex justify-center gap-y-2 mb-2"><div class="bg-[linear-gradient(to_right,rgba(0,0,0,0),rgb(13,147,136))] box-border caret-transparent h-0.5 w-12"></div>
+<div class="bg-teal-600 box-border caret-transparent h-2 w-2 rounded-full"></div>
+<div class="bg-[linear-gradient(to_left,rgba(0,0,0,0),rgb(13,147,136))] box-border caret-transparent h-0.5 w-12"></div>
+</div>
+</div>
+<div class="items-center box-border caret-transparent gap-x-8 flex flex-wrap justify-center gap-y-8"><div class="relative box-border caret-transparent"><div class="items-center bg-white box-border caret-transparent flex h-20 justify-center w-28 border border-emerald-50 px-6 rounded-2xl border-solid"><div class="items-center box-border caret-transparent flex h-full justify-center w-full"><span class="text-cyan-950/60 text-[13px] font-bold box-border caret-transparent block leading-[19.5px] text-center">BBC News</span>
+</div>
+</div>
+</div>
+<div class="relative box-border caret-transparent"><div class="items-center bg-white box-border caret-transparent flex h-20 justify-center w-32 border border-emerald-50 px-6 rounded-2xl border-solid"><div class="items-center box-border caret-transparent flex h-full justify-center w-full"><span class="text-cyan-950/60 text-[13px] font-bold box-border caret-transparent block leading-[19.5px] text-center">The Guardian</span>
+</div>
+</div>
+</div>
+<div class="relative box-border caret-transparent"><div class="items-center bg-white box-border caret-transparent flex h-20 justify-center w-36 border border-emerald-50 px-6 rounded-2xl border-solid"><div class="items-center box-border caret-transparent flex h-full justify-center w-full"><span class="text-cyan-950/60 text-[13px] font-bold box-border caret-transparent block leading-[19.5px] text-center">Yorkshire Post</span>
+</div>
+</div>
+</div>
+<div class="relative box-border caret-transparent"><div class="items-center bg-white box-border caret-transparent flex h-20 justify-center w-32 border border-emerald-50 px-6 rounded-2xl border-solid"><div class="items-center box-border caret-transparent flex h-full justify-center w-full"><span class="text-cyan-950/60 text-[13px] font-bold box-border caret-transparent block leading-[19.5px] text-center">Sheffield Star</span>
+</div>
+</div>
+</div>
+<div class="relative box-border caret-transparent"><div class="items-center bg-white box-border caret-transparent flex h-20 justify-center w-24 border border-emerald-50 px-6 rounded-2xl border-solid"><div class="items-center box-border caret-transparent flex h-full justify-center w-full"><span class="text-cyan-950/60 text-[13px] font-bold box-border caret-transparent block leading-[19.5px] text-center">ITV News</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer class="relative bg-[linear-gradient(rgb(255,255,255),rgb(248,253,252))] box-border caret-transparent border-emerald-50 overflow-hidden border-t border-solid"><div class="box-border caret-transparent max-w-[1440px] mx-auto p-20"><div class="box-border caret-transparent gap-x-12 grid grid-cols-[repeat(1,minmax(0px,1fr))] gap-y-12 mb-16 md:grid-cols-[repeat(4,minmax(0px,1fr))]"><div class="box-border caret-transparent col-end-auto col-start-auto md:col-end-[span_1] md:col-start-[span_1]"><div class="box-border caret-transparent mb-6"><img alt="Sheffield Travel Pharmacy" src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/telegram-cloud-photo-size-5-6235491751955646823-y-1.png" class="box-border caret-transparent h-12 max-w-full mb-4" />
+</div>
+<p class="text-cyan-950/70 text-[15px] box-border caret-transparent leading-[25.5px] mb-6">Sheffield&#39;s leading weight management and travel health clinic.</p>
+</div>
+</div>
+<div class="box-border caret-transparent border-emerald-50 pt-8 border-t border-solid"><div class="items-center box-border caret-transparent gap-x-4 flex flex-col justify-between gap-y-4 md:flex-row"><p class="text-cyan-950/60 text-sm box-border caret-transparent leading-[21px]">© 2025 Sheffield Travel Pharmacy. All rights reserved.</p>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</body>
+
+</html>
