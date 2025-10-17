@@ -1,0 +1,216 @@
+/* ===================================
+   PREMIUM NAVIGATION - COMPLETE REBUILD
+   =================================== */
+
+/* Navigation Bar - Full Width Container */
+.premium-navigation {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  height: 90px !important;
+  background: #FFFFFF !important;
+  border-bottom: 1px solid #E5E7EB !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04) !important;
+  z-index: 9999 !important;
+}
+
+/* Inner Container */
+.nav-container {
+  max-width: 1680px !important;
+  height: 100% !important;
+  margin: 0 auto !important;
+  padding: 0 60px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 40px !important;
+}
+
+/* ===================================
+   LEFT SECTION - LOGO AREA
+   =================================== */
+
+.logo-section {
+  display: flex !important;
+  align-items: center !important;
+  gap: 20px !important;
+  flex-shrink: 0 !important;
+}
+
+/* Sheffield United FC Logo */
+.sufc-logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sufc-logo {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Vertical Divider */
+.logo-divider {
+  width: 1px;
+  height: 45px;
+  background: linear-gradient(to bottom, transparent, #D1D5DB, transparent);
+  flex-shrink: 0;
+}
+
+/* Pharmacy Branding */
+.pharmacy-branding {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.pharmacy-name {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+
+.brand-teal {
+  color: #00A19A;
+}
+
+.brand-gray {
+  color: #4B5563;
+}
+
+.pharmacy-tagline {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  color: #9CA3AF;
+  letter-spacing: 0.01em;
+}
+
+/* ===================================
+   CENTER SECTION - NAVIGATION MENU
+   =================================== */
+
+.main-menu {
+  display: flex !important;
+  align-items: center !important;
+  gap: 40px !important;
+  flex-grow: 1 !important;
+  justify-content: center !important;
+}
+
+.menu-item {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1F2937;
+  text-decoration: none;
+  position: relative;
+  padding: 8px 0;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+}
+
+/* Active State */
+.menu-item.active {
+  color: #00A19A;
+}
+
+/* Hover Underline Animation */
+.menu-item::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #00A19A;
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-item:hover {
+  color: #00A19A;
+}
+
+.menu-item:hover::after,
+.menu-item.active::after {
+  width: 100%;
+}
+
+/* ===================================
+   RIGHT SECTION - CTA BUTTON
+   =================================== */
+
+.cta-wrapper {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.cta-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 180px;
+  height: 48px;
+  padding: 0 28px;
+  background: #00A19A;
+  color: #FFFFFF;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 161, 154, 0.2);
+  white-space: nowrap;
+}
+
+.cta-button svg {
+  transition: transform 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #008F84;
+  transform: scale(1.03);
+  box-shadow: 0 4px 16px rgba(0, 161, 154, 0.3);
+}
+
+.cta-button:hover svg {
+  transform: translateX(3px);
+}
+
+.cta-button:active {
+  transform: scale(0.98);
+}
+
+/* ===================================
+   RESPONSIVE ADJUSTMENTS
+   =================================== */
+
+@media (max-width: 1200px) {
+  .main-menu {
+    gap: 30px;
+  }
+  
+  .menu-item {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  .nav-container {
+    padding: 0 40px;
+  }
+  
+  .main-menu {
+    gap: 20px;
+  }
+}
