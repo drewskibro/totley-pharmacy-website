@@ -192,6 +192,24 @@
 }
 
 /* ===================================
+   PROFESSIONAL SOCIAL PROOF BADGES
+   =================================== */
+
+.professional-badge {
+  transition: all 0.3s ease;
+}
+
+.professional-badge:hover {
+  background: rgba(0, 161, 154, 0.1);
+  border-color: rgba(0, 161, 154, 0.25);
+  transform: translateY(-1px);
+}
+
+.professional-badge svg {
+  flex-shrink: 0;
+}
+
+/* ===================================
    RESPONSIVE ADJUSTMENTS
    =================================== */
 
