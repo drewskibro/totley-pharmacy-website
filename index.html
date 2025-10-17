@@ -115,7 +115,145 @@
     .hero-headline .char:nth-child(23) { animation-delay: 0.88s; }
     .hero-headline .char:nth-child(24) { animation-delay: 0.92s; }
     .hero-headline .char:nth-child(25) { animation-delay: 0.96s; }
+
+    /* Hero grid image animations */
+    @keyframes kenBurns {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.03);
+      }
+    }
+
+    @keyframes fadeInImage {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes pulseGlow {
+      0%, 100% {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+      50% {
+        box-shadow: 0 0 20px rgba(0, 161, 154, 0.2), 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    /* Eyebrow text animation */
+    @keyframes eyebrowFadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(-15px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes letterSpacingExpand {
+      0% {
+        letter-spacing: 0.04em;
+      }
+      100% {
+        letter-spacing: 0.08em;
+      }
+    }
+
+    .eyebrow-text {
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: #00A19A;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      animation: eyebrowFadeIn 1s ease-out forwards, letterSpacingExpand 1s ease-out forwards;
+      animation-delay: 0.8s;
+    }
+
+    .eyebrow-text::before,
+    .eyebrow-text::after {
+      content: '•';
+      color: rgba(0, 161, 154, 0.4);
+      font-size: 8px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    /* Weight Loss Calculator Styles */
+    .calculator-card {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(0, 161, 154, 0.1);
+    }
+
+    .weight-slider {
+      -webkit-appearance: none;
+      appearance: none;
+      height: 8px;
+      border-radius: 5px;
+      background: linear-gradient(to right, #B2DFDB 0%, #00A19A 100%);
+      outline: none;
+      cursor: pointer;
+    }
+
+    .weight-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: white;
+      border: 3px solid #00A19A;
+      cursor: pointer;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: all 0.2s ease;
+    }
+
+    .weight-slider::-webkit-slider-thumb:hover {
+      box-shadow: 0 4px 8px rgba(0, 161, 154, 0.3);
+      transform: scale(1.1);
+    }
+
+    .weight-slider::-moz-range-thumb {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: white;
+      border: 3px solid #00A19A;
+      cursor: pointer;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: all 0.2s ease;
+    }
+
+    .weight-slider::-moz-range-thumb:hover {
+      box-shadow: 0 4px 8px rgba(0, 161, 154, 0.3);
+      transform: scale(1.1);
+    }
+
+    .results-box {
+      background: linear-gradient(135deg, rgba(178, 223, 219, 0.2) 0%, rgba(0, 191, 165, 0.1) 100%);
+      transition: all 0.3s ease;
+    }
+
+    #weight-loss-result {
+      transition: opacity 0.3s ease;
+    }
+
+    @media (max-width: 768px) {
+      .calculator-card {
+        padding: 2rem;
+      }
+    }
+
   </style>
+
 
 
   <style>
@@ -142,10 +280,15 @@
 <button class="absolute text-cyan-950/60 bg-transparent caret-transparent block translate-y-[-50.0%] p-0 right-4 top-2/4 hover:text-cyan-950"><img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-1.svg" alt="Icon" class="box-border caret-transparent h-5 w-5" />
 </button>
 </div>
-<nav class="box-border caret-transparent max-w-[1440px] mx-auto px-20 py-5"><div class="relative items-center bg-white box-border caret-transparent flex h-20 justify-between border border-stone-300 px-7 rounded-[15px] border-solid"><div class="items-center box-border caret-transparent gap-x-3 flex gap-y-3"><img alt="Sheffield Travel Pharmacy" src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/telegram-cloud-photo-size-5-6235491751955646823-y-1.png" class="box-border caret-transparent h-[47px] max-w-full" />
-<div class="bg-zinc-300/60 box-border caret-transparent h-5 w-px"></div>
-<div class="items-center box-border caret-transparent gap-x-2.5 flex gap-y-2.5"><img alt="Sheffield United FC" src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/telegram-cloud-photo-size-5-6235491751955646824-m-1.png" class="box-border caret-transparent h-8 max-w-full w-8" />
-<div class="text-gray-700/60 text-[10.5px] box-border caret-transparent leading-[13.125px] max-w-28">Sheffield United FC Official Partner</div>
+<nav class="box-border caret-transparent max-w-[1440px] mx-auto px-20 py-5"><div class="relative items-center bg-white box-border caret-transparent flex h-20 justify-between border border-stone-300 px-7 rounded-[15px] border-solid"><div class="items-center box-border caret-transparent gap-x-4 flex gap-y-4">
+  <!-- Replace pixelated logo with text-based version -->
+  <div class="flex flex-col">
+    <span class="text-teal-600 text-[18px] font-bold box-border caret-transparent leading-tight">Sheffield Travel Pharmacy</span>
+    <span class="text-cyan-950/60 text-[11px] font-medium box-border caret-transparent leading-tight">By Totley Pharmacy</span>
+  </div>
+<div class="bg-zinc-300/60 box-border caret-transparent h-6 w-px"></div>
+<div class="items-center box-border caret-transparent gap-x-3 flex gap-y-3"><img alt="Sheffield United FC" src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/telegram-cloud-photo-size-5-6235491751955646824-m-1.png" class="box-border caret-transparent h-10 max-w-full w-10" style="image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;" />
+<div class="text-cyan-950 text-[12px] font-semibold box-border caret-transparent leading-[15px] max-w-32">Sheffield United FC<br/><span class="text-cyan-950/70 font-medium">Official Partner</span></div>
 </div>
 </div>
 <div class="items-center box-border caret-transparent gap-x-8 flex gap-y-8"><div class="relative box-border caret-transparent"><button class="text-teal-600 text-[15px] font-semibold bg-transparent caret-transparent leading-[22.5px] text-center text-nowrap p-0">Home</button>
@@ -250,15 +393,16 @@
 </div>
 </section>
 <section class="relative box-border caret-transparent max-w-[1440px] overflow-hidden mx-auto px-20 py-24"><div class="absolute bg-[linear-gradient(rgb(255,255,255),rgb(248,253,252),rgb(255,255,255))] box-border caret-transparent -z-10 inset-0"></div>
-<div class="box-border caret-transparent text-center mb-20"><div class="items-center bg-emerald-50 box-border caret-transparent gap-x-2 inline-flex gap-y-2 mb-6 px-4 py-2 rounded-full"><div class="bg-teal-600 box-border caret-transparent h-2 w-2 rounded-full"></div>
-<span class="text-teal-600 text-sm font-semibold box-border caret-transparent block tracking-[0.7px] leading-[21px] uppercase">Success Stories</span>
+<div class="box-border caret-transparent text-center mb-20">
+<div class="box-border caret-transparent flex justify-center mb-5">
+<span class="eyebrow-text box-border caret-transparent uppercase" style="font-family: 'DM Sans', sans-serif;">Success Stories</span>
 </div>
-<h2 class="text-cyan-950 text-[56px] font-bold box-border caret-transparent tracking-[-1.12px] leading-[61.6px] mb-4">Genuine Results from Sheffield</h2>
+<h2 class="text-cyan-950 text-[56px] font-bold box-border caret-transparent tracking-[-1.12px] leading-[61.6px] mb-4" style="font-family: 'Playfair Display', Georgia, serif;">Genuine Results from Sheffield</h2>
 <div class="items-center box-border caret-transparent gap-x-2 flex justify-center gap-y-2 mb-6"><div class="bg-[linear-gradient(to_right,rgba(0,0,0,0),rgb(13,147,136))] box-border caret-transparent h-0.5 w-12"></div>
 <div class="bg-teal-600 box-border caret-transparent h-2 w-2 rounded-full"></div>
 <div class="bg-[linear-gradient(to_left,rgba(0,0,0,0),rgb(13,147,136))] box-border caret-transparent h-0.5 w-12"></div>
 </div>
-<p class="text-cyan-950/80 text-xl font-semibold box-border caret-transparent leading-8 max-w-screen-md mx-auto">Real transformations from our South Yorkshire patients</p>
+<p class="text-[#475569] text-[20px] box-border caret-transparent leading-[1.65] max-w-screen-md mx-auto" style="font-family: 'DM Sans', sans-serif; font-weight: 450; letter-spacing: 0.01em;">Real transformations from our South Yorkshire patients</p>
 </div>
 <div class="box-border caret-transparent gap-x-10 grid grid-cols-[repeat(1,minmax(0px,1fr))] gap-y-10 md:grid-cols-[repeat(3,minmax(0px,1fr))]"><div class="box-border caret-transparent"><div class="relative bg-white shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_1px_3px_0px,rgba(0,0,0,0.1)_0px_1px_2px_-1px] box-border caret-transparent border border-emerald-50 overflow-hidden rounded-3xl border-solid hover:shadow-[rgba(13,147,136,0.25)_0px_25px_50px_-12px,rgba(13,147,136,0.1)_0px_0px_0px_1px] hover:border-teal-600/30"><div class="absolute bg-[linear-gradient(to_right_bottom,rgba(13,147,136,0.1),rgba(0,0,0,0))] box-border caret-transparent h-20 w-20 z-20 rounded-tr-3xl rounded-bl-[100px] right-0 top-0"></div>
 <div class="relative box-border caret-transparent flex flex-col h-full"><div class="relative box-border caret-transparent h-[380px] w-full overflow-hidden"><div class="absolute bg-[linear-gradient(to_top,rgba(0,0,0,0.6),rgba(0,0,0,0.2),rgba(0,0,0,0))] box-border caret-transparent z-10 inset-0"></div>
@@ -347,15 +491,14 @@
 </div>
 <section class="relative box-border caret-transparent max-w-[1440px] overflow-hidden mx-auto px-20 py-24"><div class="absolute bg-[linear-gradient(rgb(255,255,255),rgb(248,253,252),rgb(255,255,255))] box-border caret-transparent -z-10 inset-0"></div>
 <div class="absolute bg-[radial-gradient(circle_at_1px_1px,rgb(13,147,136)_1px,rgba(0,0,0,0)_0px)] bg-size-[40px_40px] box-border caret-transparent opacity-[0.03] -z-10 inset-0"></div>
-<div class="box-border caret-transparent text-center mb-20"><div class="items-center bg-emerald-50 box-border caret-transparent gap-x-2 inline-flex gap-y-2 mb-6 px-4 py-2 rounded-full"><div class="bg-teal-600 box-border caret-transparent h-2 w-2 rounded-full"></div>
-<span class="text-teal-600 text-sm font-semibold box-border caret-transparent block tracking-[0.7px] leading-[21px] uppercase">What We Offer</span>
-</div>
-<h2 class="text-cyan-950 text-[56px] font-bold box-border caret-transparent tracking-[-1.12px] leading-[61.6px] mb-4">Our Services</h2>
+<div class="box-border caret-transparent text-center mb-20">
+<span class="text-teal-600 text-sm font-semibold box-border caret-transparent block tracking-[0.15em] leading-[21px] uppercase mb-6" style="font-family: 'DM Sans', sans-serif; letter-spacing: 0.15em;">What We Offer</span>
+<h2 class="text-cyan-950 text-[56px] font-bold box-border caret-transparent tracking-[-1.12px] leading-[61.6px] mb-4" style="font-family: 'Playfair Display', Georgia, serif;">Our Services</h2>
 <div class="items-center box-border caret-transparent gap-x-2 flex justify-center gap-y-2 mb-6"><div class="bg-[linear-gradient(to_right,rgba(0,0,0,0),rgb(13,147,136))] box-border caret-transparent h-0.5 w-12"></div>
 <div class="bg-teal-600 box-border caret-transparent h-2 w-2 rounded-full"></div>
 <div class="bg-[linear-gradient(to_left,rgba(0,0,0,0),rgb(13,147,136))] box-border caret-transparent h-0.5 w-12"></div>
 </div>
-<p class="text-cyan-950/80 text-xl font-semibold box-border caret-transparent leading-8 max-w-screen-md mx-auto">Comprehensive healthcare solutions tailored to your needs</p>
+<p class="text-[#475569] text-[20px] box-border caret-transparent leading-[1.65] max-w-screen-md mx-auto" style="font-family: 'DM Sans', sans-serif; font-weight: 450; letter-spacing: 0.01em;">Comprehensive healthcare solutions tailored to your needs</p>
 </div>
 <div class="box-border caret-transparent gap-x-10 grid grid-cols-[repeat(1,minmax(0px,1fr))] gap-y-10 md:grid-cols-[repeat(3,minmax(0px,1fr))]"><div class="relative bg-white box-border caret-transparent border border-emerald-50 p-10 rounded-3xl border-solid hover:shadow-[rgba(13,147,136,0.25)_0px_25px_50px_-12px,rgba(13,147,136,0.1)_0px_0px_0px_1px] hover:border-teal-600/30"><div class="absolute bg-[linear-gradient(to_right_bottom,rgba(13,147,136,0.1),rgba(0,0,0,0))] box-border caret-transparent h-20 w-20 rounded-tr-3xl rounded-bl-[100px] right-0 top-0"></div>
 <div class="relative box-border caret-transparent flex flex-col"><div class="relative box-border caret-transparent mb-8"><div class="absolute bg-teal-600/10 box-border caret-transparent blur-2xl rounded-full scale-[1.5px] inset-0"></div>
@@ -363,8 +506,8 @@
 </div>
 </div>
 </div>
-<h3 class="text-cyan-950 text-[26px] font-bold box-border caret-transparent tracking-[-0.26px] leading-[32.5px] min-h-[60px] mb-4">Weight Management Programs</h3>
-<p class="text-cyan-950/80 text-[17px] box-border caret-transparent basis-[0%] grow leading-[28.9px] mb-6">Medically-supervised weight loss with personalised support and prescription treatments</p>
+<h3 class="text-cyan-950 text-[26px] font-bold box-border caret-transparent tracking-[-0.26px] leading-[32.5px] min-h-[60px] mb-4" style="font-family: 'Playfair Display', Georgia, serif;">Weight Management Programs</h3>
+<p class="text-[#475569] text-[17px] box-border caret-transparent basis-[0%] grow leading-[28.9px] mb-6" style="font-family: 'DM Sans', sans-serif;">Medically-supervised weight loss with personalised support and prescription treatments</p>
 <div class="bg-[linear-gradient(to_right,rgb(13,147,136),rgba(0,0,0,0))] box-border caret-transparent h-1 w-20 mt-6 rounded-full"></div>
 </div>
 </div>
@@ -374,8 +517,8 @@
 </div>
 </div>
 </div>
-<h3 class="text-cyan-950 text-[26px] font-bold box-border caret-transparent tracking-[-0.26px] leading-[32.5px] min-h-[60px] mb-4">Travel Vaccinations &amp; Health</h3>
-<p class="text-cyan-950/80 text-[17px] box-border caret-transparent basis-[0%] grow leading-[28.9px] mb-6">Comprehensive travel health services and same-day vaccinations for all destinations</p>
+<h3 class="text-cyan-950 text-[26px] font-bold box-border caret-transparent tracking-[-0.26px] leading-[32.5px] min-h-[60px] mb-4" style="font-family: 'Playfair Display', Georgia, serif;">Travel Vaccinations &amp; Health</h3>
+<p class="text-[#475569] text-[17px] box-border caret-transparent basis-[0%] grow leading-[28.9px] mb-6" style="font-family: 'DM Sans', sans-serif;">Comprehensive travel health services and same-day vaccinations for all destinations</p>
 <div class="bg-[linear-gradient(to_right,rgb(13,147,136),rgba(0,0,0,0))] box-border caret-transparent h-1 w-20 mt-6 rounded-full"></div>
 </div>
 </div>
@@ -385,8 +528,8 @@
 </div>
 </div>
 </div>
-<h3 class="text-cyan-950 text-[26px] font-bold box-border caret-transparent tracking-[-0.26px] leading-[32.5px] min-h-[60px] mb-4">Private Prescribing Services</h3>
-<p class="text-cyan-950/80 text-[17px] box-border caret-transparent basis-[0%] grow leading-[28.9px] mb-6">Expert independent prescribing for various health conditions with professional consultation</p>
+<h3 class="text-cyan-950 text-[26px] font-bold box-border caret-transparent tracking-[-0.26px] leading-[32.5px] min-h-[60px] mb-4" style="font-family: 'Playfair Display', Georgia, serif;">Private Prescribing Services</h3>
+<p class="text-[#475569] text-[17px] box-border caret-transparent basis-[0%] grow leading-[28.9px] mb-6" style="font-family: 'DM Sans', sans-serif;">Expert independent prescribing for various health conditions with professional consultation</p>
 <div class="bg-[linear-gradient(to_right,rgb(13,147,136),rgba(0,0,0,0))] box-border caret-transparent h-1 w-20 mt-6 rounded-full"></div>
 </div>
 </div>
@@ -396,8 +539,8 @@
 </div>
 </div>
 </div>
-<h3 class="text-cyan-950 text-[26px] font-bold box-border caret-transparent tracking-[-0.26px] leading-[32.5px] min-h-[60px] mb-4">Health Consultations</h3>
-<p class="text-cyan-950/80 text-[17px] box-border caret-transparent basis-[0%] grow leading-[28.9px] mb-6">Professional health assessments and advice from qualified independent prescribers</p>
+<h3 class="text-cyan-950 text-[26px] font-bold box-border caret-transparent tracking-[-0.26px] leading-[32.5px] min-h-[60px] mb-4" style="font-family: 'Playfair Display', Georgia, serif;">Health Consultations</h3>
+<p class="text-[#475569] text-[17px] box-border caret-transparent basis-[0%] grow leading-[28.9px] mb-6" style="font-family: 'DM Sans', sans-serif;">Professional health assessments and advice from qualified independent prescribers</p>
 <div class="bg-[linear-gradient(to_right,rgb(13,147,136),rgba(0,0,0,0))] box-border caret-transparent h-1 w-20 mt-6 rounded-full"></div>
 </div>
 </div>
@@ -407,8 +550,8 @@
 </div>
 </div>
 </div>
-<h3 class="text-cyan-950 text-[26px] font-bold box-border caret-transparent tracking-[-0.26px] leading-[32.5px] min-h-[60px] mb-4">Pharmacy Services</h3>
-<p class="text-cyan-950/80 text-[17px] box-border caret-transparent basis-[0%] grow leading-[28.9px] mb-6">Full-service pharmacy with NHS and private prescriptions, expert medication advice</p>
+<h3 class="text-cyan-950 text-[26px] font-bold box-border caret-transparent tracking-[-0.26px] leading-[32.5px] min-h-[60px] mb-4" style="font-family: 'Playfair Display', Georgia, serif;">Pharmacy Services</h3>
+<p class="text-[#475569] text-[17px] box-border caret-transparent basis-[0%] grow leading-[28.9px] mb-6" style="font-family: 'DM Sans', sans-serif;">Full-service pharmacy with NHS and private prescriptions, expert medication advice</p>
 <div class="bg-[linear-gradient(to_right,rgb(13,147,136),rgba(0,0,0,0))] box-border caret-transparent h-1 w-20 mt-6 rounded-full"></div>
 </div>
 </div>
@@ -418,50 +561,88 @@
 </div>
 </div>
 </div>
-<h3 class="text-cyan-950 text-[26px] font-bold box-border caret-transparent tracking-[-0.26px] leading-[32.5px] min-h-[60px] mb-4">Travel Health Certificates</h3>
-<p class="text-cyan-950/80 text-[17px] box-border caret-transparent basis-[0%] grow leading-[28.9px] mb-6">Official health documentation and certificates for international travel requirements</p>
+<h3 class="text-cyan-950 text-[26px] font-bold box-border caret-transparent tracking-[-0.26px] leading-[32.5px] min-h-[60px] mb-4" style="font-family: 'Playfair Display', Georgia, serif;">Travel Health Certificates</h3>
+<p class="text-[#475569] text-[17px] box-border caret-transparent basis-[0%] grow leading-[28.9px] mb-6" style="font-family: 'DM Sans', sans-serif;">Official health documentation and certificates for international travel requirements</p>
 <div class="bg-[linear-gradient(to_right,rgb(13,147,136),rgba(0,0,0,0))] box-border caret-transparent h-1 w-20 mt-6 rounded-full"></div>
 </div>
 </div>
 </div>
 </section>
-<section class="bg-white box-border caret-transparent max-w-[1440px] mx-auto px-20 py-24"><div class="box-border caret-transparent text-center mb-16"><div class="items-center bg-emerald-50 box-border caret-transparent gap-x-2 inline-flex gap-y-2 mb-6 px-4 py-2 rounded-full"><div class="bg-teal-600 box-border caret-transparent h-2 w-2 rounded-full"></div>
-<span class="text-teal-600 text-sm font-semibold box-border caret-transparent block tracking-[0.7px] leading-[21px] uppercase">Our Team</span>
-</div>
-<h2 class="text-cyan-950 text-[56px] font-bold box-border caret-transparent tracking-[-1.12px] leading-[61.6px] mb-4">Meet Your Healthcare Team</h2>
-<div class="items-center box-border caret-transparent gap-x-2 flex justify-center gap-y-2 mb-6"><div class="bg-[linear-gradient(to_right,rgba(0,0,0,0),rgb(13,147,136))] box-border caret-transparent h-0.5 w-12"></div>
-<div class="bg-teal-600 box-border caret-transparent h-2 w-2 rounded-full"></div>
-<div class="bg-[linear-gradient(to_left,rgba(0,0,0,0),rgb(13,147,136))] box-border caret-transparent h-0.5 w-12"></div>
-</div>
-<p class="text-cyan-950/80 text-xl font-semibold box-border caret-transparent leading-8 max-w-screen-md mx-auto">Led by experienced independent prescribers dedicated to your health journey</p>
-</div>
-<div class="items-center box-border caret-transparent gap-x-16 grid grid-cols-[repeat(1,minmax(0px,1fr))] gap-y-16 md:grid-cols-[repeat(2,minmax(0px,1fr))]"><div class="relative box-border caret-transparent"><div class="relative box-border caret-transparent overflow-hidden rounded-3xl"><img alt="Tejinder Singh - Lead Pharmacist & Independent Prescriber" src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/rectangle-20.png" class="box-border caret-transparent max-w-full object-cover w-full" />
-</div>
-</div>
-<div class="box-border caret-transparent"><h3 class="text-cyan-950 text-[40px] font-bold box-border caret-transparent leading-[50px] mb-3">Tejinder Singh</h3>
-<p class="text-teal-600 text-xl font-semibold box-border caret-transparent leading-[30px] mb-6">Lead Pharmacist &amp; Independent Prescriber</p>
-<div class="text-cyan-950/80 text-[17px] box-border caret-transparent leading-[28.9px] mb-8"><p class="box-border caret-transparent">With over 15 years of experience serving the Sheffield community, Tejinder leads our team with expertise in weight management and travel health.</p>
-<p class="box-border caret-transparent mt-4">As a qualified independent prescriber, he provides personalized care and evidence-based treatments to help you achieve your health goals.</p>
-</div>
-<div class="box-border caret-transparent"><div class="items-center box-border caret-transparent gap-x-3 flex gap-y-3"><img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-17.svg" alt="Icon" class="text-teal-600 box-border caret-transparent h-5 w-5" />
-<span class="text-cyan-950 font-medium box-border caret-transparent block">GPhC Registered Pharmacist</span>
-</div>
-<div class="items-center box-border caret-transparent gap-x-3 flex gap-y-3 mt-3"><img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-17.svg" alt="Icon" class="text-teal-600 box-border caret-transparent h-5 w-5" />
-<span class="text-cyan-950 font-medium box-border caret-transparent block">Independent Prescriber</span>
-</div>
-<div class="items-center box-border caret-transparent gap-x-3 flex gap-y-3 mt-3"><img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-17.svg" alt="Icon" class="text-teal-600 box-border caret-transparent h-5 w-5" />
-<span class="text-cyan-950 font-medium box-border caret-transparent block">15+ Years Experience</span>
-</div>
-</div>
-</div>
-</div>
+<section class="relative box-border caret-transparent max-w-[1440px] mx-auto px-20 py-16 overflow-hidden">
+  <!-- Background gradient -->
+  <div class="absolute bg-[linear-gradient(to_bottom,#FFFFFF,#F8FAFA)] box-border caret-transparent -z-10 inset-0"></div>
+  
+  <!-- Section header -->
+  <div class="box-border caret-transparent text-center mb-12">
+    <span class="text-teal-600 text-sm font-semibold box-border caret-transparent block tracking-[0.15em] leading-[21px] uppercase mb-6" style="font-family: 'DM Sans', sans-serif; letter-spacing: 0.15em;">Our Team</span>
+    <h2 class="text-cyan-950 text-[56px] font-bold box-border caret-transparent tracking-[-1.12px] leading-[61.6px] mb-4" style="font-family: 'Playfair Display', Georgia, serif;">Meet Your Healthcare Team</h2>
+    <div class="items-center box-border caret-transparent gap-x-2 flex justify-center gap-y-2 mb-6">
+      <div class="bg-[linear-gradient(to_right,rgba(0,0,0,0),rgb(13,147,136))] box-border caret-transparent h-0.5 w-12"></div>
+      <div class="bg-teal-600 box-border caret-transparent h-2 w-2 rounded-full"></div>
+      <div class="bg-[linear-gradient(to_left,rgba(0,0,0,0),rgb(13,147,136))] box-border caret-transparent h-0.5 w-12"></div>
+    </div>
+    <p class="text-[#475569] text-[20px] box-border caret-transparent leading-[1.65] max-w-screen-md mx-auto" style="font-family: 'DM Sans', sans-serif; font-weight: 450; letter-spacing: 0.01em;">Led by experienced independent prescribers dedicated to your health journey</p>
+  </div>
+
+  <!-- Team member card -->
+  <div class="relative bg-white box-border caret-transparent rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.1)] overflow-hidden">
+    <div class="flex flex-col md:flex-row">
+      <!-- Image section (35% width - reduced from 40%) -->
+      <div class="relative w-full md:w-[35%] box-border caret-transparent">
+        <img alt="Tajinder Singh - Lead Pharmacist & Independent Prescriber" src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/rectangle-20.png" class="box-border caret-transparent h-full w-full object-cover object-top" style="min-height: 500px; max-height: 600px;" />
+      </div>
+
+      <!-- Vertical accent line -->
+      <div class="hidden md:block w-1 bg-teal-600 box-border caret-transparent"></div>
+
+      <!-- Content section (65% width - increased from 60%) -->
+      <div class="relative w-full md:w-[65%] box-border caret-transparent p-10 md:p-12">
+        <!-- Quote icon -->
+        <svg class="absolute top-8 right-8 w-20 h-20 text-teal-600 opacity-10" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/>
+        </svg>
+
+        <!-- Name and title -->
+        <h3 class="text-[#2D3748] text-[38px] font-bold box-border caret-transparent leading-[1.2] mb-2" style="font-family: 'Playfair Display', Georgia, serif;">Tajinder Singh</h3>
+        <p class="text-teal-600 text-[17px] font-medium box-border caret-transparent leading-[1.4] mb-6" style="font-family: 'DM Sans', sans-serif;">Lead Pharmacist & Independent Prescriber</p>
+
+        <!-- Bio text -->
+        <div class="text-[#4A5568] text-[15px] box-border caret-transparent leading-[1.7] mb-6" style="font-family: 'DM Sans', sans-serif;">
+          <p class="box-border caret-transparent mb-4">With over 15 years serving Sheffield, Tajinder has helped 3,000+ patients achieve their health goals through personalized weight management programs and comprehensive travel health services.</p>
+          <p class="box-border caret-transparent">As a qualified independent prescriber, he provides personalized care and evidence-based treatments, combining clinical expertise with genuine compassion for every patient's journey.</p>
+        </div>
+
+        <!-- Credentials badges -->
+        <div class="flex flex-wrap gap-3 mb-6">
+          <div class="inline-flex items-center gap-2 px-4 py-2 bg-teal-600/8 border border-teal-600/20 rounded-full transition-all duration-200 hover:bg-teal-600/12">
+            <img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-17.svg" alt="Icon" class="text-teal-600 box-border caret-transparent h-4 w-4" />
+            <span class="text-cyan-950 text-sm font-medium box-border caret-transparent" style="font-family: 'DM Sans', sans-serif;">GPhC Registered</span>
+          </div>
+          <div class="inline-flex items-center gap-2 px-4 py-2 bg-teal-600/8 border border-teal-600/20 rounded-full transition-all duration-200 hover:bg-teal-600/12">
+            <img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-17.svg" alt="Icon" class="text-teal-600 box-border caret-transparent h-4 w-4" />
+            <span class="text-cyan-950 text-sm font-medium box-border caret-transparent" style="font-family: 'DM Sans', sans-serif;">Independent Prescriber</span>
+          </div>
+          <div class="inline-flex items-center gap-2 px-4 py-2 bg-teal-600/8 border border-teal-600/20 rounded-full transition-all duration-200 hover:bg-teal-600/12">
+            <img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-17.svg" alt="Icon" class="text-teal-600 box-border caret-transparent h-4 w-4" />
+            <span class="text-cyan-950 text-sm font-medium box-border caret-transparent" style="font-family: 'DM Sans', sans-serif;">15+ Years Experience</span>
+          </div>
+        </div>
+
+        <!-- CTA Button -->
+        <button class="text-teal-600 text-[15px] font-semibold items-center bg-white border-2 border-teal-600 shadow-[0_2px_8px_rgba(0,161,154,0.15)] box-border caret-transparent gap-x-2 inline-flex justify-center leading-[22.5px] gap-y-2 text-center text-nowrap px-8 py-3 rounded-xl transition-all duration-300 hover:bg-teal-600 hover:text-white hover:shadow-[0_4px_12px_rgba(0,161,154,0.3)]" style="font-family: 'DM Sans', sans-serif;">
+          Book Consultation with Tajinder
+          <img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-2.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 pointer-events-none text-nowrap w-4 ml-1" />
+        </button>
+      </div>
+    </div>
+  </div>
 </section>
 <section class="box-border caret-transparent max-w-[1440px] mx-auto px-20 py-16"><div class="relative box-border caret-transparent h-24 w-full overflow-hidden"><img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-18.svg" alt="Icon" class="absolute box-border caret-transparent h-24 w-full bottom-0" />
 </div>
 <section class="relative box-border caret-transparent flex justify-center w-full overflow-hidden px-4 py-16"><div class="absolute bg-[linear-gradient(rgb(255,255,255),rgb(248,253,252),rgb(255,255,255))] box-border caret-transparent -z-10 inset-0"></div>
 <div class="absolute bg-[radial-gradient(circle_at_1px_1px,rgb(13,147,136)_1px,rgba(0,0,0,0)_0px)] bg-size-[40px_40px] box-border caret-transparent opacity-[0.02] -z-10 inset-0"></div>
-<div class="box-border caret-transparent gap-x-8 flex flex-col max-w-[1264px] gap-y-8 w-full md:gap-x-[110px] md:flex-row md:gap-y-[110px]"><div class="relative box-border caret-transparent basis-[0%] grow max-w-[649px]"><h2 class="text-cyan-950 text-4xl font-semibold box-border caret-transparent tracking-[-0.36px] leading-[43.2px] mb-[62px] font-poppins">Calculate Your Weight Loss Journey</h2>
-<p class="text-cyan-950 text-lg font-medium box-border caret-transparent leading-[32.4px] mb-[139px] font-poppins">Discover your personalized weight loss timeline with our medically-backed calculator. Get realistic expectations and professional guidance for sustainable results.</p>
+<div class="box-border caret-transparent gap-x-8 flex flex-col max-w-[1264px] gap-y-8 w-full md:gap-x-[110px] md:flex-row md:gap-y-[110px]"><div class="relative box-border caret-transparent basis-[0%] grow max-w-[649px]"><h2 class="text-cyan-950 text-4xl font-semibold box-border caret-transparent tracking-[-0.36px] leading-[43.2px] mb-8" style="font-family: 'Playfair Display', Georgia, serif;">Calculate Your Weight Loss Journey</h2>
+<p class="text-[#475569] text-lg box-border caret-transparent leading-[32.4px] mb-12" style="font-family: 'DM Sans', sans-serif; font-weight: 450;">Discover your personalized weight loss timeline with our medically-backed calculator. Get realistic expectations and professional guidance for sustainable results.</p>
 <div class="relative box-border caret-transparent h-[526px] max-w-[637px] w-full"><img alt="Weight loss journey" src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/rectangle-34-3.png" class="absolute box-border caret-transparent h-full max-w-full object-cover w-full rounded-[15px] inset-0" />
 <div class="absolute bg-[linear-gradient(121deg,rgba(13,147,136,0),rgb(13,147,136))] box-border caret-transparent h-full scale-x-[-1px] scale-y-[-1px] w-full rounded-[15px] inset-0"></div>
 <div class="absolute box-border caret-transparent gap-x-3 flex flex-col max-w-[333px] gap-y-3 z-10 left-11 bottom-11"><div class="items-center box-border caret-transparent gap-x-1 flex gap-y-1"><div class="relative box-border caret-transparent h-7 w-7"><img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-19.svg" alt="Icon" class="text-yellow-400 box-border caret-transparent h-full w-full" />
@@ -475,50 +656,58 @@
 <div class="relative box-border caret-transparent h-7 w-7"><img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-19.svg" alt="Icon" class="text-yellow-400 box-border caret-transparent h-full w-full" />
 </div>
 </div>
-<p class="text-white text-lg font-bold box-border caret-transparent tracking-[-0.27px] leading-[29px] font-poppins">I lost 18kg over six months with Totley&#39;s guidance. The support was personal, professional, and life-changing</p>
+<p class="text-white text-lg font-bold box-border caret-transparent tracking-[-0.27px] leading-[29px]" style="font-family: 'DM Sans', sans-serif;">I lost 18kg over six months with Totley&#39;s guidance. The support was personal, professional, and life-changing</p>
 </div>
 </div>
 </div>
-<div class="bg-white shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(13,147,136,0.19)_0px_0px_32.6px_1px] box-border caret-transparent basis-[0%] grow max-w-[505px] rounded-[15px]"><div class="box-border caret-transparent pt-10 pb-[26px] px-[26px]"><div class="box-border caret-transparent gap-x-7 flex flex-col gap-y-7"><header class="box-border caret-transparent gap-x-1 flex flex-col gap-y-1 text-center"><h3 class="text-teal-600 text-2xl font-bold box-border caret-transparent tracking-[-0.96px] leading-[31.2px] font-poppins">Weight Loss Calculator</h3>
-<p class="text-cyan-950 font-semibold box-border caret-transparent leading-8 font-poppins">Enter your starting weight to see your potential</p>
+<div class="relative shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_10px_15px_-3px,rgba(0,0,0,0.1)_0px_4px_6px_-4px] box-border caret-transparent basis-[0%] grow max-w-[649px] p-12 rounded-3xl calculator-card">
+<header class="box-border caret-transparent gap-x-1 flex flex-col gap-y-1 text-center">
+<h3 class="text-teal-600 text-2xl font-bold box-border caret-transparent tracking-[-0.96px] leading-[31.2px]" style="font-family: 'Playfair Display', Georgia, serif;">Weight Loss Calculator</h3>
+<p class="text-cyan-950 font-semibold box-border caret-transparent leading-8" style="font-family: 'DM Sans', sans-serif;">Enter your starting weight to see your potential</p>
 </header>
-<div class="box-border caret-transparent flex justify-center"><div class="relative bg-emerald-50 box-border caret-transparent h-[59px] w-[169px] p-1 rounded-full"><div class="absolute bg-teal-600 shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_10px_15px_-3px,rgba(0,0,0,0.1)_0px_4px_6px_-4px] box-border caret-transparent h-[51px] w-[82px] rounded-full left-1 top-1"></div>
-<div class="absolute items-center box-border caret-transparent flex justify-around px-4 inset-0"><button class="text-white font-semibold bg-transparent caret-transparent block text-center z-10 p-0">Kg</button>
-<button class="text-cyan-950 font-semibold bg-transparent caret-transparent block text-center z-10 p-0">St</button>
+<div class="box-border caret-transparent gap-x-8 flex flex-col gap-y-8 mt-12">
+<div class="box-border caret-transparent gap-x-4 flex flex-col gap-y-4">
+<label class="text-cyan-950 font-semibold box-border caret-transparent block leading-8" style="font-family: 'DM Sans', sans-serif;">Starting Weight: <span id="weight-display" class="text-teal-600">100</span>kg</label>
+<input type="range" id="weight-slider" min="50" max="200" value="100" class="weight-slider box-border caret-transparent w-full" />
+<div class="box-border caret-transparent flex justify-between mt-2">
+<span class="text-cyan-950 font-semibold box-border caret-transparent block leading-8" style="font-family: 'DM Sans', sans-serif;">50kg</span>
+<span class="text-cyan-950 font-semibold box-border caret-transparent block leading-8" style="font-family: 'DM Sans', sans-serif;">200kg</span>
+</div>
+<!-- Progress milestones -->
+<div class="flex justify-between items-center mt-4 px-2">
+<div class="flex flex-col items-center">
+<div class="w-3 h-3 rounded-full bg-teal-600/30"></div>
+<span class="text-xs text-cyan-950/60 mt-1" style="font-family: 'DM Sans', sans-serif;">3 months</span>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-3 h-3 rounded-full bg-teal-600/50"></div>
+<span class="text-xs text-cyan-950/60 mt-1" style="font-family: 'DM Sans', sans-serif;">6 months</span>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-3 h-3 rounded-full bg-teal-600"></div>
+<span class="text-xs text-cyan-950/60 mt-1" style="font-family: 'DM Sans', sans-serif;">12 months</span>
 </div>
 </div>
 </div>
-<div class="box-border caret-transparent gap-x-4 flex flex-col gap-y-4"><label class="text-cyan-950 font-semibold box-border caret-transparent block leading-8 font-poppins">Starting Weight</label>
-<div class="relative box-border caret-transparent"><div class="items-center bg-white box-border caret-transparent flex h-[63px] justify-center w-full border-emerald-50 rounded-2xl border-2 border-solid"><span class="text-cyan-950 text-2xl font-semibold box-border caret-transparent block leading-8">10</span>
-</div>
-<span class="absolute text-teal-600 font-semibold box-border caret-transparent block translate-y-[-50.0%] right-4 top-2/4">Kg</span>
-</div>
-<div class="relative box-border caret-transparent pt-2"><input type="range" value="10" class="bg-transparent bg-[linear-gradient(to_right,rgb(13,147,136)_0%,rgb(13,147,136)_2.5641%,rgb(243,244,246)_2.5641%,rgb(243,244,246)_100%)] box-border caret-transparent h-2 w-full p-0 rounded-[15px]" />
-<div class="box-border caret-transparent flex justify-between mt-2"><span class="text-cyan-950 font-semibold box-border caret-transparent block leading-8 font-poppins">5kg</span>
-<span class="text-cyan-950 font-semibold box-border caret-transparent block leading-8 font-poppins">200kg</span>
+<div class="items-center box-border caret-transparent flex justify-center min-h-32 border-teal-600/10 p-8 rounded-2xl border-2 border-solid results-box">
+<div class="box-border caret-transparent gap-x-1 flex flex-col gap-y-1 text-center">
+<p class="text-cyan-950 font-semibold box-border caret-transparent" style="font-family: 'DM Sans', sans-serif;">You could lose</p>
+<p class="text-teal-600 text-4xl font-bold box-border caret-transparent tracking-[-0.9px] leading-10" style="font-family: 'Playfair Display', Georgia, serif;"><span id="weight-loss-result">15.0</span>kg</p>
+<p class="text-cyan-950 font-semibold box-border caret-transparent" style="font-family: 'DM Sans', sans-serif;">in 12 weeks</p>
 </div>
 </div>
-</div>
-<div class="items-center bg-emerald-50 box-border caret-transparent flex justify-center min-h-32 border-teal-600/10 p-8 rounded-2xl border-2 border-solid"><div class="box-border caret-transparent gap-x-1 flex flex-col gap-y-1 text-center"><p class="text-cyan-950 font-semibold box-border caret-transparent">You could lose</p>
-<p class="text-teal-600 text-4xl font-bold box-border caret-transparent tracking-[-0.9px] leading-10">1.1kg</p>
-<p class="text-cyan-950 font-semibold box-border caret-transparent">in 12 months</p>
-</div>
-</div>
-<div class="items-center box-border caret-transparent gap-x-3 flex flex-col gap-y-3"><button class="text-white text-sm font-medium items-center bg-teal-600 shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.05)_0px_1px_2px_0px] caret-transparent gap-x-2 flex h-12 justify-center leading-5 gap-y-2 text-center text-nowrap px-6 py-2 rounded-2xl hover:bg-teal-700 hover:shadow-[rgba(13,147,136,0.4)_0px_0px_30px_0px,rgba(13,147,136,0.2)_0px_0px_60px_0px]"><span class="text-[15px] font-semibold box-border caret-transparent block text-nowrap">Start Your Transformation</span>
-<img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-3.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 pointer-events-none text-nowrap w-4 ml-2" />
+<button class="text-white text-lg font-semibold items-center bg-teal-600 shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_10px_15px_-3px,rgba(0,0,0,0.1)_0px_4px_6px_-4px] box-border caret-transparent gap-x-2 flex justify-center leading-[27px] gap-y-2 text-center text-nowrap px-8 py-4 rounded-2xl transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_20px_30px_-10px_rgba(0,161,154,0.3)]" style="font-family: 'DM Sans', sans-serif;">Book Free Consultation<img src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/icon-3.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 pointer-events-none text-nowrap w-4 ml-2" />
 </button>
-<p class="text-cyan-950/70 text-sm font-medium box-border caret-transparent leading-[22.75px] text-center">Based on clinical studies and user-entered data</p>
-<p class="text-cyan-950/50 text-xs italic box-border caret-transparent leading-4 max-w-md text-center mt-2">*Results may vary. This calculator provides estimates based on average outcomes. Consult with a healthcare professional for personalized advice.</p>
-</div>
-</div>
+<p class="text-cyan-950/70 text-sm font-medium box-border caret-transparent leading-[22.75px] text-center" style="font-family: 'DM Sans', sans-serif;">Based on clinical studies and user-entered data</p>
+<p class="text-cyan-950/50 text-xs italic box-border caret-transparent leading-4 max-w-md text-center mt-2" style="font-family: 'DM Sans', sans-serif;">*Results may vary. This calculator provides estimates based on average outcomes. Consult with a healthcare professional for personalized advice.</p>
 </div>
 </div>
 </div>
 </section>
 </section>
 <section class="box-border caret-transparent max-w-[1440px] mx-auto px-20 py-16"><section class="relative box-border caret-transparent w-full overflow-hidden"><div class="absolute bg-[linear-gradient(rgb(248,253,252),rgb(255,255,255),rgb(248,253,252))] box-border caret-transparent -z-10 inset-0"></div>
-<div class="box-border caret-transparent max-w-[1440px] mx-auto"><header class="box-border caret-transparent text-center mb-20"><h2 class="text-cyan-950 text-[56px] font-bold box-border caret-transparent tracking-[-1.12px] leading-[61.6px] mb-6">Tips and Tricks for Successful Weight Loss</h2>
-<p class="text-cyan-950 text-xl font-medium box-border caret-transparent leading-8 max-w-screen-md mx-auto">Explore practical advice, expert insights and small changes that can<br class="box-border caret-transparent" />
+<div class="box-border caret-transparent max-w-[1440px] mx-auto"><header class="box-border caret-transparent text-center mb-20"><h2 class="text-cyan-950 text-[56px] font-bold box-border caret-transparent tracking-[-1.12px] leading-[61.6px] mb-6" style="font-family: 'Playfair Display', Georgia, serif;">Tips and Tricks for Successful Weight Loss</h2>
+<p class="text-[#475569] text-[20px] box-border caret-transparent leading-[1.65] max-w-screen-md mx-auto" style="font-family: 'DM Sans', sans-serif; font-weight: 450; letter-spacing: 0.01em;">Explore practical advice, expert insights and small changes that can<br class="box-border caret-transparent" />
 make a big difference on your journey</p>
 </header>
 <div class="box-border caret-transparent gap-x-10 grid grid-cols-[repeat(1,minmax(0px,1fr))] gap-y-10 mb-16 md:grid-cols-[repeat(3,minmax(0px,1fr))]"><article class="relative bg-white box-border caret-transparent border border-emerald-50 overflow-hidden rounded-3xl border-solid hover:shadow-[rgba(13,147,136,0.25)_0px_25px_50px_-12px,rgba(13,147,136,0.1)_0px_0px_0px_1px] hover:border-teal-600/30"><div class="absolute bg-[linear-gradient(to_right_bottom,rgba(13,147,136,0.1),rgba(0,0,0,0))] box-border caret-transparent h-20 w-20 z-10 rounded-tr-3xl rounded-bl-[100px] right-0 top-0"></div>
@@ -529,8 +718,8 @@ make a big difference on your journey</p>
 <div class="box-border caret-transparent p-8"><div class="items-center bg-emerald-50 box-border caret-transparent gap-x-2 inline-flex gap-y-2 mb-4 px-3 py-1 rounded-full"><div class="bg-teal-600 box-border caret-transparent h-1.5 w-1.5 rounded-full"></div>
 <span class="text-teal-600 text-sm font-semibold box-border caret-transparent block leading-[21px]">Weight Loss</span>
 </div>
-<h3 class="text-cyan-950 text-2xl font-bold box-border caret-transparent tracking-[-0.24px] leading-[30px] mb-3">Eco Living: Sustainable Choices</h3>
-<p class="text-cyan-950/80 box-border caret-transparent leading-[27.2px] mb-6">Transform your body and mind with fitness tips and routines.</p>
+<h3 class="text-cyan-950 text-2xl font-bold box-border caret-transparent tracking-[-0.24px] leading-[30px] mb-3" style="font-family: 'Playfair Display', Georgia, serif;">Eco Living: Sustainable Choices</h3>
+<p class="text-[#475569] box-border caret-transparent leading-[27.2px] mb-6" style="font-family: 'DM Sans', sans-serif;">Transform your body and mind with fitness tips and routines.</p>
 <div class="text-cyan-950/60 text-sm items-center box-border caret-transparent gap-x-3 flex leading-[21px] gap-y-3"><time class="box-border caret-transparent block">27 May, 2024</time>
 <div class="bg-cyan-950/30 box-border caret-transparent h-1 w-1 rounded-full"></div>
 <span class="box-border caret-transparent block">5 min read</span>
@@ -545,8 +734,8 @@ make a big difference on your journey</p>
 <div class="box-border caret-transparent p-8"><div class="items-center bg-emerald-50 box-border caret-transparent gap-x-2 inline-flex gap-y-2 mb-4 px-3 py-1 rounded-full"><div class="bg-teal-600 box-border caret-transparent h-1.5 w-1.5 rounded-full"></div>
 <span class="text-teal-600 text-sm font-semibold box-border caret-transparent block leading-[21px]">Weight Loss</span>
 </div>
-<h3 class="text-cyan-950 text-2xl font-bold box-border caret-transparent tracking-[-0.24px] leading-[30px] mb-3">Life Lessons: Insights and Stories of Personal Growth</h3>
-<p class="text-cyan-950/80 box-border caret-transparent leading-[27.2px] mb-6">Transform your body and mind with fitness tips and routines.</p>
+<h3 class="text-cyan-950 text-2xl font-bold box-border caret-transparent tracking-[-0.24px] leading-[30px] mb-3" style="font-family: 'Playfair Display', Georgia, serif;">Life Lessons: Insights and Stories of Personal Growth</h3>
+<p class="text-[#475569] box-border caret-transparent leading-[27.2px] mb-6" style="font-family: 'DM Sans', sans-serif;">Transform your body and mind with fitness tips and routines.</p>
 <div class="text-cyan-950/60 text-sm items-center box-border caret-transparent gap-x-3 flex leading-[21px] gap-y-3"><time class="box-border caret-transparent block">27 May, 2024</time>
 <div class="bg-cyan-950/30 box-border caret-transparent h-1 w-1 rounded-full"></div>
 <span class="box-border caret-transparent block">5 min read</span>
@@ -561,8 +750,8 @@ make a big difference on your journey</p>
 <div class="box-border caret-transparent p-8"><div class="items-center bg-emerald-50 box-border caret-transparent gap-x-2 inline-flex gap-y-2 mb-4 px-3 py-1 rounded-full"><div class="bg-teal-600 box-border caret-transparent h-1.5 w-1.5 rounded-full"></div>
 <span class="text-teal-600 text-sm font-semibold box-border caret-transparent block leading-[21px]">Weight Loss</span>
 </div>
-<h3 class="text-cyan-950 text-2xl font-bold box-border caret-transparent tracking-[-0.24px] leading-[30px] mb-3">Fitness Journey: From Couch to Confident</h3>
-<p class="text-cyan-950/80 box-border caret-transparent leading-[27.2px] mb-6">Transform your body and mind with fitness tips and routines.</p>
+<h3 class="text-cyan-950 text-2xl font-bold box-border caret-transparent tracking-[-0.24px] leading-[30px] mb-3" style="font-family: 'Playfair Display', Georgia, serif;">Fitness Journey: From Couch to Confident</h3>
+<p class="text-[#475569] box-border caret-transparent leading-[27.2px] mb-6" style="font-family: 'DM Sans', sans-serif;">Transform your body and mind with fitness tips and routines.</p>
 <div class="text-cyan-950/60 text-sm items-center box-border caret-transparent gap-x-3 flex leading-[21px] gap-y-3"><time class="box-border caret-transparent block">27 May, 2024</time>
 <div class="bg-cyan-950/30 box-border caret-transparent h-1 w-1 rounded-full"></div>
 <span class="box-border caret-transparent block">5 min read</span>
@@ -586,10 +775,9 @@ make a big difference on your journey</p>
 </div>
 <div class="absolute bg-[linear-gradient(rgb(255,255,255),rgb(248,253,252),rgb(248,253,252))] box-border caret-transparent -z-10 inset-0"></div>
 <div class="absolute bg-[radial-gradient(circle_at_1px_1px,rgb(13,147,136)_1px,rgba(0,0,0,0)_0px)] bg-size-[40px_40px] box-border caret-transparent opacity-[0.02] -z-10 inset-0"></div>
-<div class="box-border caret-transparent max-w-[1440px] mx-auto px-20"><div class="box-border caret-transparent text-center mb-12"><div class="items-center bg-emerald-50 box-border caret-transparent gap-x-2 inline-flex gap-y-2 mb-6 px-4 py-2 rounded-full"><div class="bg-teal-600 box-border caret-transparent h-2 w-2 rounded-full"></div>
-<span class="text-teal-600 text-sm font-semibold box-border caret-transparent block tracking-[0.7px] leading-[21px] uppercase">Trusted Partner</span>
-</div>
-<h2 class="text-cyan-950 text-[40px] font-bold box-border caret-transparent tracking-[-0.8px] leading-[44px] mb-4">As Featured In</h2>
+<div class="box-border caret-transparent max-w-[1440px] mx-auto px-20"><div class="box-border caret-transparent text-center mb-12">
+<span class="text-teal-600 text-sm font-semibold box-border caret-transparent block tracking-[0.15em] leading-[21px] uppercase mb-6" style="font-family: 'DM Sans', sans-serif; letter-spacing: 0.15em;">Trusted Partner</span>
+<h2 class="text-cyan-950 text-[40px] font-bold box-border caret-transparent tracking-[-0.8px] leading-[44px] mb-4" style="font-family: 'Playfair Display', Georgia, serif;">As Featured In</h2>
 <div class="items-center box-border caret-transparent gap-x-2 flex justify-center gap-y-2 mb-2"><div class="bg-[linear-gradient(to_right,rgba(0,0,0,0),rgb(13,147,136))] box-border caret-transparent h-0.5 w-12"></div>
 <div class="bg-teal-600 box-border caret-transparent h-2 w-2 rounded-full"></div>
 <div class="bg-[linear-gradient(to_left,rgba(0,0,0,0),rgb(13,147,136))] box-border caret-transparent h-0.5 w-12"></div>
@@ -618,12 +806,17 @@ make a big difference on your journey</p>
 </div>
 </div>
 </section>
-<footer class="relative bg-[linear-gradient(rgb(255,255,255),rgb(248,253,252))] box-border caret-transparent border-emerald-50 overflow-hidden border-t border-solid"><div class="box-border caret-transparent max-w-[1440px] mx-auto p-20"><div class="box-border caret-transparent gap-x-12 grid grid-cols-[repeat(1,minmax(0px,1fr))] gap-y-12 mb-16 md:grid-cols-[repeat(4,minmax(0px,1fr))]"><div class="box-border caret-transparent col-end-auto col-start-auto md:col-end-[span_1] md:col-start-[span_1]"><div class="box-border caret-transparent mb-6"><img alt="Sheffield Travel Pharmacy" src="https://c.animaapp.com/mgtib0h8FGEJi4/assets/telegram-cloud-photo-size-5-6235491751955646823-y-1.png" class="box-border caret-transparent h-12 max-w-full mb-4" />
+<footer class="relative bg-[linear-gradient(rgb(255,255,255),rgb(248,253,252))] box-border caret-transparent border-emerald-50 overflow-hidden border-t border-solid"><div class="box-border caret-transparent max-w-[1440px] mx-auto p-20"><div class="box-border caret-transparent gap-x-12 grid grid-cols-[repeat(1,minmax(0px,1fr))] gap-y-12 mb-16 md:grid-cols-[repeat(4,minmax(0px,1fr))]"><div class="box-border caret-transparent col-end-auto col-start-auto md:col-end-[span_1] md:col-start-[span_1]"><div class="box-border caret-transparent mb-6">
+  <!-- Replace footer logo with text version -->
+  <div class="flex flex-col mb-4">
+    <span class="text-teal-600 text-[20px] font-bold box-border caret-transparent leading-tight mb-1">Sheffield Travel Pharmacy</span>
+    <span class="text-cyan-950/60 text-[12px] font-medium box-border caret-transparent leading-tight">By Totley Pharmacy</span>
+  </div>
 </div>
-<p class="text-cyan-950/70 text-[15px] box-border caret-transparent leading-[25.5px] mb-6">Sheffield&#39;s leading weight management and travel health clinic.</p>
+<p class="text-cyan-950/70 text-[15px] box-border caret-transparent leading-[25.5px] mb-6" style="font-family: 'DM Sans', sans-serif;">Sheffield&#39;s leading weight management and travel health clinic.</p>
 </div>
 </div>
-<div class="box-border caret-transparent border-emerald-50 pt-8 border-t border-solid"><div class="items-center box-border caret-transparent gap-x-4 flex flex-col justify-between gap-y-4 md:flex-row"><p class="text-cyan-950/60 text-sm box-border caret-transparent leading-[21px]">© 2025 Sheffield Travel Pharmacy. All rights reserved.</p>
+<div class="box-border caret-transparent border-emerald-50 pt-8 border-t border-solid"><div class="items-center box-border caret-transparent gap-x-4 flex flex-col justify-between gap-y-4 md:flex-row"><p class="text-cyan-950/60 text-sm box-border caret-transparent leading-[21px]" style="font-family: 'DM Sans', sans-serif;">© 2025 Sheffield Travel Pharmacy. All rights reserved.</p>
 </div>
 </div>
 </div>
@@ -650,6 +843,53 @@ make a big difference on your journey</p>
         return `<span class="char">${char}</span>`;
       }).join('');
     });
+
+    // Weight Loss Calculator Functionality
+    const slider = document.getElementById('weight-slider');
+    const weightDisplay = document.getElementById('weight-display');
+    const resultDisplay = document.getElementById('weight-loss-result');
+
+    if (slider && weightDisplay && resultDisplay) {
+      function updateCalculator() {
+        const weight = parseInt(slider.value);
+        const weightLoss = (weight * 0.15).toFixed(1);
+        
+        // Update weight display
+        weightDisplay.textContent = weight;
+        
+        // Animate result change
+        resultDisplay.style.opacity = '0';
+        
+        setTimeout(() => {
+          // Animate counting
+          const currentValue = parseFloat(resultDisplay.textContent);
+          const targetValue = parseFloat(weightLoss);
+          const duration = 300;
+          const steps = 20;
+          const increment = (targetValue - currentValue) / steps;
+          let currentStep = 0;
+
+          const counter = setInterval(() => {
+            currentStep++;
+            const newValue = currentValue + (increment * currentStep);
+            resultDisplay.textContent = newValue.toFixed(1);
+            
+            if (currentStep >= steps) {
+              clearInterval(counter);
+              resultDisplay.textContent = weightLoss;
+            }
+          }, duration / steps);
+
+          resultDisplay.style.opacity = '1';
+        }, 150);
+      }
+
+      // Update on slider input
+      slider.addEventListener('input', updateCalculator);
+      
+      // Initialize
+      updateCalculator();
+    }
   });
 </script>
 </body>
