@@ -210,6 +210,77 @@
 }
 
 /* ===================================
+   PREMIUM "YOUR HEALTH PARTNER" STYLING
+   =================================== */
+
+.health-partner-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+/* Vertical Accent Line */
+.accent-line {
+  width: 3px;
+  height: 28px;
+  background: linear-gradient(to bottom, #00A19A, #00BFA5);
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(0, 161, 154, 0.3);
+  animation: lineGrow 0.6s ease-out forwards;
+  transform-origin: top;
+}
+
+@keyframes lineGrow {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    height: 28px;
+    opacity: 1;
+  }
+}
+
+/* Text Styling */
+.health-partner-text {
+  position: relative;
+  color: #00A19A;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  font-family: 'DM Sans', sans-serif;
+  padding-bottom: 4px;
+  animation: fadeIn 0.8s ease-out 0.3s forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Animated Underline */
+.animated-underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: linear-gradient(to right, #00A19A, #00BFA5);
+  border-radius: 1px;
+  animation: underlineDraw 1s ease-out 0.6s forwards;
+}
+
+@keyframes underlineDraw {
+  to {
+    width: 100%;
+  }
+}
+
+/* ===================================
    PREMIUM ANIMATED HEADLINE
    =================================== */
 
@@ -356,6 +427,16 @@
 .homepage-hero-section .grid.relative {
   position: relative;
   isolation: isolate;
+}
+
+/* ===================================
+   COUNTER ANIMATION STYLING
+   =================================== */
+
+.counter {
+  display: inline-block;
+  font-variant-numeric: tabular-nums;
+  min-width: 1ch;
 }
 
 /* ===================================

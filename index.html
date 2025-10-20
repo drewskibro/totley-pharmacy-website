@@ -187,9 +187,13 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative">
         <!-- Left Column - Text Content -->
         <div class="flex flex-col justify-center relative z-10">
-          <p class="text-[#00A19A] text-[14px] font-bold tracking-[1.4px] uppercase mb-5 font-dm_sans">
-            YOUR HEALTH PARTNER
-          </p>
+          <div class="health-partner-wrapper">
+            <div class="accent-line"></div>
+            <p class="health-partner-text">
+              YOUR HEALTH PARTNER
+              <span class="animated-underline"></span>
+            </p>
+          </div>
           <h1 class="font-playfair_display text-[64px] font-bold text-[#2D3748] leading-[1.1] tracking-[-0.04em] mb-6 max-w-[600px]">
             <span class="headline-word">Sheffield's</span> 
             <span class="headline-word headline-word-accent">Leading</span><br/>
@@ -261,10 +265,14 @@
           <!-- Bottom Right Stats Card -->
           <div class="stats-card overflow-hidden rounded-[20px] shadow-[0_4px_12px_rgba(0,0,0,0.08)] bg-gradient-to-br from-[#00A19A] to-[#00BFA5] flex flex-col items-center justify-center p-10 text-white text-center">
             <div class="text-center">
-              <div class="text-5xl font-bold mb-2 font-playfair_display">15+</div>
+              <div class="text-5xl font-bold mb-2 font-playfair_display">
+                <span class="counter" data-target="15">0</span>+
+              </div>
               <div class="text-sm opacity-90 mb-4 font-dm_sans">Years Experience</div>
               <div class="h-px w-12 bg-white/30 mx-auto mb-4"></div>
-              <div class="text-5xl font-bold mb-2 font-playfair_display">350+</div>
+              <div class="text-5xl font-bold mb-2 font-playfair_display">
+                <span class="counter" data-target="350">0</span>+
+              </div>
               <div class="text-sm opacity-90 font-dm_sans">Patients Helped</div>
             </div>
           </div>
@@ -1035,6 +1043,93 @@
 </div>
 </footer>
 </div>
+  <script>
+    console.log('=== COUNTER SCRIPT LOADED ===');
+    
+    // Counter Animation with Easing
+    function animateCounter(element) {
+      console.log('Animating counter:', element);
+      const target = parseInt(element.getAttribute('data-target'));
+      console.log('Target value:', target);
+      const duration = 2000;
+      const startTime = performance.now();
+      
+      function easeOutQuart(x) {
+        return 1 - Math.pow(1 - x, 4);
+      }
+      
+      function updateCounter(currentTime) {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const easedProgress = easeOutQuart(progress);
+        const current = Math.floor(easedProgress * target);
+        
+        element.textContent = current;
+        
+        if (progress < 1) {
+          requestAnimationFrame(updateCounter);
+        } else {
+          element.textContent = target;
+        }
+      }
+      
+      requestAnimationFrame(updateCounter);
+    }
+    
+    // Initialize counters when page loads
+    window.addEventListener('load', function() {
+      console.log('=== PAGE LOADED ===');
+      
+      // Find all counter elements
+      const allCounters = document.querySelectorAll('.counter');
+      console.log('Found counters:', allCounters.length);
+      allCounters.forEach((c, i) => console.log(`Counter ${i}:`, c, 'data-target:', c.getAttribute('data-target')));
+      
+      // Intersection Observer for counters
+      const observer = new IntersectionObserver((entries) => {
+        console.log('=== OBSERVER TRIGGERED ===');
+        entries.forEach(entry => {
+          console.log('Entry intersecting:', entry.isIntersecting);
+          if (entry.isIntersecting) {
+            const counters = entry.target.querySelectorAll('.counter');
+            console.log('Counters in view:', counters.length);
+            counters.forEach(counter => {
+              if (!counter.classList.contains('animated')) {
+                counter.classList.add('animated');
+                animateCounter(counter);
+              }
+            });
+          }
+        });
+      }, { threshold: 0.1 });
+      
+      const statsCard = document.querySelector('.stats-card');
+      console.log('Stats card element:', statsCard);
+      
+      if (statsCard) {
+        observer.observe(statsCard);
+        
+        // Also trigger immediately if already in view
+        const rect = statsCard.getBoundingClientRect();
+        const isInView = rect.top < window.innerHeight && rect.bottom > 0;
+        console.log('Stats card in view on load:', isInView);
+        console.log('Stats card position:', rect);
+        
+        if (isInView) {
+          console.log('=== TRIGGERING ANIMATION IMMEDIATELY ===');
+          const counters = statsCard.querySelectorAll('.counter');
+          counters.forEach(counter => {
+            if (!counter.classList.contains('animated')) {
+              counter.classList.add('animated');
+              animateCounter(counter);
+            }
+          });
+        }
+      } else {
+        console.error('=== STATS CARD NOT FOUND ===');
+      }
+    });
+  </script>
 </body>
 
 </html>
