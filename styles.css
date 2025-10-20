@@ -569,6 +569,104 @@ section:first-of-type,
 }
 
 /* ===================================
+   TESTIMONIALS SECTION ANIMATIONS
+   =================================== */
+
+.testimonials-grid {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out 0.2s forwards;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.testimonial-card {
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-out forwards;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.testimonial-card blockquote {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.testimonial-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.testimonial-card:nth-child(2) {
+  animation-delay: 0.25s;
+}
+
+.testimonial-card:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Stars pulse animation on hover */
+.testimonial-card:hover .star-icon {
+  animation: starPulse 0.6s ease-in-out;
+}
+
+@keyframes starPulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+.star-icon:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.star-icon:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.star-icon:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.star-icon:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.star-icon:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+/* Responsive testimonials */
+@media (max-width: 1024px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===================================
    TRAVEL HEALTH DESTINATION SECTION
    =================================== */
 
