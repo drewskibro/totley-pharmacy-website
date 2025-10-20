@@ -358,16 +358,54 @@
   }
 }
 
-/* Fix Magazine-Style Service Cards on Mobile */
+/* Fix Service Cards on Mobile - Prevent Overlap and Button Cutoff */
 @media (max-width: 768px) {
-  .relative.shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.07)_0px_4px_6px_0px,rgba(0,0,0,0.1)_0px_10px_15px_0px] .card-content {
-    padding: 24px;
+  /* Service card container */
+  section a[href^="/"] {
+    padding: 20px !important;
   }
   
-  .relative.shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.07)_0px_4px_6px_0px,rgba(0,0,0,0.1)_0px_10px_15px_0px] button {
-    min-height: 48px;
-    font-size: 15px;
-    padding: 14px 20px;
+  /* Icon container */
+  section a[href^="/"] > div > div:first-child {
+    margin-bottom: 20px !important;
+  }
+  
+  /* Card title */
+  section a[href^="/"] h3 {
+    font-size: 20px !important;
+    line-height: 1.3 !important;
+    margin-bottom: 14px !important;
+    min-height: auto !important;
+  }
+  
+  /* Card description */
+  section a[href^="/"] p {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    margin-bottom: 18px !important;
+  }
+  
+  /* Card buttons - CRITICAL FIX */
+  section a[href^="/"] button {
+    width: 100% !important;
+    font-size: 14px !important;
+    padding: 14px 16px !important;
+    min-height: 50px !important;
+    margin-top: 18px !important;
+    white-space: normal !important;
+    line-height: 1.2 !important;
+    text-align: center !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    word-break: keep-all !important;
+    overflow: visible !important;
+  }
+  
+  /* Ensure button text never gets cut off */
+  section a[href^="/"] button span {
+    display: inline-block !important;
+    max-width: 100% !important;
   }
 }
 
@@ -428,6 +466,30 @@
   .homepage-hero-section {
     padding-top: 130px !important;
     padding-bottom: 80px !important;
+  }
+}
+
+/* Tajinder Bio Read More Animation */
+@media (max-width: 767px) {
+  #tajinder-bio-short,
+  #tajinder-bio-full {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  #tajinder-bio-short button,
+  #tajinder-bio-full button {
+    margin-top: 8px;
   }
 }
 
