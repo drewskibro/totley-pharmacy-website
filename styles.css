@@ -210,6 +210,177 @@
 }
 
 /* ===================================
+   PREMIUM ANIMATED HEADLINE
+   =================================== */
+
+.headline-word {
+  display: inline-block;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.headline-word:nth-child(1) { animation-delay: 0.1s; }
+.headline-word:nth-child(2) { animation-delay: 0.3s; }
+.headline-word:nth-child(3) { animation-delay: 0.5s; }
+.headline-word:nth-child(4) { animation-delay: 0.7s; }
+.headline-word:nth-child(5) { animation-delay: 0.9s; }
+.headline-word:nth-child(6) { animation-delay: 1.1s; }
+
+.headline-word-accent {
+  color: #00A19A;
+  position: relative;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===================================
+   PREMIUM INTERACTIVE BADGES - DEMAND ATTENTION
+   =================================== */
+
+.premium-badge-animated {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 22px;
+  background: linear-gradient(135deg, rgba(0, 161, 154, 0.08), rgba(0, 191, 165, 0.12));
+  border: 2px solid rgba(0, 161, 154, 0.25);
+  border-radius: 24px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: badgePulse 3s ease-in-out infinite;
+}
+
+.premium-badge-animated:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.premium-badge-animated:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.premium-badge-animated:nth-child(3) {
+  animation-delay: 2s;
+}
+
+@keyframes badgePulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 4px 12px rgba(0, 161, 154, 0.15);
+  }
+  50% {
+    transform: scale(1.03);
+    box-shadow: 0 8px 24px rgba(0, 161, 154, 0.3);
+  }
+}
+
+.premium-badge-animated:hover {
+  transform: translateY(-4px) scale(1.05);
+  background: linear-gradient(135deg, rgba(0, 161, 154, 0.15), rgba(0, 191, 165, 0.2));
+  border-color: rgba(0, 161, 154, 0.5);
+  box-shadow: 0 12px 32px rgba(0, 161, 154, 0.4);
+}
+
+/* Glowing Background Effect */
+.badge-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(0, 161, 154, 0.4), transparent 70%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.premium-badge-animated:hover .badge-glow {
+  opacity: 1;
+  animation: glowPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.6;
+  }
+}
+
+/* Icon Animation */
+.badge-icon {
+  color: #00A19A;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  filter: drop-shadow(0 2px 4px rgba(0, 161, 154, 0.3));
+}
+
+.premium-badge-animated:hover .badge-icon {
+  transform: scale(1.2) rotate(5deg);
+  color: #00BFA5;
+  filter: drop-shadow(0 4px 8px rgba(0, 191, 165, 0.5));
+}
+
+/* Text Styling */
+.badge-text {
+  color: #2D3748;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'DM Sans', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.premium-badge-animated:hover .badge-text {
+  color: #00A19A;
+  letter-spacing: 0.3px;
+}
+
+/* ===================================
+   PREMIUM HERO BACKGROUND EFFECTS
+   =================================== */
+
+/* Radial Gradient Utility */
+.bg-gradient-radial {
+  background: radial-gradient(circle, var(--tw-gradient-stops));
+}
+
+/* Ensure proper layering */
+.homepage-hero-section .grid.relative {
+  position: relative;
+  isolation: isolate;
+}
+
+/* ===================================
+   HERO IMAGE GRID LAYOUT
+   =================================== */
+
+/* Homepage Hero - Match Weight Loss Page Grid */
+.homepage-hero-section .grid.grid-cols-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
+  gap: 1rem;
+}
+
+.homepage-hero-section .image-card:nth-child(1),
+.homepage-hero-section .image-card:nth-child(2) {
+  height: 200px;
+}
+
+.homepage-hero-section .image-card:nth-child(3),
+.homepage-hero-section .stats-card:nth-child(4) {
+  height: 380px;
+}
+
+/* ===================================
    RESPONSIVE ADJUSTMENTS
    =================================== */
 

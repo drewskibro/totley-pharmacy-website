@@ -159,7 +159,7 @@
       <!-- CENTER: Navigation Links -->
       <nav class="main-menu">
         <a href="#home" class="menu-item active">Home</a>
-        <a href="#weight-loss" class="menu-item">Weight Loss</a>
+        <a href="weight-loss.html" class="menu-item">Weight Loss</a>
         <a href="#travel-health" class="menu-item">Travel Health</a>
         <a href="#nhs-services" class="menu-item">NHS Services</a>
         <a href="#about" class="menu-item">About</a>
@@ -178,74 +178,94 @@
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="w-full bg-white" style="padding-top: 170px; padding-bottom: 120px;">
-    <div class="max-w-[1680px] mx-auto px-[60px]">
-      <div class="grid grid-cols-[55%_45%] gap-12">
-        <!-- Left Side: Text Content -->
-        <div class="flex flex-col justify-center">
-          <h1 class="font-playfair_display text-[64px] leading-[1.1] tracking-[-0.04em] mb-6 hero-headline">
-            <span class="block text-[#2D3748]">Sheffield's Leading</span>
-            <span class="block text-[#2D3748] color-reveal" data-delay="500">Weight & Travel</span>
-            <span class="block text-[#2D3748] color-reveal" data-delay="800">Health Clinic</span>
+  <!-- HERO SECTION -->
+  <section class="relative w-full pt-[170px] pb-[120px] homepage-hero-section">
+    <!-- Full-width background gradient and noise overlay -->
+    <div class="homepage-hero-background-overlay"></div>
+
+    <div class="max-w-[1680px] mx-auto px-[60px] relative z-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative">
+        <!-- Left Column - Text Content -->
+        <div class="flex flex-col justify-center relative z-10">
+          <p class="text-[#00A19A] text-[14px] font-bold tracking-[1.4px] uppercase mb-5 font-dm_sans">
+            YOUR HEALTH PARTNER
+          </p>
+          <h1 class="font-playfair_display text-[64px] font-bold text-[#2D3748] leading-[1.1] tracking-[-0.04em] mb-6 max-w-[600px]">
+            <span class="headline-word">Sheffield's</span> 
+            <span class="headline-word headline-word-accent">Leading</span><br/>
+            <span class="headline-word headline-word-accent">Weight</span> 
+            <span class="headline-word">&</span> 
+            <span class="headline-word headline-word-accent">Travel</span><br/>
+            <span class="headline-word">Health Clinic</span>
           </h1>
-          
-          <p class="text-[#475569] text-xl font-[450] leading-[1.65] max-w-[580px] mb-8 font-dm_sans">
+          <p class="text-[20px] font-[450] text-[#475569] leading-[1.65] mb-8 max-w-[580px] font-dm_sans">
             Medical weight loss that works. Travel vaccinations you can trust. Your health journey starts with Sheffield's most experienced pharmacy team.
           </p>
           
-          <button class="hero-cta bg-[#00A19A] text-white px-10 py-4 rounded-lg font-semibold text-[17px] shadow-[0_6px_20px_rgba(0,161,154,0.25)] inline-flex items-center gap-3 self-start mb-8 transition-all duration-300">
-            Book Free Consultation
-            <svg width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="hero-arrow">
-              <path d="M1 8H15M15 8L8 1M15 8L8 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </button>
-          
-          <!-- Social Proof Badges -->
-          <div class="flex gap-4">
-            <div class="professional-badge bg-[rgba(0,161,154,0.06)] border border-[rgba(0,161,154,0.15)] px-[18px] py-[10px] rounded-[20px] flex items-center gap-2">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-[#00A19A]">
-                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <div class="flex flex-col sm:flex-row gap-4 mb-10">
+            <button class="hero-cta bg-[#00A19A] text-white px-10 py-4 rounded-xl font-semibold text-[17px] shadow-[0_6px_20px_rgba(0,161,154,0.25)] inline-flex items-center gap-3 transition-all duration-300 hover:bg-[#008F84] hover:translate-y-[-2px] hover:shadow-[0_8px_24px_rgba(0,161,154,0.35)]">
+              Book Free Consultation
+              <svg width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="hero-arrow">
+                <path d="M1 8H15M15 8L8 1M15 8L8 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
-              <span class="text-[#2D3748] text-[14px] font-medium font-dm_sans">4.8/5 Rating</span>
+            </button>
+            <a href="tel:0114980278" class="bg-transparent text-[#00A19A] border-2 border-[#00A19A] px-[38px] py-[14px] rounded-xl font-semibold text-[17px] transition-all duration-300 hover:bg-[rgba(0,161,154,0.06)] flex items-center justify-center gap-3">
+              Call 0114 980 278
+            </a>
+          </div>
+
+          <!-- Trust Badges Row - PREMIUM & INTERACTIVE -->
+          <div class="flex flex-wrap gap-4 mt-10">
+            <div class="premium-badge-animated group">
+              <div class="badge-glow"></div>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="badge-icon">
+                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span class="badge-text">4.8/5 Rating</span>
             </div>
-            <div class="professional-badge bg-[rgba(0,161,154,0.06)] border border-[rgba(0,161,154,0.15)] px-[18px] py-[10px] rounded-[20px] flex items-center gap-2">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-[#00A19A]">
+            <div class="premium-badge-animated group">
+              <div class="badge-glow"></div>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="badge-icon">
                 <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89318 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
-              <span class="text-[#2D3748] text-[14px] font-medium font-dm_sans">350+ Patients Helped</span>
+              <span class="badge-text">350+ Patients Helped</span>
             </div>
-            <div class="professional-badge bg-[rgba(0,161,154,0.06)] border border-[rgba(0,161,154,0.15)] px-[18px] py-[10px] rounded-[20px] flex items-center gap-2">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-[#00A19A]">
+            <div class="premium-badge-animated group">
+              <div class="badge-glow"></div>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="badge-icon">
                 <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
-              <span class="text-[#2D3748] text-[14px] font-medium font-dm_sans">15+ Years Experience</span>
+              <span class="badge-text">15+ Years Experience</span>
             </div>
           </div>
         </div>
-        
-        <!-- Right Side: Image Grid -->
-        <div class="grid grid-cols-2 gap-4 max-w-[600px]">
-          <div class="image-card overflow-hidden rounded-[20px] shadow-[0_4px_12px_rgba(0,0,0,0.08)] transition-all duration-300">
+
+        <!-- Right Column - Image Grid -->
+        <div class="grid grid-cols-2 gap-4 max-w-[600px] mx-auto relative z-10">
+          <!-- Top Left Image -->
+          <div class="image-card overflow-hidden rounded-[20px] shadow-[0_4px_12px_rgba(0,0,0,0.08)] transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_8px_20px_rgba(0,0,0,0.12)]">
             <img src="https://c.animaapp.com/mgurhltdj0QsMB/assets/rectangle-34.png" alt="Weight loss success" class="w-full h-full object-cover" />
           </div>
-          <div class="image-card overflow-hidden rounded-[20px] shadow-[0_4px_12px_rgba(0,0,0,0.08)] transition-all duration-300">
+          <!-- Top Right Image -->
+          <div class="image-card overflow-hidden rounded-[20px] shadow-[0_4px_12px_rgba(0,0,0,0.08)] transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_8px_20px_rgba(0,0,0,0.12)]">
             <img src="https://c.animaapp.com/mgurhltdj0QsMB/assets/rectangle-34-1.png" alt="Patient success" class="w-full h-full object-cover" />
           </div>
-          <div class="image-card overflow-hidden rounded-[20px] shadow-[0_4px_12px_rgba(0,0,0,0.08)] transition-all duration-300">
+          <!-- Bottom Left Image -->
+          <div class="image-card overflow-hidden rounded-[20px] shadow-[0_4px_12px_rgba(0,0,0,0.08)] transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_8px_20px_rgba(0,0,0,0.12)]">
             <img src="https://c.animaapp.com/mgurhltdj0QsMB/assets/rectangle-34-2.png" alt="Healthcare" class="w-full h-full object-cover" />
           </div>
-          <div class="stats-card overflow-hidden rounded-[20px] shadow-[0_4px_12px_rgba(0,0,0,0.08)] bg-gradient-to-br from-[#00A19A] to-[#00BFA5] flex flex-col items-center justify-center p-6 text-white transition-all duration-300">
+          <!-- Bottom Right Stats Card -->
+          <div class="stats-card overflow-hidden rounded-[20px] shadow-[0_4px_12px_rgba(0,0,0,0.08)] bg-gradient-to-br from-[#00A19A] to-[#00BFA5] flex flex-col items-center justify-center p-10 text-white text-center">
             <div class="text-center">
-              <div class="text-5xl font-bold mb-2 counter" data-target="350">0</div>
-              <div class="text-sm opacity-90 mb-4">Patients Helped</div>
+              <div class="text-5xl font-bold mb-2 font-playfair_display">15+</div>
+              <div class="text-sm opacity-90 mb-4 font-dm_sans">Years Experience</div>
               <div class="h-px w-12 bg-white/30 mx-auto mb-4"></div>
-              <div class="text-5xl font-bold mb-2 counter" data-target="15">0</div>
-              <div class="text-sm opacity-90">Years Experience</div>
+              <div class="text-5xl font-bold mb-2 font-playfair_display">350+</div>
+              <div class="text-sm opacity-90 font-dm_sans">Patients Helped</div>
             </div>
           </div>
         </div>
@@ -253,137 +273,8 @@
     </div>
   </section>
 
-  <style>
-    
-    /* Hero Headline Animation */
-    .color-reveal {
-      animation: colorReveal 1s ease forwards;
-      animation-delay: var(--delay);
-      letter-spacing: -0.04em;
-      transition: letter-spacing 1s ease;
-    }
-    
-    .color-reveal[data-delay="500"] {
-      --delay: 0.5s;
-    }
-    
-    .color-reveal[data-delay="800"] {
-      --delay: 0.8s;
-    }
-    
-    @keyframes colorReveal {
-      0% {
-        color: #2D3748;
-        letter-spacing: -0.04em;
-      }
-      100% {
-        color: #00A19A;
-        letter-spacing: -0.03em;
-      }
-    }
-    
-    /* Hero CTA Button */
-    .hero-cta:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(0, 161, 154, 0.35);
-      background-color: #008f89;
-    }
-    
-    .hero-cta:hover .hero-arrow {
-      transform: translateX(4px);
-      transition: transform 0.3s ease;
-    }
-    
-    /* Image Cards Hover */
-    .image-card:hover,
-    .stats-card:hover {
-      transform: scale(1.03);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-    }
-    
-    /* Counter Animation */
-    @keyframes countUp {
-      from {
-        opacity: 0;
-        transform: translateY(10px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    
-    .counter {
-      animation: countUp 0.5s ease forwards;
-    }
-  </style>
 
-  <script>
-    // Counter Animation
-    function animateCounter(element) {
-      const target = parseInt(element.getAttribute('data-target'));
-      const duration = 2000;
-      const increment = target / (duration / 16);
-      let current = 0;
-      
-      const timer = setInterval(() => {
-        current += increment;
-        if (current >= target) {
-          element.textContent = target + '+';
-          clearInterval(timer);
-        } else {
-          element.textContent = Math.floor(current);
-        }
-      }, 16);
-    }
-    
-    // Intersection Observer for counters
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const counters = entry.target.querySelectorAll('.counter');
-          counters.forEach(counter => {
-            if (!counter.classList.contains('animated')) {
-              counter.classList.add('animated');
-              animateCounter(counter);
-            }
-          });
-        }
-      });
-    }, { threshold: 0.5 });
-    
-    const statsCard = document.querySelector('.stats-card');
-    if (statsCard) {
-      observer.observe(statsCard);
-    }
-  </script>
-</div>
-
-<!-- BRAND NEW SECTION WITH HEADER -->
-<section class="w-full bg-white py-16">
-  <div class="max-w-[1440px] mx-auto px-20">
-    <div class="text-center mb-16">
-      <div class="flex justify-center mb-5">
-        <span class="text-teal-600 font-bold items-center gap-x-3 flex tracking-[1.28px] gap-y-3 uppercase font-dm_sans before:accent-auto before:box-border before:caret-transparent before:text-teal-600/40 before:block before:text-[8px] before:not-italic before:normal-nums before:font-bold before:tracking-[1.28px] before:leading-6 before:list-outside before:list-disc before:pointer-events-auto before:text-center before:indent-[0px] before:uppercase before:align-middle before:visible before:border-separate before:font-dm_sans after:accent-auto after:box-border after:caret-transparent after:text-teal-600/40 after:block after:text-[8px] after:not-italic after:normal-nums after:font-bold after:tracking-[1.28px] after:leading-6 after:list-outside after:list-disc after:pointer-events-auto after:text-center after:indent-[0px] after:uppercase after:align-middle after:visible after:border-separate after:font-dm_sans">
-          Private Services
-        </span>
-      </div>
-      <h2 class="text-[#2D3748] text-[56px] font-bold font-playfair_display tracking-[-1.12px] leading-[61.6px] mb-4">
-        Beyond NHS: Private Health Solutions
-      </h2>
-      <div class="items-center box-border caret-transparent gap-x-2 flex justify-center gap-y-2 mb-6">
-        <div class="bg-[linear-gradient(to_right,rgba(0,0,0,0),rgb(13,147,136))] box-border caret-transparent h-0.5 w-12"></div>
-        <div class="bg-teal-600 box-border caret-transparent h-2 w-2 rounded-full"></div>
-        <div class="bg-[linear-gradient(to_left,rgba(0,0,0,0),rgb(13,147,136))] box-border caret-transparent h-0.5 w-12"></div>
-      </div>
-      <p class="text-[#64748B] text-xl font-[450] font-dm_sans tracking-[0.2px] leading-[33px] max-w-screen-md mx-auto">
-        Immediate access to weight loss treatment, travel vaccines, and prescription services
-      </p>
-    </div>
-  </div>
-</section>
-
-<section class="relative box-border caret-transparent overflow-hidden py-24"><div class="absolute bg-[linear-gradient(to_right_bottom,rgb(254,248,245),rgb(254,252,251),rgb(248,253,252))] box-border caret-transparent -z-10 inset-0"></div>
+<section class="relative box-border caret-transparent overflow-hidden py-24"><div class="absolute bg-[linear-gradient(to_bottom_right,#FEFEFE,#F8FDFC,#FFFFFF)] box-border caret-transparent -z-10 inset-0"></div>
 <div class="absolute bg-[radial-gradient(circle_at_2px_2px,rgb(13,147,136)_1.5px,rgba(0,0,0,0)_0px)] box-border caret-transparent opacity-[0.015] -z-10 inset-0"></div>
 <div class="box-border caret-transparent max-w-[1440px] mx-auto px-20"><div class="box-border caret-transparent gap-x-8 grid grid-cols-[repeat(1,minmax(0px,1fr))] gap-y-8 md:gap-x-12 md:grid-cols-[repeat(3,minmax(0px,1fr))] md:gap-y-12"><a href="/weight-management" class="relative shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.07)_0px_4px_6px_0px,rgba(0,0,0,0.1)_0px_10px_15px_0px] box-border caret-transparent block h-[450px] border border-gray-200 overflow-hidden rounded-[20px] border-solid hover:shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.15)_0px_20px_25px_0px]"><img alt="Lose Weight Safely" src="https://c.animaapp.com/mgurhltdj0QsMB/assets/weight-loss-servcie-card.png" class="absolute box-border caret-transparent h-full max-w-full object-cover w-full inset-0" />
 <div class="absolute bg-[linear-gradient(to_top,rgba(0,0,0,0.8),rgba(0,0,0,0.4),rgba(0,0,0,0))] box-border caret-transparent h-full inset-0"></div>
