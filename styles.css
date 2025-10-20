@@ -283,6 +283,95 @@
 }
 
 /* ===================================
+   MOBILE RESPONSIVENESS FIXES
+   =================================== */
+
+/* Fix Trust Badges on Mobile */
+@media (max-width: 768px) {
+  .premium-badge-animated {
+    padding: 12px 18px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  
+  .badge-text {
+    font-size: 14px;
+  }
+  
+  .badge-icon {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* Fix Premium Conversion Section on Mobile */
+@media (max-width: 768px) {
+  .premium-conversion-section {
+    padding: 12px;
+  }
+  
+  .premium-conversion-section .trust-badges-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .premium-conversion-section .trust-badge {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .premium-conversion-section h3 {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+  
+  .premium-conversion-section p {
+    font-size: 16px;
+  }
+  
+  .premium-conversion-section button {
+    width: 100%;
+    min-width: auto;
+    padding: 16px 24px;
+    font-size: 17px;
+  }
+}
+
+/* Fix Service Cards Image Overlays on Mobile */
+@media (max-width: 768px) {
+  .destination-card .card-overlay {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.4) 50%);
+  }
+  
+  .destination-card .card-title {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+  
+  .destination-card .card-content {
+    padding: 20px;
+  }
+  
+  .card-arrow {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* Fix Magazine-Style Service Cards on Mobile */
+@media (max-width: 768px) {
+  .relative.shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.07)_0px_4px_6px_0px,rgba(0,0,0,0.1)_0px_10px_15px_0px] .card-content {
+    padding: 24px;
+  }
+  
+  .relative.shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.07)_0px_4px_6px_0px,rgba(0,0,0,0.1)_0px_10px_15px_0px] button {
+    min-height: 48px;
+    font-size: 15px;
+    padding: 14px 20px;
+  }
+}
+
+/* ===================================
    PREMIUM ANIMATED HEADLINE
    =================================== */
 
@@ -299,10 +388,49 @@
 .headline-word:nth-child(5) { animation-delay: 0.9s; }
 .headline-word:nth-child(6) { animation-delay: 1.1s; }
 
+.headline-word {
+  display: inline-block;
+  font-weight: 700;
+}
+
 .headline-word-accent {
   color: #00A19A;
   position: relative;
+  font-weight: 800;
+  letter-spacing: -0.05em;
 }
+
+/* Mobile-specific headline improvements */
+@media (max-width: 767px) {
+  .homepage-hero-section {
+    padding-top: 100px !important;
+    padding-bottom: 60px !important;
+  }
+  
+  .homepage-hero-section h1 {
+    line-height: 1.2 !important;
+    margin-bottom: 32px !important;
+  }
+  
+  .headline-word {
+    margin-bottom: 4px;
+  }
+  
+  .headline-word-accent {
+    display: inline-block;
+    transform: scale(1.05);
+    transform-origin: left center;
+  }
+}
+
+/* Tablet adjustments */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .homepage-hero-section {
+    padding-top: 130px !important;
+    padding-bottom: 80px !important;
+  }
+}
+
 
 @keyframes fadeInUp {
   from {
@@ -449,18 +577,20 @@
 .homepage-hero-section .grid.grid-cols-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto auto;
+  grid-template-rows: 200px 380px;
   gap: 1rem;
 }
 
-.homepage-hero-section .image-card:nth-child(1),
-.homepage-hero-section .image-card:nth-child(2) {
-  height: 200px;
+.homepage-hero-section .image-card,
+.homepage-hero-section .stats-card {
+  width: 100%;
+  height: 100%;
 }
 
-.homepage-hero-section .image-card:nth-child(3),
-.homepage-hero-section .stats-card:nth-child(4) {
-  height: 380px;
+.homepage-hero-section .image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* ===================================
