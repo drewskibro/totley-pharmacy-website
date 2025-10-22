@@ -215,6 +215,75 @@
         display: none;
       }
     }
+
+    /* Enhanced Glance Card Animations */
+    .glance-card {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .glance-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(13, 147, 136, 0.1), transparent);
+      transition: left 0.6s ease;
+    }
+
+    .glance-card:hover::before {
+      left: 100%;
+    }
+
+    .glance-card:hover {
+      transform: translateY(-8px) scale(1.02);
+      border-color: #0d9388;
+      box-shadow: 0 20px 48px rgba(13, 147, 136, 0.25), 0 8px 16px rgba(13, 147, 136, 0.15) !important;
+    }
+
+    .glance-card .icon-wrapper {
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+    }
+
+    .glance-card:hover .icon-wrapper {
+      transform: scale(1.15) rotate(5deg);
+      box-shadow: 0 8px 24px rgba(13, 147, 136, 0.4);
+    }
+
+    .glance-card .icon-wrapper i {
+      transition: transform 0.3s ease;
+    }
+
+    .glance-card:hover .icon-wrapper i {
+      transform: scale(1.1);
+    }
+
+    .glance-card h3 {
+      transition: color 0.3s ease;
+    }
+
+    .glance-card:hover h3 {
+      color: #0d9388;
+    }
+
+    @keyframes slideInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .glance-card {
+      animation: slideInUp 0.6s ease-out forwards;
+    }
   </style>
 </head>
 <body class="bg-white text-slate-900">
@@ -505,32 +574,32 @@
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-[1400px] mx-auto">
-        <div class="bg-white border-2 border-gray-200 rounded-2xl p-8 text-center hover-lift animate-scale-in delay-300" style="box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);">
-          <div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-6">
+        <div class="glance-card bg-white border-2 border-gray-200 rounded-2xl p-8 text-center animate-scale-in delay-300" style="box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);">
+          <div class="icon-wrapper w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-6">
             <i class="fas fa-certificate text-white text-2xl"></i>
           </div>
           <h3 class="text-gray-700 text-xl font-bold mb-3 font-playfair_display">Required</h3>
           <p class="text-slate-600 text-base leading-relaxed">Yellow fever if arriving from endemic countries</p>
         </div>
 
-        <div class="bg-white border-2 border-gray-200 rounded-2xl p-8 text-center hover-lift animate-scale-in delay-400" style="box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);">
-          <div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-6">
+        <div class="glance-card bg-white border-2 border-gray-200 rounded-2xl p-8 text-center animate-scale-in delay-400" style="box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);">
+          <div class="icon-wrapper w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-6">
             <i class="fas fa-syringe text-white text-2xl"></i>
           </div>
           <h3 class="text-gray-700 text-xl font-bold mb-3 font-playfair_display">Recommended</h3>
           <p class="text-slate-600 text-base leading-relaxed">Hepatitis A, Typhoid, Tetanus, Polio</p>
         </div>
 
-        <div class="bg-white border-2 border-gray-200 rounded-2xl p-8 text-center hover-lift animate-scale-in delay-500" style="box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);">
-          <div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-6">
+        <div class="glance-card bg-white border-2 border-gray-200 rounded-2xl p-8 text-center animate-scale-in delay-500" style="box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);">
+          <div class="icon-wrapper w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-6">
             <i class="fas fa-mosquito text-white text-2xl"></i>
           </div>
           <h3 class="text-gray-700 text-xl font-bold mb-3 font-playfair_display">Malaria</h3>
           <p class="text-slate-600 text-base leading-relaxed">Risk in many regions</p>
         </div>
 
-        <div class="bg-white border-2 border-gray-200 rounded-2xl p-8 text-center hover-lift animate-scale-in delay-600" style="box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);">
-          <div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-6">
+        <div class="glance-card bg-white border-2 border-gray-200 rounded-2xl p-8 text-center animate-scale-in delay-600" style="box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);">
+          <div class="icon-wrapper w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-6">
             <i class="fas fa-clock text-white text-2xl"></i>
           </div>
           <h3 class="text-gray-700 text-xl font-bold mb-3 font-playfair_display">Book Ahead</h3>
