@@ -135,6 +135,59 @@
       box-shadow: 0 20px 40px rgba(0, 161, 154, 0.2);
     }
 
+    /* Premium Desktop Navigation */
+    .nav-link {
+      position: relative;
+    }
+
+    .nav-link:hover {
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      background: linear-gradient(135deg, #0d9388 0%, #14b8a6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .nav-link-active {
+      background: linear-gradient(135deg, #0d9388 0%, #14b8a6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* Premium Dropdown Styles */
+    .nav-dropdown:hover .dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    .nav-dropdown:hover svg {
+      transform: rotate(180deg);
+    }
+
+    .dropdown-menu {
+      transform: translateX(-50%) translateY(-10px);
+    }
+
+    .dropdown-menu::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .dropdown-menu::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    .dropdown-menu::-webkit-scrollbar-thumb {
+      background: #0d9388;
+      border-radius: 3px;
+    }
+
+    .dropdown-menu::-webkit-scrollbar-thumb:hover {
+      background: #14b8a6;
+    }
+
     /* Toggle Switch */
     .toggle-switch {
       position: relative;
@@ -212,11 +265,87 @@
       </div>
 
       <nav class="hidden lg:flex items-center gap-10 grow justify-center">
-        <a href="index.html" class="relative text-gray-800 text-sm md:text-[15px] font-semibold py-2 whitespace-nowrap hover:text-teal-600 after:absolute after:left-0 after:-bottom-0.5 after:w-0 after:h-0.5 after:bg-teal-600 after:transition-all hover:after:w-full">Home</a>
-        <a href="weight-loss.html" class="relative text-teal-600 text-sm md:text-[15px] font-semibold py-2 whitespace-nowrap after:absolute after:left-0 after:-bottom-0.5 after:w-full after:h-0.5 after:bg-teal-600">Weight Loss</a>
-        <a href="travel-health.html" class="relative text-gray-800 text-sm md:text-[15px] font-semibold py-2 whitespace-nowrap hover:text-teal-600 after:absolute after:left-0 after:-bottom-0.5 after:w-0 after:h-0.5 after:bg-teal-600 after:transition-all hover:after:w-full">Travel Health</a>
-        <a href="#nhs-services" class="relative text-gray-800 text-sm md:text-[15px] font-semibold py-2 whitespace-nowrap hover:text-teal-600 after:absolute after:left-0 after:-bottom-0.5 after:w-0 after:h-0.5 after:bg-teal-600 after:transition-all hover:after:w-full">NHS Services</a>
-        <a href="#about" class="relative text-gray-800 text-sm md:text-[15px] font-semibold py-2 whitespace-nowrap hover:text-teal-600 after:absolute after:left-0 after:-bottom-0.5 after:w-0 after:h-0.5 after:bg-teal-600 after:transition-all hover:after:w-full">About</a>
+        <a href="index.html" class="nav-link relative text-gray-900 text-sm md:text-[15px] font-semibold py-2 whitespace-nowrap tracking-wide transition-all duration-300 after:absolute after:left-0 after:-bottom-0.5 after:w-0 after:h-[3px] after:bg-gradient-to-r after:from-teal-600 after:to-teal-500 after:rounded-full after:transition-all after:duration-300 hover:after:w-full">Home</a>
+        
+        <!-- Weight Loss with Dropdown -->
+        <div class="nav-dropdown relative">
+          <button class="nav-link nav-link-active relative text-teal-600 text-sm md:text-[15px] font-bold py-2 whitespace-nowrap tracking-wide flex items-center gap-1.5 after:absolute after:left-0 after:-bottom-0.5 after:w-full after:h-[3px] after:bg-gradient-to-r after:from-teal-600 after:to-teal-500 after:rounded-full after:transition-all">
+            Weight Loss
+            <svg class="w-3.5 h-3.5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div class="dropdown-menu absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[280px] bg-white/95 backdrop-blur-xl rounded-2xl shadow-2xl border-2 border-gray-100 opacity-0 invisible transition-all duration-300 overflow-hidden">
+            <div class="p-3">
+              <a href="weight-loss.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-teal-50 transition-all group">
+                <i class="fas fa-weight-scale text-teal-600 text-base group-hover:scale-110 transition-transform shrink-0"></i>
+                <div class="flex-1">
+                  <div class="text-gray-900 text-sm font-semibold group-hover:text-teal-600 transition-colors">Weight Loss Program</div>
+                  <div class="text-gray-500 text-xs">Medical weight loss</div>
+                </div>
+              </a>
+              <a href="#switching-providers" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-teal-50 transition-all group">
+                <i class="fas fa-exchange-alt text-teal-600 text-base group-hover:scale-110 transition-transform shrink-0"></i>
+                <div class="flex-1">
+                  <div class="text-gray-900 text-sm font-semibold group-hover:text-teal-600 transition-colors">Switching Providers</div>
+                  <div class="text-gray-500 text-xs">Transfer your care</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Travel Health with Dropdown -->
+        <div class="nav-dropdown relative">
+          <button class="nav-link relative text-gray-900 text-sm md:text-[15px] font-semibold py-2 whitespace-nowrap tracking-wide transition-all duration-300 flex items-center gap-1.5 after:absolute after:left-0 after:-bottom-0.5 after:w-0 after:h-[3px] after:bg-gradient-to-r after:from-teal-600 after:to-teal-500 after:rounded-full after:transition-all after:duration-300 hover:after:w-full">
+            Travel Health
+            <svg class="w-3.5 h-3.5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div class="dropdown-menu absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[320px] bg-white/95 backdrop-blur-xl rounded-2xl shadow-2xl border-2 border-gray-100 opacity-0 invisible transition-all duration-300 overflow-hidden">
+            <div class="p-3 max-h-[400px] overflow-y-auto">
+              <a href="travel-health.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-teal-50 transition-all group mb-2">
+                <i class="fas fa-plane-departure text-teal-600 text-base group-hover:scale-110 transition-transform shrink-0"></i>
+                <div class="flex-1">
+                  <div class="text-gray-900 text-sm font-semibold group-hover:text-teal-600 transition-colors">All Travel Services</div>
+                  <div class="text-gray-500 text-xs">Vaccinations & advice</div>
+                </div>
+              </a>
+              <div class="border-t border-gray-200 my-2"></div>
+              <div class="px-4 py-2">
+                <div class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Popular Destinations</div>
+              </div>
+              <a href="#thailand" class="flex items-center gap-3 px-4 py-2.5 rounded-xl hover:bg-teal-50 transition-all group">
+                <i class="fas fa-location-dot text-teal-600 text-sm w-5"></i>
+                <span class="text-gray-900 text-sm font-medium group-hover:text-teal-600 transition-colors">Thailand</span>
+              </a>
+              <a href="#india" class="flex items-center gap-3 px-4 py-2.5 rounded-xl hover:bg-teal-50 transition-all group">
+                <i class="fas fa-location-dot text-teal-600 text-sm w-5"></i>
+                <span class="text-gray-900 text-sm font-medium group-hover:text-teal-600 transition-colors">India</span>
+              </a>
+              <a href="#kenya" class="flex items-center gap-3 px-4 py-2.5 rounded-xl hover:bg-teal-50 transition-all group">
+                <i class="fas fa-location-dot text-teal-600 text-sm w-5"></i>
+                <span class="text-gray-900 text-sm font-medium group-hover:text-teal-600 transition-colors">Kenya</span>
+              </a>
+              <a href="#vietnam" class="flex items-center gap-3 px-4 py-2.5 rounded-xl hover:bg-teal-50 transition-all group">
+                <i class="fas fa-location-dot text-teal-600 text-sm w-5"></i>
+                <span class="text-gray-900 text-sm font-medium group-hover:text-teal-600 transition-colors">Vietnam</span>
+              </a>
+              <a href="#brazil" class="flex items-center gap-3 px-4 py-2.5 rounded-xl hover:bg-teal-50 transition-all group">
+                <i class="fas fa-location-dot text-teal-600 text-sm w-5"></i>
+                <span class="text-gray-900 text-sm font-medium group-hover:text-teal-600 transition-colors">Brazil</span>
+              </a>
+              <a href="#south-africa" class="flex items-center gap-3 px-4 py-2.5 rounded-xl hover:bg-teal-50 transition-all group">
+                <i class="fas fa-location-dot text-teal-600 text-sm w-5"></i>
+                <span class="text-gray-900 text-sm font-medium group-hover:text-teal-600 transition-colors">South Africa</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <a href="#prescriptions" class="nav-link relative text-gray-900 text-sm md:text-[15px] font-semibold py-2 whitespace-nowrap tracking-wide transition-all duration-300 after:absolute after:left-0 after:-bottom-0.5 after:w-0 after:h-[3px] after:bg-gradient-to-r after:from-teal-600 after:to-teal-500 after:rounded-full after:transition-all after:duration-300 hover:after:w-full">Prescriptions</a>
+        <a href="#about" class="nav-link relative text-gray-900 text-sm md:text-[15px] font-semibold py-2 whitespace-nowrap tracking-wide transition-all duration-300 after:absolute after:left-0 after:-bottom-0.5 after:w-0 after:h-[3px] after:bg-gradient-to-r after:from-teal-600 after:to-teal-500 after:rounded-full after:transition-all after:duration-300 hover:after:w-full">About</a>
       </nav>
 
       <div class="hidden lg:flex items-center shrink-0">
@@ -226,13 +355,107 @@
         </button>
       </div>
 
-      <button class="lg:hidden flex items-center justify-center w-10 h-10 text-gray-600 hover:text-teal-600">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <button id="menuToggle" class="lg:hidden flex items-center justify-center w-10 h-10 text-gray-600 hover:text-teal-600 transition-colors">
+        <svg id="menuIcon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
         </svg>
       </button>
     </div>
   </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div id="mobileMenuOverlay" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-40 opacity-0 pointer-events-none transition-opacity duration-300"></div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="fixed top-0 right-0 bottom-0 w-[85%] max-w-[400px] bg-white/95 backdrop-blur-xl shadow-2xl z-50 transform translate-x-full transition-transform duration-300 ease-out">
+    <div class="flex items-center justify-between p-6 border-b border-gray-200">
+      <div class="flex items-center gap-3">
+        <img alt="Sheffield United FC" src="https://c.animaapp.com/mh1jrgnmeI4wDl/assets/sheffield_united_fc_logo-svg.png" class="h-10 w-10 object-contain" />
+        <div>
+          <div class="text-base font-bold tracking-tight leading-tight">
+            <span class="text-teal-600">Sheffield</span>
+            <span class="text-gray-600"> Wellness</span>
+          </div>
+          <div class="text-[10px] font-medium text-gray-400 tracking-wide">By Totley Pharmacy</div>
+        </div>
+      </div>
+      <button id="menuClose" class="flex items-center justify-center w-10 h-10 text-gray-600 hover:text-teal-600 hover:bg-teal-50 rounded-full transition-all">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+
+    <div class="flex flex-col h-[calc(100%-80px)] overflow-y-auto">
+      <nav class="flex-1 p-6 space-y-2">
+        <a href="index.html" class="group flex items-center justify-between px-4 py-4 rounded-xl hover:bg-teal-50 transition-all">
+          <div class="flex items-center gap-4">
+            <i class="fas fa-home text-teal-600 text-lg group-hover:scale-110 transition-transform"></i>
+            <span class="text-gray-700 text-base font-semibold group-hover:text-teal-600 transition-colors">Home</span>
+          </div>
+          <i class="fas fa-chevron-right text-gray-400 text-sm group-hover:text-teal-600 group-hover:translate-x-1 transition-all"></i>
+        </a>
+
+        <a href="weight-loss.html" class="group flex items-center justify-between px-4 py-4 rounded-xl bg-teal-50 border-2 border-teal-600">
+          <div class="flex items-center gap-4">
+            <i class="fas fa-weight-scale text-teal-600 text-lg"></i>
+            <span class="text-teal-600 text-base font-bold">Weight Loss</span>
+          </div>
+          <i class="fas fa-chevron-right text-teal-600 text-sm"></i>
+        </a>
+
+        <a href="travel-health.html" class="group flex items-center justify-between px-4 py-4 rounded-xl hover:bg-teal-50 transition-all">
+          <div class="flex items-center gap-4">
+            <i class="fas fa-plane-departure text-teal-600 text-lg group-hover:scale-110 transition-transform"></i>
+            <span class="text-gray-700 text-base font-semibold group-hover:text-teal-600 transition-colors">Travel Health</span>
+          </div>
+          <i class="fas fa-chevron-right text-gray-400 text-sm group-hover:text-teal-600 group-hover:translate-x-1 transition-all"></i>
+        </a>
+
+        <a href="#prescriptions" class="group flex items-center justify-between px-4 py-4 rounded-xl hover:bg-teal-50 transition-all">
+          <div class="flex items-center gap-4">
+            <i class="fas fa-prescription text-teal-600 text-lg group-hover:scale-110 transition-transform"></i>
+            <span class="text-gray-700 text-base font-semibold group-hover:text-teal-600 transition-colors">Prescriptions</span>
+          </div>
+          <i class="fas fa-chevron-right text-gray-400 text-sm group-hover:text-teal-600 group-hover:translate-x-1 transition-all"></i>
+        </a>
+
+        <a href="#about" class="group flex items-center justify-between px-4 py-4 rounded-xl hover:bg-teal-50 transition-all">
+          <div class="flex items-center gap-4">
+            <i class="fas fa-info-circle text-teal-600 text-lg group-hover:scale-110 transition-transform"></i>
+            <span class="text-gray-700 text-base font-semibold group-hover:text-teal-600 transition-colors">About</span>
+          </div>
+          <i class="fas fa-chevron-right text-gray-400 text-sm group-hover:text-teal-600 group-hover:translate-x-1 transition-all"></i>
+        </a>
+      </nav>
+
+      <div class="p-6 border-t border-gray-200 space-y-4">
+        <button class="w-full flex items-center justify-center gap-3 bg-teal-600 hover:bg-teal-700 text-white text-base font-semibold px-6 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all">
+          <i class="fas fa-calendar-check"></i>
+          Book Consultation
+        </button>
+        
+        <a href="tel:01149802780" class="w-full flex items-center justify-center gap-3 text-teal-600 text-base font-semibold px-6 py-4 rounded-xl border-2 border-teal-600 hover:bg-teal-50 transition-all">
+          <i class="fas fa-phone"></i>
+          Call 0114 980 278
+        </a>
+
+        <div class="flex items-center justify-center gap-3 pt-4">
+          <a href="#" class="flex items-center justify-center w-10 h-10 bg-teal-600/10 rounded-full hover:bg-teal-600 group transition-all">
+            <i class="fab fa-facebook-f text-teal-600 group-hover:text-white transition-colors"></i>
+          </a>
+          <a href="#" class="flex items-center justify-center w-10 h-10 bg-teal-600/10 rounded-full hover:bg-teal-600 group transition-all">
+            <i class="fab fa-twitter text-teal-600 group-hover:text-white transition-colors"></i>
+          </a>
+          <a href="#" class="flex items-center justify-center w-10 h-10 bg-teal-600/10 rounded-full hover:bg-teal-600 group transition-all">
+            <i class="fab fa-instagram text-teal-600 group-hover:text-white transition-colors"></i>
+          </a>
+        </div>
+
+        <p class="text-center text-gray-500 text-xs pt-2">© 2025 Totley Pharmacy</p>
+      </div>
+    </div>
+  </div>
 
   <!-- SECTION 1: HERO -->
   <section class="relative w-full pt-[100px] md:pt-[170px] pb-[60px] md:pb-[120px] overflow-hidden">
@@ -1173,6 +1396,36 @@
     
     document.querySelectorAll('.animate-fade-in-up, .animate-fade-in-left, .animate-fade-in-right, .animate-scale-in').forEach(el => {
       observer.observe(el);
+    });
+
+    // Mobile Menu Toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const menuClose = document.getElementById('menuClose');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+
+    function openMenu() {
+      mobileMenu.classList.remove('translate-x-full');
+      mobileMenuOverlay.classList.remove('opacity-0', 'pointer-events-none');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+      mobileMenu.classList.add('translate-x-full');
+      mobileMenuOverlay.classList.add('opacity-0', 'pointer-events-none');
+      document.body.style.overflow = '';
+    }
+
+    menuToggle.addEventListener('click', openMenu);
+    menuClose.addEventListener('click', closeMenu);
+    mobileMenuOverlay.addEventListener('click', closeMenu);
+
+    document.querySelectorAll('#mobileMenu a').forEach(link => {
+      link.addEventListener('click', closeMenu);
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeMenu();
     });
   </script>
 </body>
