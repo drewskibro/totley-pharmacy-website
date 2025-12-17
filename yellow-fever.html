@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>Travel Health Services Sheffield | Sheffield Wellness Clinic</title>
+  <title>Yellow Fever Vaccination | Sheffield Wellness Clinic</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -49,7 +49,6 @@
       font-family: 'DM Sans', sans-serif;
     }
 
-    /* Premium Animations */
     @keyframes fadeInUp {
       from {
         opacity: 0;
@@ -275,7 +274,7 @@
     }
 
     .accordion-content.active {
-      max-height: 500px;
+      max-height: 800px;
     }
   </style>
 </head>
@@ -332,10 +331,10 @@
           </button>
           <div class="dropdown-menu absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[320px] bg-white/95 backdrop-blur-xl rounded-2xl shadow-2xl border-2 border-gray-100 opacity-0 invisible transition-all duration-300 overflow-hidden">
             <div class="p-3 max-h-[400px] overflow-y-auto">
-              <a class="flex items-center gap-3 px-4 py-3 rounded-xl bg-teal-50 border-2 border-teal-600/30 transition-all group mb-2" href="travel-health.html">
+              <a class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-teal-50 transition-all group mb-2" href="travel-health.html">
                 <i class="fas fa-plane-departure text-teal-600 text-base group-hover:scale-110 transition-transform shrink-0"></i>
                 <div class="flex-1">
-                  <div class="text-teal-600 text-sm font-bold transition-colors">All Travel Services</div>
+                  <div class="text-gray-900 text-sm font-semibold group-hover:text-teal-600 transition-colors">All Travel Services</div>
                   <div class="text-gray-500 text-xs">Vaccinations &amp; advice</div>
                 </div>
               </a>
@@ -444,29 +443,42 @@
     </div>
   </div>
 
-  <!-- HERO SECTION -->
-  <section class="relative w-full pt-[100px] md:pt-[170px] pb-[80px] md:pb-[140px] overflow-hidden">
+  <!-- Breadcrumb Navigation -->
+  <div class="bg-gray-50 border-b border-gray-200 pt-[90px] md:pt-[90px]">
+    <div class="max-w-[1680px] mx-auto px-6 md:px-[60px] py-4">
+      <nav class="flex items-center gap-2 text-sm">
+        <a href="index.html" class="text-gray-500 hover:text-teal-600 transition-colors font-medium">Home</a>
+        <i class="fas fa-chevron-right text-gray-300 text-xs"></i>
+        <a href="travel-health.html" class="text-gray-500 hover:text-teal-600 transition-colors font-medium">Travel Health</a>
+        <i class="fas fa-chevron-right text-gray-300 text-xs"></i>
+        <span class="text-gray-900 font-semibold">Yellow Fever Vaccination</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- HERO SECTION - AMBER ACCENT -->
+  <section class="relative w-full pt-[60px] md:pt-[80px] pb-[80px] md:pb-[140px] overflow-hidden">
     <div class="absolute inset-0">
-      <img alt="Travel destination" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1920&h=1080&fit=crop"/>
-      <div class="absolute inset-0 bg-gradient-to-br from-teal-600/90 via-teal-500/85 to-teal-600/90"></div>
+      <img alt="Tropical destination requiring yellow fever vaccination" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1551244072-5d12893278ab?w=1920&h=1080&fit=crop"/>
+      <div class="absolute inset-0 bg-gradient-to-br from-amber-600/90 via-amber-500/85 to-amber-600/90"></div>
     </div>
     <div class="max-w-[1680px] mx-auto px-6 md:px-[60px] relative z-10">
       <div class="text-center text-white max-w-[900px] mx-auto">
         <div class="flex items-center justify-center gap-4 mb-6 animate-fade-in-up">
           <div class="w-[3px] h-7 bg-white rounded-sm shadow-md"></div>
-          <p class="text-white text-sm font-bold tracking-[2.5px] uppercase">TRAVEL HEALTH SERVICES</p>
+          <p class="text-white text-sm font-bold tracking-[2.5px] uppercase">YELLOW FEVER VACCINATION</p>
         </div>
         <h1 class="text-white text-[48px] md:text-[72px] font-bold tracking-tight leading-[1.1] mb-6 font-playfair_display animate-fade-in-up delay-200">
-          Travel with <span class="block mt-2">confidence</span>
+          Yellow Fever <span class="block mt-2">Vaccination & Certificate</span>
         </h1>
         <p class="text-white text-xl md:text-2xl leading-relaxed mb-10 animate-fade-in-up delay-300">
-          Expert travel vaccinations and health advice for your next adventure. Book your appointment with Tajinder at our Sheffield clinic.
+          Official Yellow Fever Centre providing internationally recognised vaccination certificates. Essential for travel to Africa and South America.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-fade-in-up delay-400">
-          <button class="group relative bg-white text-teal-600 text-base md:text-lg font-bold px-12 py-5 rounded-2xl shadow-2xl hover:shadow-3xl transition-all overflow-hidden hover-lift">
+          <button class="group relative bg-white text-amber-600 text-base md:text-lg font-bold px-12 py-5 rounded-2xl shadow-2xl hover:shadow-3xl hover:bg-amber-50 transition-all overflow-hidden hover-lift">
             <span class="relative flex items-center justify-center gap-3">
               <i class="fas fa-calendar-check"></i>
-              Book Appointment
+              Book Yellow Fever Vaccination
               <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
             </span>
           </button>
@@ -478,260 +490,172 @@
         <div class="flex flex-wrap justify-center gap-4 animate-fade-in-up delay-500">
           <div class="inline-flex items-center gap-2.5 bg-white/20 backdrop-blur-md border-2 border-white/40 px-6 py-3 rounded-full">
             <i class="fas fa-certificate text-white"></i>
-            <span class="text-white text-[15px] font-semibold whitespace-nowrap">Yellow Fever Centre</span>
+            <span class="text-white text-[15px] font-semibold whitespace-nowrap">Official Yellow Fever Centre</span>
           </div>
           <div class="inline-flex items-center gap-2.5 bg-white/20 backdrop-blur-md border-2 border-white/40 px-6 py-3 rounded-full">
-            <i class="fas fa-syringe text-white"></i>
-            <span class="text-white text-[15px] font-semibold whitespace-nowrap">All Travel Vaccinations</span>
+            <i class="fas fa-file-certificate text-white"></i>
+            <span class="text-white text-[15px] font-semibold whitespace-nowrap">Certificate Issued Same Day</span>
           </div>
           <div class="inline-flex items-center gap-2.5 bg-white/20 backdrop-blur-md border-2 border-white/40 px-6 py-3 rounded-full">
-            <i class="fas fa-user-doctor text-white"></i>
-            <span class="text-white text-[15px] font-semibold whitespace-nowrap">Expert Travel Advice</span>
+            <i class="fas fa-shield-check text-white"></i>
+            <span class="text-white text-[15px] font-semibold whitespace-nowrap">Lifetime Protection</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Stats Bar -->
-  <section class="relative bg-gradient-to-r from-teal-600 via-teal-500 to-teal-600 py-8 overflow-hidden">
+  <!-- Quick Info Bar - AMBER ACCENT -->
+  <section class="relative bg-gradient-to-r from-amber-600 via-amber-500 to-amber-600 py-8 overflow-hidden">
     <div class="absolute inset-0 bg-[linear-gradient(90deg,transparent_0%,rgba(255,255,255,0.1)_50%,transparent_100%)] animate-shimmer"></div>
     <div class="max-w-[1680px] mx-auto px-6 md:px-[60px]">
-      <div class="flex flex-wrap items-center justify-center gap-8 md:gap-20 text-white">
-        <div class="flex items-center gap-4 group cursor-default">
-          <div class="w-14 h-14 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm group-hover:bg-white/30 transition-all group-hover:scale-110">
-            <i class="fas fa-certificate text-white text-2xl"></i>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 text-white max-w-[1000px] mx-auto">
+        <div class="flex items-center gap-4 group cursor-default justify-center md:justify-start">
+          <div class="w-14 h-14 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm group-hover:bg-white/30 transition-all group-hover:scale-110 shrink-0">
+            <i class="fas fa-syringe text-white text-xl"></i>
           </div>
-          <div>
-            <p class="text-[28px] font-bold font-playfair_display leading-none mb-1">Official</p>
-            <p class="text-sm opacity-90 font-medium">Yellow Fever Centre</p>
-          </div>
-        </div>
-        <div class="hidden md:block w-px h-12 bg-white/30"></div>
-        <div class="flex items-center gap-4 group cursor-default">
-          <div class="w-14 h-14 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm group-hover:bg-white/30 transition-all group-hover:scale-110">
-            <i class="fas fa-users text-white text-2xl"></i>
-          </div>
-          <div>
-            <p class="text-[28px] font-bold font-playfair_display leading-none mb-1">1,000+</p>
-            <p class="text-sm opacity-90 font-medium">Travellers Protected</p>
+          <div class="text-center md:text-left">
+            <p class="text-2xl md:text-[28px] font-bold font-playfair_display leading-none mb-1">1 Dose</p>
+            <p class="text-sm opacity-90 font-medium">Single Vaccination</p>
           </div>
         </div>
-        <div class="hidden md:block w-px h-12 bg-white/30"></div>
-        <div class="flex items-center gap-4 group cursor-default">
-          <div class="w-14 h-14 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm group-hover:bg-white/30 transition-all group-hover:scale-110">
-            <i class="fas fa-clock text-white text-2xl"></i>
+        <div class="flex items-center gap-4 group cursor-default justify-center md:justify-start">
+          <div class="w-14 h-14 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm group-hover:bg-white/30 transition-all group-hover:scale-110 shrink-0">
+            <i class="fas fa-shield text-white text-xl"></i>
           </div>
-          <div>
-            <p class="text-[28px] font-bold font-playfair_display leading-none mb-1">30+</p>
-            <p class="text-sm opacity-90 font-medium">Years Experience</p>
+          <div class="text-center md:text-left">
+            <p class="text-2xl md:text-[28px] font-bold font-playfair_display leading-none mb-1">Lifetime</p>
+            <p class="text-sm opacity-90 font-medium">Protection Duration</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 group cursor-default justify-center md:justify-start">
+          <div class="w-14 h-14 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm group-hover:bg-white/30 transition-all group-hover:scale-110 shrink-0">
+            <i class="fas fa-calendar text-white text-xl"></i>
+          </div>
+          <div class="text-center md:text-left">
+            <p class="text-2xl md:text-[28px] font-bold font-playfair_display leading-none mb-1">10 Days</p>
+            <p class="text-sm opacity-90 font-medium">Before Travel</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- COMBINED SERVICES & VACCINATIONS SECTION -->
+  <!-- WHAT IS YELLOW FEVER SECTION - PREMIUM REDESIGN -->
   <section class="relative bg-gradient-to-b from-gray-50/50 via-white to-gray-50/50 px-5 md:px-10 py-[80px] md:py-[120px] overflow-hidden">
     <div class="absolute inset-0 opacity-[0.015] pointer-events-none">
       <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, rgb(13, 147, 136) 1.5px, transparent 0); background-size: 50px 50px;"></div>
     </div>
     
     <div class="max-w-[1680px] mx-auto relative z-10">
-      <!-- Services Header -->
       <div class="text-center mb-16">
         <div class="section-header-wrapper mb-8">
           <div class="flex items-center justify-center gap-4">
             <div class="w-[3px] h-7 bg-gradient-to-b from-teal-600 to-teal-500 rounded-sm shadow-md animate-slide-in-left"></div>
             <div class="section-header">
-              <p class="text-teal-600 text-sm font-bold tracking-[2.5px] uppercase">COMPREHENSIVE TRAVEL HEALTH</p>
+              <p class="text-teal-600 text-sm font-bold tracking-[2.5px] uppercase">ABOUT YELLOW FEVER</p>
             </div>
           </div>
         </div>
         <h2 class="text-gray-700 text-[36px] md:text-[56px] font-bold leading-[1.15] mb-6 font-playfair_display animate-fade-in-up delay-200">
-          Everything you need for safe travel
+          What is Yellow Fever?
         </h2>
         <div class="w-[60px] h-[3px] bg-teal-600 rounded-full mx-auto mb-6 animate-scale-in delay-300"></div>
         <p class="text-slate-600 text-lg md:text-[19px] leading-relaxed max-w-[800px] mx-auto animate-fade-in-up delay-400">
-          From expert consultations to all vaccinations and official certificates
+          A serious viral infection transmitted by mosquitoes in tropical regions of Africa and South America
         </p>
       </div>
 
-      <!-- Key Services - 5 Column Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-[1400px] mx-auto items-stretch mb-20">
-        <div class="relative group animate-scale-in delay-500 flex">
-          <div class="absolute inset-0 bg-teal-500/5 rounded-2xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-          <div class="relative bg-white border-2 border-gray-100 rounded-2xl p-8 text-center hover:border-teal-600/30 hover:shadow-xl transition-all flex flex-col w-full">
-            <div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-110 group-hover:rotate-6 transition-all">
-              <i class="fas fa-syringe text-white text-2xl"></i>
+      <!-- Premium 4-Card Grid Layout -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[1200px] mx-auto">
+        
+        <!-- Card 1: Viral Infection -->
+        <div class="relative group animate-scale-in delay-500">
+          <div class="absolute inset-0 bg-teal-500/5 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="relative bg-white border-2 border-gray-100 rounded-3xl p-10 hover:border-teal-600/30 hover:shadow-xl transition-all">
+            <div class="flex items-start gap-6">
+              <div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center shrink-0 shadow-xl group-hover:scale-110 group-hover:rotate-6 transition-all">
+                <i class="fas fa-virus text-white text-2xl"></i>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-gray-900 text-2xl font-bold mb-3 font-playfair_display group-hover:text-teal-600 transition-colors">Viral Infection</h3>
+                <p class="text-slate-600 text-base leading-relaxed">Caused by a virus transmitted through the bite of infected Aedes or Haemagogus mosquitoes, primarily found in tropical regions of Africa and South America.</p>
+              </div>
             </div>
-            <h3 class="text-gray-700 text-xl font-bold mb-3 font-playfair_display">Travel Vaccinations</h3>
-            <p class="text-slate-600 text-sm leading-relaxed flex-1">Full range of travel vaccines including yellow fever</p>
           </div>
         </div>
 
-        <div class="relative group animate-scale-in delay-600 flex">
-          <div class="absolute inset-0 bg-teal-500/5 rounded-2xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-          <div class="relative bg-white border-2 border-gray-100 rounded-2xl p-8 text-center hover:border-teal-600/30 hover:shadow-xl transition-all flex flex-col w-full">
-            <div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-110 group-hover:rotate-6 transition-all">
-              <i class="fas fa-pills text-white text-2xl"></i>
+        <!-- Card 2: Serious Symptoms -->
+        <div class="relative group animate-scale-in delay-600">
+          <div class="absolute inset-0 bg-teal-500/5 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="relative bg-white border-2 border-gray-100 rounded-3xl p-10 hover:border-teal-600/30 hover:shadow-xl transition-all">
+            <div class="flex items-start gap-6">
+              <div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center shrink-0 shadow-xl group-hover:scale-110 group-hover:rotate-6 transition-all">
+                <i class="fas fa-heartbeat text-white text-2xl"></i>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-gray-900 text-2xl font-bold mb-3 font-playfair_display group-hover:text-teal-600 transition-colors">Serious Symptoms</h3>
+                <p class="text-slate-600 text-base leading-relaxed">Symptoms include fever, headache, jaundice (yellowing of skin), muscle pain, nausea, and vomiting. Severe cases can cause organ failure.</p>
+              </div>
             </div>
-            <h3 class="text-gray-700 text-xl font-bold mb-3 font-playfair_display">Malaria Prevention</h3>
-            <p class="text-slate-600 text-sm leading-relaxed flex-1">Prescription antimalarial medication and expert guidance</p>
           </div>
         </div>
 
-        <div class="relative group animate-scale-in delay-700 flex">
-          <div class="absolute inset-0 bg-teal-500/5 rounded-2xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-          <div class="relative bg-white border-2 border-gray-100 rounded-2xl p-8 text-center hover:border-teal-600/30 hover:shadow-xl transition-all flex flex-col w-full">
-            <div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-110 group-hover:rotate-6 transition-all">
-              <i class="fas fa-kit-medical text-white text-2xl"></i>
+        <!-- Card 3: No Cure, But Preventable -->
+        <div class="relative group animate-scale-in delay-700">
+          <div class="absolute inset-0 bg-teal-500/5 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="relative bg-white border-2 border-gray-100 rounded-3xl p-10 hover:border-teal-600/30 hover:shadow-xl transition-all">
+            <div class="flex items-start gap-6">
+              <div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center shrink-0 shadow-xl group-hover:scale-110 group-hover:rotate-6 transition-all">
+                <i class="fas fa-shield-virus text-white text-2xl"></i>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-gray-900 text-2xl font-bold mb-3 font-playfair_display group-hover:text-teal-600 transition-colors">No Cure, But Preventable</h3>
+                <p class="text-slate-600 text-base leading-relaxed">There's no specific treatment for yellow fever, but the vaccine provides excellent protection. A single dose offers lifetime immunity.</p>
+              </div>
             </div>
-            <h3 class="text-gray-700 text-xl font-bold mb-3 font-playfair_display">Travel Health Kits</h3>
-            <p class="text-slate-600 text-sm leading-relaxed flex-1">Personalised medical kits for your destination</p>
           </div>
         </div>
 
-        <div class="relative group animate-scale-in delay-800 flex">
-          <div class="absolute inset-0 bg-teal-500/5 rounded-2xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-          <div class="relative bg-white border-2 border-gray-100 rounded-2xl p-8 text-center hover:border-teal-600/30 hover:shadow-xl transition-all flex flex-col w-full">
-            <div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-110 group-hover:rotate-6 transition-all">
-              <i class="fas fa-file-medical text-white text-2xl"></i>
+        <!-- Card 4: Risk Areas -->
+        <div class="relative group animate-scale-in delay-800">
+          <div class="absolute inset-0 bg-teal-500/5 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="relative bg-white border-2 border-gray-100 rounded-3xl p-10 hover:border-teal-600/30 hover:shadow-xl transition-all">
+            <div class="flex items-start gap-6">
+              <div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center shrink-0 shadow-xl group-hover:scale-110 group-hover:rotate-6 transition-all">
+                <i class="fas fa-globe-africa text-white text-2xl"></i>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-gray-900 text-2xl font-bold mb-3 font-playfair_display group-hover:text-teal-600 transition-colors">47 Risk Countries</h3>
+                <p class="text-slate-600 text-base leading-relaxed">Found across sub-Saharan Africa and tropical South America, including popular destinations like Kenya, Brazil, Peru, and Colombia.</p>
+              </div>
             </div>
-            <h3 class="text-gray-700 text-xl font-bold mb-3 font-playfair_display">Health Certificates</h3>
-            <p class="text-slate-600 text-sm leading-relaxed flex-1">Official vaccination certificates for travel requirements</p>
           </div>
         </div>
 
-        <div class="relative group animate-scale-in delay-900 flex">
-          <div class="absolute inset-0 bg-teal-500/5 rounded-2xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-          <div class="relative bg-white border-2 border-gray-100 rounded-2xl p-8 text-center hover:border-teal-600/30 hover:shadow-xl transition-all flex flex-col w-full">
-            <div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-110 group-hover:rotate-6 transition-all">
-              <i class="fas fa-clipboard-check text-white text-2xl"></i>
-            </div>
-            <h3 class="text-gray-700 text-xl font-bold mb-3 font-playfair_display">Travel Health Advice</h3>
-            <p class="text-slate-600 text-sm leading-relaxed flex-1">Destination-specific guidance from our travel health expert</p>
-          </div>
-        </div>
       </div>
 
-      <!-- Vaccinations Subsection -->
-      <div class="mt-24">
-        <div class="text-center mb-16">
-          <div class="inline-flex items-center gap-3 bg-white border-2 border-teal-600/30 px-6 py-3 rounded-full mb-6 shadow-lg">
-            <i class="fas fa-syringe text-teal-600 text-lg"></i>
-            <span class="text-gray-700 text-sm font-bold uppercase tracking-[2px]">All Vaccinations</span>
+      <!-- Important Notice Banner -->
+      <div class="mt-12 max-w-[1200px] mx-auto">
+        <div class="relative group animate-scale-in delay-900">
+          <div class="absolute inset-0 bg-amber-500/5 rounded-2xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="relative bg-amber-50 border-2 border-amber-500/30 rounded-2xl p-8 hover:shadow-lg transition-all">
+            <div class="flex items-start gap-5">
+              <div class="w-14 h-14 bg-gradient-to-br from-amber-500 to-amber-600 rounded-2xl flex items-center justify-center shrink-0 shadow-lg">
+                <i class="fas fa-exclamation-triangle text-white text-2xl"></i>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-gray-900 text-xl font-bold mb-2 font-playfair_display">Important: Vaccination Required for Entry</h3>
+                <p class="text-slate-600 text-base leading-relaxed">Many countries require proof of yellow fever vaccination for entry. As an official Yellow Fever Centre, we provide internationally recognised certificates on the day of vaccination.</p>
+              </div>
+            </div>
           </div>
-          <h3 class="text-gray-700 text-[32px] md:text-[42px] font-bold leading-tight mb-4 font-playfair_display">Available Vaccinations</h3>
-          <div class="w-[60px] h-[3px] bg-teal-600 rounded-full mx-auto mb-6"></div>
-          <p class="text-slate-600 text-lg md:text-[19px] leading-relaxed max-w-[700px] mx-auto">Comprehensive protection for destinations worldwide</p>
-        </div>
-
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-[1400px] mx-auto">
-          <a class="relative group bg-white border-2 border-gray-200 rounded-2xl p-6 flex items-center gap-3 hover:border-teal-600/40 hover:shadow-xl transition-all" href="#cholera">
-            <div class="w-10 h-10 bg-teal-50 rounded-lg flex items-center justify-center shrink-0 group-hover:bg-teal-600 transition-colors">
-              <i class="fas fa-syringe text-teal-600 text-lg group-hover:text-white transition-colors"></i>
-            </div>
-            <span class="text-gray-700 text-base font-semibold group-hover:text-teal-600 transition-colors">Cholera</span>
-          </a>
-          <a class="relative group bg-white border-2 border-gray-200 rounded-2xl p-6 flex items-center gap-3 hover:border-teal-600/40 hover:shadow-xl transition-all" href="#diphtheria">
-            <div class="w-10 h-10 bg-teal-50 rounded-lg flex items-center justify-center shrink-0 group-hover:bg-teal-600 transition-colors">
-              <i class="fas fa-syringe text-teal-600 text-lg group-hover:text-white transition-colors"></i>
-            </div>
-            <span class="text-gray-700 text-base font-semibold group-hover:text-teal-600 transition-colors">Diphtheria</span>
-          </a>
-          <a class="relative group bg-white border-2 border-gray-200 rounded-2xl p-6 flex items-center gap-3 hover:border-teal-600/40 hover:shadow-xl transition-all" href="#hepatitis-a">
-            <div class="w-10 h-10 bg-teal-50 rounded-lg flex items-center justify-center shrink-0 group-hover:bg-teal-600 transition-colors">
-              <i class="fas fa-syringe text-teal-600 text-lg group-hover:text-white transition-colors"></i>
-            </div>
-            <span class="text-gray-700 text-base font-semibold group-hover:text-teal-600 transition-colors">Hepatitis A</span>
-          </a>
-          <a class="relative group bg-white border-2 border-gray-200 rounded-2xl p-6 flex items-center gap-3 hover:border-teal-600/40 hover:shadow-xl transition-all" href="#hepatitis-b">
-            <div class="w-10 h-10 bg-teal-50 rounded-lg flex items-center justify-center shrink-0 group-hover:bg-teal-600 transition-colors">
-              <i class="fas fa-syringe text-teal-600 text-lg group-hover:text-white transition-colors"></i>
-            </div>
-            <span class="text-gray-700 text-base font-semibold group-hover:text-teal-600 transition-colors">Hepatitis B</span>
-          </a>
-          <a class="relative group bg-white border-2 border-gray-200 rounded-2xl p-6 flex items-center gap-3 hover:border-teal-600/40 hover:shadow-xl transition-all" href="#japanese-encephalitis">
-            <div class="w-10 h-10 bg-teal-50 rounded-lg flex items-center justify-center shrink-0 group-hover:bg-teal-600 transition-colors">
-              <i class="fas fa-syringe text-teal-600 text-lg group-hover:text-white transition-colors"></i>
-            </div>
-            <span class="text-gray-700 text-base font-semibold group-hover:text-teal-600 transition-colors">Japanese Encephalitis</span>
-          </a>
-          <a class="relative group bg-white border-2 border-gray-200 rounded-2xl p-6 flex items-center gap-3 hover:border-teal-600/40 hover:shadow-xl transition-all" href="#meningitis">
-            <div class="w-10 h-10 bg-teal-50 rounded-lg flex items-center justify-center shrink-0 group-hover:bg-teal-600 transition-colors">
-              <i class="fas fa-syringe text-teal-600 text-lg group-hover:text-white transition-colors"></i>
-            </div>
-            <span class="text-gray-700 text-base font-semibold group-hover:text-teal-600 transition-colors">Meningitis</span>
-          </a>
-          <a class="relative group bg-white border-2 border-gray-200 rounded-2xl p-6 flex items-center gap-3 hover:border-teal-600/40 hover:shadow-xl transition-all" href="#polio">
-            <div class="w-10 h-10 bg-teal-50 rounded-lg flex items-center justify-center shrink-0 group-hover:bg-teal-600 transition-colors">
-              <i class="fas fa-syringe text-teal-600 text-lg group-hover:text-white transition-colors"></i>
-            </div>
-            <span class="text-gray-700 text-base font-semibold group-hover:text-teal-600 transition-colors">Polio</span>
-          </a>
-          <a class="relative group bg-white border-2 border-gray-200 rounded-2xl p-6 flex items-center gap-3 hover:border-teal-600/40 hover:shadow-xl transition-all" href="#rabies">
-            <div class="w-10 h-10 bg-teal-50 rounded-lg flex items-center justify-center shrink-0 group-hover:bg-teal-600 transition-colors">
-              <i class="fas fa-syringe text-teal-600 text-lg group-hover:text-white transition-colors"></i>
-            </div>
-            <span class="text-gray-700 text-base font-semibold group-hover:text-teal-600 transition-colors">Rabies</span>
-          </a>
-          <a class="relative group bg-white border-2 border-gray-200 rounded-2xl p-6 flex items-center gap-3 hover:border-teal-600/40 hover:shadow-xl transition-all" href="#tetanus">
-            <div class="w-10 h-10 bg-teal-50 rounded-lg flex items-center justify-center shrink-0 group-hover:bg-teal-600 transition-colors">
-              <i class="fas fa-syringe text-teal-600 text-lg group-hover:text-white transition-colors"></i>
-            </div>
-            <span class="text-gray-700 text-base font-semibold group-hover:text-teal-600 transition-colors">Tetanus</span>
-          </a>
-          <a class="relative group bg-white border-2 border-gray-200 rounded-2xl p-6 flex items-center gap-3 hover:border-teal-600/40 hover:shadow-xl transition-all" href="#tick-borne">
-            <div class="w-10 h-10 bg-teal-50 rounded-lg flex items-center justify-center shrink-0 group-hover:bg-teal-600 transition-colors">
-              <i class="fas fa-syringe text-teal-600 text-lg group-hover:text-white transition-colors"></i>
-            </div>
-            <span class="text-gray-700 text-base font-semibold group-hover:text-teal-600 transition-colors">Tick-Borne Encephalitis</span>
-          </a>
-          <a class="relative group bg-white border-2 border-gray-200 rounded-2xl p-6 flex items-center gap-3 hover:border-teal-600/40 hover:shadow-xl transition-all" href="#typhoid">
-            <div class="w-10 h-10 bg-teal-50 rounded-lg flex items-center justify-center shrink-0 group-hover:bg-teal-600 transition-colors">
-              <i class="fas fa-syringe text-teal-600 text-lg group-hover:text-white transition-colors"></i>
-            </div>
-            <span class="text-gray-700 text-base font-semibold group-hover:text-teal-600 transition-colors">Typhoid</span>
-          </a>
-          <!-- Yellow Fever - Featured & CLICKABLE -->
-          <a class="relative group bg-gradient-to-br from-amber-600 to-amber-500 border-2 border-amber-600 rounded-2xl p-6 flex items-center gap-3 hover:shadow-2xl transition-all overflow-hidden" href="yellow-fever.html">
-            <div class="absolute inset-0 opacity-10">
-              <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 20px 20px;"></div>
-            </div>
-            <div class="relative w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-              <i class="fas fa-certificate text-white text-lg"></i>
-            </div>
-            <div class="relative flex-1">
-              <span class="text-white text-base font-bold block">Yellow Fever</span>
-              <span class="text-white/80 text-xs">Official Centre</span>
-            </div>
-            <i class="fas fa-arrow-right text-white text-sm opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all"></i>
-          </a>
-          <a class="relative group bg-white border-2 border-gray-200 rounded-2xl p-6 flex items-center gap-3 hover:border-teal-600/40 hover:shadow-xl transition-all" href="#mmr">
-            <div class="w-10 h-10 bg-teal-50 rounded-lg flex items-center justify-center shrink-0 group-hover:bg-teal-600 transition-colors">
-              <i class="fas fa-syringe text-teal-600 text-lg group-hover:text-white transition-colors"></i>
-            </div>
-            <span class="text-gray-700 text-base font-semibold group-hover:text-teal-600 transition-colors">MMR</span>
-          </a>
-          <a class="relative group bg-white border-2 border-gray-200 rounded-2xl p-6 flex items-center gap-3 hover:border-teal-600/40 hover:shadow-xl transition-all" href="#whooping-cough">
-            <div class="w-10 h-10 bg-teal-50 rounded-lg flex items-center justify-center shrink-0 group-hover:bg-teal-600 transition-colors">
-              <i class="fas fa-syringe text-teal-600 text-lg group-hover:text-white transition-colors"></i>
-            </div>
-            <span class="text-gray-700 text-base font-semibold group-hover:text-teal-600 transition-colors">Whooping Cough</span>
-          </a>
-          <a class="relative group bg-white border-2 border-gray-200 rounded-2xl p-6 flex items-center gap-3 hover:border-teal-600/40 hover:shadow-xl transition-all" href="#covid-19">
-            <div class="w-10 h-10 bg-teal-50 rounded-lg flex items-center justify-center shrink-0 group-hover:bg-teal-600 transition-colors">
-              <i class="fas fa-syringe text-teal-600 text-lg group-hover:text-white transition-colors"></i>
-            </div>
-            <span class="text-gray-700 text-base font-semibold group-hover:text-teal-600 transition-colors">COVID-19</span>
-          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- WHY CHOOSE US - 2 COLUMN LAYOUT WITH IMAGES -->
+  <!-- WHO NEEDS IT SECTION - PREMIUM REDESIGN -->
   <section class="relative bg-gradient-to-br from-[#e0f2f1] via-white to-[#e0f2f1] px-5 md:px-10 py-[80px] md:py-[120px] overflow-hidden">
     <div class="absolute inset-0 overflow-hidden pointer-events-none">
       <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-br from-teal-500/5 to-transparent rounded-full blur-3xl"></div>
@@ -744,104 +668,338 @@
           <div class="flex items-center justify-center gap-4">
             <div class="w-[3px] h-7 bg-gradient-to-b from-teal-600 to-teal-500 rounded-sm shadow-md animate-slide-in-left"></div>
             <div class="section-header">
-              <p class="text-teal-600 text-sm font-bold tracking-[2.5px] uppercase">WHY CHOOSE US</p>
+              <p class="text-teal-600 text-sm font-bold tracking-[2.5px] uppercase">WHO NEEDS YELLOW FEVER VACCINATION</p>
             </div>
           </div>
         </div>
         <h2 class="text-gray-700 text-[36px] md:text-[56px] font-bold leading-[1.15] mb-6 font-playfair_display animate-fade-in-up delay-200">
-          Sheffield's trusted travel health experts
+          Do you need the yellow fever vaccine?
         </h2>
         <div class="w-[60px] h-[3px] bg-teal-600 rounded-full mx-auto mb-6 animate-scale-in delay-300"></div>
         <p class="text-slate-600 text-lg md:text-[19px] leading-relaxed max-w-[800px] mx-auto animate-fade-in-up delay-400">
-          30+ years of experience protecting Sheffield travellers
+          Yellow fever vaccination is required or recommended for travel to many countries
         </p>
       </div>
 
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-[1300px] mx-auto items-center">
-        <!-- Left: Image -->
-        <div class="animate-fade-in-left delay-500">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[1200px] mx-auto">
+        <!-- Required - CONSISTENT TEAL DESIGN -->
+        <div class="relative group animate-scale-in delay-500">
+          <div class="absolute inset-0 bg-teal-500/5 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="relative bg-white border-2 border-gray-100 rounded-3xl p-10 hover:border-teal-600/30 hover:shadow-xl transition-all">
+            <div class="flex items-center justify-between mb-8">
+              <div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
+                <i class="fas fa-exclamation-triangle text-white text-2xl"></i>
+              </div>
+              <span class="bg-red-100 text-red-700 text-xs font-bold px-4 py-2 rounded-full">MANDATORY</span>
+            </div>
+            
+            <h3 class="text-gray-900 text-[26px] font-extrabold mb-4 font-playfair_display leading-tight">
+              Required for Entry
+            </h3>
+            <p class="text-slate-600 text-base leading-relaxed mb-6">
+              Many countries require proof of yellow fever vaccination for entry, especially if you're arriving from a country with yellow fever risk.
+            </p>
+            
+            <div class="space-y-3">
+              <div class="flex items-start gap-3">
+                <div class="w-6 h-6 bg-teal-50 rounded-full flex items-center justify-center shrink-0 mt-0.5">
+                  <i class="fas fa-check text-teal-600 text-sm"></i>
+                </div>
+                <span class="text-gray-700 text-[15px] font-medium">Travelling to yellow fever risk areas in Africa or South America</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="w-6 h-6 bg-teal-50 rounded-full flex items-center justify-center shrink-0 mt-0.5">
+                  <i class="fas fa-check text-teal-600 text-sm"></i>
+                </div>
+                <span class="text-gray-700 text-[15px] font-medium">Arriving from a country with yellow fever transmission</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="w-6 h-6 bg-teal-50 rounded-full flex items-center justify-center shrink-0 mt-0.5">
+                  <i class="fas fa-check text-teal-600 text-sm"></i>
+                </div>
+                <span class="text-gray-700 text-[15px] font-medium">Transiting through yellow fever countries</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recommended - CONSISTENT TEAL DESIGN -->
+        <div class="relative group animate-scale-in delay-600">
+          <div class="absolute inset-0 bg-teal-500/5 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="relative bg-white border-2 border-gray-100 rounded-3xl p-10 hover:border-teal-600/30 hover:shadow-xl transition-all">
+            <div class="flex items-center justify-between mb-8">
+              <div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
+                <i class="fas fa-shield-heart text-white text-2xl"></i>
+              </div>
+              <span class="bg-amber-100 text-amber-700 text-xs font-bold px-4 py-2 rounded-full">RECOMMENDED</span>
+            </div>
+            
+            <h3 class="text-gray-900 text-[26px] font-extrabold mb-4 font-playfair_display leading-tight">
+              Strongly Recommended
+            </h3>
+            <p class="text-slate-600 text-base leading-relaxed mb-6">
+              Even if not mandatory, vaccination is strongly recommended for your protection when visiting areas where yellow fever is present.
+            </p>
+            
+            <div class="space-y-3">
+              <div class="flex items-start gap-3">
+                <div class="w-6 h-6 bg-teal-50 rounded-full flex items-center justify-center shrink-0 mt-0.5">
+                  <i class="fas fa-check text-teal-600 text-sm"></i>
+                </div>
+                <span class="text-gray-700 text-[15px] font-medium">Visiting rural or jungle areas in risk countries</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="w-6 h-6 bg-teal-50 rounded-full flex items-center justify-center shrink-0 mt-0.5">
+                  <i class="fas fa-check text-teal-600 text-sm"></i>
+                </div>
+                <span class="text-gray-700 text-[15px] font-medium">Extended stays in endemic regions</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="w-6 h-6 bg-teal-50 rounded-full flex items-center justify-center shrink-0 mt-0.5">
+                  <i class="fas fa-check text-teal-600 text-sm"></i>
+                </div>
+                <span class="text-gray-700 text-[15px] font-medium">Multi-country trips in Africa or South America</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COUNTRIES REQUIRING YELLOW FEVER SECTION - TEAL BRAND -->
+  <section class="relative bg-white px-5 md:px-10 py-[80px] md:py-[120px] overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-gray-50/50 via-white to-teal-50/20"></div>
+    <div class="absolute inset-0 opacity-[0.015] pointer-events-none">
+      <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, rgb(13, 147, 136) 1.5px, transparent 0); background-size: 50px 50px;"></div>
+    </div>
+    
+    <div class="max-w-[1680px] mx-auto relative z-10">
+      <div class="text-center mb-16">
+        <div class="section-header-wrapper mb-8">
+          <div class="flex items-center justify-center gap-4">
+            <div class="w-[3px] h-7 bg-gradient-to-b from-teal-600 to-teal-500 rounded-sm shadow-md animate-slide-in-left"></div>
+            <div class="section-header">
+              <p class="text-teal-600 text-sm font-bold tracking-[2.5px] uppercase">YELLOW FEVER RISK COUNTRIES</p>
+            </div>
+          </div>
+        </div>
+        <h2 class="text-gray-700 text-[36px] md:text-[56px] font-bold leading-[1.15] mb-6 font-playfair_display animate-fade-in-up delay-200">
+          Where is yellow fever found?
+        </h2>
+        <div class="w-[60px] h-[3px] bg-teal-600 rounded-full mx-auto mb-6 animate-scale-in delay-300"></div>
+        <p class="text-slate-600 text-lg md:text-[19px] leading-relaxed max-w-[800px] mx-auto animate-fade-in-up delay-400">
+          Yellow fever is endemic in 47 countries across Africa and South America
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-[1200px] mx-auto">
+        <!-- Africa - TEAL ICONS -->
+        <div class="relative group animate-scale-in delay-500">
+          <div class="absolute inset-0 bg-teal-500/5 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="relative bg-white border-2 border-gray-100 rounded-3xl p-10 hover:border-teal-600/30 hover:shadow-xl transition-all">
+            <div class="flex items-center gap-4 mb-8">
+              <div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
+                <i class="fas fa-globe-africa text-white text-2xl"></i>
+              </div>
+              <h3 class="text-gray-900 text-2xl font-bold font-playfair_display">Africa</h3>
+            </div>
+            
+            <p class="text-slate-600 text-base leading-relaxed mb-6">
+              34 countries in sub-Saharan Africa have yellow fever risk, including:
+            </p>
+            
+            <div class="grid grid-cols-2 gap-3">
+              <div class="flex items-center gap-2">
+                <i class="fas fa-location-dot text-amber-600 text-sm"></i>
+                <span class="text-gray-700 text-sm font-medium">Kenya</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fas fa-location-dot text-amber-600 text-sm"></i>
+                <span class="text-gray-700 text-sm font-medium">Tanzania</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fas fa-location-dot text-amber-600 text-sm"></i>
+                <span class="text-gray-700 text-sm font-medium">Uganda</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fas fa-location-dot text-amber-600 text-sm"></i>
+                <span class="text-gray-700 text-sm font-medium">Ghana</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fas fa-location-dot text-amber-600 text-sm"></i>
+                <span class="text-gray-700 text-sm font-medium">Nigeria</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fas fa-location-dot text-amber-600 text-sm"></i>
+                <span class="text-gray-700 text-sm font-medium">Ethiopia</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fas fa-location-dot text-amber-600 text-sm"></i>
+                <span class="text-gray-700 text-sm font-medium">Senegal</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fas fa-location-dot text-amber-600 text-sm"></i>
+                <span class="text-gray-700 text-sm font-medium">Cameroon</span>
+              </div>
+            </div>
+            
+            <p class="text-slate-500 text-sm mt-6 italic">+ 26 other African countries</p>
+          </div>
+        </div>
+
+        <!-- South America - TEAL ICONS -->
+        <div class="relative group animate-scale-in delay-600">
+          <div class="absolute inset-0 bg-teal-500/5 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="relative bg-white border-2 border-gray-100 rounded-3xl p-10 hover:border-teal-600/30 hover:shadow-xl transition-all">
+            <div class="flex items-center gap-4 mb-8">
+              <div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
+                <i class="fas fa-globe-americas text-white text-2xl"></i>
+              </div>
+              <h3 class="text-gray-900 text-2xl font-bold font-playfair_display">South America</h3>
+            </div>
+            
+            <p class="text-slate-600 text-base leading-relaxed mb-6">
+              13 countries in South America have yellow fever risk, including:
+            </p>
+            
+            <div class="grid grid-cols-2 gap-3">
+              <div class="flex items-center gap-2">
+                <i class="fas fa-location-dot text-amber-600 text-sm"></i>
+                <span class="text-gray-700 text-sm font-medium">Brazil</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fas fa-location-dot text-amber-600 text-sm"></i>
+                <span class="text-gray-700 text-sm font-medium">Peru</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fas fa-location-dot text-amber-600 text-sm"></i>
+                <span class="text-gray-700 text-sm font-medium">Colombia</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fas fa-location-dot text-amber-600 text-sm"></i>
+                <span class="text-gray-700 text-sm font-medium">Ecuador</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fas fa-location-dot text-amber-600 text-sm"></i>
+                <span class="text-gray-700 text-sm font-medium">Bolivia</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fas fa-location-dot text-amber-600 text-sm"></i>
+                <span class="text-gray-700 text-sm font-medium">Venezuela</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fas fa-location-dot text-amber-600 text-sm"></i>
+                <span class="text-gray-700 text-sm font-medium">Guyana</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fas fa-location-dot text-amber-600 text-sm"></i>
+                <span class="text-gray-700 text-sm font-medium">Suriname</span>
+              </div>
+            </div>
+            
+            <p class="text-slate-500 text-sm mt-6 italic">+ 5 other South American countries</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-12 text-center">
+        <div class="inline-flex items-center gap-3 bg-amber-100 border-2 border-amber-500/30 px-6 py-4 rounded-2xl shadow-lg">
+          <i class="fas fa-info-circle text-amber-600 text-xl"></i>
+          <p class="text-gray-700 text-base font-semibold">Requirements vary by country and your travel history. We'll advise during consultation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFFICIAL YELLOW FEVER CENTRE SECTION - TEAL BRAND -->
+  <section class="relative bg-gradient-to-br from-[#e0f2f1] via-white to-[#e0f2f1] px-5 md:px-10 py-[80px] md:py-[120px] overflow-hidden">
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-br from-teal-500/5 to-transparent rounded-full blur-3xl"></div>
+      <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gradient-to-tr from-teal-600/5 to-transparent rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="max-w-[1680px] mx-auto relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-[1300px] mx-auto">
+        <!-- Left: Content -->
+        <div class="animate-fade-in-left delay-400">
+          <div class="inline-flex items-center gap-3 bg-amber-100 border-2 border-amber-500/30 px-5 py-3 rounded-full mb-6">
+            <i class="fas fa-certificate text-amber-600"></i>
+            <span class="text-amber-900 text-sm font-bold uppercase tracking-wide">Official Designation</span>
+          </div>
+          
+          <h2 class="text-gray-700 text-3xl md:text-[42px] font-bold leading-tight mb-6 font-playfair_display">
+            We're an Official Yellow Fever Vaccination Centre
+          </h2>
+          
+          <div class="space-y-6 mb-8">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center shrink-0 mt-1">
+                <i class="fas fa-stamp text-amber-600 text-xl"></i>
+              </div>
+              <div>
+                <h3 class="text-gray-900 text-lg font-bold mb-2 font-playfair_display">Internationally Recognised Certificate</h3>
+                <p class="text-slate-600 text-base leading-relaxed">We issue the official International Certificate of Vaccination (ICVP), accepted worldwide for entry requirements.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-teal-50 rounded-xl flex items-center justify-center shrink-0 mt-1">
+                <i class="fas fa-clock text-teal-600 text-xl"></i>
+              </div>
+              <div>
+                <h3 class="text-gray-900 text-lg font-bold mb-2 font-playfair_display">Same-Day Certificate</h3>
+                <p class="text-slate-600 text-base leading-relaxed">Receive your official yellow fever certificate immediately after vaccination—no waiting or postal delays.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center shrink-0 mt-1">
+                <i class="fas fa-user-doctor text-amber-600 text-xl"></i>
+              </div>
+              <div>
+                <h3 class="text-gray-900 text-lg font-bold mb-2 font-playfair_display">Expert Administration</h3>
+                <p class="text-slate-600 text-base leading-relaxed">Tajinder has 30+ years experience administering travel vaccinations, including thousands of yellow fever vaccines.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-teal-50 rounded-xl flex items-center justify-center shrink-0 mt-1">
+                <i class="fas fa-shield-check text-teal-600 text-xl"></i>
+              </div>
+              <div>
+                <h3 class="text-gray-900 text-lg font-bold mb-2 font-playfair_display">Regulated & Inspected</h3>
+                <p class="text-slate-600 text-base leading-relaxed">As a designated Yellow Fever Centre, we meet strict regulatory standards for vaccine storage and administration.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-amber-50 border-2 border-amber-500/30 rounded-2xl p-6">
+            <p class="text-gray-700 text-base font-semibold mb-2">
+              <i class="fas fa-info-circle text-amber-600 mr-2"></i>
+              Valid for Life
+            </p>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Since 2016, yellow fever vaccination is valid for life. You only need one dose for lifetime protection.
+            </p>
+          </div>
+        </div>
+
+        <!-- Right: Image -->
+        <div class="animate-fade-in-right delay-400">
           <div class="relative max-w-[500px] mx-auto">
             <div class="relative rounded-3xl overflow-hidden shadow-2xl group" style="box-shadow: 0 25px 70px rgba(0, 161, 154, 0.15);">
               <div class="aspect-[4/5] overflow-hidden">
-                <img alt="Tajinder Singh - Travel Health Expert" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://c.animaapp.com/mh1jrgnmeI4wDl/img/tajinder.jpg"/>
+                <img alt="Official yellow fever certificate" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://images.unsplash.com/photo-1584515933487-779824d29309?w=800&h=1000&fit=crop"/>
               </div>
               <div class="absolute inset-0 bg-gradient-to-t from-gray-900/10 via-transparent to-transparent pointer-events-none"></div>
             </div>
             
-            <!-- Floating Badge -->
-            <div class="absolute -top-6 -right-6 bg-gradient-to-br from-teal-600 to-teal-500 text-white rounded-2xl p-6 shadow-2xl animate-float hidden lg:block">
+            <!-- Floating Badge - AMBER ACCENT -->
+            <div class="absolute -top-6 -right-6 bg-white border-2 border-amber-600/20 rounded-2xl p-5 shadow-2xl animate-float hidden lg:block">
               <div class="text-center">
-                <p class="text-4xl font-bold leading-none mb-1 font-playfair_display">30+</p>
-                <p class="text-sm opacity-90 font-semibold">Years</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Right: Benefits -->
-        <div class="animate-fade-in-right delay-500">
-          <div class="space-y-6">
-            <!-- Benefit 1 -->
-            <div class="relative group">
-              <div class="absolute inset-0 bg-teal-500/5 rounded-2xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <div class="relative bg-white border-2 border-gray-100 rounded-2xl p-8 hover:border-teal-600/30 hover:shadow-lg transition-all">
-                <div class="flex items-start gap-5">
-                  <div class="w-14 h-14 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center shrink-0 shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all">
-                    <i class="fas fa-certificate text-white text-2xl"></i>
-                  </div>
-                  <div class="flex-1">
-                    <h3 class="text-gray-900 text-xl font-bold mb-2 font-playfair_display group-hover:text-teal-600 transition-colors">Official Yellow Fever Centre</h3>
-                    <p class="text-slate-600 text-base leading-relaxed">Certified to provide internationally recognised yellow fever certificates</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Benefit 2 -->
-            <div class="relative group">
-              <div class="absolute inset-0 bg-teal-500/5 rounded-2xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <div class="relative bg-white border-2 border-gray-100 rounded-2xl p-8 hover:border-teal-600/30 hover:shadow-lg transition-all">
-                <div class="flex items-start gap-5">
-                  <div class="w-14 h-14 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center shrink-0 shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all">
-                    <i class="fas fa-user-doctor text-white text-2xl"></i>
-                  </div>
-                  <div class="flex-1">
-                    <h3 class="text-gray-900 text-xl font-bold mb-2 font-playfair_display group-hover:text-teal-600 transition-colors">Expert Travel Health Guidance</h3>
-                    <p class="text-slate-600 text-base leading-relaxed">Tajinder has 30+ years experience in travel health and vaccinations</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Benefit 3 -->
-            <div class="relative group">
-              <div class="absolute inset-0 bg-teal-500/5 rounded-2xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <div class="relative bg-white border-2 border-gray-100 rounded-2xl p-8 hover:border-teal-600/30 hover:shadow-lg transition-all">
-                <div class="flex items-start gap-5">
-                  <div class="w-14 h-14 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center shrink-0 shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all">
-                    <i class="fas fa-clock text-white text-2xl"></i>
-                  </div>
-                  <div class="flex-1">
-                    <h3 class="text-gray-900 text-xl font-bold mb-2 font-playfair_display group-hover:text-teal-600 transition-colors">Flexible Appointments</h3>
-                    <p class="text-slate-600 text-base leading-relaxed">Evening and weekend appointments available to fit your schedule</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Benefit 4 -->
-            <div class="relative group">
-              <div class="absolute inset-0 bg-teal-500/5 rounded-2xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <div class="relative bg-white border-2 border-gray-100 rounded-2xl p-8 hover:border-teal-600/30 hover:shadow-lg transition-all">
-                <div class="flex items-start gap-5">
-                  <div class="w-14 h-14 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center shrink-0 shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all">
-                    <i class="fas fa-location-dot text-white text-2xl"></i>
-                  </div>
-                  <div class="flex-1">
-                    <h3 class="text-gray-900 text-xl font-bold mb-2 font-playfair_display group-hover:text-teal-600 transition-colors">Central Sheffield Location</h3>
-                    <p class="text-slate-600 text-base leading-relaxed">Easy to reach with free parking available at our Totley clinic</p>
-                  </div>
-                </div>
+                <i class="fas fa-certificate text-amber-600 text-3xl mb-2"></i>
+                <p class="text-xs text-gray-600 font-bold uppercase tracking-wide">Official Centre</p>
               </div>
             </div>
           </div>
@@ -850,213 +1008,213 @@
     </div>
   </section>
 
-  <!-- HOW IT WORKS - PREMIUM REDESIGN -->
+  <!-- VACCINATION DETAILS SECTION - TEAL BRAND -->
   <section class="relative bg-gradient-to-br from-[#e0f2f1] via-white to-[#e0f2f1] px-5 md:px-10 py-[80px] md:py-[120px] overflow-hidden">
-    <!-- Premium Background Layers -->
     <div class="absolute inset-0 opacity-[0.02] pointer-events-none">
       <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, rgb(13, 147, 136) 2px, transparent 0); background-size: 60px 60px;"></div>
     </div>
-    <!-- Decorative gradient orbs -->
     <div class="absolute inset-0 overflow-hidden pointer-events-none">
-      <div class="absolute -top-40 -right-40 w-[600px] h-[600px] bg-gradient-radial from-teal-400/10 via-teal-500/5 to-transparent rounded-full blur-3xl"></div>
-      <div class="absolute -bottom-40 -left-40 w-[500px] h-[500px] bg-gradient-radial from-teal-500/8 via-teal-600/4 to-transparent rounded-full blur-3xl"></div>
-      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-teal-400/4 rounded-full blur-3xl"></div>
+      <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-br from-teal-500/5 to-transparent rounded-full blur-3xl"></div>
+      <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gradient-to-tr from-teal-600/5 to-transparent rounded-full blur-3xl"></div>
     </div>
-    <!-- Mesh gradient overlay -->
-    <div class="absolute inset-0 bg-gradient-to-b from-white/30 via-transparent to-white/30 pointer-events-none"></div>
 
     <div class="max-w-[1680px] mx-auto relative z-10">
-      <!-- Premium Section Header -->
-      <div class="text-center mb-20">
+      <div class="text-center mb-16">
         <div class="section-header-wrapper mb-8">
           <div class="flex items-center justify-center gap-4">
             <div class="w-[3px] h-7 bg-gradient-to-b from-teal-600 to-teal-500 rounded-sm shadow-md animate-slide-in-left"></div>
             <div class="section-header">
-              <p class="text-teal-600 text-sm font-bold tracking-[2.5px] uppercase">HOW IT WORKS</p>
+              <p class="text-teal-600 text-sm font-bold tracking-[2.5px] uppercase">VACCINATION DETAILS</p>
             </div>
           </div>
         </div>
         <h2 class="text-gray-700 text-[36px] md:text-[56px] font-bold leading-[1.15] mb-6 font-playfair_display animate-fade-in-up delay-200">
-          Your travel health journey
+          What to expect
         </h2>
         <div class="w-[60px] h-[3px] bg-teal-600 rounded-full mx-auto mb-6 animate-scale-in delay-300"></div>
         <p class="text-slate-600 text-lg md:text-[19px] leading-relaxed max-w-[800px] mx-auto animate-fade-in-up delay-400">
-          Get protected for your travels in three simple steps
+          Everything you need to know about getting your yellow fever vaccination
         </p>
       </div>
 
-      <div class="max-w-[1200px] mx-auto space-y-16">
-        <!-- Step 1 -->
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center animate-fade-in-up delay-500">
-          <div class="md:col-span-5 order-2 md:order-1">
-            <div class="flex items-start gap-5 mb-6">
-              <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 text-white rounded-2xl flex items-center justify-center text-2xl font-bold shadow-xl">1</div>
-              <div class="w-14 h-14 bg-teal-50 rounded-2xl flex items-center justify-center">
-                <i class="fas fa-calendar-check text-teal-600 text-2xl"></i>
-              </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1300px] mx-auto">
+        <!-- Detail 1 - TEAL ICONS -->
+        <div class="relative group animate-scale-in delay-500">
+          <div class="absolute inset-0 bg-teal-500/5 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="relative bg-white border-2 border-gray-100 rounded-3xl p-8 hover:border-teal-600/30 hover:shadow-xl transition-all text-center">
+            <div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-xl group-hover:scale-110 transition-transform">
+              <i class="fas fa-syringe text-white text-2xl"></i>
             </div>
-            <h3 class="text-gray-700 text-3xl md:text-4xl font-bold mb-4 font-playfair_display">Book consultation</h3>
-            <p class="text-slate-600 text-lg md:text-xl leading-relaxed mb-6">
-              Schedule your travel health appointment online or by phone. We'll discuss your destination and travel plans.
+            <h3 class="text-gray-900 text-xl font-bold mb-3 font-playfair_display">Single Dose</h3>
+            <p class="text-slate-600 text-base leading-relaxed">
+              Only one injection needed for lifetime protection. No booster doses required.
             </p>
-            <div class="inline-flex items-center gap-2.5 bg-white border-2 border-teal-600/30 px-5 py-3 rounded-full shadow-md">
-              <i class="fas fa-clock text-teal-600"></i>
-              <span class="text-gray-700 text-sm font-bold">30 minutes | Free consultation</span>
-            </div>
-          </div>
-          <div class="md:col-span-7 order-1 md:order-2">
-            <div class="relative max-w-[400px] mx-auto">
-              <div class="w-full aspect-square rounded-3xl overflow-hidden shadow-2xl hover-lift" style="box-shadow: 0 25px 70px rgba(0, 161, 154, 0.15);">
-                <img alt="Book consultation" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=600&fit=crop"/>
-              </div>
-            </div>
           </div>
         </div>
 
-        <!-- Step 2 -->
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center animate-fade-in-up delay-600">
-          <div class="md:col-span-7">
-            <div class="relative max-w-[400px] mx-auto">
-              <div class="w-full aspect-square rounded-3xl overflow-hidden shadow-2xl hover-lift" style="box-shadow: 0 25px 70px rgba(0, 161, 154, 0.15);">
-                <img alt="Discuss your trip with Tajinder" class="w-full h-full object-cover" src="https://c.animaapp.com/mh1jrgnmeI4wDl/img/tajinder.jpg"/>
-              </div>
+        <!-- Detail 2 - AMBER BADGE -->
+        <div class="relative group animate-scale-in delay-600">
+          <div class="absolute inset-0 bg-teal-500/5 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="relative bg-white border-2 border-gray-100 rounded-3xl p-8 hover:border-teal-600/30 hover:shadow-xl transition-all text-center">
+            <div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-xl group-hover:scale-110 transition-transform">
+              <i class="fas fa-calendar-days text-white text-2xl"></i>
             </div>
-          </div>
-          <div class="md:col-span-5">
-            <div class="flex items-start gap-5 mb-6">
-              <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 text-white rounded-2xl flex items-center justify-center text-2xl font-bold shadow-xl">2</div>
-              <div class="w-14 h-14 bg-teal-50 rounded-2xl flex items-center justify-center">
-                <i class="fas fa-comments text-teal-600 text-2xl"></i>
-              </div>
-            </div>
-            <h3 class="text-gray-700 text-3xl md:text-4xl font-bold mb-4 font-playfair_display">Discuss your trip</h3>
-            <p class="text-slate-600 text-lg md:text-xl leading-relaxed mb-6">
-              Meet with Tajinder to discuss your destination, dates, and health needs. Get personalised advice for your journey.
+            <h3 class="text-gray-900 text-xl font-bold mb-3 font-playfair_display">10 Days Before Travel</h3>
+            <p class="text-slate-600 text-base leading-relaxed">
+              Vaccine must be given at least 10 days before travel to allow immunity to develop.
             </p>
-            <div class="inline-flex items-center gap-2.5 bg-white border-2 border-teal-600/30 px-5 py-3 rounded-full shadow-md">
-              <i class="fas fa-globe text-teal-600"></i>
-              <span class="text-gray-700 text-sm font-bold">Destination-specific advice</span>
-            </div>
           </div>
         </div>
 
-        <!-- Step 3 -->
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center animate-fade-in-up delay-700">
-          <div class="md:col-span-5 order-2 md:order-1">
-            <div class="flex items-start gap-5 mb-6">
-              <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 text-white rounded-2xl flex items-center justify-center text-2xl font-bold shadow-xl">3</div>
-              <div class="w-14 h-14 bg-teal-50 rounded-2xl flex items-center justify-center">
-                <i class="fas fa-syringe text-teal-600 text-2xl"></i>
-              </div>
+        <!-- Detail 3 -->
+        <div class="relative group animate-scale-in delay-700">
+          <div class="absolute inset-0 bg-teal-500/5 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="relative bg-white border-2 border-gray-100 rounded-3xl p-8 hover:border-teal-600/30 hover:shadow-xl transition-all text-center">
+            <div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-xl group-hover:scale-110 transition-transform">
+              <i class="fas fa-shield text-white text-2xl"></i>
             </div>
-            <h3 class="text-gray-700 text-3xl md:text-4xl font-bold mb-4 font-playfair_display">Get vaccinated</h3>
-            <p class="text-slate-600 text-lg md:text-xl leading-relaxed mb-6">
-              Receive required vaccinations and travel health advice in one visit. Leave with official certificates and peace of mind.
+            <h3 class="text-gray-900 text-xl font-bold mb-3 font-playfair_display">Lifetime Protection</h3>
+            <p class="text-slate-600 text-base leading-relaxed">
+              Valid for life. Certificate never expires and is accepted worldwide.
             </p>
-            <div class="inline-flex items-center gap-2.5 bg-white border-2 border-teal-600/30 px-5 py-3 rounded-full shadow-md">
-              <i class="fas fa-certificate text-teal-600"></i>
-              <span class="text-gray-700 text-sm font-bold">Official certificates provided</span>
-            </div>
           </div>
-          <div class="md:col-span-7 order-1 md:order-2">
-            <div class="relative max-w-[400px] mx-auto">
-              <div class="w-full aspect-square rounded-3xl overflow-hidden shadow-2xl hover-lift" style="box-shadow: 0 25px 70px rgba(0, 161, 154, 0.15);">
-                <img alt="Get vaccinated" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=600&h=600&fit=crop"/>
-              </div>
+        </div>
+
+        <!-- Detail 4 -->
+        <div class="relative group animate-scale-in delay-800">
+          <div class="absolute inset-0 bg-teal-500/5 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="relative bg-white border-2 border-gray-100 rounded-3xl p-8 hover:border-teal-600/30 hover:shadow-xl transition-all text-center">
+            <div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-xl group-hover:scale-110 transition-transform">
+              <i class="fas fa-user-check text-white text-2xl"></i>
             </div>
+            <h3 class="text-gray-900 text-xl font-bold mb-3 font-playfair_display">Age Requirements</h3>
+            <p class="text-slate-600 text-base leading-relaxed">
+              Suitable for travellers aged 9 months and older. Not recommended during pregnancy.
+            </p>
+          </div>
+        </div>
+
+        <!-- Detail 5 -->
+        <div class="relative group animate-scale-in delay-900">
+          <div class="absolute inset-0 bg-teal-500/5 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="relative bg-white border-2 border-gray-100 rounded-3xl p-8 hover:border-teal-600/30 hover:shadow-xl transition-all text-center">
+            <div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-xl group-hover:scale-110 transition-transform">
+              <i class="fas fa-notes-medical text-white text-2xl"></i>
+            </div>
+            <h3 class="text-gray-900 text-xl font-bold mb-3 font-playfair_display">Side Effects</h3>
+            <p class="text-slate-600 text-base leading-relaxed">
+              Usually mild: soreness at injection site, headache, or low-grade fever for 1-2 days.
+            </p>
+          </div>
+        </div>
+
+        <!-- Detail 6 -->
+        <div class="relative group animate-scale-in delay-500">
+          <div class="absolute inset-0 bg-teal-500/5 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="relative bg-white border-2 border-gray-100 rounded-3xl p-8 hover:border-teal-600/30 hover:shadow-xl transition-all text-center">
+            <div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-xl group-hover:scale-110 transition-transform">
+              <i class="fas fa-pound-sign text-white text-2xl"></i>
+            </div>
+            <h3 class="text-gray-900 text-xl font-bold mb-3 font-playfair_display">Private Only</h3>
+            <p class="text-slate-600 text-base leading-relaxed">
+              Yellow fever vaccination is not available on the NHS. Private fee applies.
+            </p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- POPULAR DESTINATIONS SECTION -->
-  <section class="relative bg-gradient-to-b from-gray-50 via-white to-gray-50 px-6 md:px-10 py-[80px] md:py-[120px] overflow-hidden">
-    <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
-      <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, rgb(13, 147, 136) 1px, transparent 0); background-size: 40px 40px;"></div>
+  <!-- WHO CANNOT HAVE IT SECTION - TEAL BRAND -->
+  <section class="relative bg-white px-5 md:px-10 py-[80px] md:py-[120px] overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-gray-50/50 via-white to-teal-50/20"></div>
+    <div class="absolute inset-0 opacity-[0.015] pointer-events-none">
+      <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, rgb(13, 147, 136) 1.5px, transparent 0); background-size: 50px 50px;"></div>
     </div>
-
+    
     <div class="max-w-[1680px] mx-auto relative z-10">
-      <div class="text-center mb-12">
+      <div class="text-center mb-16">
         <div class="section-header-wrapper mb-8">
           <div class="flex items-center justify-center gap-4">
             <div class="w-[3px] h-7 bg-gradient-to-b from-teal-600 to-teal-500 rounded-sm shadow-md animate-slide-in-left"></div>
             <div class="section-header">
-              <p class="text-teal-600 text-sm font-bold tracking-[2.5px] uppercase">POPULAR DESTINATIONS</p>
+              <p class="text-teal-600 text-sm font-bold tracking-[2.5px] uppercase">CONTRAINDICATIONS</p>
             </div>
           </div>
         </div>
-        <h2 class="text-gray-700 text-[32px] md:text-[42px] font-bold leading-tight max-w-[900px] mx-auto mb-6 font-playfair_display animate-fade-in-up delay-200">
-          Travelling to these destinations?
+        <h2 class="text-gray-700 text-[36px] md:text-[56px] font-bold leading-[1.15] mb-6 font-playfair_display animate-fade-in-up delay-200">
+          Who cannot have the vaccine?
         </h2>
         <div class="w-[60px] h-[3px] bg-teal-600 rounded-full mx-auto mb-6 animate-scale-in delay-300"></div>
         <p class="text-slate-600 text-lg md:text-[19px] leading-relaxed max-w-[800px] mx-auto animate-fade-in-up delay-400">
-          Find out which vaccinations and health precautions you need
+          Yellow fever vaccine is not suitable for everyone. We'll assess your eligibility during consultation.
         </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <a class="relative block aspect-video rounded-2xl overflow-hidden hover:shadow-xl transition-all group hover-lift animate-scale-in delay-100" href="thailand.html">
-          <img alt="Thailand Temple" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://c.animaapp.com/mh1jrgnmeI4wDl/assets/5.jpg"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent"></div>
-          <div class="absolute bottom-0 left-0 right-0 p-5 md:p-6 z-[5]">
-            <h3 class="text-white text-lg md:text-[22px] font-semibold leading-tight font-playfair_display">Thailand</h3>
+      <div class="max-w-[900px] mx-auto">
+        <div class="relative group animate-scale-in delay-500">
+          <div class="absolute inset-0 bg-red-500/5 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="relative bg-white border-2 border-red-200 rounded-3xl p-10 hover:shadow-xl transition-all">
+            <div class="flex items-center gap-4 mb-8">
+              <div class="w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-2xl flex items-center justify-center shadow-xl">
+                <i class="fas fa-ban text-white text-2xl"></i>
+              </div>
+              <h3 class="text-gray-900 text-2xl font-bold font-playfair_display">Not Suitable For:</h3>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="flex items-start gap-3 p-4 rounded-xl bg-red-50/50">
+                <i class="fas fa-times text-red-600 mt-1 shrink-0"></i>
+                <span class="text-gray-700 text-base font-medium">Pregnant women</span>
+              </div>
+              <div class="flex items-start gap-3 p-4 rounded-xl bg-red-50/50">
+                <i class="fas fa-times text-red-600 mt-1 shrink-0"></i>
+                <span class="text-gray-700 text-base font-medium">Breastfeeding mothers (first 6 months)</span>
+              </div>
+              <div class="flex items-start gap-3 p-4 rounded-xl bg-red-50/50">
+                <i class="fas fa-times text-red-600 mt-1 shrink-0"></i>
+                <span class="text-gray-700 text-base font-medium">Infants under 9 months</span>
+              </div>
+              <div class="flex items-start gap-3 p-4 rounded-xl bg-red-50/50">
+                <i class="fas fa-times text-red-600 mt-1 shrink-0"></i>
+                <span class="text-gray-700 text-base font-medium">Severe egg allergy</span>
+              </div>
+              <div class="flex items-start gap-3 p-4 rounded-xl bg-red-50/50">
+                <i class="fas fa-times text-red-600 mt-1 shrink-0"></i>
+                <span class="text-gray-700 text-base font-medium">Weakened immune system</span>
+              </div>
+              <div class="flex items-start gap-3 p-4 rounded-xl bg-red-50/50">
+                <i class="fas fa-times text-red-600 mt-1 shrink-0"></i>
+                <span class="text-gray-700 text-base font-medium">Thymus gland disorders</span>
+              </div>
+              <div class="flex items-start gap-3 p-4 rounded-xl bg-red-50/50">
+                <i class="fas fa-times text-red-600 mt-1 shrink-0"></i>
+                <span class="text-gray-700 text-base font-medium">Age 60+ (requires assessment)</span>
+              </div>
+              <div class="flex items-start gap-3 p-4 rounded-xl bg-red-50/50">
+                <i class="fas fa-times text-red-600 mt-1 shrink-0"></i>
+                <span class="text-gray-700 text-base font-medium">Recent live vaccines (within 4 weeks)</span>
+              </div>
+            </div>
+
+            <div class="mt-8 pt-8 border-t-2 border-gray-100">
+              <div class="bg-amber-50 border-2 border-amber-500/30 rounded-2xl p-6">
+                <p class="text-gray-700 text-base font-semibold mb-2">
+                  <i class="fas fa-info-circle text-amber-600 mr-2"></i>
+                  Medical Exemption Certificates Available
+                </p>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                  If you cannot have the vaccine for medical reasons, we can provide a Medical Exemption Certificate for travel purposes.
+                </p>
+              </div>
+            </div>
           </div>
-        </a>
-        <a class="relative block aspect-video rounded-2xl overflow-hidden hover:shadow-xl transition-all group hover-lift animate-scale-in delay-200" href="india.html">
-          <img alt="Taj Mahal India" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://c.animaapp.com/mh1jrgnmeI4wDl/assets/6.jpg"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent"></div>
-          <div class="absolute bottom-0 left-0 right-0 p-5 md:p-6 z-[5]">
-            <h3 class="text-white text-lg md:text-[22px] font-semibold leading-tight font-playfair_display">India</h3>
-          </div>
-        </a>
-        <a class="relative block aspect-video rounded-2xl overflow-hidden hover:shadow-xl transition-all group hover-lift animate-scale-in delay-300" href="kenya.html">
-          <img alt="Kenya Wildlife" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://c.animaapp.com/mh1jrgnmeI4wDl/assets/7.jpg"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent"></div>
-          <div class="absolute bottom-0 left-0 right-0 p-5 md:p-6 z-[5]">
-            <h3 class="text-white text-lg md:text-[22px] font-semibold leading-tight font-playfair_display">Kenya</h3>
-          </div>
-        </a>
-        <a class="relative block aspect-video rounded-2xl overflow-hidden hover:shadow-xl transition-all group hover-lift animate-scale-in delay-400" href="vietnam.html">
-          <img alt="Vietnam Rice Terraces" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://c.animaapp.com/mh1jrgnmeI4wDl/assets/8.jpg"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent"></div>
-          <div class="absolute bottom-0 left-0 right-0 p-5 md:p-6 z-[5]">
-            <h3 class="text-white text-lg md:text-[22px] font-semibold leading-tight font-playfair_display">Vietnam</h3>
-          </div>
-        </a>
-        <a class="relative block aspect-video rounded-2xl overflow-hidden hover:shadow-xl transition-all group hover-lift animate-scale-in delay-500" href="south-africa.html">
-          <img alt="South Africa Landscape" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://c.animaapp.com/mh1jrgnmeI4wDl/assets/9.jpg"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent"></div>
-          <div class="absolute bottom-0 left-0 right-0 p-5 md:p-6 z-[5]">
-            <h3 class="text-white text-lg md:text-[22px] font-semibold leading-tight font-playfair_display">South Africa</h3>
-          </div>
-        </a>
-        <a class="relative block aspect-video rounded-2xl overflow-hidden hover:shadow-xl transition-all group hover-lift animate-scale-in delay-600" href="#indonesia">
-          <img alt="Indonesia Temple" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://c.animaapp.com/mh1jrgnmeI4wDl/assets/10.jpg"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent"></div>
-          <div class="absolute bottom-0 left-0 right-0 p-5 md:p-6 z-[5]">
-            <h3 class="text-white text-lg md:text-[22px] font-semibold leading-tight font-playfair_display">Indonesia</h3>
-          </div>
-        </a>
-        <a class="relative block aspect-video rounded-2xl overflow-hidden hover:shadow-xl transition-all group hover-lift animate-scale-in delay-700" href="brazil.html">
-          <img alt="Brazil Rio de Janeiro" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://c.animaapp.com/mh1jrgnmeI4wDl/assets/11.jpg"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent"></div>
-          <div class="absolute bottom-0 left-0 right-0 p-5 md:p-6 z-[5]">
-            <h3 class="text-white text-lg md:text-[22px] font-semibold leading-tight font-playfair_display">Brazil</h3>
-          </div>
-        </a>
-        <a class="relative block aspect-video rounded-2xl overflow-hidden hover:shadow-xl transition-all group hover-lift animate-scale-in delay-800" href="#costa-rica">
-          <img alt="Costa Rica Beach" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://c.animaapp.com/mh1jrgnmeI4wDl/assets/12.jpg"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent"></div>
-          <div class="absolute bottom-0 left-0 right-0 p-5 md:p-6 z-[5]">
-            <h3 class="text-white text-lg md:text-[22px] font-semibold leading-tight font-playfair_display">Costa Rica</h3>
-          </div>
-        </a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- FAQ SECTION -->
+  <!-- FAQ SECTION - TEAL BRAND -->
   <section class="relative bg-gradient-to-br from-teal-50/60 via-white to-blue-50/40 px-5 md:px-10 py-[80px] md:py-[120px] overflow-hidden">
     <div class="absolute inset-0 opacity-[0.025] pointer-events-none">
       <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, rgb(13, 147, 136) 2px, transparent 0); background-size: 60px 60px;"></div>
@@ -1072,21 +1230,21 @@
           <div class="flex items-center justify-center gap-4">
             <div class="w-[3px] h-7 bg-gradient-to-b from-teal-600 to-teal-500 rounded-sm shadow-md animate-slide-in-left"></div>
             <div class="section-header">
-              <p class="text-teal-600 text-sm font-bold tracking-[2.5px] uppercase">FREQUENTLY ASKED QUESTIONS</p>
+              <p class="text-teal-600 text-sm font-bold tracking-[2.5px] uppercase">YELLOW FEVER FAQs</p>
             </div>
           </div>
         </div>
         <h2 class="text-gray-700 text-[36px] md:text-[56px] font-bold leading-[1.15] mb-6 font-playfair_display animate-fade-in-up delay-200">
-          Travel health questions answered
+          Your questions answered
         </h2>
         <div class="w-[60px] h-[3px] bg-teal-600 rounded-full mx-auto mb-6 animate-scale-in delay-300"></div>
         <p class="text-slate-600 text-lg md:text-[19px] leading-relaxed max-w-[800px] mx-auto animate-fade-in-up delay-400">
-          Get answers to the most common travel health questions
+          Common questions about yellow fever vaccination
         </p>
       </div>
 
       <div class="max-w-[900px] mx-auto space-y-4">
-        <!-- FAQ 1 -->
+        <!-- FAQ 1 - TEAL INTERACTIONS -->
         <div class="relative group">
           <div class="absolute inset-0 bg-gradient-to-br from-teal-500/8 to-blue-500/5 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
           <div class="relative bg-white/80 backdrop-blur-sm border-2 border-gray-200 rounded-3xl overflow-hidden animate-fade-in-up delay-500 hover:border-teal-600/40 hover:shadow-2xl hover:bg-white transition-all duration-300">
@@ -1095,7 +1253,7 @@
                 <div class="w-8 h-8 bg-gradient-to-br from-teal-500 to-teal-600 rounded-lg flex items-center justify-center shrink-0 mt-1 shadow-md">
                   <span class="text-white text-sm font-bold">1</span>
                 </div>
-                <span class="text-lg md:text-xl font-bold text-gray-700 font-playfair_display">How far in advance should I book my travel vaccinations?</span>
+                <span class="text-lg md:text-xl font-bold text-gray-700 font-playfair_display">How long does the yellow fever certificate last?</span>
               </div>
               <div class="flex-shrink-0 w-11 h-11 bg-teal-50 rounded-xl flex items-center justify-center group-hover:bg-teal-600 group-hover:scale-110 transition-all">
                 <i class="fas fa-plus text-teal-600 text-lg group-hover:text-white transition-colors" id="icon-1"></i>
@@ -1104,7 +1262,7 @@
             <div class="accordion-content px-7 md:px-8 pb-0" id="content-1">
               <div class="pl-12 pb-7 md:pb-8">
                 <p class="text-slate-600 text-base md:text-lg leading-relaxed">
-                  We recommend booking 6-8 weeks before travel. Some vaccines require multiple doses over several weeks, and your body needs time to build immunity. However, we can still help with last-minute travel—contact us as soon as possible.
+                  Since 2016, the yellow fever certificate is valid for life. Previously it was valid for 10 years, but the WHO changed this to lifetime validity. You only need one dose for lifelong protection.
                 </p>
               </div>
             </div>
@@ -1120,7 +1278,7 @@
                 <div class="w-8 h-8 bg-gradient-to-br from-teal-500 to-teal-600 rounded-lg flex items-center justify-center shrink-0 mt-1 shadow-md">
                   <span class="text-white text-sm font-bold">2</span>
                 </div>
-                <span class="text-lg md:text-xl font-bold text-gray-700 font-playfair_display">Do I need a yellow fever certificate?</span>
+                <span class="text-lg md:text-xl font-bold text-gray-700 font-playfair_display">When should I get vaccinated before my trip?</span>
               </div>
               <div class="flex-shrink-0 w-11 h-11 bg-teal-50 rounded-xl flex items-center justify-center group-hover:bg-teal-600 group-hover:scale-110 transition-all">
                 <i class="fas fa-plus text-teal-600 text-lg group-hover:text-white transition-colors" id="icon-2"></i>
@@ -1129,7 +1287,7 @@
             <div class="accordion-content px-7 md:px-8 pb-0" id="content-2">
               <div class="pl-12 pb-7 md:pb-8">
                 <p class="text-slate-600 text-base md:text-lg leading-relaxed">
-                  Yellow fever certificates are required for entry to certain countries in Africa and South America. As an official yellow fever vaccination centre, we can provide the internationally recognised certificate on the day of your vaccination.
+                  The yellow fever vaccine must be given at least 10 days before travel to allow your body to develop immunity. The certificate becomes valid 10 days after vaccination. We recommend booking as early as possible.
                 </p>
               </div>
             </div>
@@ -1145,7 +1303,7 @@
                 <div class="w-8 h-8 bg-gradient-to-br from-teal-500 to-teal-600 rounded-lg flex items-center justify-center shrink-0 mt-1 shadow-md">
                   <span class="text-white text-sm font-bold">3</span>
                 </div>
-                <span class="text-lg md:text-xl font-bold text-gray-700 font-playfair_display">How much do travel vaccinations cost?</span>
+                <span class="text-lg md:text-xl font-bold text-gray-700 font-playfair_display">Can I get the certificate on the same day?</span>
               </div>
               <div class="flex-shrink-0 w-11 h-11 bg-teal-50 rounded-xl flex items-center justify-center group-hover:bg-teal-600 group-hover:scale-110 transition-all">
                 <i class="fas fa-plus text-teal-600 text-lg group-hover:text-white transition-colors" id="icon-3"></i>
@@ -1154,7 +1312,7 @@
             <div class="accordion-content px-7 md:px-8 pb-0" id="content-3">
               <div class="pl-12 pb-7 md:pb-8">
                 <p class="text-slate-600 text-base md:text-lg leading-relaxed">
-                  Costs vary depending on which vaccines you need. During your consultation, we'll provide a full breakdown of costs with no hidden fees. Some vaccines may be available free on the NHS.
+                  Yes! As an official Yellow Fever Centre, we issue your International Certificate of Vaccination immediately after your vaccination. You'll leave with your certificate in hand—no waiting or postal delays.
                 </p>
               </div>
             </div>
@@ -1170,7 +1328,7 @@
                 <div class="w-8 h-8 bg-gradient-to-br from-teal-500 to-teal-600 rounded-lg flex items-center justify-center shrink-0 mt-1 shadow-md">
                   <span class="text-white text-sm font-bold">4</span>
                 </div>
-                <span class="text-lg md:text-xl font-bold text-gray-700 font-playfair_display">What should I bring to my appointment?</span>
+                <span class="text-lg md:text-xl font-bold text-gray-700 font-playfair_display">How much does yellow fever vaccination cost?</span>
               </div>
               <div class="flex-shrink-0 w-11 h-11 bg-teal-50 rounded-xl flex items-center justify-center group-hover:bg-teal-600 group-hover:scale-110 transition-all">
                 <i class="fas fa-plus text-teal-600 text-lg group-hover:text-white transition-colors" id="icon-4"></i>
@@ -1179,7 +1337,7 @@
             <div class="accordion-content px-7 md:px-8 pb-0" id="content-4">
               <div class="pl-12 pb-7 md:pb-8">
                 <p class="text-slate-600 text-base md:text-lg leading-relaxed">
-                  Bring your travel itinerary, any previous vaccination records, and details of any medical conditions or medications you're taking. This helps us provide the most accurate advice for your trip.
+                  Yellow fever vaccination is only available privately (not on the NHS). The cost includes the vaccine, administration, and official certificate. Contact us for current pricing—we offer transparent, competitive rates with no hidden fees.
                 </p>
               </div>
             </div>
@@ -1195,7 +1353,7 @@
                 <div class="w-8 h-8 bg-gradient-to-br from-teal-500 to-teal-600 rounded-lg flex items-center justify-center shrink-0 mt-1 shadow-md">
                   <span class="text-white text-sm font-bold">5</span>
                 </div>
-                <span class="text-lg md:text-xl font-bold text-gray-700 font-playfair_display">Do I need malaria tablets?</span>
+                <span class="text-lg md:text-xl font-bold text-gray-700 font-playfair_display">Can I have yellow fever vaccine with other travel vaccines?</span>
               </div>
               <div class="flex-shrink-0 w-11 h-11 bg-teal-50 rounded-xl flex items-center justify-center group-hover:bg-teal-600 group-hover:scale-110 transition-all">
                 <i class="fas fa-plus text-teal-600 text-lg group-hover:text-white transition-colors" id="icon-5"></i>
@@ -1204,7 +1362,7 @@
             <div class="accordion-content px-7 md:px-8 pb-0" id="content-5">
               <div class="pl-12 pb-7 md:pb-8">
                 <p class="text-slate-600 text-base md:text-lg leading-relaxed">
-                  This depends on your destination and the time of year you're travelling. We'll assess your malaria risk during consultation and prescribe appropriate antimalarial medication if needed.
+                  Yes, yellow fever vaccine can be given at the same time as most other travel vaccines. However, if you're having other live vaccines (like MMR), they should be given on the same day or at least 4 weeks apart. We'll advise on the best schedule during your consultation.
                 </p>
               </div>
             </div>
@@ -1220,7 +1378,7 @@
                 <div class="w-8 h-8 bg-gradient-to-br from-teal-500 to-teal-600 rounded-lg flex items-center justify-center shrink-0 mt-1 shadow-md">
                   <span class="text-white text-sm font-bold">6</span>
                 </div>
-                <span class="text-lg md:text-xl font-bold text-gray-700 font-playfair_display">Can I get travel vaccinations on the NHS?</span>
+                <span class="text-lg md:text-xl font-bold text-gray-700 font-playfair_display">What if I lose my yellow fever certificate?</span>
               </div>
               <div class="flex-shrink-0 w-11 h-11 bg-teal-50 rounded-xl flex items-center justify-center group-hover:bg-teal-600 group-hover:scale-110 transition-all">
                 <i class="fas fa-plus text-teal-600 text-lg group-hover:text-white transition-colors" id="icon-6"></i>
@@ -1229,18 +1387,113 @@
             <div class="accordion-content px-7 md:px-8 pb-0" id="content-6">
               <div class="pl-12 pb-7 md:pb-8">
                 <p class="text-slate-600 text-base md:text-lg leading-relaxed">
-                  Some travel vaccines like hepatitis A, typhoid, and cholera are available free on the NHS. Others, including yellow fever and rabies, are only available privately. We'll advise you on what's available during your consultation.
+                  If you lose your certificate, we can issue a replacement if we have your vaccination records. Keep your certificate safe—it's an important travel document. We recommend taking a photo or scan as backup.
                 </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-
     </div>
   </section>
 
-  <!-- FINAL CTA SECTION -->
+  <!-- RELATED DESTINATIONS SECTION - TEAL BRAND -->
+  <section class="relative bg-gradient-to-br from-[#e0f2f1] via-white to-[#e0f2f1] px-5 md:px-10 py-[80px] md:py-[120px] overflow-hidden">
+    <div class="absolute inset-0 opacity-[0.015] pointer-events-none">
+      <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, rgb(13, 147, 136) 1.5px, transparent 0); background-size: 50px 50px;"></div>
+    </div>
+    
+    <div class="max-w-[1680px] mx-auto relative z-10">
+      <div class="text-center mb-16">
+        <div class="section-header-wrapper mb-8">
+          <div class="flex items-center justify-center gap-4">
+            <div class="w-[3px] h-7 bg-gradient-to-b from-teal-600 to-teal-500 rounded-sm shadow-md animate-slide-in-left"></div>
+            <div class="section-header">
+              <p class="text-teal-600 text-sm font-bold tracking-[2.5px] uppercase">RELATED DESTINATIONS</p>
+            </div>
+          </div>
+        </div>
+        <h2 class="text-gray-700 text-[36px] md:text-[56px] font-bold leading-[1.15] mb-6 font-playfair_display animate-fade-in-up delay-200">
+          Destinations requiring yellow fever vaccination
+        </h2>
+        <div class="w-[60px] h-[3px] bg-teal-600 rounded-full mx-auto mb-6 animate-scale-in delay-300"></div>
+        <p class="text-slate-600 text-lg md:text-[19px] leading-relaxed max-w-[800px] mx-auto animate-fade-in-up delay-400">
+          Planning to visit these destinations? You'll need yellow fever vaccination and certificate
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[1200px] mx-auto">
+        <a class="relative block aspect-video rounded-2xl overflow-hidden hover:shadow-xl transition-all group hover-lift animate-scale-in delay-500" href="kenya.html">
+          <img alt="Kenya Wildlife" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://c.animaapp.com/mh1jrgnmeI4wDl/assets/7.jpg"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent"></div>
+          <div class="absolute top-4 left-4 bg-red-500 text-white text-xs font-bold px-3 py-1.5 rounded-full">REQUIRED</div>
+          <div class="absolute bottom-0 left-0 right-0 p-5 md:p-6 z-[5]">
+            <h3 class="text-white text-lg md:text-[22px] font-semibold leading-tight font-playfair_display mb-2">Kenya</h3>
+            <p class="text-white/80 text-sm">Yellow fever certificate required for entry</p>
+          </div>
+        </a>
+        
+        <a class="relative block aspect-video rounded-2xl overflow-hidden hover:shadow-xl transition-all group hover-lift animate-scale-in delay-600" href="brazil.html">
+          <img alt="Brazil Rio de Janeiro" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://c.animaapp.com/mh1jrgnmeI4wDl/assets/11.jpg"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent"></div>
+          <div class="absolute top-4 left-4 bg-red-500 text-white text-xs font-bold px-3 py-1.5 rounded-full">REQUIRED</div>
+          <div class="absolute bottom-0 left-0 right-0 p-5 md:p-6 z-[5]">
+            <h3 class="text-white text-lg md:text-[22px] font-semibold leading-tight font-playfair_display mb-2">Brazil</h3>
+            <p class="text-white/80 text-sm">Required for Amazon, Pantanal & Iguazu Falls</p>
+          </div>
+        </a>
+
+        <a class="relative block aspect-video rounded-2xl overflow-hidden hover:shadow-xl transition-all group hover-lift animate-scale-in delay-700" href="south-africa.html">
+          <img alt="South Africa Landscape" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://c.animaapp.com/mh1jrgnmeI4wDl/assets/9.jpg"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent"></div>
+          <div class="absolute top-4 left-4 bg-amber-500 text-white text-xs font-bold px-3 py-1.5 rounded-full">CONDITIONAL</div>
+          <div class="absolute bottom-0 left-0 right-0 p-5 md:p-6 z-[5]">
+            <h3 class="text-white text-lg md:text-[22px] font-semibold leading-tight font-playfair_display mb-2">South Africa</h3>
+            <p class="text-white/80 text-sm">Required if arriving from yellow fever countries</p>
+          </div>
+        </a>
+
+        <a class="relative block aspect-video rounded-2xl overflow-hidden hover:shadow-xl transition-all group hover-lift animate-scale-in delay-800" href="#peru">
+          <img alt="Peru Machu Picchu" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://images.unsplash.com/photo-1526392060635-9d6019884377?w=800&h=450&fit=crop"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent"></div>
+          <div class="absolute top-4 left-4 bg-red-500 text-white text-xs font-bold px-3 py-1.5 rounded-full">REQUIRED</div>
+          <div class="absolute bottom-0 left-0 right-0 p-5 md:p-6 z-[5]">
+            <h3 class="text-white text-lg md:text-[22px] font-semibold leading-tight font-playfair_display mb-2">Peru</h3>
+            <p class="text-white/80 text-sm">Required for jungle regions</p>
+          </div>
+        </a>
+
+        <a class="relative block aspect-video rounded-2xl overflow-hidden hover:shadow-xl transition-all group hover-lift animate-scale-in delay-900" href="#colombia">
+          <img alt="Colombia Landscape" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://images.unsplash.com/photo-1561077700-c4d5a2be9c00?w=800&h=450&fit=crop"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent"></div>
+          <div class="absolute top-4 left-4 bg-red-500 text-white text-xs font-bold px-3 py-1.5 rounded-full">REQUIRED</div>
+          <div class="absolute bottom-0 left-0 right-0 p-5 md:p-6 z-[5]">
+            <h3 class="text-white text-lg md:text-[22px] font-semibold leading-tight font-playfair_display mb-2">Colombia</h3>
+            <p class="text-white/80 text-sm">Required for most regions</p>
+          </div>
+        </a>
+
+        <a class="relative block aspect-video rounded-2xl overflow-hidden hover:shadow-xl transition-all group hover-lift animate-scale-in delay-500" href="#ecuador">
+          <img alt="Ecuador Landscape" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?w=800&h=450&fit=crop"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent"></div>
+          <div class="absolute top-4 left-4 bg-red-500 text-white text-xs font-bold px-3 py-1.5 rounded-full">REQUIRED</div>
+          <div class="absolute bottom-0 left-0 right-0 p-5 md:p-6 z-[5]">
+            <h3 class="text-white text-lg md:text-[22px] font-semibold leading-tight font-playfair_display mb-2">Ecuador</h3>
+            <p class="text-white/80 text-sm">Required for Amazon regions</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="text-center mt-12">
+        <div class="inline-flex items-center gap-3 bg-amber-100 border-2 border-amber-500/30 px-6 py-4 rounded-2xl shadow-lg">
+          <i class="fas fa-info-circle text-amber-600 text-xl"></i>
+          <p class="text-gray-700 text-base font-semibold">Need advice for a specific destination? <a href="travel-health.html" class="text-teal-600 hover:text-teal-700 transition-colors">Contact our travel health team</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA SECTION - TEAL BRAND -->
   <section class="relative bg-gradient-to-br from-teal-600 via-teal-500 to-teal-400 px-5 md:px-10 py-[60px] md:py-[80px] overflow-hidden">
     <div class="absolute inset-0 opacity-10">
       <div class="absolute top-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
@@ -1251,31 +1504,31 @@
       <div class="flex flex-wrap items-center justify-center gap-4 mb-10">
         <div class="inline-flex items-center gap-2.5 bg-white/20 backdrop-blur-md border border-white/30 px-5 py-3 rounded-full">
           <i class="fas fa-certificate text-white text-base"></i>
-          <span class="text-white text-sm md:text-base font-bold">Yellow Fever Centre</span>
+          <span class="text-white text-sm md:text-base font-bold">Official Yellow Fever Centre</span>
+        </div>
+        <div class="inline-flex items-center gap-2.5 bg-white/20 backdrop-blur-md border border-white/30 px-5 py-3 rounded-full">
+          <i class="fas fa-file-certificate text-white text-base"></i>
+          <span class="text-white text-sm md:text-base font-bold">Same Day Certificate</span>
         </div>
         <div class="inline-flex items-center gap-2.5 bg-white/20 backdrop-blur-md border border-white/30 px-5 py-3 rounded-full">
           <i class="fas fa-user-doctor text-white text-base"></i>
           <span class="text-white text-sm md:text-base font-bold">30+ Years Experience</span>
         </div>
-        <div class="inline-flex items-center gap-2.5 bg-white/20 backdrop-blur-md border border-white/30 px-5 py-3 rounded-full">
-          <i class="fas fa-clock text-white text-base"></i>
-          <span class="text-white text-sm md:text-base font-bold">Same Day Appointments</span>
-        </div>
       </div>
 
       <h2 class="text-white text-[40px] md:text-[56px] font-bold leading-[1.15] mb-6 font-playfair_display">
-        Ready to protect your travels?
+        Ready to get your yellow fever vaccination?
       </h2>
       
       <p class="text-white text-lg md:text-xl font-normal leading-relaxed max-w-[700px] mx-auto mb-10">
-        Book your travel health consultation with Tajinder today. Expert advice, all vaccinations, and official certificates—all in one visit.
+        Book your appointment with Tajinder today. Get vaccinated and receive your official certificate in one visit.
       </p>
 
       <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
         <button class="group relative bg-white text-teal-600 text-base md:text-[17px] font-bold px-10 py-5 rounded-2xl shadow-2xl hover:shadow-3xl transition-all overflow-hidden hover-lift">
           <span class="relative flex items-center justify-center gap-3">
             <i class="fas fa-calendar-check"></i>
-            Book Travel Health Appointment
+            Book Yellow Fever Vaccination
             <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
               <path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-linecap="round" stroke-linejoin="round"></path>
             </svg>
@@ -1290,23 +1543,23 @@
       <div class="flex flex-col sm:flex-row items-center justify-center gap-6 text-white">
         <div class="flex items-center gap-2">
           <i class="fas fa-check-circle text-lg"></i>
-          <span class="text-sm md:text-base font-semibold">Flexible appointments</span>
+          <span class="text-sm md:text-base font-semibold">Official certificate issued</span>
+        </div>
+        <span class="hidden sm:inline text-white/40 text-xl">•</span>
+        <div class="flex items-center gap-2">
+          <i class="fas fa-check-circle text-lg"></i>
+          <span class="text-sm md:text-base font-semibold">Lifetime protection</span>
         </div>
         <span class="hidden sm:inline text-white/40 text-xl">•</span>
         <div class="flex items-center gap-2">
           <i class="fas fa-check-circle text-lg"></i>
           <span class="text-sm md:text-base font-semibold">Expert advice</span>
         </div>
-        <span class="hidden sm:inline text-white/40 text-xl">•</span>
-        <div class="flex items-center gap-2">
-          <i class="fas fa-check-circle text-lg"></i>
-          <span class="text-sm md:text-base font-semibold">Official certificates</span>
-        </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- Footer - TEAL BRAND -->
   <footer class="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 overflow-hidden">
     <div class="absolute inset-0 opacity-5">
       <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, rgb(20, 184, 166) 1px, transparent 0); background-size: 40px 40px;"></div>
