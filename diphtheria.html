@@ -1,0 +1,1913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Diphtheria Vaccination Sheffield | Travel Health | Sheffield Wellness Clinic</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      content: [],
+      theme: {
+        extend: {
+          fontFamily: {
+            dm_sans: ['DM Sans', 'sans-serif'],
+            playfair_display: ['Playfair Display', 'Georgia', 'serif']
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    @font-face {
+      font-family: 'Playfair Display';
+      src: url('https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2') format("woff2");
+      font-weight: 400 800;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'DM Sans';
+      src: url('https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2') format("woff2");
+      font-weight: 400 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    * {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes fadeInRight {
+      from {
+        opacity: 0;
+        transform: translateX(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes scaleIn {
+      from {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+
+    @keyframes shimmer {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(100%);
+      }
+    }
+
+    @keyframes drawLine {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+
+    @keyframes slideInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    .animate-float {
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .animate-shimmer {
+      animation: shimmer 3s infinite;
+    }
+
+    .animate-slide-in-left {
+      animation: slideInLeft 0.8s ease-out forwards;
+    }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #0d9388 0%, #14b8a6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      display: inline-block;
+      padding-bottom: 0.1em;
+      line-height: 1.1;
+    }
+
+    .bg-gradient-radial {
+      background: radial-gradient(circle, var(--tw-gradient-stops));
+    }
+
+    .animate-fade-in-up {
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+
+    .animate-fade-in-left {
+      animation: fadeInLeft 0.8s ease-out forwards;
+    }
+
+    .animate-fade-in-right {
+      animation: fadeInRight 0.8s ease-out forwards;
+    }
+
+    .animate-scale-in {
+      animation: scaleIn 0.6s ease-out forwards;
+    }
+
+    .delay-100 { animation-delay: 0.1s; }
+    .delay-200 { animation-delay: 0.2s; }
+    .delay-300 { animation-delay: 0.3s; }
+    .delay-400 { animation-delay: 0.4s; }
+    .delay-500 { animation-delay: 0.5s; }
+    .delay-600 { animation-delay: 0.6s; }
+    .delay-700 { animation-delay: 0.7s; }
+    .delay-800 { animation-delay: 0.8s; }
+    .delay-900 { animation-delay: 0.9s; }
+
+    .animate-fade-in-up,
+    .animate-fade-in-left,
+    .animate-fade-in-right,
+    .animate-scale-in,
+    .section-header-wrapper {
+      opacity: 0;
+    }
+
+    .section-header {
+      position: relative;
+      display: inline-block;
+    }
+
+    .section-header::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+      height: 2px;
+      background: linear-gradient(90deg, #0d9388 0%, #0d9388 60%, transparent 100%);
+      animation: drawLine 1.2s ease-out forwards;
+    }
+
+    .section-header-wrapper {
+      opacity: 0;
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+
+    .hover-lift {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .hover-lift:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(0, 161, 154, 0.2);
+    }
+
+    .nav-link {
+      position: relative;
+    }
+
+    .nav-link:hover {
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      background: linear-gradient(135deg, #0d9388 0%, #14b8a6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .nav-link-active {
+      background: linear-gradient(135deg, #0d9388 0%, #14b8a6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .nav-dropdown:hover .dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    .nav-dropdown:hover svg {
+      transform: rotate(180deg);
+    }
+
+    .dropdown-menu {
+      transform: translateX(-50%) translateY(-10px);
+    }
+
+    .dropdown-menu::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .dropdown-menu::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    .dropdown-menu::-webkit-scrollbar-thumb {
+      background: #0d9388;
+      border-radius: 3px;
+    }
+
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+
+    .accordion-content.active {
+      max-height: 800px;
+    }
+  </style>
+</head>
+<body class="bg-white text-slate-900">
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/100 backdrop-blur-lg shadow-sm border-b border-gray-200">
+    <div class="max-w-[1680px] mx-auto px-5 md:px-[60px] h-[70px] md:h-[90px] flex items-center justify-between gap-10">
+      <a class="flex items-center gap-5 shrink-0 hover:opacity-80 transition-opacity" href="index.html">
+        <div class="flex items-center justify-center">
+          <img alt="Sheffield United FC Official Partner" class="h-[45px] w-[45px] md:h-[55px] md:w-[55px] object-contain" src="https://c.animaapp.com/mh1jrgnmeI4wDl/assets/sheffield_united_fc_logo-svg.png"/>
+        </div>
+        <div class="h-[45px] w-px bg-gradient-to-b from-transparent via-gray-300 to-transparent shrink-0"></div>
+        <div class="flex flex-col gap-0.5">
+          <div class="text-base md:text-xl font-bold tracking-tight leading-tight whitespace-nowrap">
+            <span class="text-teal-600">Sheffield</span>
+            <span class="text-gray-600">Wellness Clinic</span>
+          </div>
+          <div class="text-[11px] font-medium text-gray-400 tracking-wide">By Totley Pharmacy</div>
+        </div>
+      </a>
+      <nav class="hidden lg:flex items-center gap-10 grow justify-center">
+        <div class="nav-dropdown relative">
+          <button class="nav-link relative text-gray-900 text-sm md:text-[15px] font-semibold py-2 whitespace-nowrap tracking-wide transition-all duration-300 flex items-center gap-1.5 after:absolute after:left-0 after:-bottom-0.5 after:w-0 after:h-[3px] after:bg-gradient-to-r after:from-teal-600 after:to-teal-500 after:rounded-full after:transition-all after:duration-300 hover:after:w-full">
+            Weight Loss
+            <svg class="w-3.5 h-3.5 transition-transform duration-300" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+              <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+            </svg>
+          </button>
+          <div class="dropdown-menu absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[280px] bg-white/95 backdrop-blur-xl rounded-2xl shadow-2xl border-2 border-gray-100 opacity-0 invisible transition-all duration-300 overflow-hidden">
+            <div class="p-3">
+              <a class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-teal-50 transition-all group" href="weight-loss.html">
+                <i class="fas fa-weight-scale text-teal-600 text-base group-hover:scale-110 transition-transform shrink-0"></i>
+                <div class="flex-1">
+                  <div class="text-gray-900 text-sm font-semibold group-hover:text-teal-600 transition-colors">Weight Loss Programme</div>
+                  <div class="text-gray-500 text-xs">Medical weight loss</div>
+                </div>
+              </a>
+              <a class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-teal-50 transition-all group" href="switching-provider.html">
+                <i class="fas fa-exchange-alt text-teal-600 text-base group-hover:scale-110 transition-transform shrink-0"></i>
+                <div class="flex-1">
+                  <div class="text-gray-900 text-sm font-semibold group-hover:text-teal-600 transition-colors">Switching Providers</div>
+                  <div class="text-gray-500 text-xs">Transfer your care</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-dropdown relative">
+          <button class="nav-link nav-link-active relative text-teal-600 text-sm md:text-[15px] font-bold py-2 whitespace-nowrap tracking-wide flex items-center gap-1.5 after:absolute after:left-0 after:-bottom-0.5 after:w-full after:h-[3px] after:bg-gradient-to-r after:from-teal-600 after:to-teal-500 after:rounded-full after:transition-all">
+            Travel Health
+            <svg class="w-3.5 h-3.5 transition-transform duration-300" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+              <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+            </svg>
+          </button>
+          <div class="dropdown-menu absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[320px] bg-white/95 backdrop-blur-xl rounded-2xl shadow-2xl border-2 border-gray-100 opacity-0 invisible transition-all duration-300 overflow-hidden">
+            <div class="p-3 max-h-[400px] overflow-y-auto">
+              <a class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-teal-50 transition-all group mb-2" href="travel-health.html">
+                <i class="fas fa-plane-departure text-teal-600 text-base group-hover:scale-110 transition-transform shrink-0"></i>
+                <div class="flex-1">
+                  <div class="text-gray-900 text-sm font-semibold group-hover:text-teal-600 transition-colors">All Travel Services</div>
+                  <div class="text-gray-500 text-xs">Vaccinations &amp; advice</div>
+                </div>
+              </a>
+              <div class="border-t border-gray-200 my-2"></div>
+              <div class="px-4 py-2">
+                <div class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Popular Destinations</div>
+              </div>
+              <a class="flex items-center gap-3 px-4 py-2.5 rounded-xl hover:bg-teal-50 transition-all group" href="thailand.html">
+                <i class="fas fa-location-dot text-teal-600 text-sm w-5"></i>
+                <span class="text-gray-900 text-sm font-medium group-hover:text-teal-600 transition-colors">Thailand</span>
+              </a>
+              <a class="flex items-center gap-3 px-4 py-2.5 rounded-xl hover:bg-teal-50 transition-all group" href="india.html">
+                <i class="fas fa-location-dot text-teal-600 text-sm w-5"></i>
+                <span class="text-gray-900 text-sm font-medium group-hover:text-teal-600 transition-colors">India</span>
+              </a>
+              <a class="flex items-center gap-3 px-4 py-2.5 rounded-xl hover:bg-teal-50 transition-all group" href="kenya.html">
+                <i class="fas fa-location-dot text-teal-600 text-sm w-5"></i>
+                <span class="text-gray-900 text-sm font-medium group-hover:text-teal-600 transition-colors">Kenya</span>
+              </a>
+              <a class="flex items-center gap-3 px-4 py-2.5 rounded-xl hover:bg-teal-50 transition-all group" href="vietnam.html">
+                <i class="fas fa-location-dot text-teal-600 text-sm w-5"></i>
+                <span class="text-gray-900 text-sm font-medium group-hover:text-teal-600 transition-colors">Vietnam</span>
+              </a>
+              <a class="flex items-center gap-3 px-4 py-2.5 rounded-xl hover:bg-teal-50 transition-all group" href="brazil.html">
+                <i class="fas fa-location-dot text-teal-600 text-sm w-5"></i>
+                <span class="text-gray-900 text-sm font-medium group-hover:text-teal-600 transition-colors">Brazil</span>
+              </a>
+              <a class="flex items-center gap-3 px-4 py-2.5 rounded-xl hover:bg-teal-50 transition-all group" href="south-africa.html">
+                <i class="fas fa-location-dot text-teal-600 text-sm w-5"></i>
+                <span class="text-gray-900 text-sm font-medium group-hover:text-teal-600 transition-colors">South Africa</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Services with Dropdown -->
+        <div class="nav-dropdown relative">
+          <button class="nav-link relative text-gray-900 text-sm md:text-[15px] font-semibold py-2 whitespace-nowrap tracking-wide transition-all duration-300 flex items-center gap-1.5 after:absolute after:left-0 after:-bottom-0.5 after:w-0 after:h-[3px] after:bg-gradient-to-r after:from-teal-600 after:to-teal-500 after:rounded-full after:transition-all after:duration-300 hover:after:w-full">
+            Services
+            <svg class="w-3.5 h-3.5 transition-transform duration-300" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+              <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+            </svg>
+          </button>
+          <div class="dropdown-menu absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[280px] bg-white/95 backdrop-blur-xl rounded-2xl shadow-2xl border-2 border-gray-100 opacity-0 invisible transition-all duration-300 overflow-hidden">
+            <div class="p-3">
+              <a class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-teal-50 transition-all group" href="#prescriptions">
+                <i class="fas fa-prescription text-teal-600 text-base group-hover:scale-110 transition-transform shrink-0"></i>
+                <div class="flex-1">
+                  <div class="text-gray-900 text-sm font-semibold group-hover:text-teal-600 transition-colors">Prescriptions</div>
+                  <div class="text-gray-500 text-xs">Repeat prescriptions</div>
+                </div>
+              </a>
+              <a class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-teal-50 transition-all group" href="#flu-jabs">
+                <i class="fas fa-syringe text-teal-600 text-base group-hover:scale-110 transition-transform shrink-0"></i>
+                <div class="flex-1">
+                  <div class="text-gray-900 text-sm font-semibold group-hover:text-teal-600 transition-colors">Flu Jabs</div>
+                  <div class="text-gray-500 text-xs">Private vaccinations</div>
+                </div>
+              </a>
+              <a class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-teal-50 transition-all group" href="#nhs-services">
+                <i class="fas fa-heart-pulse text-teal-600 text-base group-hover:scale-110 transition-transform shrink-0"></i>
+                <div class="flex-1">
+                  <div class="text-gray-900 text-sm font-semibold group-hover:text-teal-600 transition-colors">NHS Services</div>
+                  <div class="text-gray-500 text-xs">Free NHS care</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a class="nav-link relative text-gray-900 text-sm md:text-[15px] font-semibold py-2 whitespace-nowrap tracking-wide transition-all duration-300 after:absolute after:left-0 after:-bottom-0.5 after:w-0 after:h-[3px] after:bg-gradient-to-r after:from-teal-600 after:to-teal-500 after:rounded-full after:transition-all after:duration-300 hover:after:w-full" href="health-hub.html">Health Hub</a>
+        <a class="nav-link relative text-gray-900 text-sm md:text-[15px] font-semibold py-2 whitespace-nowrap tracking-wide transition-all duration-300 after:absolute after:left-0 after:-bottom-0.5 after:w-0 after:h-[3px] after:bg-gradient-to-r after:from-teal-600 after:to-teal-500 after:rounded-full after:transition-all after:duration-300 hover:after:w-full" href="#about">About</a>
+      </nav>
+      <div class="hidden lg:flex items-center shrink-0">
+        <button class="flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white text-[15px] font-semibold px-7 py-3 rounded-3xl shadow-lg hover:shadow-xl transition-all min-w-[180px] justify-center">
+          Book Consultation
+          <i class="fas fa-arrow-right text-sm"></i>
+        </button>
+      </div>
+      <button class="lg:hidden flex items-center justify-center w-10 h-10 text-gray-600 hover:text-teal-600 transition-colors" id="menuToggle">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+          <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="fixed inset-0 bg-black/60 backdrop-blur-sm z-40 opacity-0 pointer-events-none transition-opacity duration-300" id="mobileMenuOverlay"></div>
+  <div class="fixed top-0 right-0 bottom-0 w-[85%] max-w-[400px] bg-white/95 backdrop-blur-xl shadow-2xl z-50 transform translate-x-full transition-transform duration-300 ease-out" id="mobileMenu">
+    <div class="flex items-center justify-between p-6 border-b border-gray-200">
+      <div class="flex items-center gap-3">
+        <img alt="Sheffield United FC" class="h-10 w-10 object-contain" src="https://c.animaapp.com/mh1jrgnmeI4wDl/assets/sheffield_united_fc_logo-svg.png"/>
+        <div>
+          <div class="text-base font-bold tracking-tight leading-tight">
+            <span class="text-teal-600">Sheffield</span>
+            <span class="text-gray-600">Wellness</span>
+          </div>
+          <div class="text-[10px] font-medium text-gray-400 tracking-wide">By Totley Pharmacy</div>
+        </div>
+      </div>
+      <button class="flex items-center justify-center w-10 h-10 text-gray-600 hover:text-teal-600 hover:bg-teal-50 rounded-full transition-all" id="menuClose">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+          <path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+        </svg>
+      </button>
+    </div>
+    <div class="flex flex-col h-[calc(100%-80px)] overflow-y-auto">
+      <nav class="flex-1 p-6 space-y-2">
+        <a class="group flex items-center justify-between px-4 py-4 rounded-xl hover:bg-teal-50 transition-all" href="weight-loss.html">
+          <div class="flex items-center gap-4">
+            <i class="fas fa-weight-scale text-teal-600 text-lg group-hover:scale-110 transition-transform"></i>
+            <span class="text-gray-700 text-base font-semibold group-hover:text-teal-600 transition-colors">Weight Loss</span>
+          </div>
+          <i class="fas fa-chevron-right text-gray-400 text-sm group-hover:text-teal-600 group-hover:translate-x-1 transition-all"></i>
+        </a>
+        <a class="group flex items-center justify-between px-4 py-4 rounded-xl bg-teal-50 border-2 border-teal-600" href="travel-health.html">
+          <div class="flex items-center gap-4">
+            <i class="fas fa-plane-departure text-teal-600 text-lg"></i>
+            <span class="text-teal-600 text-base font-bold">Travel Health</span>
+          </div>
+          <i class="fas fa-chevron-right text-teal-600 text-sm"></i>
+        </a>
+        <a class="group flex items-center justify-between px-4 py-4 rounded-xl hover:bg-teal-50 transition-all" href="health-hub.html">
+          <div class="flex items-center gap-4">
+            <i class="fas fa-newspaper text-teal-600 text-lg group-hover:scale-110 transition-transform"></i>
+            <span class="text-gray-700 text-base font-semibold group-hover:text-teal-600 transition-colors">Health Hub</span>
+          </div>
+          <i class="fas fa-chevron-right text-gray-400 text-sm group-hover:text-teal-600 group-hover:translate-x-1 transition-all"></i>
+        </a>
+      </nav>
+      <div class="p-6 border-t border-gray-200 space-y-4">
+        <button class="w-full flex items-center justify-center gap-3 bg-teal-600 hover:bg-teal-700 text-white text-base font-semibold px-6 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all">
+          <i class="fas fa-calendar-check"></i>
+          Book Consultation
+        </button>
+        <a class="w-full flex items-center justify-center gap-3 text-teal-600 text-base font-semibold px-6 py-4 rounded-xl border-2 border-teal-600 hover:bg-teal-50 transition-all" href="tel:01149802780">
+          <i class="fas fa-phone"></i>
+          Call 0114 980 278
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Breadcrumb Navigation -->
+  <div class="bg-gray-50 border-b border-gray-200 pt-[90px] md:pt-[90px]">
+    <div class="max-w-[1680px] mx-auto px-6 md:px-[60px] py-4">
+      <nav class="flex items-center gap-2 text-sm">
+        <a href="index.html" class="text-gray-500 hover:text-teal-600 transition-colors font-medium">Home</a>
+        <i class="fas fa-chevron-right text-gray-300 text-xs"></i>
+        <a href="travel-health.html" class="text-gray-500 hover:text-teal-600 transition-colors font-medium">Travel Health</a>
+        <i class="fas fa-chevron-right text-gray-300 text-xs"></i>
+        <span class="text-gray-900 font-semibold">Diphtheria Vaccination</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="relative w-full pt-[60px] md:pt-[80px] pb-[80px] md:pb-[140px] overflow-hidden">
+    <div class="absolute inset-0">
+      <img alt="Travel destination requiring diphtheria vaccination" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1920&h=1080&fit=crop"/>
+      <div class="absolute inset-0 bg-gradient-to-br from-teal-600/90 via-teal-500/85 to-teal-600/90"></div>
+    </div>
+    <div class="max-w-[1680px] mx-auto px-6 md:px-[60px] relative z-10">
+      <div class="text-center text-white max-w-[900px] mx-auto">
+        <div class="flex items-center justify-center gap-4 mb-6 animate-fade-in-up">
+          <div class="w-[3px] h-7 bg-white rounded-sm shadow-md"></div>
+          <p class="text-white text-sm font-bold tracking-[2.5px] uppercase">DIPHTHERIA VACCINATION</p>
+        </div>
+        <h1 class="text-white text-[48px] md:text-[72px] font-bold tracking-tight leading-[1.1] mb-6 font-playfair_display animate-fade-in-up delay-200">
+          Diphtheria Vaccination <span class="block mt-2">in Sheffield</span>
+        </h1>
+        <p class="text-white text-xl md:text-2xl leading-relaxed mb-10 animate-fade-in-up delay-300">
+          Protect yourself against diphtheria with booster vaccinations at our Sheffield clinic. Expert advice from Tajinder and 30+ years of travel health experience.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-fade-in-up delay-400">
+          <button class="group relative bg-white text-teal-600 text-base md:text-lg font-bold px-12 py-5 rounded-2xl shadow-2xl hover:shadow-3xl transition-all overflow-hidden hover-lift">
+            <span class="relative flex items-center justify-center gap-3">
+              <i class="fas fa-calendar-check"></i>
+              Book Diphtheria Vaccination
+              <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+            </span>
+          </button>
+          <a class="flex items-center justify-center gap-3 text-white text-base md:text-lg font-bold px-10 py-5 rounded-2xl border-2 border-white hover:bg-white/15 transition-all shadow-xl hover:shadow-2xl" href="tel:01149802780">
+            <i class="fas fa-phone"></i>
+            Call 0114 980 278
+          </a>
+        </div>
+        <div class="flex flex-wrap justify-center gap-4 animate-fade-in-up delay-500">
+          <div class="inline-flex items-center gap-2.5 bg-white/20 backdrop-blur-md border-2 border-white/40 px-6 py-3 rounded-full">
+            <i class="fas fa-syringe text-white"></i>
+            <span class="text-white text-[15px] font-semibold whitespace-nowrap">Booster Available</span>
+          </div>
+          <div class="inline-flex items-center gap-2.5 bg-white/20 backdrop-blur-md border-2 border-white/40 px-6 py-3 rounded-full">
+            <i class="fas fa-shield-check text-white"></i>
+            <span class="text-white text-[15px] font-semibold whitespace-nowrap">10 Years Protection</span>
+          </div>
+          <div class="inline-flex items-center gap-2.5 bg-white/20 backdrop-blur-md border-2 border-white/40 px-6 py-3 rounded-full">
+            <i class="fas fa-user-doctor text-white"></i>
+            <span class="text-white text-[15px] font-semibold whitespace-nowrap">Expert Sheffield Advice</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIPHTHERIA VACCINE BENEFITS SECTION - SPLIT EDITORIAL LAYOUT -->
+  <section class="relative bg-gradient-to-br from-[#F8FDFC] via-white to-[#F8FDFC] px-5 md:px-10 py-[60px] md:py-[100px] overflow-hidden">
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-br from-teal-500/5 to-transparent rounded-full blur-3xl"></div>
+      <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gradient-to-tr from-teal-600/5 to-transparent rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="max-w-[1680px] mx-auto relative z-10">
+      <div class="text-center mb-16">
+        <div class="section-header-wrapper mb-8">
+          <div class="flex items-center justify-center gap-4">
+            <div class="w-[3px] h-7 bg-gradient-to-b from-teal-600 to-teal-500 rounded-sm shadow-md animate-slide-in-left"></div>
+            <div class="section-header">
+              <p class="text-teal-600 text-sm font-bold tracking-[2.5px] uppercase">DIPHTHERIA VACCINATION IN SHEFFIELD</p>
+            </div>
+          </div>
+        </div>
+        <h2 class="text-gray-700 text-[36px] md:text-[56px] font-bold leading-[1.15] mb-6 font-playfair_display animate-fade-in-up delay-200">
+          Essential Protection for Sheffield Travellers
+        </h2>
+        <div class="w-[60px] h-[3px] bg-teal-600 rounded-full mx-auto mb-6 animate-scale-in delay-300"></div>
+        <p class="text-slate-600 text-lg md:text-[19px] leading-relaxed max-w-[800px] mx-auto animate-fade-in-up delay-400">
+          Diphtheria vaccination is a crucial part of your routine immunisations and travel health preparation
+        </p>
+      </div>
+
+      <!-- Split Editorial Layout -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center max-w-[1400px] mx-auto">
+        
+        <!-- LEFT: Image (45%) -->
+        <div class="lg:col-span-5 animate-fade-in-left delay-500">
+          <div class="relative">
+            <div class="relative rounded-3xl overflow-hidden shadow-2xl group" style="box-shadow: 0 25px 70px rgba(0, 161, 154, 0.15);">
+              <div class="aspect-[4/5] overflow-hidden">
+                <img alt="Tajinder Singh - Diphtheria Vaccination Expert" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://c.animaapp.com/mh1jrgnmeI4wDl/img/tajinder.jpg"/>
+              </div>
+              <div class="absolute inset-0 bg-gradient-to-t from-gray-900/10 via-transparent to-transparent pointer-events-none"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: Content (55%) -->
+        <div class="lg:col-span-7 animate-fade-in-right delay-500">
+          
+          <!-- Premium Trust Badge -->
+          <div class="relative inline-flex items-center gap-4 px-6 py-4 rounded-xl mb-8 shadow-lg border-2 border-teal-600/30 group hover:shadow-xl hover:border-teal-600 transition-all bg-white">
+            <div class="w-14 h-14 bg-gradient-to-br from-teal-500 to-teal-600 rounded-xl flex items-center justify-center shadow-md group-hover:scale-110 group-hover:rotate-6 transition-all">
+              <i class="fas fa-syringe text-white text-2xl"></i>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-xs font-bold uppercase tracking-[2px] mb-1 text-gray-500">Combined Vaccine</span>
+              <span class="text-lg font-extrabold tracking-tight text-gray-900">Diphtheria, Tetanus & Polio (Td/IPV)</span>
+            </div>
+            <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-teal-600 to-teal-500 rounded-b-xl"></div>
+          </div>
+
+          <!-- Main Heading -->
+          <h3 class="text-gray-900 text-3xl md:text-[42px] font-bold leading-tight mb-6 font-playfair_display">
+            Routine Booster Available at Our Sheffield Clinic
+          </h3>
+
+          <!-- Intro Paragraph -->
+          <p class="text-slate-600 text-lg md:text-xl leading-relaxed mb-10">
+            Diphtheria vaccination is typically given as part of the combined Td/IPV booster (diphtheria, tetanus, and polio). Most Sheffield adults need a booster every 10 years, especially before travelling. Get yours at our Totley clinic with expert guidance from Tajinder.
+          </p>
+
+          <!-- Feature List -->
+          <div class="space-y-6 mb-10">
+            
+            <!-- Feature 1 -->
+            <div class="flex items-start gap-5">
+              <div class="w-12 h-12 bg-gradient-to-br from-teal-500 to-teal-600 rounded-xl flex items-center justify-center shrink-0 shadow-lg">
+                <i class="fas fa-shield-virus text-white text-xl"></i>
+              </div>
+              <div class="flex-1">
+                <h4 class="text-gray-900 text-xl font-bold mb-2 font-playfair_display">Combined Protection</h4>
+                <p class="text-slate-600 text-base leading-relaxed">The Td/IPV booster protects against diphtheria, tetanus, and polio in a single injection—convenient for Sheffield travellers.</p>
+              </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="flex items-start gap-5">
+              <div class="w-12 h-12 bg-gradient-to-br from-teal-500 to-teal-600 rounded-xl flex items-center justify-center shrink-0 shadow-lg">
+                <i class="fas fa-calendar-check text-white text-xl"></i>
+              </div>
+              <div class="flex-1">
+                <h4 class="text-gray-900 text-xl font-bold mb-2 font-playfair_display">10-Year Booster Schedule</h4>
+                <p class="text-slate-600 text-base leading-relaxed">A single booster dose provides 10 years of protection. We'll check your vaccination history at our Sheffield clinic and advise if you're due.</p>
+              </div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="flex items-start gap-5">
+              <div class="w-12 h-12 bg-gradient-to-br from-teal-500 to-teal-600 rounded-xl flex items-center justify-center shrink-0 shadow-lg">
+                <i class="fas fa-globe text-white text-xl"></i>
+              </div>
+              <div class="flex-1">
+                <h4 class="text-gray-900 text-xl font-bold mb-2 font-playfair_display">Essential for Travel</h4>
+                <p class="text-slate-600 text-base leading-relaxed">Diphtheria booster is recommended for all Sheffield travellers, especially those visiting developing countries or areas with limited healthcare.</p>
+              </div>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="flex items-start gap-5">
+              <div class="w-12 h-12 bg-gradient-to-br from-teal-500 to-teal-600 rounded-xl flex items-center justify-center shrink-0 shadow-lg">
+                <i class="fas fa-user-doctor text-white text-xl"></i>
+              </div>
+              <div class="flex-1">
+                <h4 class="text-gray-900 text-xl font-bold mb-2 font-playfair_display">30+ Years Sheffield Experience</h4>
+                <p class="text-slate-600 text-base leading-relaxed">Tajinder has administered thousands of diphtheria boosters to Sheffield residents and travellers over three decades at our Totley clinic.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="flex flex-col sm:flex-row gap-4">
+            <button class="group relative flex items-center justify-center gap-3 bg-gradient-to-r from-teal-600 to-teal-500 hover:from-teal-700 hover:to-teal-600 text-white text-base md:text-lg font-bold px-10 py-5 rounded-2xl shadow-xl hover:shadow-2xl transition-all overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000"></div>
+              <span class="relative flex items-center gap-3">
+                <i class="fas fa-calendar-check"></i>
+                Book Diphtheria Booster
+                <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+              </span>
+            </button>
+            <a class="flex items-center justify-center gap-3 text-teal-600 text-base md:text-lg font-bold px-8 py-5 rounded-2xl border-2 border-teal-600 hover:bg-teal-600 hover:text-white transition-all bg-white shadow-lg hover:shadow-xl" href="tel:01149802780">
+              <i class="fas fa-phone"></i>
+              Call 0114 980 278
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- PREMIUM 10-YEAR PROTECTION BANNER -->
+      <div class="mt-16 max-w-[1400px] mx-auto">
+        <div class="relative group animate-scale-in delay-700">
+          <div class="absolute inset-0 bg-teal-500/10 rounded-3xl blur-2xl opacity-50 group-hover:opacity-100 transition-opacity duration-500"></div>
+          
+          <div class="relative bg-white border-2 border-teal-600/40 rounded-3xl p-10 md:p-12 overflow-hidden shadow-2xl">
+              <div class="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-teal-500/10 to-transparent rounded-full blur-3xl"></div>
+              <div class="absolute bottom-0 left-0 w-48 h-48 bg-teal-600/5 rounded-full blur-2xl"></div>
+              
+              <div class="relative flex items-start gap-8">
+                <div class="relative shrink-0">
+                  <i class="fas fa-shield-check text-6xl text-teal-600 group-hover:scale-110 transition-transform"></i>
+                </div>
+                
+                <div class="flex-1">
+                  <div class="flex items-center gap-3 mb-4">
+                    <h3 class="text-gray-900 text-2xl md:text-3xl font-extrabold font-playfair_display leading-tight">10 Years of Protection</h3>
+                    <span class="inline-flex items-center px-3 py-1 bg-teal-100 text-teal-700 rounded-full text-xs font-bold">LONG-LASTING</span>
+                  </div>
+                  
+                  <p class="text-slate-600 text-lg leading-relaxed mb-6">
+                    A single diphtheria booster provides <span class="text-gray-900 font-bold">10 years of protection</span> against this serious bacterial infection. Most Sheffield adults received their childhood vaccinations but need regular boosters to maintain immunity.
+                  </p>
+                  
+                  <div class="relative mt-6 p-5 bg-gradient-to-br from-teal-50 to-teal-50/50 rounded-xl border-l-4 border-teal-600">
+                    <div class="flex items-start gap-3">
+                      <i class="fas fa-info-circle text-teal-600 text-sm mt-1 shrink-0"></i>
+                      <p class="text-slate-600 text-sm leading-relaxed">
+                        <span class="font-bold text-gray-900">Check your status:</span> If it's been more than 10 years since your last booster, or you're unsure of your vaccination history, book a consultation at our Sheffield clinic. We'll review your records and advise if you need a booster before travelling.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Info Bar -->
+  <section class="relative bg-gradient-to-r from-teal-600 via-teal-500 to-teal-600 py-10 overflow-hidden">
+    <div class="absolute inset-0 bg-[linear-gradient(90deg,transparent_0%,rgba(255,255,255,0.1)_50%,transparent_100%)] animate-shimmer"></div>
+    <div class="max-w-[1680px] mx-auto px-6 md:px-[60px]">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8 text-white max-w-[1200px] mx-auto">
+        <div class="flex items-center gap-4 group cursor-default justify-center md:justify-start">
+          <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm group-hover:bg-white/30 transition-all group-hover:scale-110 shrink-0">
+            <i class="fas fa-syringe text-white text-2xl"></i>
+          </div>
+          <div class="text-center md:text-left">
+            <p class="text-2xl md:text-3xl font-bold font-playfair_display leading-none mb-1">1 Dose</p>
+            <p class="text-sm opacity-95 font-semibold">Booster Injection</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 group cursor-default justify-center md:justify-start">
+          <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm group-hover:bg-white/30 transition-all group-hover:scale-110 shrink-0">
+            <i class="fas fa-shield text-white text-2xl"></i>
+          </div>
+          <div class="text-center md:text-left">
+            <p class="text-2xl md:text-3xl font-bold font-playfair_display leading-none mb-1">10 Years</p>
+            <p class="text-sm opacity-95 font-semibold">Protection Duration</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 group cursor-default justify-center md:justify-start">
+          <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm group-hover:bg-white/30 transition-all group-hover:scale-110 shrink-0">
+            <i class="fas fa-users text-white text-2xl"></i>
+          </div>
+          <div class="text-center md:text-left">
+            <p class="text-2xl md:text-3xl font-bold font-playfair_display leading-none mb-1">All Ages</p>
+            <p class="text-sm opacity-95 font-semibold">Adults & Children</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 group cursor-default justify-center md:justify-start">
+          <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm group-hover:bg-white/30 transition-all group-hover:scale-110 shrink-0">
+            <i class="fas fa-pound-sign text-white text-2xl"></i>
+          </div>
+          <div class="text-center md:text-left">
+            <p class="text-2xl md:text-3xl font-bold font-playfair_display leading-none mb-1">NHS</p>
+            <p class="text-sm opacity-95 font-semibold">May Be Available</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT IS DIPHTHERIA SECTION -->
+  <section class="relative bg-gradient-to-b from-teal-50/20 via-white to-teal-50/20 px-5 md:px-10 py-[60px] md:py-[100px] overflow-hidden">
+    <div class="absolute inset-0 opacity-[0.015] pointer-events-none">
+      <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, rgb(13, 147, 136) 1.5px, transparent 0); background-size: 50px 50px;"></div>
+    </div>
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <div class="absolute -top-40 -right-40 w-[600px] h-[600px] bg-gradient-radial from-teal-400/10 via-teal-500/5 to-transparent rounded-full blur-3xl"></div>
+      <div class="absolute -bottom-40 -left-40 w-[500px] h-[500px] bg-gradient-radial from-teal-500/8 via-teal-600/4 to-transparent rounded-full blur-3xl"></div>
+    </div>
+    
+    <div class="max-w-[1680px] mx-auto relative z-10">
+      <div class="text-center mb-16">
+        <div class="section-header-wrapper mb-8">
+          <div class="flex items-center justify-center gap-4">
+            <div class="w-[3px] h-7 bg-gradient-to-b from-teal-600 to-teal-500 rounded-sm shadow-md animate-slide-in-left"></div>
+            <div class="section-header">
+              <p class="text-teal-600 text-sm font-bold tracking-[2.5px] uppercase">ABOUT DIPHTHERIA</p>
+            </div>
+          </div>
+        </div>
+        <h2 class="text-gray-700 text-[36px] md:text-[56px] font-bold leading-[1.15] mb-6 font-playfair_display animate-fade-in-up delay-200">
+          What is Diphtheria?
+        </h2>
+        <div class="w-[60px] h-[3px] bg-teal-600 rounded-full mx-auto mb-6 animate-scale-in delay-300"></div>
+        <p class="text-slate-600 text-lg md:text-[19px] leading-relaxed max-w-[800px] mx-auto animate-fade-in-up delay-400">
+          A serious bacterial infection affecting the nose, throat, and airways, still present in many countries worldwide
+        </p>
+      </div>
+
+      <!-- Premium 4-Card Grid Layout -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[1200px] mx-auto">
+        
+        <!-- Card 1: Bacterial Infection -->
+        <div class="relative group animate-scale-in delay-500">
+          <div class="absolute inset-0 bg-teal-500/5 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="relative bg-white border-2 border-gray-100 rounded-3xl p-10 hover:border-teal-600/30 hover:shadow-xl transition-all">
+            <div class="flex items-start gap-6">
+              <div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center shrink-0 shadow-xl group-hover:scale-110 group-hover:rotate-6 transition-all">
+                <i class="fas fa-bacteria text-white text-2xl"></i>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-gray-900 text-2xl font-bold mb-3 font-playfair_display group-hover:text-teal-600 transition-colors">Bacterial Infection</h3>
+                <p class="text-slate-600 text-base leading-relaxed">Caused by the bacterium Corynebacterium diphtheriae, which produces a toxin affecting the respiratory system. Spreads through respiratory droplets from coughing or sneezing.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Serious Symptoms -->
+        <div class="relative group animate-scale-in delay-600">
+          <div class="absolute inset-0 bg-teal-500/5 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="relative bg-white border-2 border-gray-100 rounded-3xl p-10 hover:border-teal-600/30 hover:shadow-xl transition-all">
+            <div class="flex items-start gap-6">
+              <div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center shrink-0 shadow-xl group-hover:scale-110 group-hover:rotate-6 transition-all">
+                <i class="fas fa-lungs text-white text-2xl"></i>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-gray-900 text-2xl font-bold mb-3 font-playfair_display group-hover:text-teal-600 transition-colors">Respiratory Symptoms</h3>
+                <p class="text-slate-600 text-base leading-relaxed">Symptoms include sore throat, fever, swollen neck glands, and a thick grey coating in the throat that can block airways. Can cause heart and nerve damage in severe cases.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Highly Preventable -->
+        <div class="relative group animate-scale-in delay-700">
+          <div class="absolute inset-0 bg-teal-500/5 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="relative bg-white border-2 border-gray-100 rounded-3xl p-10 hover:border-teal-600/30 hover:shadow-xl transition-all">
+            <div class="flex items-start gap-6">
+              <div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center shrink-0 shadow-xl group-hover:scale-110 group-hover:rotate-6 transition-all">
+                <i class="fas fa-shield-virus text-white text-2xl"></i>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-gray-900 text-2xl font-bold mb-3 font-playfair_display group-hover:text-teal-600 transition-colors">Highly Preventable</h3>
+                <p class="text-slate-600 text-base leading-relaxed">Diphtheria is rare in the UK thanks to childhood vaccination programmes, but remains common in many countries. Regular boosters maintain your protection when travelling.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4: Global Risk -->
+        <div class="relative group animate-scale-in delay-800">
+          <div class="absolute inset-0 bg-teal-500/5 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="relative bg-white border-2 border-gray-100 rounded-3xl p-10 hover:border-teal-600/30 hover:shadow-xl transition-all">
+            <div class="flex items-start gap-6">
+              <div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center shrink-0 shadow-xl group-hover:scale-110 group-hover:rotate-6 transition-all">
+                <i class="fas fa-globe text-white text-2xl"></i>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-gray-900 text-2xl font-bold mb-3 font-playfair_display group-hover:text-teal-600 transition-colors">Present Worldwide</h3>
+                <p class="text-slate-600 text-base leading-relaxed">Diphtheria is still endemic in parts of Africa, Asia, South America, and Eastern Europe. Sheffield travellers to these regions should ensure their booster is up to date.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- PREMIUM IMPORTANT NOTICE BANNER -->
+      <div class="mt-12 max-w-[1200px] mx-auto">
+        <div class="relative group animate-scale-in delay-900">
+          <div class="absolute inset-0 bg-teal-500/10 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          
+          <div class="relative bg-white border-2 border-teal-600/40 rounded-3xl p-10 md:p-12 overflow-hidden shadow-2xl">
+              <div class="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-teal-500/10 to-transparent rounded-full blur-3xl"></div>
+              <div class="absolute bottom-0 left-0 w-48 h-48 bg-teal-600/5 rounded-full blur-2xl"></div>
+              
+              <div class="relative flex items-start gap-8">
+                <div class="relative shrink-0">
+                  <i class="fas fa-exclamation-triangle text-6xl text-teal-600 group-hover:scale-110 transition-transform"></i>
+                </div>
+                
+                <div class="flex-1">
+                  <div class="flex items-center gap-3 mb-4">
+                    <h3 class="text-gray-900 text-2xl md:text-3xl font-extrabold font-playfair_display leading-tight">Important: Check Your Booster Status</h3>
+                    <span class="inline-flex items-center px-3 py-1 bg-teal-100 text-teal-700 rounded-full text-xs font-bold">ESSENTIAL</span>
+                  </div>
+                  
+                  <p class="text-slate-600 text-lg leading-relaxed">
+                    Most Sheffield adults received diphtheria vaccination as children, but <span class="text-gray-900 font-bold">immunity wanes over time</span>. If it's been more than 10 years since your last booster, you need a top-up before travelling—especially to developing countries. Book a consultation at our Totley clinic to check your status.
+                  </p>
+                </div>
+              </div>
+              
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO NEEDS IT SECTION -->
+  <section class="relative bg-gradient-to-br from-teal-50/20 via-white to-teal-50/30 px-5 md:px-10 py-[60px] md:py-[100px] overflow-hidden">
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-radial from-teal-400/8 via-teal-500/4 to-transparent rounded-full blur-3xl"></div>
+      <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gradient-to-tr from-teal-600/5 to-transparent rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="max-w-[1680px] mx-auto relative z-10">
+      <div class="text-center mb-16">
+        <div class="section-header-wrapper mb-8">
+          <div class="flex items-center justify-center gap-4">
+            <div class="w-[3px] h-7 bg-gradient-to-b from-teal-600 to-teal-500 rounded-sm shadow-md animate-slide-in-left"></div>
+            <div class="section-header">
+              <p class="text-teal-600 text-sm font-bold tracking-[2.5px] uppercase">WHO NEEDS DIPHTHERIA VACCINATION</p>
+            </div>
+          </div>
+        </div>
+        <h2 class="text-gray-700 text-[36px] md:text-[56px] font-bold leading-[1.15] mb-6 font-playfair_display animate-fade-in-up delay-200">
+          Do you need a diphtheria booster?
+        </h2>
+        <div class="w-[60px] h-[3px] bg-teal-600 rounded-full mx-auto mb-6 animate-scale-in delay-300"></div>
+        <p class="text-slate-600 text-lg md:text-[19px] leading-relaxed max-w-[800px] mx-auto animate-fade-in-up delay-400">
+          Diphtheria boosters are recommended for Sheffield travellers and those due for routine immunisation
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[1200px] mx-auto">
+        <!-- Travellers -->
+        <div class="relative group animate-scale-in delay-500">
+          <div class="absolute inset-0 bg-teal-500/5 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="relative bg-white border-2 border-gray-100 rounded-3xl p-10 hover:border-teal-600/30 hover:shadow-xl transition-all">
+            <div class="flex items-center justify-between mb-8">
+              <div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
+                <i class="fas fa-plane-departure text-white text-2xl"></i>
+              </div>
+              <span class="bg-teal-100 text-teal-700 text-xs font-bold px-4 py-2 rounded-full">RECOMMENDED</span>
+            </div>
+            
+            <h3 class="text-gray-900 text-[26px] font-extrabold mb-4 font-playfair_display leading-tight">
+              Sheffield Travellers
+            </h3>
+            <p class="text-slate-600 text-base leading-relaxed mb-6">
+              Diphtheria booster is recommended for all Sheffield travellers, especially those visiting countries where diphtheria is still common.
+            </p>
+            
+            <div class="space-y-3">
+              <div class="flex items-start gap-3">
+                <div class="w-6 h-6 bg-teal-50 rounded-full flex items-center justify-center shrink-0 mt-0.5">
+                  <i class="fas fa-check text-teal-600 text-sm"></i>
+                </div>
+                <span class="text-gray-700 text-[15px] font-medium">Travelling to Africa, Asia, or South America</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="w-6 h-6 bg-teal-50 rounded-full flex items-center justify-center shrink-0 mt-0.5">
+                  <i class="fas fa-check text-teal-600 text-sm"></i>
+                </div>
+                <span class="text-gray-700 text-[15px] font-medium">Visiting areas with limited healthcare access</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="w-6 h-6 bg-teal-50 rounded-full flex items-center justify-center shrink-0 mt-0.5">
+                  <i class="fas fa-check text-teal-600 text-sm"></i>
+                </div>
+                <span class="text-gray-700 text-[15px] font-medium">Extended stays abroad</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="w-6 h-6 bg-teal-50 rounded-full flex items-center justify-center shrink-0 mt-0.5">
+                  <i class="fas fa-check text-teal-600 text-sm"></i>
+                </div>
+                <span class="text-gray-700 text-[15px] font-medium">Last booster more than 10 years ago</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Routine Boosters -->
+        <div class="relative group animate-scale-in delay-600">
+          <div class="absolute inset-0 bg-teal-500/5 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="relative bg-white border-2 border-gray-100 rounded-3xl p-10 hover:border-teal-600/30 hover:shadow-xl transition-all">
+            <div class="flex items-center justify-between mb-8">
+              <div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
+                <i class="fas fa-calendar-days text-white text-2xl"></i>
+              </div>
+              <span class="bg-teal-100 text-teal-700 text-xs font-bold px-4 py-2 rounded-full">ROUTINE</span>
+            </div>
+            
+            <h3 class="text-gray-900 text-[26px] font-extrabold mb-4 font-playfair_display leading-tight">
+              Routine Immunisation
+            </h3>
+            <p class="text-slate-600 text-base leading-relaxed mb-6">
+              Even if you're not travelling, Sheffield residents should maintain their diphtheria immunity with regular 10-year boosters.
+            </p>
+            
+            <div class="space-y-3">
+              <div class="flex items-start gap-3">
+                <div class="w-6 h-6 bg-teal-50 rounded-full flex items-center justify-center shrink-0 mt-0.5">
+                  <i class="fas fa-check text-teal-600 text-sm"></i>
+                </div>
+                <span class="text-gray-700 text-[15px] font-medium">Adults due for 10-year booster</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="w-6 h-6 bg-teal-50 rounded-full flex items-center justify-center shrink-0 mt-0.5">
+                  <i class="fas fa-check text-teal-600 text-sm"></i>
+                </div>
+                <span class="text-gray-700 text-[15px] font-medium">Healthcare workers in Sheffield</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="w-6 h-6 bg-teal-50 rounded-full flex items-center justify-center shrink-0 mt-0.5">
+                  <i class="fas fa-check text-teal-600 text-sm"></i>
+                </div>
+                <span class="text-gray-700 text-[15px] font-medium">Those with incomplete childhood vaccination</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="w-6 h-6 bg-teal-50 rounded-full flex items-center justify-center shrink-0 mt-0.5">
+                  <i class="fas fa-check text-teal-600 text-sm"></i>
+                </div>
+                <span class="text-gray-700 text-[15px] font-medium">Pregnant women (after first trimester)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-12 text-center">
+        <div class="inline-flex items-center gap-3 bg-teal-50 border-2 border-teal-600/30 px-6 py-4 rounded-2xl shadow-lg">
+          <i class="fas fa-info-circle text-teal-600 text-xl"></i>
+          <p class="text-gray-700 text-base font-semibold">Not sure when you last had a booster? We'll check your records at our Sheffield clinic.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIPHTHERIA RISK COUNTRIES SECTION -->
+  <section class="relative bg-gradient-to-br from-teal-50/40 via-white to-teal-50/40 px-5 md:px-10 py-[60px] md:py-[100px] overflow-hidden">
+    <div class="absolute inset-0 opacity-[0.02] pointer-events-none">
+      <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, rgb(13, 147, 136) 1.5px, transparent 0); background-size: 60px 60px;"></div>
+    </div>
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <div class="absolute -top-40 -right-40 w-[700px] h-[700px] bg-gradient-radial from-teal-400/12 via-teal-500/6 to-transparent rounded-full blur-3xl"></div>
+      <div class="absolute -bottom-40 -left-40 w-[600px] h-[600px] bg-gradient-radial from-teal-500/10 via-teal-600/5 to-transparent rounded-full blur-3xl"></div>
+    </div>
+    <div class="absolute inset-0 bg-gradient-to-b from-white/40 via-transparent to-white/40 pointer-events-none"></div>
+    
+    <div class="max-w-[1680px] mx-auto relative z-10">
+      <div class="text-center mb-20">
+        <div class="section-header-wrapper mb-8">
+          <div class="flex items-center justify-center gap-4">
+            <div class="w-[3px] h-7 bg-gradient-to-b from-teal-600 to-teal-500 rounded-sm shadow-md animate-slide-in-left"></div>
+            <div class="section-header">
+              <p class="text-teal-600 text-sm font-bold tracking-[2.5px] uppercase">DIPHTHERIA RISK AREAS</p>
+            </div>
+          </div>
+        </div>
+        <h2 class="text-gray-700 text-[36px] md:text-[56px] font-bold leading-[1.15] mb-8 font-playfair_display animate-fade-in-up delay-200">
+          Where is diphtheria found?
+        </h2>
+        <div class="w-[60px] h-[3px] bg-teal-600 rounded-full mx-auto mb-8 animate-scale-in delay-300"></div>
+        <p class="text-slate-600 text-lg md:text-xl leading-relaxed max-w-[900px] mx-auto animate-fade-in-up delay-400">
+          While rare in the UK, diphtheria remains <span class="text-teal-600 font-bold">endemic in many countries</span> across Africa, Asia, South America, and parts of Eastern Europe. Sheffield travellers to these regions should ensure their booster is current.
+        </p>
+      </div>
+
+      <!-- Premium Stats Bar -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-[1000px] mx-auto mb-20 animate-fade-in-up delay-500">
+        <div class="relative group">
+          <div class="absolute inset-0 bg-teal-500/5 rounded-2xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="relative bg-white border-2 border-teal-600/30 rounded-2xl p-8 text-center hover:shadow-xl transition-all">
+            <div class="text-5xl font-bold text-teal-600 mb-3 font-playfair_display group-hover:scale-110 transition-transform">100+</div>
+            <div class="text-gray-700 text-base font-bold mb-1">Countries</div>
+            <div class="text-slate-500 text-sm">With diphtheria cases</div>
+          </div>
+        </div>
+        <div class="relative group">
+          <div class="absolute inset-0 bg-teal-500/5 rounded-2xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="relative bg-white border-2 border-teal-600/30 rounded-2xl p-8 text-center hover:shadow-xl transition-all">
+            <div class="text-5xl font-bold text-teal-600 mb-3 font-playfair_display group-hover:scale-110 transition-transform">10</div>
+            <div class="text-gray-700 text-base font-bold mb-1">Years</div>
+            <div class="text-slate-500 text-sm">Between boosters</div>
+          </div>
+        </div>
+        <div class="relative group">
+          <div class="absolute inset-0 bg-teal-500/5 rounded-2xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="relative bg-white border-2 border-teal-600/30 rounded-2xl p-8 text-center hover:shadow-xl transition-all">
+            <div class="text-5xl font-bold text-teal-600 mb-3 font-playfair_display group-hover:scale-110 transition-transform">95%</div>
+            <div class="text-gray-700 text-base font-bold mb-1">Effective</div>
+            <div class="text-slate-500 text-sm">Vaccine protection</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Premium 3-Column Regional Cards -->
+      <div class="max-w-[1400px] mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- AFRICA & MIDDLE EAST CARD -->
+          <div class="relative group animate-scale-in delay-700">
+            <div class="absolute inset-0 bg-teal-500/8 rounded-3xl blur-2xl opacity-50 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div class="relative bg-gradient-to-br from-white via-teal-50/20 to-white border-2 border-teal-600/30 rounded-3xl p-8 hover:shadow-2xl transition-all overflow-hidden">
+              <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-teal-500/10 to-transparent rounded-full blur-3xl"></div>
+              
+              <div class="relative flex items-center gap-4 mb-8">
+                <div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center shadow-xl group-hover:scale-110 group-hover:rotate-6 transition-all">
+                  <i class="fas fa-globe-africa text-white text-2xl"></i>
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-gray-900 text-2xl font-extrabold font-playfair_display leading-tight">Africa & Middle East</h3>
+                  <p class="text-teal-600 text-sm font-bold">Endemic Areas</p>
+                </div>
+              </div>
+              
+              <p class="text-slate-600 text-base leading-relaxed mb-6">
+                Diphtheria remains endemic in parts of sub-Saharan Africa and the Middle East, particularly in areas with low vaccination coverage.
+              </p>
+              
+              <div class="space-y-2">
+                <div class="flex items-center gap-2 text-gray-700 text-sm font-medium">
+                  <i class="fas fa-location-dot text-teal-600 text-xs"></i>
+                  <span>Nigeria</span>
+                </div>
+                <div class="flex items-center gap-2 text-gray-700 text-sm font-medium">
+                  <i class="fas fa-location-dot text-teal-600 text-xs"></i>
+                  <span>Ethiopia</span>
+                </div>
+                <div class="flex items-center gap-2 text-gray-700 text-sm font-medium">
+                  <i class="fas fa-location-dot text-teal-600 text-xs"></i>
+                  <span>Yemen</span>
+                </div>
+                <div class="flex items-center gap-2 text-gray-700 text-sm font-medium">
+                  <i class="fas fa-location-dot text-teal-600 text-xs"></i>
+                  <span>Sudan</span>
+                </div>
+              </div>
+              
+              <div class="relative pt-6 mt-6 border-t-2 border-teal-600/20">
+                <p class="text-slate-500 text-sm font-semibold text-center">+ Other African countries</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ASIA CARD -->
+          <div class="relative group animate-scale-in delay-800">
+            <div class="absolute inset-0 bg-teal-500/8 rounded-3xl blur-2xl opacity-50 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div class="relative bg-gradient-to-br from-white via-teal-50/20 to-white border-2 border-teal-600/30 rounded-3xl p-8 hover:shadow-2xl transition-all overflow-hidden">
+              <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-teal-500/10 to-transparent rounded-full blur-3xl"></div>
+              
+              <div class="relative flex items-center gap-4 mb-8">
+                <div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center shadow-xl group-hover:scale-110 group-hover:rotate-6 transition-all">
+                  <i class="fas fa-globe-asia text-white text-2xl"></i>
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-gray-900 text-2xl font-extrabold font-playfair_display leading-tight">Asia</h3>
+                  <p class="text-teal-600 text-sm font-bold">Higher Risk Regions</p>
+                </div>
+              </div>
+              
+              <p class="text-slate-600 text-base leading-relaxed mb-6">
+                Parts of South and Southeast Asia continue to report diphtheria cases, particularly in areas with lower vaccination rates.
+              </p>
+              
+              <div class="space-y-2">
+                <div class="flex items-center gap-2 text-gray-700 text-sm font-medium">
+                  <i class="fas fa-location-dot text-teal-600 text-xs"></i>
+                  <span>India</span>
+                </div>
+                <div class="flex items-center gap-2 text-gray-700 text-sm font-medium">
+                  <i class="fas fa-location-dot text-teal-600 text-xs"></i>
+                  <span>Indonesia</span>
+                </div>
+                <div class="flex items-center gap-2 text-gray-700 text-sm font-medium">
+                  <i class="fas fa-location-dot text-teal-600 text-xs"></i>
+                  <span>Bangladesh</span>
+                </div>
+                <div class="flex items-center gap-2 text-gray-700 text-sm font-medium">
+                  <i class="fas fa-location-dot text-teal-600 text-xs"></i>
+                  <span>Pakistan</span>
+                </div>
+              </div>
+              
+              <div class="relative pt-6 mt-6 border-t-2 border-teal-600/20">
+                <p class="text-slate-500 text-sm font-semibold text-center">+ Other Asian countries</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- AMERICAS & EUROPE CARD -->
+          <div class="relative group animate-scale-in delay-900">
+            <div class="absolute inset-0 bg-teal-500/8 rounded-3xl blur-2xl opacity-50 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div class="relative bg-gradient-to-br from-white via-teal-50/20 to-white border-2 border-teal-600/30 rounded-3xl p-8 hover:shadow-2xl transition-all overflow-hidden">
+              <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-teal-500/10 to-transparent rounded-full blur-3xl"></div>
+              
+              <div class="relative flex items-center gap-4 mb-8">
+                <div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center shadow-xl group-hover:scale-110 group-hover:rotate-6 transition-all">
+                  <i class="fas fa-globe-americas text-white text-2xl"></i>
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-gray-900 text-2xl font-extrabold font-playfair_display leading-tight">Americas & Europe</h3>
+                  <p class="text-teal-600 text-sm font-bold">Sporadic Cases</p>
+                </div>
+              </div>
+              
+              <p class="text-slate-600 text-base leading-relaxed mb-6">
+                While less common, diphtheria cases still occur in parts of South America and Eastern Europe, particularly during outbreaks.
+              </p>
+              
+              <div class="space-y-2">
+                <div class="flex items-center gap-2 text-gray-700 text-sm font-medium">
+                  <i class="fas fa-location-dot text-teal-600 text-xs"></i>
+                  <span>Venezuela</span>
+                </div>
+                <div class="flex items-center gap-2 text-gray-700 text-sm font-medium">
+                  <i class="fas fa-location-dot text-teal-600 text-xs"></i>
+                  <span>Haiti</span>
+                </div>
+                <div class="flex items-center gap-2 text-gray-700 text-sm font-medium">
+                  <i class="fas fa-location-dot text-teal-600 text-xs"></i>
+                  <span>Ukraine</span>
+                </div>
+                <div class="flex items-center gap-2 text-gray-700 text-sm font-medium">
+                  <i class="fas fa-location-dot text-teal-600 text-xs"></i>
+                  <span>Russia</span>
+                </div>
+              </div>
+              
+              <div class="relative pt-6 mt-6 border-t-2 border-teal-600/20">
+                <p class="text-slate-500 text-sm font-semibold text-center">Risk varies by region</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Premium Info Banner -->
+      <div class="mt-16 max-w-[1200px] mx-auto animate-scale-in delay-500">
+        <div class="relative group">
+          <div class="absolute inset-0 bg-teal-500/10 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="relative bg-gradient-to-br from-teal-50 to-white border-2 border-teal-600/40 rounded-3xl p-10 hover:shadow-2xl transition-all overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-teal-500/10 to-transparent rounded-full blur-2xl"></div>
+            
+            <div class="relative flex items-start gap-6">
+              <div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center shrink-0 shadow-xl group-hover:scale-110 group-hover:rotate-6 transition-all">
+                <i class="fas fa-globe text-white text-2xl"></i>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-gray-900 text-2xl md:text-3xl font-bold mb-4 font-playfair_display">Universal Travel Recommendation</h3>
+                <p class="text-slate-600 text-lg leading-relaxed mb-4">
+                  Regardless of your destination, Sheffield travel health experts recommend ensuring your <span class="text-gray-900 font-bold">diphtheria booster is up to date</span> before any international travel. It's a simple precaution that provides essential protection.
+                </p>
+                <div class="flex flex-wrap gap-3 mt-6">
+                  <div class="inline-flex items-center gap-2 bg-white border-2 border-teal-600/30 px-4 py-2 rounded-full shadow-sm">
+                    <i class="fas fa-check-circle text-teal-600 text-sm"></i>
+                    <span class="text-gray-700 text-sm font-bold">All destinations</span>
+                  </div>
+                  <div class="inline-flex items-center gap-2 bg-white border-2 border-teal-600/30 px-4 py-2 rounded-full shadow-sm">
+                    <i class="fas fa-shield-check text-teal-600 text-sm"></i>
+                    <span class="text-gray-700 text-sm font-bold">Essential protection</span>
+                  </div>
+                  <div class="inline-flex items-center gap-2 bg-white border-2 border-teal-600/30 px-4 py-2 rounded-full shadow-sm">
+                    <i class="fas fa-calendar text-teal-600 text-sm"></i>
+                    <span class="text-gray-700 text-sm font-bold">10-year validity</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA Banner -->
+      <div class="mt-16 text-center animate-fade-in-up delay-600">
+        <div class="inline-flex items-center gap-3 bg-teal-50 border-2 border-teal-600/30 px-8 py-5 rounded-2xl shadow-xl mb-6">
+          <i class="fas fa-info-circle text-teal-600 text-2xl"></i>
+          <p class="text-gray-900 text-lg font-bold">Not sure if you need a diphtheria booster? We'll check your vaccination history at our Sheffield clinic.</p>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <button class="group relative bg-gradient-to-r from-teal-600 to-teal-500 hover:from-teal-700 hover:to-teal-600 text-white text-base md:text-lg font-bold px-10 py-5 rounded-2xl shadow-xl hover:shadow-2xl transition-all overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000"></div>
+            <span class="relative flex items-center gap-3">
+              <i class="fas fa-calendar-check"></i>
+              Book Diphtheria Consultation
+              <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+            </span>
+          </button>
+          <a class="flex items-center justify-center gap-3 text-teal-600 text-base md:text-lg font-bold px-8 py-5 rounded-2xl border-2 border-teal-600 hover:bg-teal-600 hover:text-white transition-all bg-white shadow-lg hover:shadow-xl" href="tel:01149802780">
+            <i class="fas fa-phone"></i>
+            Call 0114 980 278
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VACCINATION DETAILS SECTION -->
+  <section class="relative bg-gradient-to-br from-teal-50/60 via-teal-50/30 to-teal-50/60 px-5 md:px-10 py-[60px] md:py-[100px] overflow-hidden">
+    <div class="absolute inset-0 opacity-[0.02] pointer-events-none">
+      <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, rgb(13, 147, 136) 2px, transparent 0); background-size: 60px 60px;"></div>
+    </div>
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-br from-teal-400/12 to-transparent rounded-full blur-3xl"></div>
+      <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-gradient-to-tr from-teal-500/12 to-transparent rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="max-w-[1680px] mx-auto relative z-10">
+      <div class="text-center mb-16">
+        <div class="section-header-wrapper mb-8">
+          <div class="flex items-center justify-center gap-4">
+            <div class="w-[3px] h-7 bg-gradient-to-b from-teal-600 to-teal-500 rounded-sm shadow-md animate-slide-in-left"></div>
+            <div class="section-header">
+              <p class="text-teal-600 text-sm font-bold tracking-[2.5px] uppercase">VACCINATION DETAILS</p>
+            </div>
+          </div>
+        </div>
+        <h2 class="text-gray-700 text-[36px] md:text-[56px] font-bold leading-[1.15] mb-6 font-playfair_display animate-fade-in-up delay-200">
+          What to expect at your Sheffield appointment
+        </h2>
+        <div class="w-[60px] h-[3px] bg-teal-600 rounded-full mx-auto mb-6 animate-scale-in delay-300"></div>
+        <p class="text-slate-600 text-lg md:text-[19px] leading-relaxed max-w-[800px] mx-auto animate-fade-in-up delay-400">
+          Simple, straightforward booster vaccination at our Totley clinic
+        </p>
+      </div>
+
+      <!-- PREMIUM 2-COLUMN FEATURE LIST -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start max-w-[1300px] mx-auto">
+        
+        <!-- Left Column -->
+        <div class="space-y-8 animate-fade-in-left delay-500">
+          <!-- Feature 1 -->
+          <div class="relative group">
+            <div class="absolute inset-0 bg-teal-500/5 rounded-2xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div class="relative bg-white border-2 border-gray-100 rounded-2xl p-8 hover:border-teal-600/30 hover:shadow-lg transition-all">
+              <div class="flex items-start gap-5">
+                <div class="w-14 h-14 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center shrink-0 shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all">
+                  <i class="fas fa-syringe text-white text-2xl"></i>
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-gray-900 text-xl font-bold mb-2 font-playfair_display group-hover:text-teal-600 transition-colors">Single Booster Injection</h3>
+                  <p class="text-slate-600 text-base leading-relaxed">One injection of the Td/IPV booster provides 10 years of protection against diphtheria, tetanus, and polio. Quick and convenient at our Sheffield clinic.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="relative group">
+            <div class="absolute inset-0 bg-teal-500/5 rounded-2xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div class="relative bg-white border-2 border-gray-100 rounded-2xl p-8 hover:border-teal-600/30 hover:shadow-lg transition-all">
+              <div class="flex items-start gap-5">
+                <div class="w-14 h-14 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center shrink-0 shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all">
+                  <i class="fas fa-calendar-days text-white text-2xl"></i>
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-gray-900 text-xl font-bold mb-2 font-playfair_display group-hover:text-teal-600 transition-colors">Book Before Travel</h3>
+                  <p class="text-slate-600 text-base leading-relaxed">Ideally get your booster 4-6 weeks before travel, though it can be given closer to departure if needed. We'll advise Sheffield travellers on timing.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="relative group">
+            <div class="absolute inset-0 bg-teal-500/5 rounded-2xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div class="relative bg-white border-2 border-gray-100 rounded-2xl p-8 hover:border-teal-600/30 hover:shadow-lg transition-all">
+              <div class="flex items-start gap-5">
+                <div class="w-14 h-14 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center shrink-0 shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all">
+                  <i class="fas fa-notes-medical text-white text-2xl"></i>
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-gray-900 text-xl font-bold mb-2 font-playfair_display group-hover:text-teal-600 transition-colors">Minimal Side Effects</h3>
+                  <p class="text-slate-600 text-base leading-relaxed">Usually mild: soreness at injection site, slight swelling, or low-grade fever for 1-2 days. Most Sheffield patients experience no issues.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="space-y-8 animate-fade-in-right delay-500">
+          <!-- Feature 4 -->
+          <div class="relative group">
+            <div class="absolute inset-0 bg-teal-500/5 rounded-2xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div class="relative bg-white border-2 border-gray-100 rounded-2xl p-8 hover:border-teal-600/30 hover:shadow-lg transition-all">
+              <div class="flex items-start gap-5">
+                <div class="w-14 h-14 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center shrink-0 shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all">
+                  <i class="fas fa-shield text-white text-2xl"></i>
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-gray-900 text-xl font-bold mb-2 font-playfair_display group-hover:text-teal-600 transition-colors">10-Year Protection</h3>
+                  <p class="text-slate-600 text-base leading-relaxed">A single booster provides 10 years of protection. After that, Sheffield residents and travellers should get another booster to maintain immunity.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature 5 -->
+          <div class="relative group">
+            <div class="absolute inset-0 bg-teal-500/5 rounded-2xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div class="relative bg-white border-2 border-gray-100 rounded-2xl p-8 hover:border-teal-600/30 hover:shadow-lg transition-all">
+              <div class="flex items-start gap-5">
+                <div class="w-14 h-14 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center shrink-0 shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all">
+                  <i class="fas fa-user-check text-white text-2xl"></i>
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-gray-900 text-xl font-bold mb-2 font-playfair_display group-hover:text-teal-600 transition-colors">Suitable for All Ages</h3>
+                  <p class="text-slate-600 text-base leading-relaxed">The Td/IPV booster is suitable for adults and children over 10 years old. Safe during pregnancy (after first trimester) if needed for travel.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature 6 -->
+          <div class="relative group">
+            <div class="absolute inset-0 bg-teal-500/5 rounded-2xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div class="relative bg-white border-2 border-gray-100 rounded-2xl p-8 hover:border-teal-600/30 hover:shadow-lg transition-all">
+              <div class="flex items-start gap-5">
+                <div class="w-14 h-14 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center shrink-0 shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all">
+                  <i class="fas fa-pound-sign text-white text-2xl"></i>
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-gray-900 text-xl font-bold mb-2 font-playfair_display group-hover:text-teal-600 transition-colors">NHS & Private Options</h3>
+                  <p class="text-slate-600 text-base leading-relaxed">May be available free on the NHS for Sheffield residents due for routine booster. Private vaccination also available. We'll check your eligibility.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="relative bg-gradient-to-br from-teal-50/60 via-white to-blue-50/40 px-5 md:px-10 py-[60px] md:py-[100px] overflow-hidden">
+    <div class="absolute inset-0 opacity-[0.025] pointer-events-none">
+      <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, rgb(13, 147, 136) 2px, transparent 0); background-size: 60px 60px;"></div>
+    </div>
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-br from-teal-400/8 to-transparent rounded-full blur-3xl"></div>
+      <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-gradient-to-tr from-blue-400/6 to-transparent rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="max-w-[1680px] mx-auto relative z-10">
+      <div class="text-center mb-16">
+        <div class="section-header-wrapper mb-8">
+          <div class="flex items-center justify-center gap-4">
+            <div class="w-[3px] h-7 bg-gradient-to-b from-teal-600 to-teal-500 rounded-sm shadow-md animate-slide-in-left"></div>
+            <div class="section-header">
+              <p class="text-teal-600 text-sm font-bold tracking-[2.5px] uppercase">DIPHTHERIA VACCINATION FAQs</p>
+            </div>
+          </div>
+        </div>
+        <h2 class="text-gray-700 text-[36px] md:text-[56px] font-bold leading-[1.15] mb-6 font-playfair_display animate-fade-in-up delay-200">
+          Your diphtheria questions answered
+        </h2>
+        <div class="w-[60px] h-[3px] bg-teal-600 rounded-full mx-auto mb-6 animate-scale-in delay-300"></div>
+        <p class="text-slate-600 text-lg md:text-[19px] leading-relaxed max-w-[800px] mx-auto animate-fade-in-up delay-400">
+          Common questions about diphtheria vaccination from Sheffield travellers
+        </p>
+      </div>
+
+      <div class="max-w-[900px] mx-auto space-y-4">
+        <!-- FAQ 1 -->
+        <div class="relative group">
+          <div class="absolute inset-0 bg-gradient-to-br from-teal-500/8 to-blue-500/5 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <div class="relative bg-white/80 backdrop-blur-sm border-2 border-gray-200 rounded-3xl overflow-hidden animate-fade-in-up delay-500 hover:border-teal-600/40 hover:shadow-2xl hover:bg-white transition-all duration-300">
+            <button class="w-full flex items-center justify-between p-7 md:p-8 text-left hover:bg-teal-50/30 transition-colors" onclick="toggleAccordion(1)">
+              <div class="flex items-start gap-4 flex-1 pr-4">
+                <div class="w-8 h-8 bg-gradient-to-br from-teal-500 to-teal-600 rounded-lg flex items-center justify-center shrink-0 mt-1 shadow-md">
+                  <span class="text-white text-sm font-bold">1</span>
+                </div>
+                <span class="text-lg md:text-xl font-bold text-gray-700 font-playfair_display">Do I need a diphtheria booster for travel?</span>
+              </div>
+              <div class="flex-shrink-0 w-11 h-11 bg-teal-50 rounded-xl flex items-center justify-center group-hover:bg-teal-600 group-hover:scale-110 transition-all">
+                <i class="fas fa-plus text-teal-600 text-lg group-hover:text-white transition-colors" id="icon-1"></i>
+              </div>
+            </button>
+            <div class="accordion-content px-7 md:px-8 pb-0" id="content-1">
+              <div class="pl-12 pb-7 md:pb-8">
+                <p class="text-slate-600 text-base md:text-lg leading-relaxed">
+                  Yes, if it's been more than 10 years since your last booster. Diphtheria vaccination is recommended for all Sheffield travellers, especially those visiting developing countries. We'll check your vaccination history during consultation at our Totley clinic.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="relative group">
+          <div class="absolute inset-0 bg-gradient-to-br from-teal-500/8 to-blue-500/5 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <div class="relative bg-white/80 backdrop-blur-sm border-2 border-gray-200 rounded-3xl overflow-hidden animate-fade-in-up delay-600 hover:border-teal-600/40 hover:shadow-2xl hover:bg-white transition-all duration-300">
+            <button class="w-full flex items-center justify-between p-7 md:p-8 text-left hover:bg-teal-50/30 transition-colors" onclick="toggleAccordion(2)">
+              <div class="flex items-start gap-4 flex-1 pr-4">
+                <div class="w-8 h-8 bg-gradient-to-br from-teal-500 to-teal-600 rounded-lg flex items-center justify-center shrink-0 mt-1 shadow-md">
+                  <span class="text-white text-sm font-bold">2</span>
+                </div>
+                <span class="text-lg md:text-xl font-bold text-gray-700 font-playfair_display">How long does the diphtheria booster last?</span>
+              </div>
+              <div class="flex-shrink-0 w-11 h-11 bg-teal-50 rounded-xl flex items-center justify-center group-hover:bg-teal-600 group-hover:scale-110 transition-all">
+                <i class="fas fa-plus text-teal-600 text-lg group-hover:text-white transition-colors" id="icon-2"></i>
+              </div>
+            </button>
+            <div class="accordion-content px-7 md:px-8 pb-0" id="content-2">
+              <div class="pl-12 pb-7 md:pb-8">
+                <p class="text-slate-600 text-base md:text-lg leading-relaxed">
+                  The diphtheria booster provides 10 years of protection. After that, Sheffield residents should get another booster to maintain immunity, especially if planning international travel. We'll remind you when your next booster is due.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="relative group">
+          <div class="absolute inset-0 bg-gradient-to-br from-teal-500/8 to-blue-500/5 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <div class="relative bg-white/80 backdrop-blur-sm border-2 border-gray-200 rounded-3xl overflow-hidden animate-fade-in-up delay-700 hover:border-teal-600/40 hover:shadow-2xl hover:bg-white transition-all duration-300">
+            <button class="w-full flex items-center justify-between p-7 md:p-8 text-left hover:bg-teal-50/30 transition-colors" onclick="toggleAccordion(3)">
+              <div class="flex items-start gap-4 flex-1 pr-4">
+                <div class="w-8 h-8 bg-gradient-to-br from-teal-500 to-teal-600 rounded-lg flex items-center justify-center shrink-0 mt-1 shadow-md">
+                  <span class="text-white text-sm font-bold">3</span>
+                </div>
+                <span class="text-lg md:text-xl font-bold text-gray-700 font-playfair_display">What is the Td/IPV booster?</span>
+              </div>
+              <div class="flex-shrink-0 w-11 h-11 bg-teal-50 rounded-xl flex items-center justify-center group-hover:bg-teal-600 group-hover:scale-110 transition-all">
+                <i class="fas fa-plus text-teal-600 text-lg group-hover:text-white transition-colors" id="icon-3"></i>
+              </div>
+            </button>
+            <div class="accordion-content px-7 md:px-8 pb-0" id="content-3">
+              <div class="pl-12 pb-7 md:pb-8">
+                <p class="text-slate-600 text-base md:text-lg leading-relaxed">
+                  The Td/IPV booster is a combined vaccine that protects against three diseases: Tetanus, diphtheria (low dose), and Polio. It's the standard booster given to Sheffield adults every 10 years. One injection protects against all three diseases.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="relative group">
+          <div class="absolute inset-0 bg-gradient-to-br from-teal-500/8 to-blue-500/5 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <div class="relative bg-white/80 backdrop-blur-sm border-2 border-gray-200 rounded-3xl overflow-hidden animate-fade-in-up delay-800 hover:border-teal-600/40 hover:shadow-2xl hover:bg-white transition-all duration-300">
+            <button class="w-full flex items-center justify-between p-7 md:p-8 text-left hover:bg-teal-50/30 transition-colors" onclick="toggleAccordion(4)">
+              <div class="flex items-start gap-4 flex-1 pr-4">
+                <div class="w-8 h-8 bg-gradient-to-br from-teal-500 to-teal-600 rounded-lg flex items-center justify-center shrink-0 mt-1 shadow-md">
+                  <span class="text-white text-sm font-bold">4</span>
+                </div>
+                <span class="text-lg md:text-xl font-bold text-gray-700 font-playfair_display">How much does diphtheria vaccination cost in Sheffield?</span>
+              </div>
+              <div class="flex-shrink-0 w-11 h-11 bg-teal-50 rounded-xl flex items-center justify-center group-hover:bg-teal-600 group-hover:scale-110 transition-all">
+                <i class="fas fa-plus text-teal-600 text-lg group-hover:text-white transition-colors" id="icon-4"></i>
+              </div>
+            </button>
+            <div class="accordion-content px-7 md:px-8 pb-0" id="content-4">
+              <div class="pl-12 pb-7 md:pb-8">
+                <p class="text-slate-600 text-base md:text-lg leading-relaxed">
+                  The Td/IPV booster may be available free on the NHS for Sheffield residents due for routine immunisation. For travel purposes, private vaccination is available. We'll check your NHS eligibility and provide full pricing during your consultation at our Totley clinic with no hidden fees.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="relative group">
+          <div class="absolute inset-0 bg-gradient-to-br from-teal-500/8 to-blue-500/5 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <div class="relative bg-white/80 backdrop-blur-sm border-2 border-gray-200 rounded-3xl overflow-hidden animate-fade-in-up delay-900 hover:border-teal-600/40 hover:shadow-2xl hover:bg-white transition-all duration-300">
+            <button class="w-full flex items-center justify-between p-7 md:p-8 text-left hover:bg-teal-50/30 transition-colors" onclick="toggleAccordion(5)">
+              <div class="flex items-start gap-4 flex-1 pr-4">
+                <div class="w-8 h-8 bg-gradient-to-br from-teal-500 to-teal-600 rounded-lg flex items-center justify-center shrink-0 mt-1 shadow-md">
+                  <span class="text-white text-sm font-bold">5</span>
+                </div>
+                <span class="text-lg md:text-xl font-bold text-gray-700 font-playfair_display">Can I get diphtheria booster with other travel vaccines?</span>
+              </div>
+              <div class="flex-shrink-0 w-11 h-11 bg-teal-50 rounded-xl flex items-center justify-center group-hover:bg-teal-600 group-hover:scale-110 transition-all">
+                <i class="fas fa-plus text-teal-600 text-lg group-hover:text-white transition-colors" id="icon-5"></i>
+              </div>
+            </button>
+            <div class="accordion-content px-7 md:px-8 pb-0" id="content-5">
+              <div class="pl-12 pb-7 md:pb-8">
+                <p class="text-slate-600 text-base md:text-lg leading-relaxed">
+                  Yes, the diphtheria booster (Td/IPV) can be given at the same appointment as most other travel vaccines at our Sheffield clinic. This makes it convenient for Sheffield travellers to get all their vaccinations in one visit. We'll advise on the best schedule for your needs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 6 -->
+        <div class="relative group">
+          <div class="absolute inset-0 bg-gradient-to-br from-teal-500/8 to-blue-500/5 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <div class="relative bg-white/80 backdrop-blur-sm border-2 border-gray-200 rounded-3xl overflow-hidden animate-fade-in-up delay-500 hover:border-teal-600/40 hover:shadow-2xl hover:bg-white transition-all duration-300">
+            <button class="w-full flex items-center justify-between p-7 md:p-8 text-left hover:bg-teal-50/30 transition-colors" onclick="toggleAccordion(6)">
+              <div class="flex items-start gap-4 flex-1 pr-4">
+                <div class="w-8 h-8 bg-gradient-to-br from-teal-500 to-teal-600 rounded-lg flex items-center justify-center shrink-0 mt-1 shadow-md">
+                  <span class="text-white text-sm font-bold">6</span>
+                </div>
+                <span class="text-lg md:text-xl font-bold text-gray-700 font-playfair_display">What if I never had childhood diphtheria vaccination?</span>
+              </div>
+              <div class="flex-shrink-0 w-11 h-11 bg-teal-50 rounded-xl flex items-center justify-center group-hover:bg-teal-600 group-hover:scale-110 transition-all">
+                <i class="fas fa-plus text-teal-600 text-lg group-hover:text-white transition-colors" id="icon-6"></i>
+              </div>
+            </button>
+            <div class="accordion-content px-7 md:px-8 pb-0" id="content-6">
+              <div class="pl-12 pb-7 md:pb-8">
+                <p class="text-slate-600 text-base md:text-lg leading-relaxed">
+                  If you never completed your childhood diphtheria vaccination course, you'll need a full primary course of three doses. We can arrange this at our Sheffield clinic. Most UK adults received childhood vaccinations and only need boosters, but we'll check your history and advise accordingly.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA SECTION -->
+  <section class="relative bg-gradient-to-br from-teal-600 via-teal-500 to-teal-400 px-5 md:px-10 py-[50px] md:py-[70px] overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute top-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+      <div class="absolute bottom-0 left-0 w-80 h-80 bg-white rounded-full blur-3xl"></div>
+    </div>
+    
+    <div class="max-w-[1200px] mx-auto relative z-10 text-center">
+      <div class="flex flex-wrap items-center justify-center gap-4 mb-10">
+        <div class="inline-flex items-center gap-2.5 bg-white/20 backdrop-blur-md border border-white/30 px-5 py-3 rounded-full">
+          <i class="fas fa-syringe text-white text-base"></i>
+          <span class="text-white text-sm md:text-base font-bold">Booster Available</span>
+        </div>
+        <div class="inline-flex items-center gap-2.5 bg-white/20 backdrop-blur-md border border-white/30 px-5 py-3 rounded-full">
+          <i class="fas fa-user-doctor text-white text-base"></i>
+          <span class="text-white text-sm md:text-base font-bold">30+ Years Experience</span>
+        </div>
+        <div class="inline-flex items-center gap-2.5 bg-white/20 backdrop-blur-md border border-white/30 px-5 py-3 rounded-full">
+          <i class="fas fa-clock text-white text-base"></i>
+          <span class="text-white text-sm md:text-base font-bold">Same Day Service</span>
+        </div>
+      </div>
+
+      <h2 class="text-white text-[40px] md:text-[56px] font-bold leading-[1.15] mb-6 font-playfair_display">
+        Ready to protect your travels?
+      </h2>
+      
+      <p class="text-white text-lg md:text-xl font-normal leading-relaxed max-w-[700px] mx-auto mb-10">
+        Book your diphtheria booster consultation with Tajinder today. Get expert advice and vaccination at our Sheffield clinic.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+        <button class="group relative bg-white text-teal-600 text-base md:text-[17px] font-bold px-10 py-5 rounded-2xl shadow-2xl hover:shadow-3xl transition-all overflow-hidden hover-lift">
+          <span class="relative flex items-center justify-center gap-3">
+            <i class="fas fa-calendar-check"></i>
+            Book Diphtheria Booster
+            <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </span>
+        </button>
+        <a class="flex items-center justify-center gap-3 text-white text-base md:text-[17px] font-bold px-8 py-5 rounded-2xl border-2 border-white hover:bg-white/15 transition-all shadow-xl hover:shadow-2xl" href="tel:01149802780">
+          <i class="fas fa-phone"></i>
+          Call 0114 980 278
+        </a>
+      </div>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-6 text-white">
+        <div class="flex items-center gap-2">
+          <i class="fas fa-check-circle text-lg"></i>
+          <span class="text-sm md:text-base font-semibold">Check your status</span>
+        </div>
+        <span class="hidden sm:inline text-white/40 text-xl">•</span>
+        <div class="flex items-center gap-2">
+          <i class="fas fa-check-circle text-lg"></i>
+          <span class="text-sm md:text-base font-semibold">NHS may be available</span>
+        </div>
+        <span class="hidden sm:inline text-white/40 text-xl">•</span>
+        <div class="flex items-center gap-2">
+          <i class="fas fa-check-circle text-lg"></i>
+          <span class="text-sm md:text-base font-semibold">Expert advice</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 overflow-hidden">
+    <div class="absolute inset-0 opacity-5">
+      <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, rgb(20, 184, 166) 1px, transparent 0); background-size: 40px 40px;"></div>
+    </div>
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <div class="absolute -top-40 -right-40 w-[500px] h-[500px] bg-gradient-to-br from-teal-500/10 to-transparent rounded-full blur-3xl"></div>
+      <div class="absolute -bottom-40 -left-40 w-[400px] h-[400px] bg-gradient-to-tr from-teal-600/10 to-transparent rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="relative max-w-[1680px] mx-auto px-6 md:px-[60px]">
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between py-16 md:py-20 border-b border-white/10 gap-8">
+        <div class="text-left max-w-[500px]">
+          <div class="flex items-center gap-5 mb-6">
+            <img alt="Sheffield United FC" class="h-16 w-16 object-contain opacity-90" src="https://c.animaapp.com/mh1jrgnmeI4wDl/assets/sheffield_united_fc_logo-svg.png"/>
+            <div>
+              <h3 class="text-white text-3xl md:text-4xl font-extrabold leading-none mb-2 font-playfair_display tracking-tight">
+                <span class="text-teal-400">Sheffield</span> Wellness
+              </h3>
+              <p class="text-white/70 text-base font-semibold tracking-wide">By Totley Pharmacy</p>
+            </div>
+          </div>
+          <p class="text-white/80 text-[17px] leading-relaxed font-medium">
+            Your trusted partner for weight loss, travel health, and expert pharmacy care in Sheffield.
+          </p>
+        </div>
+        <div class="flex flex-col gap-3 shrink-0 min-w-[240px]">
+          <button class="group bg-white hover:bg-teal-50 text-teal-600 text-[15px] font-bold px-7 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2">
+            <i class="fas fa-calendar-check text-base"></i>
+            Book Consultation
+            <i class="fas fa-arrow-right text-xs group-hover:translate-x-0.5 transition-transform"></i>
+          </button>
+          <a class="flex items-center justify-center gap-2.5 text-white text-[15px] font-bold px-6 py-3 rounded-xl border-2 border-white/30 hover:border-white hover:bg-white/10 transition-all" href="tel:01149802780">
+            <i class="fas fa-phone text-sm"></i>
+            0114 980 278
+          </a>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-12 py-16">
+        <div class="md:col-span-3">
+          <h4 class="text-white text-base font-bold mb-6 uppercase tracking-wider">Services</h4>
+          <ul class="space-y-3">
+            <li><a class="text-white/70 hover:text-teal-400 transition-colors text-[15px] font-medium flex items-center gap-2 group" href="weight-loss.html">
+              <i class="fas fa-arrow-right text-teal-400 text-xs opacity-0 group-hover:opacity-100 transition-opacity"></i>
+              Weight Loss Programme
+            </a></li>
+            <li><a class="text-white/70 hover:text-teal-400 transition-colors text-[15px] font-medium flex items-center gap-2 group" href="travel-health.html">
+              <i class="fas fa-arrow-right text-teal-400 text-xs opacity-0 group-hover:opacity-100 transition-opacity"></i>
+              Travel Vaccinations
+            </a></li>
+            <li><a class="text-white/70 hover:text-teal-400 transition-colors text-[15px] font-medium flex items-center gap-2 group" href="#prescriptions">
+              <i class="fas fa-arrow-right text-teal-400 text-xs opacity-0 group-hover:opacity-100 transition-opacity"></i>
+              Prescriptions
+            </a></li>
+            <li><a class="text-white/70 hover:text-teal-400 transition-colors text-[15px] font-medium flex items-center gap-2 group" href="#flu-jabs">
+              <i class="fas fa-arrow-right text-teal-400 text-xs opacity-0 group-hover:opacity-100 transition-opacity"></i>
+              Private Vaccinations
+            </a></li>
+            <li><a class="text-white/70 hover:text-teal-400 transition-colors text-[15px] font-medium flex items-center gap-2 group" href="health-hub.html">
+              <i class="fas fa-arrow-right text-teal-400 text-xs opacity-0 group-hover:opacity-100 transition-opacity"></i>
+              Health Hub
+            </a></li>
+          </ul>
+        </div>
+
+        <div class="md:col-span-4">
+          <h4 class="text-white text-base font-bold mb-6 uppercase tracking-wider">Contact Us</h4>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3 group">
+              <div class="w-10 h-10 bg-teal-600/20 rounded-xl flex items-center justify-center shrink-0 group-hover:bg-teal-600 transition-colors">
+                <i class="fas fa-phone text-teal-400 group-hover:text-white transition-colors"></i>
+              </div>
+              <div>
+                <p class="text-white/50 text-xs font-semibold uppercase tracking-wide mb-1">Phone</p>
+                <a class="text-white text-[15px] font-semibold hover:text-teal-400 transition-colors" href="tel:01149802780">0114 980 278</a>
+              </div>
+            </li>
+            <li class="flex items-start gap-3 group">
+              <div class="w-10 h-10 bg-teal-600/20 rounded-xl flex items-center justify-center shrink-0 group-hover:bg-teal-600 transition-colors">
+                <i class="fas fa-envelope text-teal-400 group-hover:text-white transition-colors"></i>
+              </div>
+              <div>
+                <p class="text-white/50 text-xs font-semibold uppercase tracking-wide mb-1">Email</p>
+                <a class="text-white text-[15px] font-semibold hover:text-teal-400 transition-colors break-all" href="mailto:info@totleypharmacy.co.uk">info@totleypharmacy.co.uk</a>
+              </div>
+            </li>
+            <li class="flex items-start gap-3 group">
+              <div class="w-10 h-10 bg-teal-600/20 rounded-xl flex items-center justify-center shrink-0 group-hover:bg-teal-600 transition-colors">
+                <i class="fas fa-map-marker-alt text-teal-400 group-hover:text-white transition-colors"></i>
+              </div>
+              <div>
+                <p class="text-white/50 text-xs font-semibold uppercase tracking-wide mb-1">Address</p>
+                <p class="text-white text-[15px] font-semibold">123 Totley Road<br/>Sheffield S17 XXX</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="md:col-span-3">
+          <h4 class="text-white text-base font-bold mb-6 uppercase tracking-wider">Opening Hours</h4>
+          <ul class="space-y-3">
+            <li class="flex justify-between items-center text-[15px]">
+              <span class="text-white/70 font-medium">Monday - Friday</span>
+              <span class="text-white font-bold">9:00 - 18:00</span>
+            </li>
+            <li class="flex justify-between items-center text-[15px]">
+              <span class="text-white/70 font-medium">Saturday</span>
+              <span class="text-white font-bold">9:00 - 17:00</span>
+            </li>
+            <li class="flex justify-between items-center text-[15px]">
+              <span class="text-white/70 font-medium">Sunday</span>
+              <span class="text-white/50 font-bold">Closed</span>
+            </li>
+          </ul>
+          <div class="mt-8 pt-6 border-t border-white/10">
+            <p class="text-white/50 text-xs font-semibold uppercase tracking-wide mb-3">Follow Us</p>
+            <div class="flex gap-3">
+              <a class="w-11 h-11 bg-white/10 hover:bg-teal-600 rounded-xl flex items-center justify-center transition-all group" href="#">
+                <i class="fab fa-facebook-f text-white/70 group-hover:text-white text-lg transition-colors"></i>
+              </a>
+              <a class="w-11 h-11 bg-white/10 hover:bg-teal-600 rounded-xl flex items-center justify-center transition-all group" href="#">
+                <i class="fab fa-twitter text-white/70 group-hover:text-white text-lg transition-colors"></i>
+              </a>
+              <a class="w-11 h-11 bg-white/10 hover:bg-teal-600 rounded-xl flex items-center justify-center transition-all group" href="#">
+                <i class="fab fa-instagram text-white/70 group-hover:text-white text-lg transition-colors"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:col-span-2">
+          <h4 class="text-white text-base font-bold mb-6 uppercase tracking-wider">Stay Updated</h4>
+          <p class="text-white/70 text-sm mb-4">Get health tips & exclusive offers</p>
+          <form class="space-y-3">
+            <input class="w-full bg-white/10 border border-white/20 text-white placeholder-white/50 px-4 py-3 rounded-xl focus:bg-white/15 focus:border-teal-400 outline-none transition-all text-sm" placeholder="Your email" type="email"/>
+            <button class="w-full bg-teal-600 hover:bg-teal-500 text-white text-sm font-bold px-6 py-3 rounded-xl transition-all shadow-lg hover:shadow-xl" type="submit">Subscribe</button>
+          </form>
+          <p class="text-white/40 text-xs mt-3">We respect your privacy</p>
+        </div>
+      </div>
+
+      <div class="border-t border-white/10 py-8">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+          <div class="flex flex-wrap items-center justify-center gap-6 text-white/50 text-xs">
+            <span>© 2025 Totley Pharmacy</span>
+            <span class="hidden md:inline">•</span>
+            <a class="hover:text-teal-400 transition-colors" href="/privacy">Privacy</a>
+            <span>•</span>
+            <a class="hover:text-teal-400 transition-colors" href="/terms">Terms</a>
+            <span>•</span>
+            <a class="hover:text-teal-400 transition-colors" href="/cookies">Cookies</a>
+          </div>
+          <div class="flex flex-wrap items-center justify-center gap-4">
+            <div class="flex items-center gap-2 text-white/60 text-xs">
+              <i class="fas fa-shield-alt text-teal-400"></i>
+              <span>GPhC Registered</span>
+            </div>
+            <span class="text-white/30">•</span>
+            <div class="flex items-center gap-2 text-white/60 text-xs">
+              <i class="fas fa-certificate text-teal-400"></i>
+              <span>NHS Partner</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Accordion functionality
+    function toggleAccordion(id) {
+      const content = document.getElementById('content-' + id);
+      const icon = document.getElementById('icon-' + id);
+      
+      if (content.classList.contains('active')) {
+        content.classList.remove('active');
+        icon.classList.remove('fa-minus');
+        icon.classList.add('fa-plus');
+      } else {
+        document.querySelectorAll('.accordion-content').forEach(item => {
+          item.classList.remove('active');
+        });
+        document.querySelectorAll('[id^="icon-"]').forEach(item => {
+          item.classList.remove('fa-minus');
+          item.classList.add('fa-plus');
+        });
+        
+        content.classList.add('active');
+        icon.classList.remove('fa-plus');
+        icon.classList.add('fa-minus');
+      }
+    }
+    
+    // Scroll animations
+    const observerOptions = {
+      threshold: 0.2,
+      rootMargin: '0px 0px -100px 0px'
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+        }
+      });
+    }, observerOptions);
+    
+    document.querySelectorAll('.animate-fade-in-up, .animate-fade-in-left, .animate-fade-in-right, .animate-scale-in').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Mobile Menu Toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const menuClose = document.getElementById('menuClose');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+
+    function openMenu() {
+      mobileMenu.classList.remove('translate-x-full');
+      mobileMenuOverlay.classList.remove('opacity-0', 'pointer-events-none');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+      mobileMenu.classList.add('translate-x-full');
+      mobileMenuOverlay.classList.add('opacity-0', 'pointer-events-none');
+      document.body.style.overflow = '';
+    }
+
+    menuToggle.addEventListener('click', openMenu);
+    menuClose.addEventListener('click', closeMenu);
+    mobileMenuOverlay.addEventListener('click', closeMenu);
+
+    document.querySelectorAll('#mobileMenu a').forEach(link => {
+      link.addEventListener('click', closeMenu);
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeMenu();
+    });
+  </script>
+</body>
+</html>

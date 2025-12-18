@@ -1,0 +1,1439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Health Hub | Expert Health Advice Sheffield | Sheffield Wellness Clinic</title>
+  <meta name="description" content="Expert health advice on weight loss, travel health, and wellness from Sheffield's trusted independent pharmacy team. Get tips from Tajinder Singh and our healthcare experts."/>
+  <meta name="keywords" content="Sheffield health advice, travel health Sheffield, weight loss tips Sheffield, health blog Sheffield"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      content: [],
+      theme: {
+        extend: {
+          fontFamily: {
+            dm_sans: ['DM Sans', 'sans-serif'],
+            playfair_display: ['Playfair Display', 'Georgia', 'serif']
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    @font-face {
+      font-family: 'Playfair Display';
+      src: url('https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2') format("woff2");
+      font-weight: 400 800;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'DM Sans';
+      src: url('https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2') format("woff2");
+      font-weight: 400 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    * {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes fadeInRight {
+      from {
+        opacity: 0;
+        transform: translateX(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes scaleIn {
+      from {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+
+    @keyframes shimmer {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(100%);
+      }
+    }
+
+    @keyframes drawLine {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+
+    @keyframes slideInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    .animate-float {
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .animate-shimmer {
+      animation: shimmer 3s infinite;
+    }
+
+    .animate-slide-in-left {
+      animation: slideInLeft 0.8s ease-out forwards;
+    }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #0d9388 0%, #14b8a6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      display: inline-block;
+      padding-bottom: 0.1em;
+      line-height: 1.1;
+    }
+
+    .bg-gradient-radial {
+      background: radial-gradient(circle, var(--tw-gradient-stops));
+    }
+
+    .animate-fade-in-up {
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+
+    .animate-fade-in-left {
+      animation: fadeInLeft 0.8s ease-out forwards;
+    }
+
+    .animate-fade-in-right {
+      animation: fadeInRight 0.8s ease-out forwards;
+    }
+
+    .animate-scale-in {
+      animation: scaleIn 0.6s ease-out forwards;
+    }
+
+    .delay-100 { animation-delay: 0.1s; }
+    .delay-200 { animation-delay: 0.2s; }
+    .delay-300 { animation-delay: 0.3s; }
+    .delay-400 { animation-delay: 0.4s; }
+    .delay-500 { animation-delay: 0.5s; }
+    .delay-600 { animation-delay: 0.6s; }
+    .delay-700 { animation-delay: 0.7s; }
+    .delay-800 { animation-delay: 0.8s; }
+    .delay-900 { animation-delay: 0.9s; }
+
+    .animate-fade-in-up,
+    .animate-fade-in-left,
+    .animate-fade-in-right,
+    .animate-scale-in,
+    .section-header-wrapper {
+      opacity: 0;
+    }
+
+    .section-header {
+      position: relative;
+      display: inline-block;
+    }
+
+    .section-header::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+      height: 2px;
+      background: linear-gradient(90deg, #0d9388 0%, #0d9388 60%, transparent 100%);
+      animation: drawLine 1.2s ease-out forwards;
+    }
+
+    .section-header-wrapper {
+      opacity: 0;
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+
+    .hover-lift {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .hover-lift:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(0, 161, 154, 0.2);
+    }
+
+    .nav-link {
+      position: relative;
+    }
+
+    .nav-link:hover {
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      background: linear-gradient(135deg, #0d9388 0%, #14b8a6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .nav-link-active {
+      background: linear-gradient(135deg, #0d9388 0%, #14b8a6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .nav-dropdown:hover .dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    .nav-dropdown:hover svg {
+      transform: rotate(180deg);
+    }
+
+    .dropdown-menu {
+      transform: translateX(-50%) translateY(-10px);
+    }
+
+    .dropdown-menu::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .dropdown-menu::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    .dropdown-menu::-webkit-scrollbar-thumb {
+      background: #0d9388;
+      border-radius: 3px;
+    }
+
+    .line-clamp-2 {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .line-clamp-3 {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .category-pill {
+      transition: all 0.3s ease;
+    }
+
+    .category-pill.active {
+      background: linear-gradient(to right, #0d9388, #14b8a6);
+      color: white;
+      border-color: transparent;
+    }
+  </style>
+</head>
+<body class="bg-white text-slate-900">
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/100 backdrop-blur-lg shadow-sm border-b border-gray-200">
+    <div class="max-w-[1680px] mx-auto px-5 md:px-[60px] h-[70px] md:h-[90px] flex items-center justify-between gap-10">
+      <a class="flex items-center gap-5 shrink-0 hover:opacity-80 transition-opacity" href="index.html">
+        <div class="flex items-center justify-center">
+          <img alt="Sheffield United FC Official Partner" class="h-[45px] w-[45px] md:h-[55px] md:w-[55px] object-contain" src="https://c.animaapp.com/mh1jrgnmeI4wDl/assets/sheffield_united_fc_logo-svg.png"/>
+        </div>
+        <div class="h-[45px] w-px bg-gradient-to-b from-transparent via-gray-300 to-transparent shrink-0"></div>
+        <div class="flex flex-col gap-0.5">
+          <div class="text-base md:text-xl font-bold tracking-tight leading-tight whitespace-nowrap">
+            <span class="text-teal-600">Sheffield</span>
+            <span class="text-gray-600">Wellness Clinic</span>
+          </div>
+          <div class="text-[11px] font-medium text-gray-400 tracking-wide">By Totley Pharmacy</div>
+        </div>
+      </a>
+      <nav class="hidden lg:flex items-center gap-10 grow justify-center">
+        <div class="nav-dropdown relative">
+          <button class="nav-link relative text-gray-900 text-sm md:text-[15px] font-semibold py-2 whitespace-nowrap tracking-wide transition-all duration-300 flex items-center gap-1.5 after:absolute after:left-0 after:-bottom-0.5 after:w-0 after:h-[3px] after:bg-gradient-to-r after:from-teal-600 after:to-teal-500 after:rounded-full after:transition-all after:duration-300 hover:after:w-full">
+            Weight Loss
+            <svg class="w-3.5 h-3.5 transition-transform duration-300" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+              <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+            </svg>
+          </button>
+          <div class="dropdown-menu absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[280px] bg-white/95 backdrop-blur-xl rounded-2xl shadow-2xl border-2 border-gray-100 opacity-0 invisible transition-all duration-300 overflow-hidden">
+            <div class="p-3">
+              <a class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-teal-50 transition-all group" href="weight-loss.html">
+                <i class="fas fa-weight-scale text-teal-600 text-base group-hover:scale-110 transition-transform shrink-0"></i>
+                <div class="flex-1">
+                  <div class="text-gray-900 text-sm font-semibold group-hover:text-teal-600 transition-colors">Weight Loss Programme</div>
+                  <div class="text-gray-500 text-xs">Medical weight loss</div>
+                </div>
+              </a>
+              <a class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-teal-50 transition-all group" href="switching-provider.html">
+                <i class="fas fa-exchange-alt text-teal-600 text-base group-hover:scale-110 transition-transform shrink-0"></i>
+                <div class="flex-1">
+                  <div class="text-gray-900 text-sm font-semibold group-hover:text-teal-600 transition-colors">Switching Providers</div>
+                  <div class="text-gray-500 text-xs">Transfer your care</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-dropdown relative">
+          <button class="nav-link relative text-gray-900 text-sm md:text-[15px] font-semibold py-2 whitespace-nowrap tracking-wide transition-all duration-300 flex items-center gap-1.5 after:absolute after:left-0 after:-bottom-0.5 after:w-0 after:h-[3px] after:bg-gradient-to-r after:from-teal-600 after:to-teal-500 after:rounded-full after:transition-all after:duration-300 hover:after:w-full">
+            Travel Health
+            <svg class="w-3.5 h-3.5 transition-transform duration-300" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+              <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+            </svg>
+          </button>
+          <div class="dropdown-menu absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[320px] bg-white/95 backdrop-blur-xl rounded-2xl shadow-2xl border-2 border-gray-100 opacity-0 invisible transition-all duration-300 overflow-hidden">
+            <div class="p-3 max-h-[400px] overflow-y-auto">
+              <a class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-teal-50 transition-all group mb-2" href="travel-health.html">
+                <i class="fas fa-plane-departure text-teal-600 text-base group-hover:scale-110 transition-transform shrink-0"></i>
+                <div class="flex-1">
+                  <div class="text-gray-900 text-sm font-semibold group-hover:text-teal-600 transition-colors">All Travel Services</div>
+                  <div class="text-gray-500 text-xs">Vaccinations &amp; advice</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-dropdown relative">
+          <button class="nav-link relative text-gray-900 text-sm md:text-[15px] font-semibold py-2 whitespace-nowrap tracking-wide transition-all duration-300 flex items-center gap-1.5 after:absolute after:left-0 after:-bottom-0.5 after:w-0 after:h-[3px] after:bg-gradient-to-r after:from-teal-600 after:to-teal-500 after:rounded-full after:transition-all after:duration-300 hover:after:w-full">
+            Services
+            <svg class="w-3.5 h-3.5 transition-transform duration-300" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+              <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+            </svg>
+          </button>
+          <div class="dropdown-menu absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[280px] bg-white/95 backdrop-blur-xl rounded-2xl shadow-2xl border-2 border-gray-100 opacity-0 invisible transition-all duration-300 overflow-hidden">
+            <div class="p-3">
+              <a class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-teal-50 transition-all group" href="ear-wax-removal.html">
+                <i class="fas fa-ear-listen text-teal-600 text-base group-hover:scale-110 transition-transform shrink-0"></i>
+                <div class="flex-1">
+                  <div class="text-gray-900 text-sm font-semibold group-hover:text-teal-600 transition-colors">Ear Wax Removal</div>
+                  <div class="text-gray-500 text-xs">Professional microsuction</div>
+                </div>
+              </a>
+              <a class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-teal-50 transition-all group" href="#prescriptions">
+                <i class="fas fa-prescription text-teal-600 text-base group-hover:scale-110 transition-transform shrink-0"></i>
+                <div class="flex-1">
+                  <div class="text-gray-900 text-sm font-semibold group-hover:text-teal-600 transition-colors">Prescriptions</div>
+                  <div class="text-gray-500 text-xs">Repeat prescriptions</div>
+                </div>
+              </a>
+              <a class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-teal-50 transition-all group" href="#flu-jabs">
+                <i class="fas fa-syringe text-teal-600 text-base group-hover:scale-110 transition-transform shrink-0"></i>
+                <div class="flex-1">
+                  <div class="text-gray-900 text-sm font-semibold group-hover:text-teal-600 transition-colors">Flu Jabs</div>
+                  <div class="text-gray-500 text-xs">Private vaccinations</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a class="nav-link nav-link-active relative text-teal-600 text-sm md:text-[15px] font-bold py-2 whitespace-nowrap tracking-wide after:absolute after:left-0 after:-bottom-0.5 after:w-full after:h-[3px] after:bg-gradient-to-r after:from-teal-600 after:to-teal-500 after:rounded-full after:transition-all" href="health-hub.html">Health Hub</a>
+        <a class="nav-link relative text-gray-900 text-sm md:text-[15px] font-semibold py-2 whitespace-nowrap tracking-wide transition-all duration-300 after:absolute after:left-0 after:-bottom-0.5 after:w-0 after:h-[3px] after:bg-gradient-to-r after:from-teal-600 after:to-teal-500 after:rounded-full after:transition-all after:duration-300 hover:after:w-full" href="#about">About</a>
+      </nav>
+      <div class="hidden lg:flex items-center shrink-0">
+        <button class="flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white text-[15px] font-semibold px-7 py-3 rounded-3xl shadow-lg hover:shadow-xl transition-all min-w-[180px] justify-center">
+          Book Consultation
+          <i class="fas fa-arrow-right text-sm"></i>
+        </button>
+      </div>
+      <button class="lg:hidden flex items-center justify-center w-10 h-10 text-gray-600 hover:text-teal-600 transition-colors" id="menuToggle">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+          <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="fixed inset-0 bg-black/60 backdrop-blur-sm z-40 opacity-0 pointer-events-none transition-opacity duration-300" id="mobileMenuOverlay"></div>
+  <div class="fixed top-0 right-0 bottom-0 w-[85%] max-w-[400px] bg-white/95 backdrop-blur-xl shadow-2xl z-50 transform translate-x-full transition-transform duration-300 ease-out" id="mobileMenu">
+    <div class="flex items-center justify-between p-6 border-b border-gray-200">
+      <div class="flex items-center gap-3">
+        <img alt="Sheffield United FC" class="h-10 w-10 object-contain" src="https://c.animaapp.com/mh1jrgnmeI4wDl/assets/sheffield_united_fc_logo-svg.png"/>
+        <div>
+          <div class="text-base font-bold tracking-tight leading-tight">
+            <span class="text-teal-600">Sheffield</span>
+            <span class="text-gray-600">Wellness</span>
+          </div>
+          <div class="text-[10px] font-medium text-gray-400 tracking-wide">By Totley Pharmacy</div>
+        </div>
+      </div>
+      <button class="flex items-center justify-center w-10 h-10 text-gray-600 hover:text-teal-600 hover:bg-teal-50 rounded-full transition-all" id="menuClose">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+          <path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+        </svg>
+      </button>
+    </div>
+    <div class="flex flex-col h-[calc(100%-80px)] overflow-y-auto">
+      <nav class="flex-1 p-6 space-y-2">
+        <a class="group flex items-center justify-between px-4 py-4 rounded-xl hover:bg-teal-50 transition-all" href="weight-loss.html">
+          <div class="flex items-center gap-4">
+            <i class="fas fa-weight-scale text-teal-600 text-lg group-hover:scale-110 transition-transform"></i>
+            <span class="text-gray-700 text-base font-semibold group-hover:text-teal-600 transition-colors">Weight Loss</span>
+          </div>
+          <i class="fas fa-chevron-right text-gray-400 text-sm group-hover:text-teal-600 group-hover:translate-x-1 transition-all"></i>
+        </a>
+        <a class="group flex items-center justify-between px-4 py-4 rounded-xl hover:bg-teal-50 transition-all" href="travel-health.html">
+          <div class="flex items-center gap-4">
+            <i class="fas fa-plane-departure text-teal-600 text-lg group-hover:scale-110 transition-transform"></i>
+            <span class="text-gray-700 text-base font-semibold group-hover:text-teal-600 transition-colors">Travel Health</span>
+          </div>
+          <i class="fas fa-chevron-right text-gray-400 text-sm group-hover:text-teal-600 group-hover:translate-x-1 transition-all"></i>
+        </a>
+        <a class="group flex items-center justify-between px-4 py-4 rounded-xl bg-teal-50 border-2 border-teal-600" href="health-hub.html">
+          <div class="flex items-center gap-4">
+            <i class="fas fa-newspaper text-teal-600 text-lg"></i>
+            <span class="text-teal-600 text-base font-bold">Health Hub</span>
+          </div>
+          <i class="fas fa-chevron-right text-teal-600 text-sm"></i>
+        </a>
+      </nav>
+      <div class="p-6 border-t border-gray-200 space-y-4">
+        <button class="w-full flex items-center justify-center gap-3 bg-teal-600 hover:bg-teal-700 text-white text-base font-semibold px-6 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all">
+          <i class="fas fa-calendar-check"></i>
+          Book Consultation
+        </button>
+        <a class="w-full flex items-center justify-center gap-3 text-teal-600 text-base font-semibold px-6 py-4 rounded-xl border-2 border-teal-600 hover:bg-teal-50 transition-all" href="tel:01149802780">
+          <i class="fas fa-phone"></i>
+          Call 0114 980 278
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="relative w-full pt-[100px] md:pt-[170px] pb-[60px] md:pb-[100px] overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-[#e0f2f1] via-white to-[#e0f2f1]"></div>
+    <div class="absolute inset-0 opacity-[0.02] pointer-events-none">
+      <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, rgb(13, 147, 136) 2px, transparent 0); background-size: 60px 60px;"></div>
+    </div>
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <div class="absolute -top-40 -right-40 w-[800px] h-[800px] bg-gradient-radial from-teal-400/12 via-teal-500/6 to-transparent rounded-full blur-3xl"></div>
+      <div class="absolute -bottom-40 -left-40 w-[700px] h-[700px] bg-gradient-radial from-teal-500/10 via-teal-600/5 to-transparent rounded-full blur-3xl"></div>
+    </div>
+    <div class="absolute inset-0 bg-gradient-to-b from-white/40 via-transparent to-white/40 pointer-events-none"></div>
+    
+    <div class="max-w-[1680px] mx-auto px-6 md:px-[60px] relative z-10">
+      <div class="text-center max-w-[900px] mx-auto">
+        <div class="section-header-wrapper mb-8">
+          <div class="flex items-center justify-center gap-4">
+            <div class="w-[3px] h-7 bg-gradient-to-b from-teal-600 to-teal-500 rounded-sm shadow-md animate-slide-in-left"></div>
+            <div class="section-header">
+              <p class="text-teal-600 text-sm font-bold tracking-[2.5px] uppercase">HEALTH HUB</p>
+            </div>
+          </div>
+        </div>
+        <h1 class="text-gray-700 text-[48px] md:text-[72px] font-bold tracking-tight leading-[1.1] mb-6 font-playfair_display animate-fade-in-up delay-200">
+          Your Guide to Health & Wellness
+        </h1>
+        <div class="w-[60px] h-[3px] bg-teal-600 rounded-full mx-auto mb-6 animate-scale-in delay-300"></div>
+        <p class="text-slate-600 text-xl md:text-2xl leading-relaxed mb-10 animate-fade-in-up delay-400">
+          Expert advice on weight management, travel health, and private healthcare from Sheffield's trusted independent pharmacy team
+        </p>
+        
+        <!-- Search Bar -->
+        <div class="max-w-[600px] mx-auto animate-fade-in-up delay-500">
+          <div class="relative">
+            <input type="text" placeholder="Search health topics..." class="w-full px-6 py-4 pr-14 rounded-xl border-2 border-gray-200 focus:border-teal-600 focus:ring-2 focus:ring-teal-600/20 outline-none text-base" id="searchInput"/>
+            <button class="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 bg-teal-600 hover:bg-teal-700 rounded-lg flex items-center justify-center transition-all">
+              <i class="fas fa-search text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED ARTICLE SECTION - Magazine Hero Style -->
+  <section class="relative bg-white px-5 md:px-10 py-[60px] md:py-[100px] overflow-hidden">
+    <div class="max-w-[1680px] mx-auto relative z-10">
+      <div class="text-center mb-12">
+        <div class="inline-flex items-center gap-2 bg-teal-50 border-2 border-teal-600/30 px-5 py-2 rounded-full mb-6">
+          <i class="fas fa-star text-teal-600"></i>
+          <span class="text-teal-600 text-sm font-bold uppercase tracking-wide">Featured Article</span>
+        </div>
+      </div>
+
+      <!-- Premium Featured Article Card -->
+      <div class="relative group max-w-[1400px] mx-auto animate-scale-in delay-300">
+        <div class="absolute inset-0 bg-teal-500/5 rounded-3xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <div class="relative bg-white border-2 border-gray-100 rounded-3xl overflow-hidden hover:shadow-2xl transition-all">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+            <!-- Left: Image (60%) -->
+            <div class="lg:col-span-7 relative overflow-hidden">
+              <div class="aspect-[16/10] lg:aspect-auto lg:h-full overflow-hidden">
+                <img alt="GLP-1 medications and weight loss" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71?w=1200&h=800&fit=crop"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent lg:hidden"></div>
+              </div>
+              <!-- Category Badge -->
+              <span class="absolute top-6 left-6 bg-teal-600 text-white text-xs font-bold px-5 py-2.5 rounded-full shadow-xl">
+                WEIGHT LOSS
+              </span>
+            </div>
+            
+            <!-- Right: Content (40%) -->
+            <div class="lg:col-span-5 p-8 md:p-12 flex flex-col justify-center">
+              <div class="flex items-center gap-3 text-slate-500 text-sm mb-4">
+                <div class="flex items-center gap-1.5">
+                  <i class="fas fa-user-circle text-teal-600"></i>
+                  <span>By Tajinder Singh</span>
+                </div>
+                <span>•</span>
+                <div class="flex items-center gap-1.5">
+                  <i class="fas fa-clock text-teal-600"></i>
+                  <span>8 min read</span>
+                </div>
+              </div>
+              
+              <h2 class="text-gray-900 text-3xl md:text-4xl font-bold mb-4 font-playfair_display leading-tight">
+                How GLP-1 Medications Changed Weight Loss Treatment in 2024
+              </h2>
+              
+              <p class="text-slate-600 text-base md:text-lg leading-relaxed mb-6">
+                Discover how prescription GLP-1 treatments like Mounjaro and Wegovy have revolutionised medical weight loss, offering Sheffield patients sustainable results where traditional diets have failed.
+              </p>
+              
+              <div class="flex items-center gap-4 mb-8">
+                <span class="text-slate-500 text-sm">December 2024</span>
+              </div>
+              
+              <a href="#" class="inline-flex items-center gap-3 bg-teal-600 hover:bg-teal-700 text-white text-base font-bold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all group/btn">
+                Read Article
+                <i class="fas fa-arrow-right group-hover/btn:translate-x-1 transition-transform"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORY FILTER -->
+  <section class="relative bg-gradient-to-b from-gray-50/50 to-white px-5 md:px-10 py-8 sticky top-[90px] z-40 backdrop-blur-lg border-b border-gray-200">
+    <div class="max-w-[1680px] mx-auto">
+      <div class="flex items-center justify-between gap-4 flex-wrap">
+        <div class="flex items-center gap-3 flex-wrap">
+          <button class="category-pill active px-6 py-2.5 rounded-full border-2 border-gray-200 text-sm font-bold transition-all hover:border-teal-600" data-category="all">
+            All Articles
+          </button>
+          <button class="category-pill px-6 py-2.5 rounded-full border-2 border-gray-200 text-sm font-bold transition-all hover:border-teal-600" data-category="weight-loss">
+            Weight Loss
+          </button>
+          <button class="category-pill px-6 py-2.5 rounded-full border-2 border-gray-200 text-sm font-bold transition-all hover:border-teal-600" data-category="travel-health">
+            Travel Health
+          </button>
+          <button class="category-pill px-6 py-2.5 rounded-full border-2 border-gray-200 text-sm font-bold transition-all hover:border-teal-600" data-category="private-health">
+            Private Health
+          </button>
+          <button class="category-pill px-6 py-2.5 rounded-full border-2 border-gray-200 text-sm font-bold transition-all hover:border-teal-600" data-category="pharmacy">
+            Pharmacy Advice
+          </button>
+          <button class="category-pill px-6 py-2.5 rounded-full border-2 border-gray-200 text-sm font-bold transition-all hover:border-teal-600" data-category="wellness">
+            Wellness Tips
+          </button>
+        </div>
+        
+        <!-- Sort Dropdown -->
+        <div class="relative">
+          <select class="px-4 py-2.5 rounded-xl border-2 border-gray-200 text-sm font-semibold focus:border-teal-600 focus:ring-2 focus:ring-teal-600/20 outline-none bg-white">
+            <option>Most Recent</option>
+            <option>Most Popular</option>
+            <option>By Topic</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTICLES GRID WITH SIDEBAR -->
+  <section class="relative bg-gradient-to-b from-white via-gray-50/30 to-white px-5 md:px-10 py-[80px] md:py-[120px] overflow-hidden">
+    <div class="max-w-[1680px] mx-auto relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <!-- Main Content Area -->
+        <div class="lg:col-span-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8" id="articlesGrid">
+            
+            <!-- Article 1: Travel Health -->
+            <article class="article-card bg-white rounded-2xl overflow-hidden shadow-lg hover-lift transition-all duration-300 animate-fade-in-up delay-400" data-category="travel-health">
+              <div class="relative aspect-[4/5] overflow-hidden">
+                <img alt="Yellow fever vaccination" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=600&h=750&fit=crop"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+                <span class="absolute top-4 left-4 bg-teal-600 text-white text-xs font-bold px-4 py-2 rounded-full shadow-lg">
+                  TRAVEL HEALTH
+                </span>
+                <div class="absolute bottom-0 left-0 right-0 p-6">
+                  <h3 class="text-white text-xl font-bold leading-tight font-playfair_display">
+                    Yellow Fever Requirements for South America: Complete Guide
+                  </h3>
+                </div>
+              </div>
+              <div class="p-6">
+                <p class="text-slate-600 text-sm leading-relaxed mb-4 line-clamp-2">
+                  Planning a trip to Brazil, Peru, or Colombia? Here's everything you need to know about yellow fever vaccination requirements.
+                </p>
+                <div class="flex items-center gap-3 text-slate-500 text-xs mb-4">
+                  <span>By Tajinder Singh</span>
+                  <span>•</span>
+                  <span>6 min read</span>
+                  <span>•</span>
+                  <span>Nov 2024</span>
+                </div>
+                <a href="#" class="inline-flex items-center gap-2 text-teal-600 text-sm font-semibold hover:gap-3 transition-all">
+                  Read Article
+                  <i class="fas fa-arrow-right text-xs"></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- Article 2: Weight Loss -->
+            <article class="article-card bg-white rounded-2xl overflow-hidden shadow-lg hover-lift transition-all duration-300 animate-fade-in-up delay-500" data-category="weight-loss">
+              <div class="relative aspect-[4/5] overflow-hidden">
+                <img alt="Medical weight loss consultation" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71?w=600&h=750&fit=crop"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+                <span class="absolute top-4 left-4 bg-teal-600 text-white text-xs font-bold px-4 py-2 rounded-full shadow-lg">
+                  WEIGHT LOSS
+                </span>
+                <div class="absolute bottom-0 left-0 right-0 p-6">
+                  <h3 class="text-white text-xl font-bold leading-tight font-playfair_display">
+                    Beyond Diets: Why Medical Weight Loss Works When Others Fail
+                  </h3>
+                </div>
+              </div>
+              <div class="p-6">
+                <p class="text-slate-600 text-sm leading-relaxed mb-4 line-clamp-2">
+                  Discover the science behind GLP-1 medications and why clinically-supervised programmes achieve lasting results.
+                </p>
+                <div class="flex items-center gap-3 text-slate-500 text-xs mb-4">
+                  <span>By Tajinder Singh</span>
+                  <span>•</span>
+                  <span>10 min read</span>
+                  <span>•</span>
+                  <span>Nov 2024</span>
+                </div>
+                <a href="#" class="inline-flex items-center gap-2 text-teal-600 text-sm font-semibold hover:gap-3 transition-all">
+                  Read Article
+                  <i class="fas fa-arrow-right text-xs"></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- Article 3: Travel Health -->
+            <article class="article-card bg-white rounded-2xl overflow-hidden shadow-lg hover-lift transition-all duration-300 animate-fade-in-up delay-600" data-category="travel-health">
+              <div class="relative aspect-[4/5] overflow-hidden">
+                <img alt="Last minute travel vaccinations" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&h=750&fit=crop"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+                <span class="absolute top-4 left-4 bg-teal-600 text-white text-xs font-bold px-4 py-2 rounded-full shadow-lg">
+                  TRAVEL HEALTH
+                </span>
+                <div class="absolute bottom-0 left-0 right-0 p-6">
+                  <h3 class="text-white text-xl font-bold leading-tight font-playfair_display">
+                    Last-Minute Travel Vaccinations: What You Need to Know
+                  </h3>
+                </div>
+              </div>
+              <div class="p-6">
+                <p class="text-slate-600 text-sm leading-relaxed mb-4 line-clamp-2">
+                  Travelling soon? Learn which vaccinations you can get at short notice and what to do if you're running out of time.
+                </p>
+                <div class="flex items-center gap-3 text-slate-500 text-xs mb-4">
+                  <span>By Sheffield Wellness Team</span>
+                  <span>•</span>
+                  <span>5 min read</span>
+                  <span>•</span>
+                  <span>Dec 2024</span>
+                </div>
+                <a href="#" class="inline-flex items-center gap-2 text-teal-600 text-sm font-semibold hover:gap-3 transition-all">
+                  Read Article
+                  <i class="fas fa-arrow-right text-xs"></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- Article 4: Private Health -->
+            <article class="article-card bg-white rounded-2xl overflow-hidden shadow-lg hover-lift transition-all duration-300 animate-fade-in-up delay-700" data-category="private-health">
+              <div class="relative aspect-[4/5] overflow-hidden">
+                <img alt="Private prescription consultation" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=750&fit=crop"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+                <span class="absolute top-4 left-4 bg-teal-600 text-white text-xs font-bold px-4 py-2 rounded-full shadow-lg">
+                  PRIVATE HEALTH
+                </span>
+                <div class="absolute bottom-0 left-0 right-0 p-6">
+                  <h3 class="text-white text-xl font-bold leading-tight font-playfair_display">
+                    Private Prescriptions: When NHS Isn't the Right Option
+                  </h3>
+                </div>
+              </div>
+              <div class="p-6">
+                <p class="text-slate-600 text-sm leading-relaxed mb-4 line-clamp-2">
+                  Understanding when private healthcare makes sense and how independent prescribing can help you access treatment faster.
+                </p>
+                <div class="flex items-center gap-3 text-slate-500 text-xs mb-4">
+                  <span>By Tajinder Singh</span>
+                  <span>•</span>
+                  <span>7 min read</span>
+                  <span>•</span>
+                  <span>Oct 2024</span>
+                </div>
+                <a href="#" class="inline-flex items-center gap-2 text-teal-600 text-sm font-semibold hover:gap-3 transition-all">
+                  Read Article
+                  <i class="fas fa-arrow-right text-xs"></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- Article 5: Wellness Tips -->
+            <article class="article-card bg-white rounded-2xl overflow-hidden shadow-lg hover-lift transition-all duration-300 animate-fade-in-up delay-800" data-category="wellness">
+              <div class="relative aspect-[4/5] overflow-hidden">
+                <img alt="Flu vaccination" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&h=750&fit=crop"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+                <span class="absolute top-4 left-4 bg-teal-600 text-white text-xs font-bold px-4 py-2 rounded-full shadow-lg">
+                  WELLNESS TIPS
+                </span>
+                <div class="absolute bottom-0 left-0 right-0 p-6">
+                  <h3 class="text-white text-xl font-bold leading-tight font-playfair_display">
+                    Flu Season 2024/25: When to Get Your Vaccination
+                  </h3>
+                </div>
+              </div>
+              <div class="p-6">
+                <p class="text-slate-600 text-sm leading-relaxed mb-4 line-clamp-2">
+                  Timing matters. Discover the optimal time to get your flu jab for maximum protection this winter.
+                </p>
+                <div class="flex items-center gap-3 text-slate-500 text-xs mb-4">
+                  <span>By Sheffield Wellness Team</span>
+                  <span>•</span>
+                  <span>4 min read</span>
+                  <span>•</span>
+                  <span>Sept 2024</span>
+                </div>
+                <a href="#" class="inline-flex items-center gap-2 text-teal-600 text-sm font-semibold hover:gap-3 transition-all">
+                  Read Article
+                  <i class="fas fa-arrow-right text-xs"></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- Article 6: Travel Health -->
+            <article class="article-card bg-white rounded-2xl overflow-hidden shadow-lg hover-lift transition-all duration-300 animate-fade-in-up delay-900" data-category="travel-health">
+              <div class="relative aspect-[4/5] overflow-hidden">
+                <img alt="African safari landscape" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=600&h=750&fit=crop"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+                <span class="absolute top-4 left-4 bg-teal-600 text-white text-xs font-bold px-4 py-2 rounded-full shadow-lg">
+                  TRAVEL HEALTH
+                </span>
+                <div class="absolute bottom-0 left-0 right-0 p-6">
+                  <h3 class="text-white text-xl font-bold leading-tight font-playfair_display">
+                    Malaria Prevention for African Safaris: Essential Guide
+                  </h3>
+                </div>
+              </div>
+              <div class="p-6">
+                <p class="text-slate-600 text-sm leading-relaxed mb-4 line-clamp-2">
+                  Planning a Kenya or Tanzania safari? Here's your complete guide to malaria prevention and antimalarial medications.
+                </p>
+                <div class="flex items-center gap-3 text-slate-500 text-xs mb-4">
+                  <span>By Tajinder Singh</span>
+                  <span>•</span>
+                  <span>8 min read</span>
+                  <span>•</span>
+                  <span>Aug 2024</span>
+                </div>
+                <a href="#" class="inline-flex items-center gap-2 text-teal-600 text-sm font-semibold hover:gap-3 transition-all">
+                  Read Article
+                  <i class="fas fa-arrow-right text-xs"></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- Article 7: Weight Loss -->
+            <article class="article-card bg-white rounded-2xl overflow-hidden shadow-lg hover-lift transition-all duration-300 animate-fade-in-up delay-400" data-category="weight-loss">
+              <div class="relative aspect-[4/5] overflow-hidden">
+                <img alt="Mounjaro medication" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1434682881908-b43d0467b798?w=600&h=750&fit=crop"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+                <span class="absolute top-4 left-4 bg-teal-600 text-white text-xs font-bold px-4 py-2 rounded-full shadow-lg">
+                  WEIGHT LOSS
+                </span>
+                <div class="absolute bottom-0 left-0 right-0 p-6">
+                  <h3 class="text-white text-xl font-bold leading-tight font-playfair_display">
+                    Mounjaro vs Wegovy: Which GLP-1 Treatment is Right for You?
+                  </h3>
+                </div>
+              </div>
+              <div class="p-6">
+                <p class="text-slate-600 text-sm leading-relaxed mb-4 line-clamp-2">
+                  Compare the two leading GLP-1 medications available in Sheffield and discover which treatment aligns with your weight loss goals.
+                </p>
+                <div class="flex items-center gap-3 text-slate-500 text-xs mb-4">
+                  <span>By Tajinder Singh</span>
+                  <span>•</span>
+                  <span>9 min read</span>
+                  <span>•</span>
+                  <span>Dec 2024</span>
+                </div>
+                <a href="#" class="inline-flex items-center gap-2 text-teal-600 text-sm font-semibold hover:gap-3 transition-all">
+                  Read Article
+                  <i class="fas fa-arrow-right text-xs"></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- Article 8: Pharmacy Advice -->
+            <article class="article-card bg-white rounded-2xl overflow-hidden shadow-lg hover-lift transition-all duration-300 animate-fade-in-up delay-500" data-category="pharmacy">
+              <div class="relative aspect-[4/5] overflow-hidden">
+                <img alt="Pharmacy consultation" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=600&h=750&fit=crop"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+                <span class="absolute top-4 left-4 bg-teal-600 text-white text-xs font-bold px-4 py-2 rounded-full shadow-lg">
+                  PHARMACY ADVICE
+                </span>
+                <div class="absolute bottom-0 left-0 right-0 p-6">
+                  <h3 class="text-white text-xl font-bold leading-tight font-playfair_display">
+                    Understanding Your Prescription: A Pharmacist's Guide
+                  </h3>
+                </div>
+              </div>
+              <div class="p-6">
+                <p class="text-slate-600 text-sm leading-relaxed mb-4 line-clamp-2">
+                  Learn how to read your prescription, understand dosage instructions, and get the most from your medication.
+                </p>
+                <div class="flex items-center gap-3 text-slate-500 text-xs mb-4">
+                  <span>By Sheffield Wellness Team</span>
+                  <span>•</span>
+                  <span>6 min read</span>
+                  <span>•</span>
+                  <span>Oct 2024</span>
+                </div>
+                <a href="#" class="inline-flex items-center gap-2 text-teal-600 text-sm font-semibold hover:gap-3 transition-all">
+                  Read Article
+                  <i class="fas fa-arrow-right text-xs"></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- Article 9: Travel Health -->
+            <article class="article-card bg-white rounded-2xl overflow-hidden shadow-lg hover-lift transition-all duration-300 animate-fade-in-up delay-600" data-category="travel-health">
+              <div class="relative aspect-[4/5] overflow-hidden">
+                <img alt="India travel health" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=600&h=750&fit=crop"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+                <span class="absolute top-4 left-4 bg-teal-600 text-white text-xs font-bold px-4 py-2 rounded-full shadow-lg">
+                  TRAVEL HEALTH
+                </span>
+                <div class="absolute bottom-0 left-0 right-0 p-6">
+                  <h3 class="text-white text-xl font-bold leading-tight font-playfair_display">
+                    India Travel Health: Essential Vaccinations & Safety Tips
+                  </h3>
+                </div>
+              </div>
+              <div class="p-6">
+                <p class="text-slate-600 text-sm leading-relaxed mb-4 line-clamp-2">
+                  Comprehensive guide to staying healthy in India, from essential vaccinations to food safety and malaria prevention.
+                </p>
+                <div class="flex items-center gap-3 text-slate-500 text-xs mb-4">
+                  <span>By Tajinder Singh</span>
+                  <span>•</span>
+                  <span>12 min read</span>
+                  <span>•</span>
+                  <span>Sept 2024</span>
+                </div>
+                <a href="#" class="inline-flex items-center gap-2 text-teal-600 text-sm font-semibold hover:gap-3 transition-all">
+                  Read Article
+                  <i class="fas fa-arrow-right text-xs"></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- Article 10: Weight Loss -->
+            <article class="article-card bg-white rounded-2xl overflow-hidden shadow-lg hover-lift transition-all duration-300 animate-fade-in-up delay-700" data-category="weight-loss">
+              <div class="relative aspect-[4/5] overflow-hidden">
+                <img alt="Healthy meal prep" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&h=750&fit=crop"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+                <span class="absolute top-4 left-4 bg-teal-600 text-white text-xs font-bold px-4 py-2 rounded-full shadow-lg">
+                  WEIGHT LOSS
+                </span>
+                <div class="absolute bottom-0 left-0 right-0 p-6">
+                  <h3 class="text-white text-xl font-bold leading-tight font-playfair_display">
+                    Nutrition Tips to Maximize Your Weight Loss Results
+                  </h3>
+                </div>
+              </div>
+              <div class="p-6">
+                <p class="text-slate-600 text-sm leading-relaxed mb-4 line-clamp-2">
+                  Discover how to combine GLP-1 treatment with smart nutrition choices for optimal weight loss results in Sheffield.
+                </p>
+                <div class="flex items-center gap-3 text-slate-500 text-xs mb-4">
+                  <span>By Sheffield Wellness Team</span>
+                  <span>•</span>
+                  <span>7 min read</span>
+                  <span>•</span>
+                  <span>Aug 2024</span>
+                </div>
+                <a href="#" class="inline-flex items-center gap-2 text-teal-600 text-sm font-semibold hover:gap-3 transition-all">
+                  Read Article
+                  <i class="fas fa-arrow-right text-xs"></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- Article 11: Wellness Tips -->
+            <article class="article-card bg-white rounded-2xl overflow-hidden shadow-lg hover-lift transition-all duration-300 animate-fade-in-up delay-800" data-category="wellness">
+              <div class="relative aspect-[4/5] overflow-hidden">
+                <img alt="Winter wellness" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=600&h=750&fit=crop"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+                <span class="absolute top-4 left-4 bg-teal-600 text-white text-xs font-bold px-4 py-2 rounded-full shadow-lg">
+                  WELLNESS TIPS
+                </span>
+                <div class="absolute bottom-0 left-0 right-0 p-6">
+                  <h3 class="text-white text-xl font-bold leading-tight font-playfair_display">
+                    Winter Wellness: Staying Healthy in Sheffield
+                  </h3>
+                </div>
+              </div>
+              <div class="p-6">
+                <p class="text-slate-600 text-sm leading-relaxed mb-4 line-clamp-2">
+                  Essential tips for maintaining your health during Sheffield's winter months, from immune support to vitamin D.
+                </p>
+                <div class="flex items-center gap-3 text-slate-500 text-xs mb-4">
+                  <span>By Sheffield Wellness Team</span>
+                  <span>•</span>
+                  <span>5 min read</span>
+                  <span>•</span>
+                  <span>July 2024</span>
+                </div>
+                <a href="#" class="inline-flex items-center gap-2 text-teal-600 text-sm font-semibold hover:gap-3 transition-all">
+                  Read Article
+                  <i class="fas fa-arrow-right text-xs"></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- Article 12: Private Health -->
+            <article class="article-card bg-white rounded-2xl overflow-hidden shadow-lg hover-lift transition-all duration-300 animate-fade-in-up delay-900" data-category="private-health">
+              <div class="relative aspect-[4/5] overflow-hidden">
+                <img alt="Private healthcare consultation" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=600&h=750&fit=crop"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+                <span class="absolute top-4 left-4 bg-teal-600 text-white text-xs font-bold px-4 py-2 rounded-full shadow-lg">
+                  PRIVATE HEALTH
+                </span>
+                <div class="absolute bottom-0 left-0 right-0 p-6">
+                  <h3 class="text-white text-xl font-bold leading-tight font-playfair_display">
+                    The Benefits of Independent Prescribing in Sheffield
+                  </h3>
+                </div>
+              </div>
+              <div class="p-6">
+                <p class="text-slate-600 text-sm leading-relaxed mb-4 line-clamp-2">
+                  Learn how independent prescribers like Tajinder can provide faster access to treatment and personalized care.
+                </p>
+                <div class="flex items-center gap-3 text-slate-500 text-xs mb-4">
+                  <span>By Tajinder Singh</span>
+                  <span>•</span>
+                  <span>6 min read</span>
+                  <span>•</span>
+                  <span>June 2024</span>
+                </div>
+                <a href="#" class="inline-flex items-center gap-2 text-teal-600 text-sm font-semibold hover:gap-3 transition-all">
+                  Read Article
+                  <i class="fas fa-arrow-right text-xs"></i>
+                </a>
+              </div>
+            </article>
+
+          </div>
+
+          <!-- Load More Button -->
+          <div class="text-center mt-12">
+            <button class="inline-flex items-center gap-3 bg-white text-teal-600 text-base font-bold px-10 py-4 rounded-xl border-2 border-teal-600 hover:bg-teal-600 hover:text-white transition-all shadow-lg hover:shadow-xl">
+              <i class="fas fa-plus"></i>
+              Load More Articles
+            </button>
+          </div>
+        </div>
+
+        <!-- Sidebar (Desktop Only) -->
+        <aside class="lg:col-span-4 hidden lg:block">
+          <div class="sticky top-[180px] space-y-8">
+            
+            <!-- Popular Topics -->
+            <div class="bg-white border-2 border-gray-100 rounded-2xl p-8 shadow-lg">
+              <h3 class="text-gray-900 text-xl font-bold mb-6 font-playfair_display">Popular Topics</h3>
+              <ul class="space-y-3">
+                <li>
+                  <a href="#" class="flex items-center justify-between p-3 rounded-xl hover:bg-teal-50 transition-all group">
+                    <div class="flex items-center gap-3">
+                      <i class="fas fa-pills text-teal-600"></i>
+                      <span class="text-gray-700 font-semibold group-hover:text-teal-600 transition-colors">Weight Loss Medications</span>
+                    </div>
+                    <span class="text-slate-400 text-sm">12</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="flex items-center justify-between p-3 rounded-xl hover:bg-teal-50 transition-all group">
+                    <div class="flex items-center gap-3">
+                      <i class="fas fa-certificate text-teal-600"></i>
+                      <span class="text-gray-700 font-semibold group-hover:text-teal-600 transition-colors">Yellow Fever Requirements</span>
+                    </div>
+                    <span class="text-slate-400 text-sm">8</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="flex items-center justify-between p-3 rounded-xl hover:bg-teal-50 transition-all group">
+                    <div class="flex items-center gap-3">
+                      <i class="fas fa-user-doctor text-teal-600"></i>
+                      <span class="text-gray-700 font-semibold group-hover:text-teal-600 transition-colors">Private Health Services</span>
+                    </div>
+                    <span class="text-slate-400 text-sm">6</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="flex items-center justify-between p-3 rounded-xl hover:bg-teal-50 transition-all group">
+                    <div class="flex items-center gap-3">
+                      <i class="fas fa-syringe text-teal-600"></i>
+                      <span class="text-gray-700 font-semibold group-hover:text-teal-600 transition-colors">Travel Vaccinations</span>
+                    </div>
+                    <span class="text-slate-400 text-sm">15</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="flex items-center justify-between p-3 rounded-xl hover:bg-teal-50 transition-all group">
+                    <div class="flex items-center gap-3">
+                      <i class="fas fa-shield-virus text-teal-600"></i>
+                      <span class="text-gray-700 font-semibold group-hover:text-teal-600 transition-colors">Flu Prevention</span>
+                    </div>
+                    <span class="text-slate-400 text-sm">5</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="flex items-center justify-between p-3 rounded-xl hover:bg-teal-50 transition-all group">
+                    <div class="flex items-center gap-3">
+                      <i class="fas fa-ear-listen text-teal-600"></i>
+                      <span class="text-gray-700 font-semibold group-hover:text-teal-600 transition-colors">Ear Wax Removal</span>
+                    </div>
+                    <span class="text-slate-400 text-sm">4</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Newsletter Signup -->
+            <div class="relative bg-gradient-to-br from-teal-600 to-teal-500 rounded-2xl p-8 shadow-xl overflow-hidden">
+              <div class="absolute inset-0 opacity-10">
+                <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 20px 20px;"></div>
+              </div>
+              <div class="relative">
+                <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mb-4">
+                  <i class="fas fa-envelope text-white text-xl"></i>
+                </div>
+                <h3 class="text-white text-xl font-bold mb-3 font-playfair_display">Stay Informed</h3>
+                <p class="text-white/90 text-sm mb-6">Get monthly health tips straight to your inbox</p>
+                <form class="space-y-3">
+                  <input type="email" placeholder="Your email" class="w-full px-4 py-3 rounded-xl border-2 border-white/20 bg-white/10 text-white placeholder-white/60 focus:bg-white/20 focus:border-white outline-none transition-all"/>
+                  <button type="submit" class="w-full bg-white text-teal-600 text-sm font-bold px-6 py-3 rounded-xl hover:bg-teal-50 transition-all shadow-lg">
+                    Subscribe
+                  </button>
+                </form>
+                <p class="text-white/70 text-xs mt-3">Unsubscribe anytime. Privacy guaranteed.</p>
+              </div>
+            </div>
+
+            <!-- Recent Articles -->
+            <div class="bg-white border-2 border-gray-100 rounded-2xl p-8 shadow-lg">
+              <h3 class="text-gray-900 text-xl font-bold mb-6 font-playfair_display">Recent Articles</h3>
+              <ul class="space-y-4">
+                <li>
+                  <a href="#" class="group">
+                    <p class="text-gray-700 font-semibold text-sm mb-1 group-hover:text-teal-600 transition-colors line-clamp-2">
+                      5 Signs You're Ready for Medical Weight Loss
+                    </p>
+                    <p class="text-slate-400 text-xs">2 days ago</p>
+                  </a>
+                </li>
+                <li class="pt-4 border-t border-gray-100">
+                  <a href="#" class="group">
+                    <p class="text-gray-700 font-semibold text-sm mb-1 group-hover:text-teal-600 transition-colors line-clamp-2">
+                      Thailand Travel Health: What You Need to Know
+                    </p>
+                    <p class="text-slate-400 text-xs">5 days ago</p>
+                  </a>
+                </li>
+                <li class="pt-4 border-t border-gray-100">
+                  <a href="#" class="group">
+                    <p class="text-gray-700 font-semibold text-sm mb-1 group-hover:text-teal-600 transition-colors line-clamp-2">
+                      Understanding Antimalarial Medications
+                    </p>
+                    <p class="text-slate-400 text-xs">1 week ago</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER SECTION (Mid-page) -->
+  <section class="relative bg-gradient-to-br from-teal-50 via-teal-50/50 to-white px-5 md:px-10 py-[80px] md:py-[100px] overflow-hidden">
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-br from-teal-400/10 to-transparent rounded-full blur-3xl"></div>
+      <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gradient-to-tr from-teal-500/10 to-transparent rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="max-w-[1000px] mx-auto relative z-10 text-center">
+      <div class="inline-flex items-center gap-2 bg-white border-2 border-teal-600/30 px-5 py-2 rounded-full mb-6">
+        <i class="fas fa-envelope text-teal-600"></i>
+        <span class="text-teal-600 text-sm font-bold uppercase tracking-wide">Newsletter</span>
+      </div>
+      
+      <h2 class="text-gray-900 text-[36px] md:text-[48px] font-bold mb-6 font-playfair_display">
+        Stay Informed with Expert Health Advice
+      </h2>
+      
+      <p class="text-slate-600 text-lg md:text-xl leading-relaxed mb-10 max-w-[700px] mx-auto">
+        Get monthly tips on weight loss, travel health, and wellness straight to your inbox
+      </p>
+
+      <form class="max-w-[500px] mx-auto">
+        <div class="flex flex-col sm:flex-row gap-3">
+          <input type="email" placeholder="Enter your email" class="flex-1 px-6 py-4 rounded-xl border-2 border-gray-200 focus:border-teal-600 focus:ring-2 focus:ring-teal-600/20 outline-none text-base"/>
+          <button type="submit" class="bg-teal-600 hover:bg-teal-700 text-white text-base font-bold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all whitespace-nowrap">
+            Subscribe
+          </button>
+        </div>
+        <p class="text-slate-400 text-sm mt-4">Unsubscribe anytime. Privacy guaranteed.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 overflow-hidden">
+    <div class="absolute inset-0 opacity-5">
+      <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, rgb(20, 184, 166) 1px, transparent 0); background-size: 40px 40px;"></div>
+    </div>
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <div class="absolute -top-40 -right-40 w-[500px] h-[500px] bg-gradient-to-br from-teal-500/10 to-transparent rounded-full blur-3xl"></div>
+      <div class="absolute -bottom-40 -left-40 w-[400px] h-[400px] bg-gradient-to-tr from-teal-600/10 to-transparent rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="relative max-w-[1680px] mx-auto px-6 md:px-[60px]">
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between py-16 md:py-20 border-b border-white/10 gap-8">
+        <div class="text-left max-w-[500px]">
+          <div class="flex items-center gap-5 mb-6">
+            <img alt="Sheffield United FC" class="h-16 w-16 object-contain opacity-90" src="https://c.animaapp.com/mh1jrgnmeI4wDl/assets/sheffield_united_fc_logo-svg.png"/>
+            <div>
+              <h3 class="text-white text-3xl md:text-4xl font-extrabold leading-none mb-2 font-playfair_display tracking-tight">
+                <span class="text-teal-400">Sheffield</span> Wellness
+              </h3>
+              <p class="text-white/70 text-base font-semibold tracking-wide">By Totley Pharmacy</p>
+            </div>
+          </div>
+          <p class="text-white/80 text-[17px] leading-relaxed font-medium">
+            Your trusted partner for weight loss, travel health, and expert pharmacy care in Sheffield.
+          </p>
+        </div>
+        <div class="flex flex-col gap-3 shrink-0 min-w-[240px]">
+          <button class="group bg-white hover:bg-teal-50 text-teal-600 text-[15px] font-bold px-7 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2">
+            <i class="fas fa-calendar-check text-base"></i>
+            Book Consultation
+            <i class="fas fa-arrow-right text-xs group-hover:translate-x-0.5 transition-transform"></i>
+          </button>
+          <a class="flex items-center justify-center gap-2.5 text-white text-[15px] font-bold px-6 py-3 rounded-xl border-2 border-white/30 hover:border-white hover:bg-white/10 transition-all" href="tel:01149802780">
+            <i class="fas fa-phone text-sm"></i>
+            0114 980 278
+          </a>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-12 py-16">
+        <div class="md:col-span-3">
+          <h4 class="text-white text-base font-bold mb-6 uppercase tracking-wider">Services</h4>
+          <ul class="space-y-3">
+            <li><a class="text-white/70 hover:text-teal-400 transition-colors text-[15px] font-medium flex items-center gap-2 group" href="weight-loss.html">
+              <i class="fas fa-arrow-right text-teal-400 text-xs opacity-0 group-hover:opacity-100 transition-opacity"></i>
+              Weight Loss Programme
+            </a></li>
+            <li><a class="text-white/70 hover:text-teal-400 transition-colors text-[15px] font-medium flex items-center gap-2 group" href="travel-health.html">
+              <i class="fas fa-arrow-right text-teal-400 text-xs opacity-0 group-hover:opacity-100 transition-opacity"></i>
+              Travel Vaccinations
+            </a></li>
+            <li><a class="text-white/70 hover:text-teal-400 transition-colors text-[15px] font-medium flex items-center gap-2 group" href="#prescriptions">
+              <i class="fas fa-arrow-right text-teal-400 text-xs opacity-0 group-hover:opacity-100 transition-opacity"></i>
+              Prescriptions
+            </a></li>
+            <li><a class="text-white/70 hover:text-teal-400 transition-colors text-[15px] font-medium flex items-center gap-2 group" href="#flu-jabs">
+              <i class="fas fa-arrow-right text-teal-400 text-xs opacity-0 group-hover:opacity-100 transition-opacity"></i>
+              Private Vaccinations
+            </a></li>
+            <li><a class="text-white/70 hover:text-teal-400 transition-colors text-[15px] font-medium flex items-center gap-2 group" href="health-hub.html">
+              <i class="fas fa-arrow-right text-teal-400 text-xs opacity-0 group-hover:opacity-100 transition-opacity"></i>
+              Health Hub
+            </a></li>
+          </ul>
+        </div>
+
+        <div class="md:col-span-4">
+          <h4 class="text-white text-base font-bold mb-6 uppercase tracking-wider">Contact Us</h4>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3 group">
+              <div class="w-10 h-10 bg-teal-600/20 rounded-xl flex items-center justify-center shrink-0 group-hover:bg-teal-600 transition-colors">
+                <i class="fas fa-phone text-teal-400 group-hover:text-white transition-colors"></i>
+              </div>
+              <div>
+                <p class="text-white/50 text-xs font-semibold uppercase tracking-wide mb-1">Phone</p>
+                <a class="text-white text-[15px] font-semibold hover:text-teal-400 transition-colors" href="tel:01149802780">0114 980 278</a>
+              </div>
+            </li>
+            <li class="flex items-start gap-3 group">
+              <div class="w-10 h-10 bg-teal-600/20 rounded-xl flex items-center justify-center shrink-0 group-hover:bg-teal-600 transition-colors">
+                <i class="fas fa-envelope text-teal-400 group-hover:text-white transition-colors"></i>
+              </div>
+              <div>
+                <p class="text-white/50 text-xs font-semibold uppercase tracking-wide mb-1">Email</p>
+                <a class="text-white text-[15px] font-semibold hover:text-teal-400 transition-colors break-all" href="mailto:info@totleypharmacy.co.uk">info@totleypharmacy.co.uk</a>
+              </div>
+            </li>
+            <li class="flex items-start gap-3 group">
+              <div class="w-10 h-10 bg-teal-600/20 rounded-xl flex items-center justify-center shrink-0 group-hover:bg-teal-600 transition-colors">
+                <i class="fas fa-map-marker-alt text-teal-400 group-hover:text-white transition-colors"></i>
+              </div>
+              <div>
+                <p class="text-white/50 text-xs font-semibold uppercase tracking-wide mb-1">Address</p>
+                <p class="text-white text-[15px] font-semibold">123 Totley Road<br/>Sheffield S17 XXX</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="md:col-span-3">
+          <h4 class="text-white text-base font-bold mb-6 uppercase tracking-wider">Opening Hours</h4>
+          <ul class="space-y-3">
+            <li class="flex justify-between items-center text-[15px]">
+              <span class="text-white/70 font-medium">Monday - Friday</span>
+              <span class="text-white font-bold">9:00 - 18:00</span>
+            </li>
+            <li class="flex justify-between items-center text-[15px]">
+              <span class="text-white/70 font-medium">Saturday</span>
+              <span class="text-white font-bold">9:00 - 17:00</span>
+            </li>
+            <li class="flex justify-between items-center text-[15px]">
+              <span class="text-white/70 font-medium">Sunday</span>
+              <span class="text-white/50 font-bold">Closed</span>
+            </li>
+          </ul>
+          <div class="mt-8 pt-6 border-t border-white/10">
+            <p class="text-white/50 text-xs font-semibold uppercase tracking-wide mb-3">Follow Us</p>
+            <div class="flex gap-3">
+              <a class="w-11 h-11 bg-white/10 hover:bg-teal-600 rounded-xl flex items-center justify-center transition-all group" href="#">
+                <i class="fab fa-facebook-f text-white/70 group-hover:text-white text-lg transition-colors"></i>
+              </a>
+              <a class="w-11 h-11 bg-white/10 hover:bg-teal-600 rounded-xl flex items-center justify-center transition-all group" href="#">
+                <i class="fab fa-twitter text-white/70 group-hover:text-white text-lg transition-colors"></i>
+              </a>
+              <a class="w-11 h-11 bg-white/10 hover:bg-teal-600 rounded-xl flex items-center justify-center transition-all group" href="#">
+                <i class="fab fa-instagram text-white/70 group-hover:text-white text-lg transition-colors"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:col-span-2">
+          <h4 class="text-white text-base font-bold mb-6 uppercase tracking-wider">Stay Updated</h4>
+          <p class="text-white/70 text-sm mb-4">Get health tips & exclusive offers</p>
+          <form class="space-y-3">
+            <input class="w-full bg-white/10 border border-white/20 text-white placeholder-white/50 px-4 py-3 rounded-xl focus:bg-white/15 focus:border-teal-400 outline-none transition-all text-sm" placeholder="Your email" type="email"/>
+            <button class="w-full bg-teal-600 hover:bg-teal-500 text-white text-sm font-bold px-6 py-3 rounded-xl transition-all shadow-lg hover:shadow-xl" type="submit">Subscribe</button>
+          </form>
+          <p class="text-white/40 text-xs mt-3">We respect your privacy</p>
+        </div>
+      </div>
+
+      <div class="border-t border-white/10 py-8">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+          <div class="flex flex-wrap items-center justify-center gap-6 text-white/50 text-xs">
+            <span>© 2025 Totley Pharmacy</span>
+            <span class="hidden md:inline">•</span>
+            <a class="hover:text-teal-400 transition-colors" href="/privacy">Privacy</a>
+            <span>•</span>
+            <a class="hover:text-teal-400 transition-colors" href="/terms">Terms</a>
+            <span>•</span>
+            <a class="hover:text-teal-400 transition-colors" href="/cookies">Cookies</a>
+          </div>
+          <div class="flex flex-wrap items-center justify-center gap-4">
+            <div class="flex items-center gap-2 text-white/60 text-xs">
+              <i class="fas fa-shield-alt text-teal-400"></i>
+              <span>GPhC Registered</span>
+            </div>
+            <span class="text-white/30">•</span>
+            <div class="flex items-center gap-2 text-white/60 text-xs">
+              <i class="fas fa-certificate text-teal-400"></i>
+              <span>NHS Partner</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile Menu Toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const menuClose = document.getElementById('menuClose');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+
+    function openMenu() {
+      mobileMenu.classList.remove('translate-x-full');
+      mobileMenuOverlay.classList.remove('opacity-0', 'pointer-events-none');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+      mobileMenu.classList.add('translate-x-full');
+      mobileMenuOverlay.classList.add('opacity-0', 'pointer-events-none');
+      document.body.style.overflow = '';
+    }
+
+    menuToggle.addEventListener('click', openMenu);
+    menuClose.addEventListener('click', closeMenu);
+    mobileMenuOverlay.addEventListener('click', closeMenu);
+
+    document.querySelectorAll('#mobileMenu a').forEach(link => {
+      link.addEventListener('click', closeMenu);
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeMenu();
+    });
+
+    // Category Filter Functionality
+    const categoryButtons = document.querySelectorAll('.category-pill');
+    const articleCards = document.querySelectorAll('.article-card');
+
+    categoryButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const category = button.dataset.category;
+        
+        // Update active state
+        categoryButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+        
+        // Filter articles
+        articleCards.forEach(card => {
+          if (category === 'all' || card.dataset.category === category) {
+            card.style.display = 'block';
+            setTimeout(() => {
+              card.style.opacity = '1';
+              card.style.transform = 'translateY(0)';
+            }, 10);
+          } else {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            setTimeout(() => {
+              card.style.display = 'none';
+            }, 300);
+          }
+        });
+      });
+    });
+
+    // Search Functionality
+    const searchInput = document.getElementById('searchInput');
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.toLowerCase();
+      
+      articleCards.forEach(card => {
+        const title = card.querySelector('h3').textContent.toLowerCase();
+        const excerpt = card.querySelector('.line-clamp-2').textContent.toLowerCase();
+        
+        if (title.includes(query) || excerpt.includes(query) || query === '') {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+
+    // Scroll animations
+    const observerOptions = {
+      threshold: 0.2,
+      rootMargin: '0px 0px -100px 0px'
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+        }
+      });
+    }, observerOptions);
+    
+    document.querySelectorAll('.animate-fade-in-up, .animate-fade-in-left, .animate-fade-in-right, .animate-scale-in').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
