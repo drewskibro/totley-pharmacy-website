@@ -284,13 +284,23 @@
     }
 
     .category-pill {
+      background: white;
+      color: #64748b;
+      border: 1px solid #e2e8f0;
       transition: all 0.3s ease;
+    }
+
+    .category-pill:hover {
+      background: #f0fdfa;
+      color: #0d9388;
+      border-color: #0d9388;
     }
 
     .category-pill.active {
       background: linear-gradient(to right, #0d9388, #14b8a6);
       color: white;
       border-color: transparent;
+      box-shadow: 0 4px 12px rgba(13, 147, 136, 0.3);
     }
   </style>
 </head>
@@ -391,7 +401,7 @@
           </div>
         </div>
         <a class="nav-link nav-link-active relative text-teal-600 text-sm md:text-[15px] font-bold py-2 whitespace-nowrap tracking-wide after:absolute after:left-0 after:-bottom-0.5 after:w-full after:h-[3px] after:bg-gradient-to-r after:from-teal-600 after:to-teal-500 after:rounded-full after:transition-all" href="health-hub.html">Health Hub</a>
-        <a class="nav-link relative text-gray-900 text-sm md:text-[15px] font-semibold py-2 whitespace-nowrap tracking-wide transition-all duration-300 after:absolute after:left-0 after:-bottom-0.5 after:w-0 after:h-[3px] after:bg-gradient-to-r after:from-teal-600 after:to-teal-500 after:rounded-full after:transition-all after:duration-300 hover:after:w-full" href="#about">About</a>
+        <a class="nav-link relative text-gray-900 text-sm md:text-[15px] font-semibold py-2 whitespace-nowrap tracking-wide transition-all duration-300 after:absolute after:left-0 after:-bottom-0.5 after:w-0 after:h-[3px] after:bg-gradient-to-r after:from-teal-600 after:to-teal-500 after:rounded-full after:transition-all after:duration-300 hover:after:w-full" href="contact.html">Contact</a>
       </nav>
       <div class="hidden lg:flex items-center shrink-0">
         <button class="flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white text-[15px] font-semibold px-7 py-3 rounded-3xl shadow-lg hover:shadow-xl transition-all min-w-[180px] justify-center">
@@ -464,104 +474,136 @@
     </div>
   </div>
 
-  <!-- HERO SECTION -->
-  <section class="relative w-full pt-[100px] md:pt-[170px] pb-[60px] md:pb-[100px] overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-br from-[#e0f2f1] via-white to-[#e0f2f1]"></div>
-    <div class="absolute inset-0 opacity-[0.02] pointer-events-none">
-      <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, rgb(13, 147, 136) 2px, transparent 0); background-size: 60px 60px;"></div>
+  <!-- HERO SECTION - COSMOPOLITAN MAGAZINE STYLE -->
+  <section class="relative w-full pt-[100px] md:pt-[140px] pb-0 overflow-hidden">
+    <!-- Premium Gradient Background -->
+    <div class="absolute inset-0">
+      <div class="absolute inset-0 bg-gradient-to-br from-teal-600 via-teal-500 to-teal-600"></div>
+      <!-- Sophisticated overlay pattern -->
+      <div class="absolute inset-0 opacity-10">
+        <div class="absolute inset-0" style="background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.05) 35px, rgba(255,255,255,.05) 70px);"></div>
+      </div>
+      <!-- Dynamic gradient orbs -->
+      <div class="absolute inset-0 overflow-hidden pointer-events-none">
+        <div class="absolute -top-40 -right-40 w-[600px] h-[600px] bg-white/10 rounded-full blur-3xl animate-float"></div>
+        <div class="absolute -bottom-40 -left-40 w-[500px] h-[500px] bg-white/10 rounded-full blur-3xl" style="animation: float 4s ease-in-out infinite; animation-delay: 1s;"></div>
+      </div>
     </div>
-    <div class="absolute inset-0 overflow-hidden pointer-events-none">
-      <div class="absolute -top-40 -right-40 w-[800px] h-[800px] bg-gradient-radial from-teal-400/12 via-teal-500/6 to-transparent rounded-full blur-3xl"></div>
-      <div class="absolute -bottom-40 -left-40 w-[700px] h-[700px] bg-gradient-radial from-teal-500/10 via-teal-600/5 to-transparent rounded-full blur-3xl"></div>
-    </div>
-    <div class="absolute inset-0 bg-gradient-to-b from-white/40 via-transparent to-white/40 pointer-events-none"></div>
     
     <div class="max-w-[1680px] mx-auto px-6 md:px-[60px] relative z-10">
-      <div class="text-center max-w-[900px] mx-auto">
-        <div class="section-header-wrapper mb-8">
-          <div class="flex items-center justify-center gap-4">
-            <div class="w-[3px] h-7 bg-gradient-to-b from-teal-600 to-teal-500 rounded-sm shadow-md animate-slide-in-left"></div>
-            <div class="section-header">
-              <p class="text-teal-600 text-sm font-bold tracking-[2.5px] uppercase">HEALTH HUB</p>
+      <!-- Magazine-Style Hero Content -->
+      <div class="text-center text-white py-16 md:py-24">
+        <!-- Premium Badge -->
+        <div class="inline-flex items-center gap-3 bg-white/20 backdrop-blur-md border-2 border-white/40 px-6 py-3 rounded-full mb-8 animate-fade-in-up">
+          <i class="fas fa-sparkles text-white text-sm"></i>
+          <span class="text-white text-sm font-bold uppercase tracking-[2px]">Expert Health Insights</span>
+        </div>
+        
+        <!-- Cosmopolitan-Style Headline -->
+        <h1 class="text-white text-[56px] md:text-[96px] font-black tracking-tight leading-[0.95] mb-8 font-playfair_display animate-fade-in-up delay-200" style="text-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+          HEALTH<br/>
+          <span class="text-[64px] md:text-[110px] italic" style="font-style: italic;">HUB</span>
+        </h1>
+        
+        <!-- Elegant Subheading -->
+        <p class="text-white/95 text-xl md:text-2xl leading-relaxed mb-12 animate-fade-in-up delay-300 max-w-[700px] mx-auto font-light">
+          Curated wellness advice from Sheffield's leading independent pharmacy experts
+        </p>
+        
+        <!-- Premium Search Bar -->
+        <div class="max-w-[700px] mx-auto animate-fade-in-up delay-400">
+          <div class="relative group">
+            <div class="absolute inset-0 bg-white/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div class="relative bg-white/95 backdrop-blur-xl rounded-2xl p-2 shadow-2xl border-2 border-white/50">
+              <div class="flex items-center gap-3">
+                <div class="flex-1 flex items-center gap-3 px-4">
+                  <i class="fas fa-search text-teal-600 text-xl"></i>
+                  <input type="text" placeholder="Search articles, topics, destinations..." class="w-full py-3 bg-transparent text-gray-900 placeholder-gray-400 outline-none text-base font-medium" id="searchInput"/>
+                </div>
+                <button class="bg-gradient-to-r from-teal-600 to-teal-500 hover:from-teal-700 hover:to-teal-600 text-white font-bold px-8 py-3 rounded-xl transition-all shadow-lg hover:shadow-xl">
+                  Search
+                </button>
+              </div>
             </div>
           </div>
         </div>
-        <h1 class="text-gray-700 text-[48px] md:text-[72px] font-bold tracking-tight leading-[1.1] mb-6 font-playfair_display animate-fade-in-up delay-200">
-          Your Guide to Health & Wellness
-        </h1>
-        <div class="w-[60px] h-[3px] bg-teal-600 rounded-full mx-auto mb-6 animate-scale-in delay-300"></div>
-        <p class="text-slate-600 text-xl md:text-2xl leading-relaxed mb-10 animate-fade-in-up delay-400">
-          Expert advice on weight management, travel health, and private healthcare from Sheffield's trusted independent pharmacy team
-        </p>
-        
-        <!-- Search Bar -->
-        <div class="max-w-[600px] mx-auto animate-fade-in-up delay-500">
-          <div class="relative">
-            <input type="text" placeholder="Search health topics..." class="w-full px-6 py-4 pr-14 rounded-xl border-2 border-gray-200 focus:border-teal-600 focus:ring-2 focus:ring-teal-600/20 outline-none text-base" id="searchInput"/>
-            <button class="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 bg-teal-600 hover:bg-teal-700 rounded-lg flex items-center justify-center transition-all">
-              <i class="fas fa-search text-white"></i>
-            </button>
+
+        <!-- Trust Indicators -->
+        <div class="flex flex-wrap items-center justify-center gap-6 mt-12 animate-fade-in-up delay-500">
+          <div class="flex items-center gap-2 text-white/90">
+            <i class="fas fa-user-doctor text-lg"></i>
+            <span class="text-sm font-semibold">Expert Authors</span>
+          </div>
+          <span class="text-white/40">•</span>
+          <div class="flex items-center gap-2 text-white/90">
+            <i class="fas fa-shield-check text-lg"></i>
+            <span class="text-sm font-semibold">Evidence-Based</span>
+          </div>
+          <span class="text-white/40">•</span>
+          <div class="flex items-center gap-2 text-white/90">
+            <i class="fas fa-clock text-lg"></i>
+            <span class="text-sm font-semibold">Updated Weekly</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FEATURED ARTICLE SECTION - Magazine Hero Style -->
-  <section class="relative bg-white px-5 md:px-10 py-[60px] md:py-[100px] overflow-hidden">
-    <div class="max-w-[1680px] mx-auto relative z-10">
-      <div class="text-center mb-12">
-        <div class="inline-flex items-center gap-2 bg-teal-50 border-2 border-teal-600/30 px-5 py-2 rounded-full mb-6">
-          <i class="fas fa-star text-teal-600"></i>
-          <span class="text-teal-600 text-sm font-bold uppercase tracking-wide">Featured Article</span>
+  <!-- FEATURED ARTICLE SECTION - COSMOPOLITAN HERO STYLE -->
+  <section class="relative bg-black px-0 py-0 overflow-hidden">
+    <div class="max-w-[1920px] mx-auto relative">
+      <!-- Premium Featured Article - Full Bleed Magazine Style -->
+      <div class="relative group">
+        <!-- Hero Image with Overlay -->
+        <div class="relative aspect-[21/9] md:aspect-[21/9] overflow-hidden">
+          <img alt="GLP-1 medications and weight loss" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71?w=1920&h=900&fit=crop"/>
+          <!-- Sophisticated gradient overlay -->
+          <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-transparent"></div>
+          <!-- Subtle vignette -->
+          <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/20"></div>
         </div>
-      </div>
-
-      <!-- Premium Featured Article Card -->
-      <div class="relative group max-w-[1400px] mx-auto animate-scale-in delay-300">
-        <div class="absolute inset-0 bg-teal-500/5 rounded-3xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-        <div class="relative bg-white border-2 border-gray-100 rounded-3xl overflow-hidden hover:shadow-2xl transition-all">
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
-            <!-- Left: Image (60%) -->
-            <div class="lg:col-span-7 relative overflow-hidden">
-              <div class="aspect-[16/10] lg:aspect-auto lg:h-full overflow-hidden">
-                <img alt="GLP-1 medications and weight loss" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71?w=1200&h=800&fit=crop"/>
-                <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent lg:hidden"></div>
-              </div>
-              <!-- Category Badge -->
-              <span class="absolute top-6 left-6 bg-teal-600 text-white text-xs font-bold px-5 py-2.5 rounded-full shadow-xl">
-                WEIGHT LOSS
-              </span>
-            </div>
-            
-            <!-- Right: Content (40%) -->
-            <div class="lg:col-span-5 p-8 md:p-12 flex flex-col justify-center">
-              <div class="flex items-center gap-3 text-slate-500 text-sm mb-4">
-                <div class="flex items-center gap-1.5">
-                  <i class="fas fa-user-circle text-teal-600"></i>
-                  <span>By Tajinder Singh</span>
-                </div>
-                <span>•</span>
-                <div class="flex items-center gap-1.5">
-                  <i class="fas fa-clock text-teal-600"></i>
-                  <span>8 min read</span>
-                </div>
+        
+        <!-- Content Overlay - Magazine Style -->
+        <div class="absolute inset-0 flex items-center">
+          <div class="max-w-[1680px] mx-auto px-6 md:px-[60px] w-full">
+            <div class="max-w-[700px]">
+              <!-- Premium Category Badge -->
+              <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/30 px-5 py-2 rounded-full mb-6 animate-fade-in-up">
+                <i class="fas fa-star text-white text-xs"></i>
+                <span class="text-white text-xs font-bold uppercase tracking-[2px]">Featured Story</span>
               </div>
               
-              <h2 class="text-gray-900 text-3xl md:text-4xl font-bold mb-4 font-playfair_display leading-tight">
-                How GLP-1 Medications Changed Weight Loss Treatment in 2024
+              <!-- Magazine-Style Headline -->
+              <h2 class="text-white text-[42px] md:text-[64px] font-black leading-[1.05] mb-6 font-playfair_display animate-fade-in-up delay-200" style="text-shadow: 0 4px 30px rgba(0,0,0,0.3);">
+                The GLP-1 Revolution: How Medical Weight Loss Changed in 2024
               </h2>
               
-              <p class="text-slate-600 text-base md:text-lg leading-relaxed mb-6">
-                Discover how prescription GLP-1 treatments like Mounjaro and Wegovy have revolutionised medical weight loss, offering Sheffield patients sustainable results where traditional diets have failed.
+              <!-- Elegant Deck Copy -->
+              <p class="text-white/95 text-lg md:text-xl leading-relaxed mb-8 animate-fade-in-up delay-300 font-light">
+                Prescription treatments like Mounjaro and Wegovy are transforming lives across Sheffield. Here's what you need to know about the medical weight loss breakthrough.
               </p>
               
-              <div class="flex items-center gap-4 mb-8">
-                <span class="text-slate-500 text-sm">December 2024</span>
+              <!-- Author & Meta Info -->
+              <div class="flex flex-wrap items-center gap-4 text-white/80 text-sm mb-8 animate-fade-in-up delay-400">
+                <div class="flex items-center gap-2">
+                  <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
+                    <i class="fas fa-user-md text-white"></i>
+                  </div>
+                  <div>
+                    <p class="font-bold text-white">Tajinder Singh</p>
+                    <p class="text-xs text-white/70">Independent Prescriber</p>
+                  </div>
+                </div>
+                <span class="text-white/40">•</span>
+                <span>8 min read</span>
+                <span class="text-white/40">•</span>
+                <span>December 2024</span>
               </div>
               
-              <a href="#" class="inline-flex items-center gap-3 bg-teal-600 hover:bg-teal-700 text-white text-base font-bold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all group/btn">
-                Read Article
+              <!-- Premium CTA -->
+              <a href="#" class="inline-flex items-center gap-3 bg-white hover:bg-teal-50 text-teal-600 text-base md:text-lg font-bold px-10 py-5 rounded-xl shadow-2xl hover:shadow-3xl transition-all group/btn animate-fade-in-up delay-500">
+                <i class="fas fa-book-open"></i>
+                Read Full Article
                 <i class="fas fa-arrow-right group-hover/btn:translate-x-1 transition-transform"></i>
               </a>
             </div>
@@ -571,45 +613,50 @@
     </div>
   </section>
 
-  <!-- CATEGORY FILTER -->
-  <section class="relative bg-gradient-to-b from-gray-50/50 to-white px-5 md:px-10 py-8 sticky top-[90px] z-40 backdrop-blur-lg border-b border-gray-200">
+  <!-- CATEGORY FILTER - COSMOPOLITAN STYLE -->
+  <section class="relative bg-white px-5 md:px-10 py-6 sticky top-[90px] z-40 backdrop-blur-xl border-b border-gray-100 shadow-sm">
     <div class="max-w-[1680px] mx-auto">
       <div class="flex items-center justify-between gap-4 flex-wrap">
-        <div class="flex items-center gap-3 flex-wrap">
-          <button class="category-pill active px-6 py-2.5 rounded-full border-2 border-gray-200 text-sm font-bold transition-all hover:border-teal-600" data-category="all">
-            All Articles
+        <!-- Category Pills - More Refined -->
+        <div class="flex items-center gap-2 flex-wrap">
+          <button class="category-pill active px-5 py-2 rounded-full text-xs font-extrabold uppercase tracking-[1.5px] transition-all" data-category="all">
+            All
           </button>
-          <button class="category-pill px-6 py-2.5 rounded-full border-2 border-gray-200 text-sm font-bold transition-all hover:border-teal-600" data-category="weight-loss">
+          <button class="category-pill px-5 py-2 rounded-full text-xs font-extrabold uppercase tracking-[1.5px] transition-all" data-category="weight-loss">
             Weight Loss
           </button>
-          <button class="category-pill px-6 py-2.5 rounded-full border-2 border-gray-200 text-sm font-bold transition-all hover:border-teal-600" data-category="travel-health">
-            Travel Health
+          <button class="category-pill px-5 py-2 rounded-full text-xs font-extrabold uppercase tracking-[1.5px] transition-all" data-category="travel-health">
+            Travel
           </button>
-          <button class="category-pill px-6 py-2.5 rounded-full border-2 border-gray-200 text-sm font-bold transition-all hover:border-teal-600" data-category="private-health">
+          <button class="category-pill px-5 py-2 rounded-full text-xs font-extrabold uppercase tracking-[1.5px] transition-all" data-category="private-health">
             Private Health
           </button>
-          <button class="category-pill px-6 py-2.5 rounded-full border-2 border-gray-200 text-sm font-bold transition-all hover:border-teal-600" data-category="pharmacy">
-            Pharmacy Advice
+          <button class="category-pill px-5 py-2 rounded-full text-xs font-extrabold uppercase tracking-[1.5px] transition-all" data-category="pharmacy">
+            Pharmacy
           </button>
-          <button class="category-pill px-6 py-2.5 rounded-full border-2 border-gray-200 text-sm font-bold transition-all hover:border-teal-600" data-category="wellness">
-            Wellness Tips
+          <button class="category-pill px-5 py-2 rounded-full text-xs font-extrabold uppercase tracking-[1.5px] transition-all" data-category="wellness">
+            Wellness
           </button>
         </div>
         
-        <!-- Sort Dropdown -->
+        <!-- Refined Sort Dropdown -->
         <div class="relative">
-          <select class="px-4 py-2.5 rounded-xl border-2 border-gray-200 text-sm font-semibold focus:border-teal-600 focus:ring-2 focus:ring-teal-600/20 outline-none bg-white">
-            <option>Most Recent</option>
-            <option>Most Popular</option>
-            <option>By Topic</option>
+          <select class="px-4 py-2 rounded-lg border border-gray-200 text-xs font-bold uppercase tracking-wide focus:border-teal-600 focus:ring-1 focus:ring-teal-600/20 outline-none bg-white text-gray-700">
+            <option>Latest</option>
+            <option>Popular</option>
+            <option>Trending</option>
           </select>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ARTICLES GRID WITH SIDEBAR -->
-  <section class="relative bg-gradient-to-b from-white via-gray-50/30 to-white px-5 md:px-10 py-[80px] md:py-[120px] overflow-hidden">
+  <!-- ARTICLES GRID - COSMOPOLITAN MASONRY LAYOUT -->
+  <section class="relative bg-white px-5 md:px-10 py-[80px] md:py-[100px] overflow-hidden">
+    <!-- Subtle background texture -->
+    <div class="absolute inset-0 opacity-[0.015] pointer-events-none">
+      <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, rgb(13, 147, 136) 1px, transparent 0); background-size: 60px 60px;"></div>
+    </div>
     <div class="max-w-[1680px] mx-auto relative z-10">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
         
@@ -617,99 +664,81 @@
         <div class="lg:col-span-8">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8" id="articlesGrid">
             
-            <!-- Article 1: Travel Health -->
-            <article class="article-card bg-white rounded-2xl overflow-hidden shadow-lg hover-lift transition-all duration-300 animate-fade-in-up delay-400" data-category="travel-health">
-              <div class="relative aspect-[4/5] overflow-hidden">
-                <img alt="Yellow fever vaccination" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=600&h=750&fit=crop"/>
-                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
-                <span class="absolute top-4 left-4 bg-teal-600 text-white text-xs font-bold px-4 py-2 rounded-full shadow-lg">
-                  TRAVEL HEALTH
+            <!-- Article 1: Travel Health - COSMOPOLITAN CARD STYLE -->
+            <article class="article-card group bg-white rounded-xl overflow-hidden hover:shadow-2xl transition-all duration-500 animate-fade-in-up delay-400" data-category="travel-health">
+              <div class="relative aspect-[3/4] overflow-hidden">
+                <img alt="Yellow fever vaccination" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=600&h=800&fit=crop"/>
+                <!-- Sophisticated gradient overlay -->
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+                <!-- Premium Category Badge -->
+                <span class="absolute top-5 left-5 bg-white text-teal-600 text-[10px] font-black px-4 py-2 rounded-full shadow-xl uppercase tracking-[1.5px]">
+                  Travel
                 </span>
+                <!-- Content Overlay -->
                 <div class="absolute bottom-0 left-0 right-0 p-6">
-                  <h3 class="text-white text-xl font-bold leading-tight font-playfair_display">
-                    Yellow Fever Requirements for South America: Complete Guide
+                  <h3 class="text-white text-2xl md:text-[28px] font-bold leading-tight font-playfair_display mb-3">
+                    Yellow Fever Requirements for South America
                   </h3>
+                  <div class="flex items-center gap-3 text-white/80 text-xs mb-4">
+                    <span class="font-semibold">Tajinder Singh</span>
+                    <span>•</span>
+                    <span>6 min</span>
+                  </div>
+                  <a href="#" class="inline-flex items-center gap-2 text-white text-sm font-bold hover:gap-3 transition-all group/link">
+                    Read Now
+                    <i class="fas fa-arrow-right text-xs group-hover/link:translate-x-1 transition-transform"></i>
+                  </a>
                 </div>
-              </div>
-              <div class="p-6">
-                <p class="text-slate-600 text-sm leading-relaxed mb-4 line-clamp-2">
-                  Planning a trip to Brazil, Peru, or Colombia? Here's everything you need to know about yellow fever vaccination requirements.
-                </p>
-                <div class="flex items-center gap-3 text-slate-500 text-xs mb-4">
-                  <span>By Tajinder Singh</span>
-                  <span>•</span>
-                  <span>6 min read</span>
-                  <span>•</span>
-                  <span>Nov 2024</span>
-                </div>
-                <a href="#" class="inline-flex items-center gap-2 text-teal-600 text-sm font-semibold hover:gap-3 transition-all">
-                  Read Article
-                  <i class="fas fa-arrow-right text-xs"></i>
-                </a>
               </div>
             </article>
 
-            <!-- Article 2: Weight Loss -->
-            <article class="article-card bg-white rounded-2xl overflow-hidden shadow-lg hover-lift transition-all duration-300 animate-fade-in-up delay-500" data-category="weight-loss">
-              <div class="relative aspect-[4/5] overflow-hidden">
-                <img alt="Medical weight loss consultation" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71?w=600&h=750&fit=crop"/>
-                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
-                <span class="absolute top-4 left-4 bg-teal-600 text-white text-xs font-bold px-4 py-2 rounded-full shadow-lg">
-                  WEIGHT LOSS
+            <!-- Article 2: Weight Loss - COSMOPOLITAN CARD STYLE -->
+            <article class="article-card group bg-white rounded-xl overflow-hidden hover:shadow-2xl transition-all duration-500 animate-fade-in-up delay-500" data-category="weight-loss">
+              <div class="relative aspect-[3/4] overflow-hidden">
+                <img alt="Medical weight loss consultation" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://images.unsplash.com/photo-1434682881908-b43d0467b798?w=600&h=800&fit=crop"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+                <span class="absolute top-5 left-5 bg-white text-teal-600 text-[10px] font-black px-4 py-2 rounded-full shadow-xl uppercase tracking-[1.5px]">
+                  Weight Loss
                 </span>
                 <div class="absolute bottom-0 left-0 right-0 p-6">
-                  <h3 class="text-white text-xl font-bold leading-tight font-playfair_display">
-                    Beyond Diets: Why Medical Weight Loss Works When Others Fail
+                  <h3 class="text-white text-2xl md:text-[28px] font-bold leading-tight font-playfair_display mb-3">
+                    Beyond Diets: Why Medical Weight Loss Works
                   </h3>
+                  <div class="flex items-center gap-3 text-white/80 text-xs mb-4">
+                    <span class="font-semibold">Tajinder Singh</span>
+                    <span>•</span>
+                    <span>10 min</span>
+                  </div>
+                  <a href="#" class="inline-flex items-center gap-2 text-white text-sm font-bold hover:gap-3 transition-all group/link">
+                    Read Now
+                    <i class="fas fa-arrow-right text-xs group-hover/link:translate-x-1 transition-transform"></i>
+                  </a>
                 </div>
-              </div>
-              <div class="p-6">
-                <p class="text-slate-600 text-sm leading-relaxed mb-4 line-clamp-2">
-                  Discover the science behind GLP-1 medications and why clinically-supervised programmes achieve lasting results.
-                </p>
-                <div class="flex items-center gap-3 text-slate-500 text-xs mb-4">
-                  <span>By Tajinder Singh</span>
-                  <span>•</span>
-                  <span>10 min read</span>
-                  <span>•</span>
-                  <span>Nov 2024</span>
-                </div>
-                <a href="#" class="inline-flex items-center gap-2 text-teal-600 text-sm font-semibold hover:gap-3 transition-all">
-                  Read Article
-                  <i class="fas fa-arrow-right text-xs"></i>
-                </a>
               </div>
             </article>
 
-            <!-- Article 3: Travel Health -->
-            <article class="article-card bg-white rounded-2xl overflow-hidden shadow-lg hover-lift transition-all duration-300 animate-fade-in-up delay-600" data-category="travel-health">
-              <div class="relative aspect-[4/5] overflow-hidden">
-                <img alt="Last minute travel vaccinations" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&h=750&fit=crop"/>
-                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
-                <span class="absolute top-4 left-4 bg-teal-600 text-white text-xs font-bold px-4 py-2 rounded-full shadow-lg">
-                  TRAVEL HEALTH
+            <!-- Article 3: Travel Health - COSMOPOLITAN CARD -->
+            <article class="article-card group bg-white rounded-xl overflow-hidden hover:shadow-2xl transition-all duration-500 animate-fade-in-up delay-600" data-category="travel-health">
+              <div class="relative aspect-[3/4] overflow-hidden">
+                <img alt="Last minute travel vaccinations" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&h=800&fit=crop"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+                <span class="absolute top-5 left-5 bg-white text-teal-600 text-[10px] font-black px-4 py-2 rounded-full shadow-xl uppercase tracking-[1.5px]">
+                  Travel
                 </span>
                 <div class="absolute bottom-0 left-0 right-0 p-6">
-                  <h3 class="text-white text-xl font-bold leading-tight font-playfair_display">
-                    Last-Minute Travel Vaccinations: What You Need to Know
+                  <h3 class="text-white text-2xl md:text-[28px] font-bold leading-tight font-playfair_display mb-3">
+                    Last-Minute Travel Vaccinations Guide
                   </h3>
+                  <div class="flex items-center gap-3 text-white/80 text-xs mb-4">
+                    <span class="font-semibold">Sheffield Team</span>
+                    <span>•</span>
+                    <span>5 min</span>
+                  </div>
+                  <a href="#" class="inline-flex items-center gap-2 text-white text-sm font-bold hover:gap-3 transition-all group/link">
+                    Read Now
+                    <i class="fas fa-arrow-right text-xs group-hover/link:translate-x-1 transition-transform"></i>
+                  </a>
                 </div>
-              </div>
-              <div class="p-6">
-                <p class="text-slate-600 text-sm leading-relaxed mb-4 line-clamp-2">
-                  Travelling soon? Learn which vaccinations you can get at short notice and what to do if you're running out of time.
-                </p>
-                <div class="flex items-center gap-3 text-slate-500 text-xs mb-4">
-                  <span>By Sheffield Wellness Team</span>
-                  <span>•</span>
-                  <span>5 min read</span>
-                  <span>•</span>
-                  <span>Dec 2024</span>
-                </div>
-                <a href="#" class="inline-flex items-center gap-2 text-teal-600 text-sm font-semibold hover:gap-3 transition-all">
-                  Read Article
-                  <i class="fas fa-arrow-right text-xs"></i>
-                </a>
               </div>
             </article>
 
@@ -1014,10 +1043,10 @@
 
         <!-- Sidebar (Desktop Only) -->
         <aside class="lg:col-span-4 hidden lg:block">
-          <div class="sticky top-[180px] space-y-8">
+          <div class="space-y-8">
             
             <!-- Popular Topics -->
-            <div class="bg-white border-2 border-gray-100 rounded-2xl p-8 shadow-lg">
+            <div class="bg-white border-2 border-gray-100 rounded-2xl p-8 shadow-lg sticky top-[180px]">
               <h3 class="text-gray-900 text-xl font-bold mb-6 font-playfair_display">Popular Topics</h3>
               <ul class="space-y-3">
                 <li>
@@ -1078,7 +1107,7 @@
             </div>
 
             <!-- Newsletter Signup -->
-            <div class="relative bg-gradient-to-br from-teal-600 to-teal-500 rounded-2xl p-8 shadow-xl overflow-hidden">
+            <div class="relative bg-gradient-to-br from-teal-600 to-teal-500 rounded-2xl p-8 shadow-xl overflow-hidden sticky top-[180px]">
               <div class="absolute inset-0 opacity-10">
                 <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 20px 20px;"></div>
               </div>
@@ -1099,7 +1128,7 @@
             </div>
 
             <!-- Recent Articles -->
-            <div class="bg-white border-2 border-gray-100 rounded-2xl p-8 shadow-lg">
+            <div class="bg-white border-2 border-gray-100 rounded-2xl p-8 shadow-lg sticky top-[180px]">
               <h3 class="text-gray-900 text-xl font-bold mb-6 font-playfair_display">Recent Articles</h3>
               <ul class="space-y-4">
                 <li>
@@ -1231,6 +1260,10 @@
             <li><a class="text-white/70 hover:text-teal-400 transition-colors text-[15px] font-medium flex items-center gap-2 group" href="health-hub.html">
               <i class="fas fa-arrow-right text-teal-400 text-xs opacity-0 group-hover:opacity-100 transition-opacity"></i>
               Health Hub
+            </a></li>
+            <li><a class="text-white/70 hover:text-teal-400 transition-colors text-[15px] font-medium flex items-center gap-2 group" href="contact.html">
+              <i class="fas fa-arrow-right text-teal-400 text-xs opacity-0 group-hover:opacity-100 transition-opacity"></i>
+              Contact
             </a></li>
           </ul>
         </div>
