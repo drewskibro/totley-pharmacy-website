@@ -520,7 +520,7 @@
                   <i class="fas fa-search text-teal-600 text-xl"></i>
                   <input type="text" placeholder="Search articles, topics, destinations..." class="w-full py-3 bg-transparent text-gray-900 placeholder-gray-400 outline-none text-base font-medium" id="searchInput"/>
                 </div>
-                <button class="bg-gradient-to-r from-teal-600 to-teal-500 hover:from-teal-700 hover:to-teal-600 text-white font-bold px-8 py-3 rounded-xl transition-all shadow-lg hover:shadow-xl">
+                <button type="button" class="bg-gradient-to-r from-teal-600 to-teal-500 hover:from-teal-700 hover:to-teal-600 text-white font-bold px-8 py-3 rounded-xl transition-all shadow-lg hover:shadow-xl">
                   Search
                 </button>
               </div>
@@ -555,7 +555,7 @@
       <!-- Premium Featured Article - Full Bleed Magazine Style -->
       <div class="relative group">
         <!-- Hero Image with Overlay -->
-        <div class="relative aspect-[21/9] md:aspect-[21/9] overflow-hidden">
+        <div class="relative aspect-[4/5] md:aspect-[21/9] overflow-hidden">
           <img alt="GLP-1 medications and weight loss" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71?w=1920&h=900&fit=crop"/>
           <!-- Sophisticated gradient overlay -->
           <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-transparent"></div>
@@ -1043,10 +1043,10 @@
 
         <!-- Sidebar (Desktop Only) -->
         <aside class="lg:col-span-4 hidden lg:block">
-          <div class="space-y-8">
+          <div class="sticky top-[180px] space-y-8">
             
             <!-- Popular Topics -->
-            <div class="bg-white border-2 border-gray-100 rounded-2xl p-8 shadow-lg sticky top-[180px]">
+            <div class="bg-white border-2 border-gray-100 rounded-2xl p-8 shadow-lg">
               <h3 class="text-gray-900 text-xl font-bold mb-6 font-playfair_display">Popular Topics</h3>
               <ul class="space-y-3">
                 <li>
@@ -1107,7 +1107,7 @@
             </div>
 
             <!-- Newsletter Signup -->
-            <div class="relative bg-gradient-to-br from-teal-600 to-teal-500 rounded-2xl p-8 shadow-xl overflow-hidden sticky top-[180px]">
+            <div class="relative bg-gradient-to-br from-teal-600 to-teal-500 rounded-2xl p-8 shadow-xl overflow-hidden">
               <div class="absolute inset-0 opacity-10">
                 <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 20px 20px;"></div>
               </div>
@@ -1128,7 +1128,7 @@
             </div>
 
             <!-- Recent Articles -->
-            <div class="bg-white border-2 border-gray-100 rounded-2xl p-8 shadow-lg sticky top-[180px]">
+            <div class="bg-white border-2 border-gray-100 rounded-2xl p-8 shadow-lg">
               <h3 class="text-gray-900 text-xl font-bold mb-6 font-playfair_display">Recent Articles</h3>
               <ul class="space-y-4">
                 <li>
@@ -1433,22 +1433,93 @@
       });
     });
 
-    // Search Functionality
+    // Enhanced Search Functionality
     const searchInput = document.getElementById('searchInput');
-    searchInput.addEventListener('input', (e) => {
-      const query = e.target.value.toLowerCase();
+    
+    function performSearch(query) {
+      const searchTerm = query.toLowerCase().trim();
       
       articleCards.forEach(card => {
         const title = card.querySelector('h3').textContent.toLowerCase();
-        const excerpt = card.querySelector('.line-clamp-2').textContent.toLowerCase();
+        const excerpt = card.querySelector('.line-clamp-2') ? card.querySelector('.line-clamp-2').textContent.toLowerCase() : '';
+        const category = card.dataset.category.toLowerCase();
+        const categoryBadge = card.querySelector('span[class*="bg-"]') ? card.querySelector('span[class*="bg-"]').textContent.toLowerCase() : '';
         
-        if (title.includes(query) || excerpt.includes(query) || query === '') {
+        // Check if search term matches title, excerpt, category, or category badge
+        const matchesSearch = searchTerm === '' || 
+                             title.includes(searchTerm) || 
+                             excerpt.includes(searchTerm) || 
+                             category.includes(searchTerm) ||
+                             categoryBadge.includes(searchTerm) ||
+                             // Handle common search variations
+                             (searchTerm.includes('weight') && category === 'weight-loss') ||
+                             (searchTerm.includes('travel') && category === 'travel-health') ||
+                             (searchTerm.includes('private') && category === 'private-health') ||
+                             (searchTerm.includes('pharmacy') && category === 'pharmacy') ||
+                             (searchTerm.includes('wellness') && category === 'wellness');
+        
+        if (matchesSearch) {
           card.style.display = 'block';
+          card.style.opacity = '1';
+          card.style.transform = 'translateY(0)';
         } else {
-          card.style.display = 'none';
+          card.style.opacity = '0';
+          card.style.transform = 'translateY(20px)';
+          setTimeout(() => {
+            card.style.display = 'none';
+          }, 300);
         }
       });
+      
+      // Show "no results" message if no articles match
+      const visibleCards = Array.from(articleCards).filter(card => card.style.display !== 'none');
+      const articlesGrid = document.getElementById('articlesGrid');
+      let noResultsMsg = document.getElementById('noResultsMessage');
+      
+      if (visibleCards.length === 0 && searchTerm !== '') {
+        if (!noResultsMsg) {
+          noResultsMsg = document.createElement('div');
+          noResultsMsg.id = 'noResultsMessage';
+          noResultsMsg.className = 'col-span-full text-center py-20';
+          noResultsMsg.innerHTML = `
+            <i class="fas fa-search text-gray-300 text-6xl mb-6"></i>
+            <h3 class="text-gray-900 text-2xl font-bold mb-3 font-playfair_display">No articles found</h3>
+            <p class="text-slate-600 text-lg mb-6">Try searching for "weight loss", "travel", "vaccinations", or other health topics</p>
+            <button onclick="document.getElementById('searchInput').value = ''; performSearch('');" class="inline-flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white font-bold px-6 py-3 rounded-xl transition-all">
+              <i class="fas fa-times"></i>
+              Clear Search
+            </button>
+          `;
+          articlesGrid.appendChild(noResultsMsg);
+        }
+      } else if (noResultsMsg) {
+        noResultsMsg.remove();
+      }
+    }
+    
+    // Search on input
+    searchInput.addEventListener('input', (e) => {
+      performSearch(e.target.value);
     });
+    
+    // Search on button click
+    const searchButton = document.querySelector('button[type="button"]');
+    if (searchButton) {
+      searchButton.addEventListener('click', () => {
+        performSearch(searchInput.value);
+      });
+    }
+    
+    // Search on Enter key
+    searchInput.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        performSearch(searchInput.value);
+      }
+    });
+    
+    // Make performSearch globally accessible
+    window.performSearch = performSearch;
 
     // Scroll animations
     const observerOptions = {
