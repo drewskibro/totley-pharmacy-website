@@ -493,35 +493,43 @@
   </section>
 
   <!-- Quick Info Bar -->
-  <section class="relative bg-gradient-to-r from-teal-600 via-teal-500 to-teal-600 py-8 overflow-hidden">
+  <section class="relative bg-gradient-to-r from-teal-600 via-teal-500 to-teal-600 py-10 md:py-8 overflow-hidden">
     <div class="absolute inset-0 bg-[linear-gradient(90deg,transparent_0%,rgba(255,255,255,0.1)_50%,transparent_100%)] animate-shimmer"></div>
+    <!-- Subtle decorative elements -->
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <div class="absolute top-0 left-1/4 w-2 h-2 bg-white/20 rounded-full"></div>
+      <div class="absolute bottom-0 right-1/3 w-3 h-3 bg-white/15 rounded-full"></div>
+      <div class="absolute top-1/2 right-1/4 w-1.5 h-1.5 bg-white/25 rounded-full"></div>
+    </div>
     <div class="max-w-[1680px] mx-auto px-6 md:px-[60px]">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 text-white max-w-[1000px] mx-auto">
-        <div class="flex items-center gap-4 group cursor-default justify-center md:justify-start">
-          <div class="w-14 h-14 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm group-hover:bg-white/30 transition-all group-hover:scale-110 shrink-0">
-            <i class="fas fa-syringe text-white text-xl"></i>
+      <!-- Mobile: Enhanced card-style layout, Desktop: horizontal layout -->
+      <div class="flex flex-col md:flex-row md:flex-wrap md:items-center md:justify-center gap-6 md:gap-20 text-white">
+        <!-- Mobile: Enhanced card-style badges with better spacing -->
+        <div class="flex items-center gap-5 group cursor-default bg-white/10 backdrop-blur-sm rounded-2xl p-5 md:bg-transparent md:p-0">
+          <div class="w-16 h-16 md:w-14 md:h-14 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm group-hover:bg-white/30 transition-all group-hover:scale-110 shrink-0 shadow-lg">
+            <i class="fas fa-syringe text-white text-2xl md:text-2xl"></i>
           </div>
-          <div class="text-center md:text-left">
-            <p class="text-2xl md:text-[28px] font-bold font-playfair_display leading-none mb-1">7-9</p>
-            <p class="text-sm opacity-90 font-medium">Vaccines Recommended</p>
-          </div>
-        </div>
-        <div class="flex items-center gap-4 group cursor-default justify-center md:justify-start">
-          <div class="w-14 h-14 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm group-hover:bg-white/30 transition-all group-hover:scale-110 shrink-0">
-            <i class="fas fa-calendar text-white text-xl"></i>
-          </div>
-          <div class="text-center md:text-left">
-            <p class="text-2xl md:text-[28px] font-bold font-playfair_display leading-none mb-1">6-8</p>
-            <p class="text-sm opacity-90 font-medium">Weeks Before Travel</p>
+          <div class="text-left md:text-left">
+            <p class="text-3xl md:text-[28px] font-bold font-playfair_display leading-none mb-1.5">7-9</p>
+            <p class="text-sm md:text-sm opacity-90 font-semibold">Vaccines Recommended</p>
           </div>
         </div>
-        <div class="flex items-center gap-4 group cursor-default justify-center md:justify-start">
-          <div class="w-14 h-14 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm group-hover:bg-white/30 transition-all group-hover:scale-110 shrink-0">
-            <i class="fas fa-certificate text-white text-xl"></i>
+        <div class="flex items-center gap-5 group cursor-default bg-white/10 backdrop-blur-sm rounded-2xl p-5 md:bg-transparent md:p-0">
+          <div class="w-16 h-16 md:w-14 md:h-14 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm group-hover:bg-white/30 transition-all group-hover:scale-110 shrink-0 shadow-lg">
+            <i class="fas fa-calendar text-white text-2xl md:text-2xl"></i>
           </div>
-          <div class="text-center md:text-left">
-            <p class="text-2xl md:text-[28px] font-bold font-playfair_display leading-none mb-1">Yellow Fever</p>
-            <p class="text-sm opacity-90 font-medium">Certificate Required</p>
+          <div class="text-left md:text-left">
+            <p class="text-3xl md:text-[28px] font-bold font-playfair_display leading-none mb-1.5">6-8</p>
+            <p class="text-sm md:text-sm opacity-90 font-semibold">Weeks Before Travel</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-5 group cursor-default bg-white/10 backdrop-blur-sm rounded-2xl p-5 md:bg-transparent md:p-0">
+          <div class="w-16 h-16 md:w-14 md:h-14 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm group-hover:bg-white/30 transition-all group-hover:scale-110 shrink-0 shadow-lg">
+            <i class="fas fa-certificate text-white text-2xl md:text-2xl"></i>
+          </div>
+          <div class="text-left md:text-left">
+            <p class="text-3xl md:text-[28px] font-bold font-playfair_display leading-none mb-1.5">Yellow Fever</p>
+            <p class="text-sm md:text-sm opacity-90 font-semibold">Certificate Required</p>
           </div>
         </div>
       </div>
